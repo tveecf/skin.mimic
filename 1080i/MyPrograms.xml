@@ -7,7 +7,7 @@
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <onunload>ClearProperty(MediaMenu,Home)</onunload>
     <onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-    <views>50,52,520,57,501</views>
+    <views>50,52,520,57,501,960,961,962,963,964,965</views>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -21,6 +21,12 @@
             <!-- view id = 57 -->
             <include>AddonLowList</include>
             <!-- view id = 501 -->
+			<include>View_960_BeltPoster</include>
+			<include>View_961_BeltSquare</include>
+			<include>View_962_BeltFanart</include>
+			<include>View_963_BeltSNES64</include>
+			<include>View_964_BeltBluRay</include>
+			<include>View_965_BeltPSP</include>
         </control>
         <include>Topbar</include>
         <control type="group">
