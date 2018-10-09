@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.lyrebird" name="Lyrebird" version="0.1.0" provider-name="Rufoo">
+<addon id="skin.lyrebird" name="Lyrebird" version="0.5.0" provider-name="Rufoo">
     <requires>
         <import addon="xbmc.gui" version="5.13.0"/>
         <import addon="resource.images.studios.white" version="0.0.4"/>
@@ -38,5 +38,6 @@
             <screenshot>resources/screenshot-09.jpg</screenshot>
             <screenshot>resources/screenshot-10.jpg</screenshot>
         </assets>
+        <news>0.5.0[CR]- Version bump.[CR]- Kodi Kyrpton port.</news>
     </extension>
 </addon>

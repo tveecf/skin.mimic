@@ -26,6 +26,11 @@ Support Kodi by donating @ http://kodi.tv/contribute/donate/
 
 ***
 
+**0.5.0**
+ - Version bump.
+ - Lyrebird version 0.1.0 in branch `krypton_v5` is for Kodi Krypton and tracks 
+   Lyrebird 0.5.0 for Kodi Leia in `master` branch.
+
 **0.1.0**
-- Based off Mimic (July 3rd 2018).
-- Belt Views (Poster, Square, Fanart, SNES/N64, Blu-Ray, PSP/Switch).
+ - Based off Mimic (July 3rd 2018).
+ - Belt Views (Poster, Square, Fanart, SNES/N64, Blu-Ray, PSP/Switch).
