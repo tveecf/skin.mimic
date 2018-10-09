@@ -192,6 +192,36 @@
 						<visible>Container.Content(songs)</visible>
 						<visible>!Skin.HasSetting(Disable.SongView)</visible>
 					</item>
+					<item>
+						<description>Belt (PSP)</description>
+						<label>Belt (Poster)</label>
+						<onclick>Container.SetViewMode(960)</onclick>
+					</item>
+					<item>
+						<description>Belt (PSP)</description>
+						<label>Belt (Square)</label>
+						<onclick>Container.SetViewMode(961)</onclick>
+					</item>
+					<item>
+						<description>Belt (Fanart)</description>
+						<label>Belt (Fanart)</label>
+						<onclick>Container.SetViewMode(962)</onclick>
+					</item>
+					<item>
+						<description>Belt (SNES / N64)</description>
+						<label>Belt (SNES / N64)</label>
+						<onclick>Container.SetViewMode(963)</onclick>
+					</item>
+					<item>
+						<description>Belt (Blu-Ray)</description>
+						<label>Belt (Blu-Ray)</label>
+						<onclick>Container.SetViewMode(964)</onclick>
+					</item>
+					<item>
+						<description>Belt (PSP / Switch)</description>
+						<label>Belt (PSP / Switch)</label>
+						<onclick>Container.SetViewMode(965)</onclick>
+					</item>
 				</content>
 			</control>
 			<control type="button" id="9012">
