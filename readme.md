@@ -13,7 +13,7 @@ Credits & Thanks:
  * Braz, for Mimic.
  * Paradix, Butchabay, & YoHan, for Cirrus Extended.
  * Rufoo, SexyCirrus & Citris.
- * Wintermute0110, for Advanced Emulator Launcher & Advanced MAME Launcher.
+ * Wintermute0110, for [Advanced Emulator Launcher] & [Advanced MAME Launcher].
 
 [Lyrebird support thread] in [Kodi forum].
 
