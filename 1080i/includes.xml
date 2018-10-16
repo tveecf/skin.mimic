@@ -22,6 +22,13 @@
 	<include file="View_507_BigList.xml" />
 	<include file="View_508_SongList.xml" />
 	<include file="View_509_Wall.xml" />
+	<!-- Lyrebird Views -->
+	<include file="View_960_BeltPoster.xml" />
+	<include file="View_961_BeltSquare.xml" />
+	<include file="View_962_BeltFanart.xml" />
+	<include file="View_963_BeltSNES64.xml" />
+	<include file="View_964_BeltBluRay.xml" />
+	<include file="View_965_BeltPSP.xml" />
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
 	<constant name="FanartCrossfadeTime">500</constant>
