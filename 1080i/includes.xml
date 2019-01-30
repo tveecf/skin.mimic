@@ -22,13 +22,9 @@
     <include file="View_507_BigList.xml" />
     <include file="View_508_SongList.xml" />
     <include file="View_509_Wall.xml" />
-	<!-- Lyrebird Views -->
-	<include file="View_960_BeltPoster.xml" />
-	<include file="View_961_BeltSquare.xml" />
-	<include file="View_962_BeltFanart.xml" />
-	<include file="View_963_BeltSNES64.xml" />
-	<include file="View_964_BeltBluRay.xml" />
-	<include file="View_965_BeltPSP.xml" />
+	<!-- Lyrebird -->
+	<include file="Includes_Lyrebird.xml" />
+	<include file="View_960_ArcadeMaster.xml" />
     <include file="variables.xml" />
     <include file="script-skinshortcuts-includes.xml" />
     <constant name="FanartCrossfadeTime">500</constant>
@@ -128,7 +124,7 @@
         <onback>50</onback>
         <itemgap>0</itemgap>
         <include condition="Skin.HasSetting(KioskMode.Enabled)">KioskModeButton</include>
-        <visible allowhiddenfocus="true">String.IsEmpty(Window(home).Property(viewtypeselect)) + !Window.IsVisible(1133) + !Control.HasFocus(9013) + !Control.HasFocus(9014)</visible>
+        <visible allowhiddenfocus="true">[String.IsEmpty(Window(home).Property(viewtypeselect)) + String.IsEmpty(Window(home).Property(viewtypeoptions))] + !Window.IsVisible(1133) + !Control.HasFocus(9013) + !Control.HasFocus(9014)</visible>
         <animation effect="slide" start="-440,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
         <control type="label" id="200">
             <width>400</width>
@@ -147,6 +143,13 @@
             <visible>![Window.IsActive(musicplaylisteditor) | Window.IsActive(tvguide) | Window.IsActive(tvchannels) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiotimers) | Window.IsActive(radiotimerrules) | Window.IsActive(radiorecordings) | Window.IsActive(radiosearch)]</visible>
             <enable>!Window.IsActive(eventlog)</enable>
         </control>
+        <control type="button" id="1880">
+            <label>Arcade Options</label>
+            <include>ButtonCommonValues</include>
+            <onclick>SetProperty(viewtypeoptions,1,home)</onclick>
+            <onclick>ActivateWindow(1150)</onclick>
+            <visible>Control.IsVisible(960)</visible>
+        </control>	
         <control type="button" id="3">
             <description>Sort by button</description>
             <include>ButtonCommonValues</include>

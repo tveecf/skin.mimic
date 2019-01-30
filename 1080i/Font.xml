@@ -7,6 +7,66 @@
     *********************************-->
     <fontset id="Default" idloc="31390">
         <font>
+            <name>lyrefont10</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>10</size>
+        </font>
+        <font>
+            <name>lyrefont18</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
+            <name>lyrefont22</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>22</size>
+        </font>			
+        <font>
+            <name>lyrefont24</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
+            <name>lyrefont26</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>26</size>
+        </font>		
+        <font>
+            <name>lyrefont28</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>28</size>
+        </font>			
+        <font>
+            <name>lyrefont30</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>30</size>
+        </font>
+        <font>
+            <name>lyrefont36</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>36</size>
+        </font>		
+        <font>
+            <name>lyrefont40</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>40</size>
+        </font>
+        <font>
+            <name>lyrefont48</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>48</size>
+        </font>
+        <font>
+            <name>lyrefont60</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>lyrefont64</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>64</size>
+        </font>
+        <font>
             <name>font10</name>
             <filename>weblysleekuil.ttf</filename>
             <size>21</size>

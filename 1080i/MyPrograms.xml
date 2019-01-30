@@ -21,14 +21,16 @@
             <!-- view id = 57 -->
             <include>AddonLowList</include>
             <!-- view id = 501 -->
-			<include>View_960_BeltPoster</include>
-			<include>View_961_BeltSquare</include>
-			<include>View_962_BeltFanart</include>
-			<include>View_963_BeltSNES64</include>
-			<include>View_964_BeltBluRay</include>
-			<include>View_965_BeltPSP</include>
+			<include>view960_arcade</include>
         </control>
-        <include>Topbar</include>
+		<control type="group">
+			<visible>!Control.IsVisible(960)</visible>
+			<include>Topbar</include>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(960)</visible>
+			<include>common.lyrebird.header</include>
+		</control>
         <control type="group">
             <left>-440</left>
             <include>SideBladeLeft</include>

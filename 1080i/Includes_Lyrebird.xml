@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="common.lyrebird.header">
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>80</height>
+			<colordiffuse>99000000</colordiffuse>
+			<texture>menu_fo.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>	
+	</include>
+</includes>
