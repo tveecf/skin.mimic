@@ -17,7 +17,7 @@
 				<width>1920</width>
 				<height>80</height>
 				<colordiffuse>90000000</colordiffuse>
-				<texture flipy="true">gradient_h.png</texture>
+				<texture flipy="true">_lyre/gradient_h.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -25,7 +25,7 @@
 				<top>940</top>
 				<width>1920</width>
 				<height>10</height>
-				<texture flipy="true">gradient_h.png</texture>
+				<texture flipy="true">_lyre/gradient_h.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -34,7 +34,7 @@
 				<width>1920</width>
 				<height>80</height>
 				<colordiffuse>FF000000</colordiffuse>
-				<texture flipy="true">gradient_h.png</texture>
+				<texture flipy="true">_lyre/gradient_h.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -362,7 +362,7 @@
 						<top>115</top>
 						<width>480</width>
 						<height>270</height>
-						<texture background="true" fallback="citristex/fallback_ws.jpg">$VAR[view960.fanart.icon]</texture>
+						<texture background="true" fallback="citristex/fallback_ws.jpg">$VAR[arcade.fanart.icon]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -444,7 +444,7 @@
 							<top>388</top>
 							<width>480</width>
 							<height>270</height>
-							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$VAR[view960.fanart.icon]</texture>
+							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$VAR[arcade.fanart.icon]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>	
 							<animation type="Conditional" condition="true" reversible="false">
@@ -470,7 +470,7 @@
 							<top>115</top>
 							<width>480</width>
 							<height>270</height>
-							<texture background="true" fallback="citristex/fallback_ws.jpg">$VAR[view960.fanart.icon]</texture>
+							<texture background="true" fallback="citristex/fallback_ws.jpg">$VAR[arcade.fanart.icon]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -1025,14 +1025,30 @@
 		</control>
 	</include>
 	<!-- Variables -->
-	<variable name="view960.fanart.icon">
+	<variable name="arcade.fanart.icon">
 		<value condition="Control.IsVisible(960) + String.IsEqual(Skin.String(view960_fanarticon),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
 		<value condition="Control.IsVisible(960) + String.IsEqual(Skin.String(view960_fanarticon),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(961) + String.IsEqual(Skin.String(view961_fanarticon),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(961) + String.IsEqual(Skin.String(view961_fanarticon),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(962) + String.IsEqual(Skin.String(view962_fanarticon),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(962) + String.IsEqual(Skin.String(view962_fanarticon),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(963) + String.IsEqual(Skin.String(view963_fanarticon),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(963) + String.IsEqual(Skin.String(view963_fanarticon),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(964) + String.IsEqual(Skin.String(view964_fanarticon),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(964) + String.IsEqual(Skin.String(view964_fanarticon),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
-	<variable name="view960.fanart.window1">
+	<variable name="arcade.fanart.window1">
 		<value condition="Control.IsVisible(960) + String.IsEqual(Skin.String(view960_window1),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
 		<value condition="Control.IsVisible(960) + String.IsEqual(Skin.String(view960_window1),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(961) + String.IsEqual(Skin.String(view961_window1),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(961) + String.IsEqual(Skin.String(view961_window1),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(962) + String.IsEqual(Skin.String(view962_window1),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(962) + String.IsEqual(Skin.String(view962_window1),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(963) + String.IsEqual(Skin.String(view963_window1),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(963) + String.IsEqual(Skin.String(view963_window1),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(964) + String.IsEqual(Skin.String(view964_window1),snap) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(964) + String.IsEqual(Skin.String(view964_window1),title) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="arcade.fanart.window2">
@@ -1121,7 +1137,7 @@
 			<width>728</width>
 			<height>410</height>
 			<fadetime>400</fadetime>
-			<texture background="true">$VAR[view960.fanart.window1]</texture>
+			<texture background="true">$VAR[arcade.fanart.window1]</texture>
 			<aspectratio>stretch</aspectratio>
 			<bordertexture border="6">_lyre\casetest.png</bordertexture>
 			<bordersize>6</bordersize>
@@ -1182,7 +1198,7 @@
 			<width>728</width>
 			<height>410</height>
 			<fadetime>400</fadetime>
-			<texture background="true">$VAR[view960.fanart.window1]</texture>
+			<texture background="true">$VAR[arcade.fanart.window1]</texture>
 			<aspectratio>stretch</aspectratio>
 			<bordertexture border="6">_lyre\casetest.png</bordertexture>
 			<bordersize>6</bordersize>
