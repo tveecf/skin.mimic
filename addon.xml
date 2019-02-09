@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.lyrebird" name="Lyrebird" version="0.6.0" provider-name="Rufoo">
+<addon id="skin.lyrebird" name="Lyrebird" version="0.6.1" provider-name="Rufoo">
     <requires>
         <import addon="xbmc.gui" version="5.14.0"/>
         <import addon="resource.images.studios.white" version="0.0.6"/>
@@ -10,14 +10,14 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_AU">Lyrebird: For Kodi Gamers</summary>
-        <summary lang="en_GB">Lyrebird: For Kodi Gamers</summary>
-        <summary lang="en_NZ">Lyrebird: For Kodi Gamers</summary>
-        <summary lang="en_US">Lyrebird: For Kodi Gamers</summary>
-        <description lang="en_AU">Lyrebird: A blend of Mimic and the Cirrus Extended family.</description>
-        <description lang="en_GB">Lyrebird: A blend of Mimic and the Cirrus Extended family.</description>
-        <description lang="en_NZ">Lyrebird: A blend of Mimic and the Cirrus Extended family.</description>
-        <description lang="en_US">Lyrebird: A blend of Mimic and the Cirrus Extended family.</description>
+        <summary lang="en_AU">Lyrebird: Mimic x Cirrus Extended</summary>
+        <summary lang="en_GB">Lyrebird: Mimic x Cirrus Extended</summary>
+        <summary lang="en_NZ">Lyrebird: Mimic x Cirrus Extended</summary>
+        <summary lang="en_US">Lyrebird: Mimic x Cirrus Extended</summary>
+        <description lang="en_AU">Lyrebird: Mimic x Cirrus Extended</description>
+        <description lang="en_GB">Lyrebird: Mimic x Cirrus Extended</description>
+        <description lang="en_NZ">Lyrebird: Mimic x Cirrus Extended</description>
+        <description lang="en_US">Lyrebird: Mimic x Cirrus Extended</description>
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
         <forum>http://forum.kodi.tv/forumdisplay.php?fid=218</forum>
@@ -38,6 +38,6 @@
             <screenshot>resources/screenshot-09.jpg</screenshot>
             <screenshot>resources/screenshot-10.jpg</screenshot>
         </assets>
-        <news>0.6.0 - The Arcade Begins!</news>
+        <news>0.6.1 - Steam Explorer</news>
     </extension>
 </addon>

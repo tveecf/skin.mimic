@@ -40,7 +40,7 @@
 				<textcolor>white</textcolor>
                 <label>Games</label>
 				<scroll>false</scroll>
-			</control>
+			</control>			
 		</control>
 		<control type="grouplist">
 			<description>Header Labels</description>

@@ -197,6 +197,11 @@
 						<label>Arcade</label>
 						<onclick>Container.SetViewMode(960)</onclick>
 					</item>
+					<item>
+						<description>Steam Explorer (Master)</description>
+						<label>Steam Explorer</label>
+						<onclick>Container.SetViewMode(980)</onclick>
+					</item>
                 </content>
             </control>
             <control type="button" id="9012">

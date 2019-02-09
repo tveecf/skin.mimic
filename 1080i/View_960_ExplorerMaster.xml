@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="view980_explorer">
+		<control type="group">		
+			<visible>Control.IsVisible(980)</visible>
+				<animation type="Conditional" condition="Control.IsVisible(980)" reversible="true">
+					<effect type="zoom" center="auto" start="130" end="100" delay="400" time="400" tween="sine" easing="out" />
+					<effect type="fade" delay="400" time="400" />
+				</animation>			
+			<control type="group">
+				<description>Default</description>
+				<include>arcade.template.default</include>
+				<visible>String.IsEqual(Skin.String(view980_template),)</visible>
+			</control>
+			<control type="group">
+				<description>Box Shot</description>
+				<include>explorer.template.boxshot</include>
+
+				<visible>String.IsEqual(Skin.String(view980_template),boxshot)</visible>
+			</control>
+			<control type="group">
+				<description>Double Fanart</description>
+				<include>explorer.template.doublefanart</include>
+
+				<visible>String.IsEqual(Skin.String(view980_template),doublefanart)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(980)</visible>
+			<animation type="Conditional" condition="Control.IsVisible(980)" reversible="true">
+				<effect type="slide" start="0,400" end="0,0" time="400" tween="sine" easing="out" />
+			</animation>
+			<control type="image">
+				<left>-10</left>
+				<top>660</top>
+				<right>-10</right>
+				<bottom>17.5</bottom>
+				<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>680</top>
+				<right>30</right>
+				<bottom>37.5</bottom>
+				<texture colordiffuse="99000000" border="5">listselect_fo.png</texture>
+			</control>
+			<control type="image">
+				<left>-10</left>
+				<top>1060</top>
+				<right>-10</right>
+				<bottom>0</bottom>
+				<texture colordiffuse="FF000000" border="5">listselect_fo.png</texture>	
+			</control>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(980).NumItems,0) + !Container.Content(episodes)</visible>
+				<animation effect="fade" time="320" delay="300">Visible</animation>
+				<control type="image">
+					<visible>Control.HasFocus(980)</visible>
+					<left>42.5</left>
+					<top>692.5</top>
+					<width>225</width>
+					<height>110</height>
+					<include>FocusedBackgroundFade</include>
+					<texture colordiffuse="FF32C4FF" border="5">listselect_fo.png</texture>
+					<animation effect="slide" end="0,115" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Row,1)">Conditional</animation>
+					<animation effect="slide" end="0,115" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Row,0)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,6)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,5)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,4)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,3)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,2)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,1)">Conditional</animation>
+					<animation effect="slide" end="230,0" time="200" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(980).Column,0)">Conditional</animation>
+				</control>
+			</control>
+			<control type="panel" id="980">
+				<left>40</left>
+				<top>690</top>
+				<width>1840</width>
+				<height>345</height>
+				<onleft>SetProperty(MediaMenu,True,home)</onleft>
+				<onleft>SetFocus(9050)</onleft>
+				<onright>733</onright>
+				<onup condition="!Skin.HasSetting(kiosk)">6000</onup>
+				<ondown>733</ondown>
+				<orientation>vertical</orientation>
+				<viewtype label="Steam Explorer">list</viewtype>
+				<scrolltime tween="quadratic">400</scrolltime>
+				<pagecontrol>60</pagecontrol>
+				<itemlayout width="230" height="115">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>220</width>
+						<height>105</height>
+						<texture background="true" diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordersize>2.5</bordersize>
+					</control>
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>220</width>
+						<height>105</height>
+						<texture diffuse="diffuse/thumbnail.png">_lyre/icoshade.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordersize>2.5</bordersize>
+					</control>
+				</itemlayout>
+				<focusedlayout width="230" height="115">
+					<control type="group">
+						<animation type="Focus" reversible="true">
+							<effect type="zoom" center="115,57.5" start="100" end="120" delay="240" time="200" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" center="115,57.5" start="120" end="100" time="0" />
+						</animation>
+						<control type="image">
+							<left>2.5</left>
+							<top>2.5</top>
+							<width>225</width>
+							<height>110</height>
+							<texture colordiffuse="FF32C4FF" border="5">listselect_fo.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<animation type="Focus" reversible="true">
+								<effect type="fade" start="0" end="100" time="400" />
+								<effect type="zoom" center="auto" start="0" end="100" time="300" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="fade" start="100" end="0" time="0" />
+							</animation>
+						</control>
+						<control type="image">
+							<left>5</left>
+							<top>5</top>
+							<width>220</width>
+							<height>105</height>
+							<texture background="true" diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(banner)]</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordersize>2.5</bordersize>
+						</control>
+						<control type="image">
+							<left>5</left>
+							<top>5</top>
+							<width>220</width>
+							<height>105</height>
+							<texture diffuse="diffuse/thumbnail.png">_lyre/icoshade.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordersize>2.5</bordersize>
+							<animation type="Focus" reversible="true">
+								<effect type="fade" start="100" end="0" time="400" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="fade" start="0" end="100" time="200" />
+							</animation>
+						</control>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+	<include name="explorer.template.doubleinvert">
+	</include>
+	<include name="explorer.template.doublefanart">
+		<control type="image">
+			<left>60</left>
+			<top>140</top>
+			<right>60</right>
+			<bottom>790</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+		</control>
+		<control type="image">
+			<left>60</left>
+			<top>290</top>
+			<right>60</right>
+			<bottom>480</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+		</control>
+		<control type="image">
+			<left>75</left>
+			<top>290</top>
+			<right>75</right>
+			<bottom>495</bottom>
+			<texture colordiffuse="99000000" border="5">listselect_fo.png</texture>
+		</control>	
+		<control type="image">
+			<left>915</left>
+			<top>290</top>
+			<right>75</right>
+			<bottom>495</bottom>
+			<texture colordiffuse="99000000" border="5">listselect_fo.png</texture>
+		</control>
+		<!--<control type="image">
+			<left>45</left>
+			<top>125</top>
+			<width>380</width>
+			<height>180</height>
+			<fadetime>200</fadetime>
+			<texture>$INFO[ListItem.Art(banner)]</texture>
+			<aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6">_lyre/casetest.png</bordertexture>
+		</control>-->
+		<control type="image">
+			<left>50</left>
+			<top>125</top>
+			<width>380</width>
+			<height>180</height>
+			<fadetime>200</fadetime>
+			<texture>$INFO[ListItem.Art(banner)]</texture>
+			<aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6">_lyre/casetest.png</bordertexture>
+		</control>
+		<control type="label">
+			<left>470</left>
+			<top>160</top>
+			<width>1020</width>
+			<height>50</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>lyrefont50</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[ListItem.Label]</label>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>470</left>
+			<top>230</top>
+			<width>1095</width>
+			<height>30</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>lyrefont32</font>
+			<textcolor>ff5aabdf</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
+			<scroll>true</scroll>
+		</control>
+		<control type="textbox">
+			<left>110</left>
+			<top>330</top>
+			<width>770</width>
+			<height>140</height>
+			<align>justify</align>
+			<aligny>top</aligny>
+			<label>$INFO[ListItem.Plot]</label>
+			<font>font12</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Control.HasFocus(2)</autoscroll>
+		</control>
+		<control type="image">
+			<left>110</left>
+			<top>495</top>
+			<right>1040</right>
+			<bottom>580</bottom>
+			<texture colordiffuse="03FFFFFF" border="5">listselect_fo.png</texture>		
+		</control>	
+		<control type="label">
+			<left>110</left>
+			<top>510</top>
+			<width>1920</width>
+			<height>60</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textcolor>highlight</textcolor>
+			<font>font12</font>
+			<label>Year: [COLOR=white]$INFO[ListItem.Year][/COLOR]   [COLOR=grey]•[/COLOR]   Studio:  [COLOR=white]$INFO[ListItem.Studio][/COLOR]   [COLOR=grey]•[/COLOR]   Rating:  [COLOR=white]$INFO[ListItem.Rating][/COLOR]</label>
+			<scroll>false</scroll>
+		</control>
+        <control type="image">
+            <left>940</left>
+            <top>315</top>
+            <width>430</width>
+            <height>232</height>
+            <fadetime>400</fadetime>
+            <texture background="true">$INFO[ListItem.Art(title)]</texture>
+            <aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6">_lyre/casetest.png</bordertexture>
+        </control>
+        <control type="image">
+            <left>1390</left>
+            <top>315</top>
+            <width>430</width>
+            <height>232</height>
+            <fadetime>400</fadetime>
+            <texture background="true">$INFO[ListItem.Art(snap)]</texture>
+            <aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6">_lyre/casetest.png</bordertexture>
+        </control>
+		<control type="image">
+			<left>1710</left>
+			<top>165</top>
+			<width>100</width>
+			<height>100</height>
+			<fadetime>200</fadetime>
+			<texture>resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</texture>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+		</control>	
+	</include>
+	<include name="explorer.template.develop">
+		<control type="group">
+		
+		<control type="image">
+			<left>1110</left>
+			<top>140</top>
+			<right>60</right>
+			<bottom>470</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+			<visible>Control.IsVisible(980)</visible>
+		</control>
+        <control type="image">
+            <description>Fanart</description>
+            <left>1110</left>
+            <top>140</top>
+            <width>720</width>
+            <height>410</height>
+            <fadetime>400</fadetime>
+            <texture background="true">$INFO[ListItem.Art(snap)]</texture>
+            <aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6">_lyre/casetest.png</bordertexture>
+        </control>
+           <control type="image">
+                <left>60</left>
+                <top>140</top>
+                <width>382</width>
+                <height>180</height>
+				<fadetime>200</fadetime>
+                <texture>$INFO[ListItem.Art(banner)]</texture>
+                <aspectratio>stretch</aspectratio>
+                <bordersize>6</bordersize>
+                <bordertexture border="6">_lyre/casetest.png</bordertexture>
+                <include>SxcAnimationAssetVanish</include>
+                <include>SxcAnimationAssetIconSlide</include>
+            </control>
+            <control type="label">
+                <left>60</left>
+                <top>350</top>
+                <width>1020</width>
+                <height>60</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>lyrefont60</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="grouplist">
+                <description>Duration / Genre</description>
+                <left>60</left>
+                <top>430</top>
+                <width>1095</width>
+                <height>30</height>
+                <align>left</align>
+                <itemgap>15</itemgap>
+                <orientation>horizontal</orientation>
+                <control type="label">
+                    <description>Genre</description>
+                    <width max="840">auto</width>
+                    <height>30</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>lyrefont36</font>
+                    <textcolor>ff5aabdf</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
+                    <scroll>true</scroll>
+                </control>
+            </control>
+            <control type="grouplist">
+                <description>About This Item / Star Rating</description>
+                <left>90</left>
+                <top>390</top>
+                <width>450</width>
+                <height>30</height>
+                <align>left</align>
+                <itemgap>15</itemgap>
+                <orientation>horizontal</orientation>
+                <control type="label">
+                    <description>About This Item...</description>
+                    <width>auto</width>
+                    <height>30</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>cirrus_18</font>
+                    <textcolor>ff5aabdf</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <label>$VAR[ABOUTTHISITEM]</label>
+                </control>
+                <control type="image">
+                    <description>Star Rating</description>
+                    <width>105</width>
+                    <height>30</height>
+                    <texture>$INFO[ListItem.Rating,recentlyadded/,.png]</texture>
+                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <animation type="Conditonal" condition="Container.OnNext | Container.OnPrevious" reversible="false">
+                        <effect type="fade" start="100" end="0" time="0" />
+                    </animation>
+                    <animation type="Conditonal" condition="!Container.OnNext + !Container.OnPrevious" reversible="false">
+                        <effect type="fade" start="0" end="100" time="400" />
+                    </animation>
+                </control>
+            </control>
+       <control type="grouplist">
+            <description>Year, Rating, / Studio</description>
+            <left>1140</left>
+            <top>548</top>
+            <width>720</width>
+            <height>30</height>
+            <align>left</align>
+            <itemgap>15</itemgap>
+            <orientation>horizontal</orientation>
+            <control type="label">
+                <description>Year Header</description>
+                <width>auto</width>
+                <height>30</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>cirrus_16</font>
+                <textcolor>ff5aabdf</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>Year:</label>
+                <visible>!IsEmpty(ListItem.Year)</visible>
+            </control>
+            <control type="label">
+                <description>Year</description>
+                <width>auto</width>
+                <height>30</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>cirrus_16</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[ListItem.Year]</label>
+                <visible>!IsEmpty(ListItem.Year)</visible>
+            </control>
+            <control type="image">
+                <width>8</width>
+                <height>30</height>
+                <colordiffuse>ffccffff</colordiffuse>
+                <texture>citristex/bulletpnt.png</texture>
+                <aspectratio>keep</aspectratio>
+                <visible>!IsEmpty(ListItem.Rating)</visible>
+            </control>
+            <control type="label">
+                <description>Studio Header</description>
+                <width>auto</width>
+                <height>30</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>cirrus_16</font>
+                <textcolor>ff5aabdf</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>Studio:</label>
+                <visible>!IsEmpty(ListItem.Studio)</visible>
+            </control>
+            <control type="label">
+                <description>Studio</description>
+                <width max="255">auto</width>
+                <height>30</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>cirrus_16</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[ListItem.Studio]</label>
+                <scroll>true</scroll>
+                <visible>!IsEmpty(ListItem.Studio)</visible>
+            </control>
+            <control type="label">
+                <description>Rating Header</description>
+                <width>auto</width>
+                <height>30</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>cirrus_16</font>
+                <textcolor>ff5aabdf</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>Rating:</label>
+                <visible>!IsEmpty(ListItem.Rating)</visible>
+            </control>
+            <control type="label">
+                <description>Rating</description>
+                <width>auto</width>
+                <height>30</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>cirrus_16</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>$INFO[ListItem.Rating]</label>
+                <visible>!IsEmpty(ListItem.Rating)</visible>
+            </control>
+            <control type="image">
+                <width>8</width>
+                <height>30</height>
+                <colordiffuse>ffccffff</colordiffuse>
+                <texture>citristex/bulletpnt.png</texture>
+                <aspectratio>keep</aspectratio>
+                <visible>!IsEmpty(ListItem.Studio)</visible>
+            </control>
+
+        </control>
+            <control type="textbox">
+                <left>60</left>
+                <top>495</top>
+                <width>900</width>
+                <height>110</height>
+                <align>justify</align>
+                <aligny>top</aligny>
+                <label>$INFO[ListItem.Plot]</label>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <autoscroll time="2000" delay="3000" repeat="5000">!Control.HasFocus(2)</autoscroll>
+            </control>
+		</control>
+	</include>
+	<include name="explorer.template.boxshot">
+		<control type="image">
+			<left>70</left>
+			<top>150</top>
+			<width>440</width>
+			<height>440</height>
+			<fadetime>400</fadetime>
+			<texture>$INFO[ListItem.Icon]</texture>
+			<bordertexture border="6">_lyre\casetest.png</bordertexture>
+			<bordersize>6</bordersize>
+			<visible>Control.IsVisible(980)</visible>
+		</control>
+		<control type="image">
+			<left>590</left>
+			<top>150</top>
+			<right>70</right>
+			<bottom>490</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+			<visible>Control.IsVisible(980)</visible>
+		</control>
+		<control type="image">
+			<left>625</left>
+			<top>500</top>
+			<right>110</right>
+			<bottom>575</bottom>
+			<texture colordiffuse="03FFFFFF" border="5">listselect_fo.png</texture>
+		<animation type="Conditional" condition="true" reversible="true">
+					<effect type="slide" start="0,0" end="0,-10" time="0" />
+				</animation>			
+			<visible>Control.IsVisible(980)</visible>
+		</control>
+	<!--	<control type="image">
+			<left>1442</left>
+			<top>160</top>
+			<right>80</right>
+			<bottom>500</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+			<visible>Control.IsVisible(980)</visible>
+		</control>-->		
+		<control type="label">
+			<left>630</left>
+			<top>190</top>
+			<width>682</width>
+			<height>35</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font36</font>
+			<label>$INFO[ListItem.Label]</label>
+			<textcolor>white</textcolor>
+			<scrollspeed>60</scrollspeed>
+			<pauseatend>1500</pauseatend>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>630</left>
+			<top>260</top>
+			<width>1920</width>
+			<height>20</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textcolor>highlight</textcolor>
+			<font>font20</font>
+			<label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
+			<scroll>false</scroll>
+		</control>
+		<control type="textbox">
+			<left>630</left>
+			<top>330</top>
+			<width>680</width>
+			<height>120</height>
+			<font>font11</font>
+			<align>justify</align>
+			<textcolor>white</textcolor>
+			<label>$INFO[ListItem.Plot]</label>
+			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+		</control>
+		<control type="label">
+			<left>630</left>
+			<top>510</top>
+			<width>1920</width>
+			<height>60</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textcolor>highlight</textcolor>
+			<font>font12</font>
+			<label>Year: [COLOR=white]$INFO[ListItem.Year][/COLOR]   [COLOR=grey]•[/COLOR]   Studio:  [COLOR=white]$INFO[ListItem.Studio][/COLOR]   [COLOR=grey]•[/COLOR]   Rating:  [COLOR=white]$INFO[ListItem.Rating][/COLOR]</label>
+			<scroll>false</scroll>
+		</control>		
+		<control type="image">
+			<left>1705</left>
+			<!--<left>640</left>-->
+			<top>510</top>
+			<width>100</width>
+			<height>60</height>
+			<fadetime>200</fadetime>
+			<texture>resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</texture>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+		</control>	
+				<control type="image">
+			<left>605</left>
+			<!--<left>640</left>-->
+			<top>510</top>
+			<width>100</width>
+			<height>60</height>
+			<texture colordiffuse="white">$INFO[ListItem.Rating[],starrating/,.png]</texture>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+		</control>	
+<!--<control type="image">
+			<left>1442</left>
+			<top>160</top>
+			<width>398</width>
+			<height>186</height>
+			<fadetime>400</fadetime>
+			<texture>$INFO[ListItem.Art(banner)]</texture>
+			<bordertexture border="6">_lyre\casetest.png</bordertexture>
+			<bordersize>6</bordersize>
+			<visible>Control.IsVisible(980)</visible>
+		</control>
+<control type="image">
+			<left>1442</left>
+			<top>356</top>
+			<width>398</width>
+			<height>224</height>
+			<fadetime>400</fadetime>
+			<texture>$INFO[ListItem.Art(snap)]</texture>
+			<bordertexture border="6">_lyre\casetest.png</bordertexture>
+			<bordersize>6</bordersize>			
+			<visible>Control.IsVisible(980)</visible>
+		</control>-->		
+		<control type="image">
+			<left>1366</left>
+			<top>190</top>
+			<width>444</width>
+			<height>260</height>
+			<fadetime>400</fadetime>
+			<texture diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(snap)]</texture>
+			<bordertexture border="6">_lyre\casetest.png</bordertexture>
+			<bordersize>5</bordersize>			
+			<visible>Control.IsVisible(980)</visible>
+		</control>
+<control type="image">
+			<left>0</left>
+			<top>1060</top>
+			<width>1920</width>
+			<height>80</height>
+			<colordiffuse>FF000000</colordiffuse>
+			<texture>menu_fo.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>	
+		<control type="group">
+			<!--<control type="image">
+			<left>0</left>
+			<top>1020</top>
+			<width>1920</width>
+			<height>80</height>
+			<colordiffuse>FF000000</colordiffuse>
+			<texture>menu_fo.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>		
+	<control type="grouplist">
+			<description>Header Labels</description>
+			<left>2</left>
+			<top>1020</top>
+			<width>1880</width>
+			<height>60</height>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+			<itemgap>20</itemgap>	
+	                <control type="label">
+                    <description>RSS feed</description>
+                    <height>60</height>
+                    <width>auto</width>
+					<align>right</align>
+                    <font>font12</font>
+					<textcolor>white</textcolor>
+					<label>Back</label>
+					<scroll>false</scroll>
+                </control>		
+			<control type="image">
+
+			<width>25</width>
+			<height>60</height>
+			<texture>_lyre/button_b.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>	
+			<control type="image">
+				<width>30</width>
+				<height>60</height>
+				<texture colordiffuse="highlight">_lyre/seperator_dot.png</texture>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+			</control>		
+                <control type="label">
+                    <description>RSS feed</description>
+                    <height>60</height>
+                    <width>auto</width>
+					<align>right</align>
+                    <font>font12</font>
+					<textcolor>white</textcolor>
+					<label>Start</label>
+					<scroll>false</scroll>
+                </control>
+			<control type="image">
+
+			<width>25</width>
+			<height>60</height>
+			<texture>_lyre/button_a.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>	
+				</control>-->
+		</control>
+	</include>
+</includes>
