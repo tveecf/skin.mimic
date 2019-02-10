@@ -86,7 +86,7 @@
 				<orientation>vertical</orientation>
 				<viewtype label="Steam Explorer">list</viewtype>
 				<scrolltime tween="quadratic">400</scrolltime>
-				<pagecontrol>60</pagecontrol>
+				<pagecontrol>60</pagecontrol>				
 				<itemlayout width="230" height="115">
 					<control type="image">
 						<left>5</left>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="view981_steamthumbs">
+		<control type="group">
+			<visible>Control.IsVisible(981)</visible>
+            <include>Animation.Common</include>		
+            <control type="group">
+                <visible>Integer.IsGreater(Container(981).NumItems,0)</visible>
+                <animation effect="fade" time="320" delay="300">Visible</animation>
+                <control type="image">
+                    <visible>Control.HasFocus(981)</visible>
+                    <left>70</left>
+                    <top>155</top>
+                    <width>430</width>
+                    <height>270</height>
+                    <include>FocusedBackgroundFade</include>
+                    <texture colordiffuse="FF32C4FF" border="5">listselect_fo.png</texture>
+                    <animation effect="slide" end="0,290" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(981).Row,1)">Conditional</animation>
+                    <animation effect="slide" end="0,290" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(981).Row,0)">Conditional</animation>
+                    <animation effect="slide" end="450,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(981).Column,3)">Conditional</animation>
+                    <animation effect="slide" end="450,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(981).Column,2)">Conditional</animation>
+                    <animation effect="slide" end="450,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(981).Column,1)">Conditional</animation>
+                    <animation effect="slide" end="450,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(981).Column,0)">Conditional</animation>
+                </control>
+            </control>	
+			<control type="panel" id="981">
+				<left>60</left>
+				<top>145</top>
+				<width>1800</width>
+				<height>870</height>
+				<onleft>SetProperty(MediaMenu,True,home)</onleft>
+				<onleft>SetFocus(9050)</onleft>
+				<onright>981</onright>
+				<onup>981</onup>
+				<ondown>981</ondown>
+				<orientation>vertical</orientation>
+				<viewtype label="Steam Thumbs">list</viewtype>
+				<scrolltime tween="quadratic">400</scrolltime>
+				<pagecontrol>60</pagecontrol>	
+				<itemlayout width="450" height="290">
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<right>10</right>
+						<bottom>10</bottom>
+						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
+					</control>
+                    <control type="label">
+                        <left>20</left>
+                        <right>20</right>
+                        <top>230</top>
+                        <height>35</height>
+						<textcolor>grey</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>![Window.IsActive(pictures) + Skin.HasSetting(PictureInfo.Disabled)]</visible>
+                    </control>					
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>410</width>
+						<height>200</height>
+						<texture background="true" diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>410</width>
+						<height>200</height>
+						<texture diffuse="diffuse/thumbnail.png">_lyre/icoshade.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="450" height="290">
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<right>10</right>
+						<bottom>10</bottom>
+						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>410</width>
+						<height>200</height>
+						<texture background="true" diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>410</width>
+						<height>200</height>
+						<texture diffuse="diffuse/thumbnail.png">_lyre/icoshade.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<animation type="Focus" reversible="true">
+							<effect type="fade" start="100" end="0" time="400" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="fade" start="0" end="100" time="200" />
+						</animation>						
+					</control>						
+                    <control type="label">
+                        <left>20</left>
+                        <right>20</right>
+                        <top>230</top>
+                        <height>35</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>![Window.IsActive(pictures) + Skin.HasSetting(PictureInfo.Disabled)]</visible>
+                    </control>						
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+</includes>

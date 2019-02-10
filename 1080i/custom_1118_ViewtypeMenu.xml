@@ -202,6 +202,11 @@
 						<label>Steam Explorer</label>
 						<onclick>Container.SetViewMode(980)</onclick>
 					</item>
+					<item>
+						<description>Steam Thumbs (Master)</description>
+						<label>Steam Thumbs</label>
+						<onclick>Container.SetViewMode(981)</onclick>
+					</item>
                 </content>
             </control>
             <control type="button" id="9012">

@@ -7,7 +7,7 @@
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <onunload>ClearProperty(MediaMenu,Home)</onunload>
     <onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-    <views>50,52,520,57,501,960,961,962,963,964,965,980</views>
+    <views>50,52,520,57,501,960,961,962,963,964,965,980,981</views>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -24,13 +24,14 @@
 			<include>view960_arcade</include>
 			<include>view961_arcade</include>
 			<include>view980_explorer</include>
+			<include>view981_steamthumbs</include>
         </control>
 		<control type="group">
-			<visible>!Control.IsVisible(960) + !Control.IsVisible(980)</visible>
+			<visible>!Control.IsVisible(960) + !Control.IsVisible(980) + !Control.IsVisible(981)</visible>
 			<include>Topbar</include>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(960) | Control.IsVisible(980)</visible>
+			<visible>Control.IsVisible(960) | Control.IsVisible(980) | Control.IsVisible(981)</visible>
 			<include>common.lyrebird.header</include>
 		</control>
         <control type="group">

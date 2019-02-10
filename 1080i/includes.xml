@@ -27,6 +27,7 @@
 	<include file="View_960_ArcadeMaster.xml" />
 	<include file="View_961_ArcadeClone1.xml" />
 	<include file="View_960_ExplorerMaster.xml" />
+	<include file="View_981_SteamThumbs.xml" />
     <include file="variables.xml" />
     <include file="script-skinshortcuts-includes.xml" />
     <constant name="FanartCrossfadeTime">500</constant>
@@ -263,7 +264,7 @@
             <onclick>Skin.SetString(view980_template,boxshot)</onclick>
             <selected>String.IsEqual(Skin.String(view980_template),boxshot)</selected>
             <visible>Control.IsVisible(980) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-        </control>		
+        </control>			
     </include>
     <include name="PVRMediaMenu">
         <control type="group">
