@@ -789,48 +789,11 @@
 							<width>480</width>
 							<height>270</height>
 							<fadetime>400</fadetime>						
-							<texture background="true" flipy="true">$VAR[Arcade.FanartIcon]</texture>
+							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$VAR[Arcade.FanartIcon]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
-						</control>
-						<control type="image">
-							<left>20</left>
-							<top>388</top>
-							<width>470</width>
-							<height>100</height>
-							<colordiffuse>99000000</colordiffuse>
-							<texture>menu_fo.png</texture>
-							<aspectratio>stretch</aspectratio>						
-						</control>
-						<control type="label">
-							<left>50</left>
-							<top>430</top>
-							<width>435</width>
-							<height>20</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<angle>0</angle>							
-							<textcolor>15666666</textcolor>
-							<font>font20</font>
-							<label>$INFO[ListItem.Label]</label>
-							<scroll>false</scroll>							
 							<animation type="Conditional" condition="true" reversible="false">
-								<effect type="rotatex" center="430,0" end="-180" time="0" />
-							</animation>							
-						</control>
-						<control type="label">
-							<left>50</left>
-							<top>408</top>
-							<width>1920</width>
-							<height>20</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>ff333333</textcolor>
-							<font>font10</font>
-							<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=ff666666]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
-							<scroll>false</scroll>							
-							<animation type="Conditional" condition="true" reversible="false">
-								<effect type="rotatex" center="408,0" end="-180" time="0" />
+								<effect type="rotatex" center="388,0" end="90" time="0" />
 							</animation>							
 						</control>	
 					</control>
