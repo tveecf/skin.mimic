@@ -501,6 +501,7 @@
         <value>.jpg</value>
     </variable>
     <variable name="HeaderIcon">
+		<value condition="$EXP[LyrebirdGameSupport]">DefaultGames.png</value>
         <value condition="Player.Muted">DefaultIconMute.png</value>
         <value condition="Window.IsVisible(movieinformation)">DefaultAddonInfoProvider.png</value>
         <value condition="Window.IsVisible(musicinformation)">DefaultAddonInfoProvider.png</value>
@@ -776,6 +777,17 @@
         <value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,8)">starrating/8.png</value>
         <value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,9)">starrating/9.png</value>
         <value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,10)">starrating/10.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,1)">starrating/1.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,2)">starrating/2.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,3)">starrating/3.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,4)">starrating/4.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,5)">starrating/5.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,6)">starrating/6.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,7)">starrating/7.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,8)">starrating/8.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,9)">starrating/9.png</value>
+        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,10)">starrating/10.png</value>
         <value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
         <value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,1)">starrating/1.png</value>
         <value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,2)">starrating/2.png</value>

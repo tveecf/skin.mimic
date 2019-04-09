@@ -193,20 +193,23 @@
                         <visible>!Skin.HasSetting(Disable.SongView)</visible>
                     </item>
 					<item>
-						<description>Arcade (Master)</description>
+						<description>Arcade</description>
 						<label>Arcade</label>
 						<onclick>Container.SetViewMode(960)</onclick>
+                        <visible>$EXP[GameSupport] | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows)</visible>						
 					</item>
 					<item>
-						<description>Steam Explorer (Master)</description>
+						<description>Steam Explorer</description>
 						<label>Steam Explorer</label>
 						<onclick>Container.SetViewMode(980)</onclick>
+                        <visible>$EXP[GameSupport]</visible>							
 					</item>
 					<item>
-						<description>Steam Thumbs (Master)</description>
+						<description>Steam Thumbs</description>
 						<label>Steam Thumbs</label>
 						<onclick>Container.SetViewMode(981)</onclick>
-					</item>
+                        <visible>$EXP[GameSupport]</visible>							
+					</item>						
                 </content>
             </control>
             <control type="button" id="9012">

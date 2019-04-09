@@ -164,6 +164,54 @@
                     <selected>!Skin.HasSetting(Disable.SongView)</selected>
                     <visible>Container.Content(songs)</visible>
                 </control>
+                <control type="radiobutton" id="1400">
+                    <description>Arcade</description>
+                    <label>Arcade</label>
+                    <include>ButtonCommonValues</include>
+                    <onclick>Skin.ToggleSetting(Disable.ArcadeView)</onclick>
+                    <selected>!Skin.HasSetting(Disable.ArcadeView)</selected>
+                    <visible></visible>
+                </control>
+                <control type="radiobutton" id="1401">
+                    <description>Rightlist</description>
+                    <label>Rightlist</label>
+                    <include>ButtonCommonValues</include>
+                    <onclick>Skin.ToggleSetting(Disable.ArcadeView)</onclick>
+                    <selected>!Skin.HasSetting(Disable.ArcadeView)</selected>
+                    <visible></visible>
+                </control>	
+                <control type="radiobutton" id="1402">
+                    <description>Keibertz</description>
+                    <label>Keibertz</label>
+                    <include>ButtonCommonValues</include>
+                    <onclick>Skin.ToggleSetting(Disable.ArcadeView)</onclick>
+                    <selected>!Skin.HasSetting(Disable.ArcadeView)</selected>
+                    <visible></visible>
+                </control>
+                <control type="radiobutton" id="1403">
+                    <description>Varia</description>
+                    <label>Varia</label>
+                    <include>ButtonCommonValues</include>
+                    <onclick>Skin.ToggleSetting(Disable.ArcadeView)</onclick>
+                    <selected>!Skin.HasSetting(Disable.ArcadeView)</selected>
+                    <visible></visible>
+                </control>
+                <control type="radiobutton" id="1410">
+                    <description>Steam Explorer</description>
+                    <label>Steam Explorer</label>
+                    <include>ButtonCommonValues</include>
+                    <onclick>Skin.ToggleSetting(Disable.ArcadeView)</onclick>
+                    <selected>!Skin.HasSetting(Disable.ArcadeView)</selected>
+                    <visible></visible>
+                </control>
+                <control type="radiobutton" id="1411">
+                    <description>Steam Thumbnail</description>
+                    <label>Steam Thumbnail</label>
+                    <include>ButtonCommonValues</include>
+                    <onclick>Skin.ToggleSetting(Disable.ArcadeView)</onclick>
+                    <selected>!Skin.HasSetting(Disable.ArcadeView)</selected>
+                    <visible></visible>
+                </control>				
             </control>
         </control>
         <control type="button" id="9014">

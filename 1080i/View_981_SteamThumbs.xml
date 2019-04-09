@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="view981_steamthumbs">
+	<include name="View_981_SteamThumbs">
 		<control type="group">
 			<visible>Control.IsVisible(981)</visible>
             <include>Animation.Common</include>		
@@ -28,6 +28,7 @@
 				<top>145</top>
 				<width>1800</width>
 				<height>870</height>
+						<onleft>PlayerControl(Stop)</onleft>					
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
 				<onright>981</onright>
@@ -108,9 +109,33 @@
                         <height>35</height>
                         <label>$INFO[ListItem.Label]</label>
                         <visible>![Window.IsActive(pictures) + Skin.HasSetting(PictureInfo.Disabled)]</visible>
-                    </control>						
+                    </control>	
+					<control type="button">
+						<left>0</left>
+						<top>0</top>
+						<onfocus condition="[!Container.OnNext + !Container.OnPrevious] + !String.IsEmpty(ListItem.Trailer)">PlayMedia($INFO[ListItem.trailer],1)</onfocus>					
+							<animation type="Focus" reversible="true">					
+							<effect type="fade" delay="400" start="0" end="100" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="fade" start="100" end="0" time="0" />
+						</animation>								
+						<visible>[!Container.OnNext + !Container.OnPrevious] + !String.IsEmpty(ListItem.Trailer)</visible>						
+					</control>	
+					<!--<control type="button">
+						<left>0</left>
+						<top>0</top>
+						<onfocus>PlayerControl(Stop)</onfocus>					
+							<animation type="Focus" reversible="true">					
+							<effect type="fade" delay="0" start="0" end="100" time="0"/>
+						</animation>
+						<animation type="Unfocus">
+							<effect type="fade" start="100" end="0" time="0" />
+						</animation>								
+						<visible>[Container.OnNext | Container.OnPrevious] + Player.HasVideo</visible>						
+					</control>-->					
 				</focusedlayout>
-			</control>
+			</control>			
 		</control>
 	</include>
 </includes>

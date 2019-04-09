@@ -1281,3 +1281,35 @@ msgstr ""
 msgctxt "#31949"
 msgid "Roboto"
 msgstr ""
+
+msgctxt "#96050"
+msgid "Arcade | Choose Template"
+msgstr "Arcade | Choose Template"
+
+msgctxt "#96051"
+msgid "Default"
+msgstr "Default"
+
+msgctxt "#96052"
+msgid "Reversed"
+msgstr "Reversed"
+
+msgctxt "#96053"
+msgid "Adaptive"
+msgstr "Adaptive"
+
+msgctxt "#96054"
+msgid "Mini"
+msgstr "Mini"
+
+msgctxt "#96055"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#96056"
+msgid "Snap"
+msgstr "Snap"
+
+msgctxt "#96057"
+msgid "Title"
+msgstr "Title"

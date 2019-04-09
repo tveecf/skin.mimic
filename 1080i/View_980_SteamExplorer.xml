@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="view980_explorer">
+	<include name="View_980_SteamExplorer">
 		<control type="group">		
 			<visible>Control.IsVisible(980)</visible>
 				<animation type="Conditional" condition="Control.IsVisible(980)" reversible="true">
@@ -15,13 +15,11 @@
 			<control type="group">
 				<description>Box Shot</description>
 				<include>explorer.template.boxshot</include>
-
 				<visible>String.IsEqual(Skin.String(view980_template),boxshot)</visible>
 			</control>
 			<control type="group">
 				<description>Double Fanart</description>
 				<include>explorer.template.doublefanart</include>
-
 				<visible>String.IsEqual(Skin.String(view980_template),doublefanart)</visible>
 			</control>
 		</control>
@@ -52,7 +50,7 @@
 				<texture colordiffuse="FF000000" border="5">listselect_fo.png</texture>	
 			</control>
 			<control type="group">
-				<visible>Integer.IsGreater(Container(980).NumItems,0) + !Container.Content(episodes)</visible>
+				<visible>Integer.IsGreater(Container(980).NumItems,0)</visible>
 				<animation effect="fade" time="320" delay="300">Visible</animation>
 				<control type="image">
 					<visible>Control.HasFocus(980)</visible>
