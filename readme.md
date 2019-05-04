@@ -3,7 +3,7 @@
 `Lyrebirds are ground-dwelling birds that are native to Australia. They are known for their
 noteworthy mimicking abilities.`
 
-Lyrebird Rmod is a fork from Lyrebird which ss a fork of Mimic.
+Lyrebird Rmod is a fork from Lyrebird which is a fork of Mimic.
 
 This mod adds the following features:
 
