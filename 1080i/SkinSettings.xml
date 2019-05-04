@@ -545,6 +545,22 @@
                         <onclick>Skin.ToggleDebug</onclick>
                         <selected>Skin.HasSetting(Skin.ToggleDebug)</selected>
                     </control>
+
+                    <control type="radiobutton" id="404">
+                        <include>SkinSettingsButtonDefaults</include>
+                        <label>Use Icons From Weather Provider</label>
+                        <onclick>Skin.ToggleSetting(Enable.RemoteWeatherIcons)</onclick>
+                        <selected>Skin.HasSetting(Enable.RemoteWeatherIcons)</selected>
+                    </control>
+					<!-- 
+                    <control type="button" id="405">
+                        <include>SkinSettingsButtonDefaults</include>
+                        <label>Path for Custom Actor-Role Images</label>
+                        <label2>$INFO[Skin.String(CustomActorRolePath)]</label2>
+                        <onclick>Skin.SetPath(CustomActorRolePath)</onclick>
+                    </control>
+					-->
+					
                 </control>
                 <control type="grouplist" id="9008">
                     <description>About control area</description>

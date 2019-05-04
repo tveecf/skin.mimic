@@ -71,7 +71,7 @@
                     </focusedlayout>
                     <content>
                         <item>
-                            <label>$INFO[ListItem.Title]</label>
+                            <label>$INFO[ListItem.Title][I]$INFO[ListItem.Season, - S,]$INFO[ListItem.Episode,E,][/I][COLOR highlight][I]$INFO[ListItem.EpisodeName, - ,][/I][/COLOR]</label>
                             <label2>[COLOR highlight]$LOCALIZE[369]:[/COLOR]</label2>
                         </item>
                         <item>

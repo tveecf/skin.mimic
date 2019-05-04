@@ -198,7 +198,16 @@
                         <top>40</top>
                         <height>270</height>
                         <aspectratio scalediffuse="false" align="left" aligny="center">keep</aspectratio>
+						<texture background="true">$INFO[Window(weather).Property(Current.RemoteIcon)]</texture>
+						<visible>Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+                    </control>
+                    <control type="image">
+                        <left>40</left>
+                        <top>40</top>
+                        <height>270</height>
+                        <aspectratio scalediffuse="false" align="left" aligny="center">keep</aspectratio>
                         <texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
+ 						<visible>!Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
                     </control>
                     <control type="grouplist">
                         <top>0</top>

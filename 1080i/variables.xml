@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+
+	<!-- 
+	<variable name="CustomActorRolePath">
+		<value>$INFO[Skin.String(CustomActorRolePath)]</value>
+	</variable>
+	-->
     <variable name="GlobalBackgroundVar">
         <value condition="!String.IsEmpty(Container.ListItem.Art(fanart)) + !Skin.HasSetting(Disable.Fanart)">$INFO[Container.ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container.Art(set.fanart))">$INFO[Container.Art(set.fanart)]</value>

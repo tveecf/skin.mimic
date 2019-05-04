@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include file="defaults.xml" />
+<!--<include file="Includes_MyWeather-default.xml" />
+    <include file="Includes_MyWeather-NOAA.xml" />
+ -->   <include file="Includes_WeatherObjects.xml" />
     <include file="Includes_Animations.xml" />
     <include file="Includes_Backgrounds.xml" />
     <include file="Includes_CommonValues.xml" />
