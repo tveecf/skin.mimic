@@ -14,11 +14,11 @@ This mod adds the following features:
 3. There's a feature to display the Actor-Role based images (ala thetvdb.com images), that is, show a different character image of the actor in that TV show (or Movie), instead of always showing the same generic image that Kodi scrapes.  Note, that this is accomplished by placing images in a static directory (currently hard-coded to /media-share/People),  where the image name is  Actor - Role.jpg.  The actor name and role must match what kodi has in the database for that actor's name and role.  In many cases, this will require using .nfo files to "clean up" many of the names to clean out chars which cannot be used in filenames, such as when thetvdb uses a / to display multiple roles, "Some Actor as Joe/Bob/Bob's Ghost" 
 
 For example:,  
-     /media-share/People/Bruce Campbell - Ash Williams.jpg
-     /media-share/People/Bruce Campbell - Autolycus.jpg
-     /media-share/People/Bruce Campbell - Brisco County Jr..jpg
-     /media-share/People/Bruce Campbell - Final Shemp.jpg
-     /media-share/People/Bruce Campbell - Jack Stiles.jpg
+  *   /media-share/People/Bruce Campbell - Ash Williams.jpg
+  *   /media-share/People/Bruce Campbell - Autolycus.jpg
+  *   /media-share/People/Bruce Campbell - Brisco County Jr..jpg
+  *   /media-share/People/Bruce Campbell - Final Shemp.jpg
+  *   /media-share/People/Bruce Campbell - Jack Stiles.jpg
      
      
 
