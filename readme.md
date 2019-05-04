@@ -1,12 +1,11 @@
-## Lyrebird ##
+## Lyrebird Rmod ##
 
 `Lyrebirds are ground-dwelling birds that are native to Australia. They are known for their
 noteworthy mimicking abilities.`
 
-Lyrebird is built from a merging of Mimic and the Cirrus Extended family.
+Lyrebird Rmod is a fork from Lyrebird which ss a fork of Mimic.
 
-`master` branch of Lyrebird is for Kodi Leia, now in beta stage. Use branch `krypton_v5`
-for Kodi Krypton.
+`master` branch of Lyrebird is for Kodi Leia.
 
 Credits & Thanks:
 
