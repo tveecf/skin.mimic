@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
+<include name="weather-alert-item">
+	<param name="index"/>
+	<definition>
+	<item>
+		<label>$INFO[Window(weather).Property(Alerts.$PARAM[index].event)]</label>
+		<label2>$INFO[Window(weather).Property(Alerts.$PARAM[index].headline)]</label2>
+		<property name="description">$INFO[Window(weather).Property(Alerts.$PARAM[index].description)]</property>
+		<property name="instruction">$INFO[Window(weather).Property(Alerts.$PARAM[index].instruction)]</property>
+		<visible>!String.IsEmpty(Window(weather).Property(Alerts.$PARAM[index].event))</visible>
+	</item>
+	</definition>
+</include>
+
+
 <include name="weather-daily-item">
 	<param name="index"/>
 	<definition>
