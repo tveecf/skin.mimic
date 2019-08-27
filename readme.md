@@ -2,6 +2,9 @@
 <code>Mimic x Cirrus Extended</code><br />
 <code>A gamer centric skin built off the foundations of Mimic with a sprinkling of Cirrus Extended and assorted other MODs.</code>
 
+NOTE: This is the 0.9.9 codebase. It is being updated daily with clean elements. If you download this, be sure that new commits will be happening
+all the time. So some stuff may appear broken then miraculously be working on the next commit.
+
 THANKS AND CREDITS:
 
 	** @Braz
