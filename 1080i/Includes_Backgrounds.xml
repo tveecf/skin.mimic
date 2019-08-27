@@ -12,7 +12,7 @@
                 <visible>String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
             </control>
             <control type="group">
-                <visible>!Control.IsVisible(960) + Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels) + !SlideShow.IsActive</visible>
+                <visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels) + !SlideShow.IsActive</visible>
                 <control type="image">
                     <include>FullscreenDimensions</include>
                     <texture>black.png</texture>

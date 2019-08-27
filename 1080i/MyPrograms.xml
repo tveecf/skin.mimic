@@ -7,7 +7,7 @@
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <onunload>ClearProperty(MediaMenu,Home)</onunload>
     <onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-    <views>50,52,520,57,501,960,980,981</views>
+    <views>50,52,520,57,501,900,902,903,909</views>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -21,11 +21,12 @@
             <!-- view id = 57 -->
             <include>AddonLowList</include>
             <!-- view id = 501 -->
-			<include>View_960_Arcade</include>
-			<include>View_980_SteamExplorer</include>
-			<include>View_981_SteamThumbs</include>
+			<include>View_900_Arcade</include>
+			<include>View_902_KeibertzPlus</include>
+			<include>View_903_Coverflow</include>
+			<include>View_909_Sauna</include>
         </control>
-		<include>common.lyrebird.header</include>
+        <include>Topbar</include>
         <control type="group">
             <left>-440</left>
             <include>SideBladeLeft</include>

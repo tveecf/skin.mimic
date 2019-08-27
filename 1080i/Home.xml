@@ -43,7 +43,7 @@
             <texture>$VAR[CommonBackgroundOverlay]</texture>
             <colordiffuse>background</colordiffuse>
         </control>
-        <include>common.lyrebird.header</include>
+        <include>Topbar</include>
         <include condition="!Skin.HasSetting(Enable.HorizontalMenu)">HomeVertical</include>
         <include condition="Skin.HasSetting(Enable.HorizontalMenu)">HomeHorizontal</include>
         <control type="label">

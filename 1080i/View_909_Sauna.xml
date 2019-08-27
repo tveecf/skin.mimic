@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<!-- view -->
+	<include name="View_909_Sauna">
+		<control type="group">
+			<visible>Control.IsVisible(909)</visible>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" center="960,345" start="0" end="100" time="300" tween="sine" easing="in" />
+				<effect type="slide" start="0,600" end="0" time="300" center="auto" tween="quadratic" easing="out" />
+			</animation>
+			<control type="image">
+				<left>30</left>
+				<top>600</top>
+				<right>30</right>
+				<bottom>30</bottom>
+				<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+				<visible>Control.IsVisible(909)</visible>
+			</control>
+			<control type="image">
+				<left>40</left>
+				<top>610</top>
+				<right>40</right>
+				<bottom>40</bottom>
+				<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+				<visible>Control.IsVisible(909)</visible>
+			</control>
+			<control type="panel" id="909">
+				<left>45</left>
+				<top>615</top>
+				<width>1830</width>
+				<height>420</height>
+				<include>OnBackInclude</include>
+				<ondown>909</ondown>
+				<onleft>SetProperty(MediaMenu,True,home)</onleft>
+				<onleft>SetFocus(9050)</onleft>
+				<onright>909</onright>
+				<onup>909</onup>
+				<orientation>horizontal</orientation>
+				<viewtype label="Sauna">list</viewtype>
+				<scrolltime tween="quadratic">400</scrolltime>
+				<itemlayout width="305" height="140">
+					<control type="image">
+						<width>305</width>
+						<height>140</height>
+						<texture background="true" diffuse="diffuse/thumbnail.png" fallback="black.png">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordersize>5</bordersize>
+					</control>
+					<control type="image">
+						<width>305</width>
+						<height>140</height>
+						<texture diffuse="diffuse/thumbnail.png">overlays/icon-overlay.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordersize>5</bordersize>
+					</control>
+				</itemlayout>
+				<focusedlayout width="305" height="140">
+					<control type="image">
+						<width>305</width>
+						<height>140</height>
+						<texture background="true" diffuse="diffuse/thumbnail.png" fallback="black.png">black.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordersize>5</bordersize>
+						<bordertexture colordiffuse="FF32C4FF" border="5">listselect_fo.png</bordertexture>
+						<animation type="Focus" reversible="true">
+							<effect type="zoom" center="152.5,70" start="100" end="120" time="200" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" center="152.5,70" start="120" end="100" time="0" />
+						</animation>
+					</control>
+					<control type="image">
+						<width>305</width>
+						<height>140</height>
+						<texture background="true">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordersize>5</bordersize>
+						<animation type="Focus" reversible="true">
+							<effect type="zoom" center="152.5,70" start="100" end="120" time="200" />
+						</animation>
+						<animation type="Unfocus">
+							<effect type="zoom" center="152.5,70" start="120" end="100" time="0" />
+						</animation>
+					</control>
+
+				</focusedlayout>				
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(909)</visible>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" delay="300" time="300" tween="sine" easing="in" />
+				<effect type="zoom" start="50" end="100" delay="300" time="300" center="auto" tween="quadratic" easing="out" />
+			</animation>
+			<include>SaunaLayoutBoxshot</include>
+		</control>
+	</include>
+	<!-- layout_includes -->
+	<include name="SaunaLayoutDefault">
+		<control type="label">
+			<left>80</left>
+			<top>140</top>
+			<width>900</width>
+			<height>60</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font52</font>
+			<label>$INFO[ListItem.Label]</label>
+			<textcolor>white</textcolor>
+			<scrollspeed>60</scrollspeed>
+			<pauseatend>1500</pauseatend>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>80</left>
+			<top>230</top>
+			<width>760</width>
+			<height>50</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font30</font>
+			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<textcolor>highlight</textcolor>
+			<scroll>false</scroll>
+		</control>	
+		<control type="textbox">
+			<left>80</left>
+			<top>330</top>
+			<width>1080</width>
+			<height>165</height>
+			<align>left</align>
+			<font>font14_textbox</font>
+			<label>$INFO[ListItem.Plot]</label>
+			<textcolor>white</textcolor>
+			<autoscroll time="2000" delay="3000" repeat="5000">Control.HasFocus(909)</autoscroll>
+		</control>
+		<control type="image">
+			<left>1216</left>
+			<top>140</top>
+			<width>624</width>
+			<height>360</height>
+			<fadetime>400</fadetime>
+			<texture diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(snap)]</texture>
+			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordersize>10</bordersize>			
+		</control>
+	</include>
+	<include name="SaunaLayoutDouble">
+			<animation type="Conditional" condition="true" reversible="false">
+				<effect type="slide" start="0,0" end="0,-20" time="0" center="auto" tween="quadratic" easing="out" />
+			</animation>
+		<control type="group">
+		<control type="image">
+			<left>60</left>
+			<top>140</top>
+			<right>60</right>
+			<bottom>790</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+		</control>
+		<control type="image">
+			<left>60</left>
+			<top>290</top>
+			<right>60</right>
+			<bottom>500</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+		</control>
+		<control type="image">
+			<left>70</left>
+			<top>290</top>
+			<right>70</right>
+			<bottom>510</bottom>
+			<texture colordiffuse="99000000" border="5">listselect_fo.png</texture>
+		</control>	
+		<control type="image">
+			<left>910</left>
+			<top>290</top>
+			<right>75</right>
+			<bottom>510</bottom>
+			<texture colordiffuse="99000000" border="5">listselect_fo.png</texture>
+		</control>
+		<control type="image">
+			<left>50</left>
+			<top>125</top>
+			<width>380</width>
+			<height>180</height>
+			<fadetime>200</fadetime>
+			<texture>$INFO[ListItem.Art(banner)]</texture>
+			<aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6" colordiffuse="33787878">listselect_fo.png</bordertexture>
+		</control>
+		<control type="label">
+			<left>470</left>
+			<top>160</top>
+			<width>1020</width>
+			<height>50</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font32</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[ListItem.Label]</label>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>470</left>
+			<top>230</top>
+			<width>1095</width>
+			<height>35</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font14</font>
+			<textcolor>ff5aabdf</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<scroll>true</scroll>
+		</control>
+		<control type="textbox">
+			<left>110</left>
+			<top>350</top>
+			<width>770</width>
+			<height>170</height>
+			<align>left</align>
+			<aligny>top</aligny>
+			<label>$INFO[ListItem.Plot]</label>
+			<font>font13_textbox</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Control.HasFocus(2)</autoscroll>
+		</control>
+		<!--<control type="image">
+			<left>110</left>
+			<top>485</top>
+			<right>1040</right>
+			<bottom>590</bottom>
+			<texture colordiffuse="03FFFFFF" border="5">listselect_fo.png</texture>		
+		</control>	
+		<control type="label">
+			<left>110</left>
+			<top>510</top>
+			<width>1920</width>
+			<height>35</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textcolor>highlight</textcolor>
+			<font>font12</font>
+			<label>Year: [COLOR=white]$INFO[ListItem.Year][/COLOR]   [COLOR=grey]•[/COLOR]   Studio:  [COLOR=white]$INFO[ListItem.Studio][/COLOR]   [COLOR=grey]•[/COLOR]   Rating:  [COLOR=white]$INFO[ListItem.Rating][/COLOR]</label>
+			<scroll>false</scroll>
+		</control>-->
+        <control type="image">
+            <left>940</left>
+            <top>315</top>
+            <width>430</width>
+            <height>232</height>
+            <fadetime>400</fadetime>
+            <texture background="true">$INFO[ListItem.Art(snap)]</texture>
+            <aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6" colordiffuse="33787878">listselect_fo.png</bordertexture>
+        </control>
+        <control type="image">
+            <left>1390</left>
+            <top>315</top>
+            <width>430</width>
+            <height>232</height>
+            <fadetime>400</fadetime>
+            <texture background="true">$INFO[ListItem.Art(title)]</texture>
+            <aspectratio>stretch</aspectratio>
+			<bordersize>6</bordersize>
+			<bordertexture border="6" colordiffuse="33787878">listselect_fo.png</bordertexture>
+        </control>
+		<control type="image">
+			<left>1710</left>
+			<top>170</top>
+			<width>100</width>
+			<height>50</height>
+			<fadetime>200</fadetime>
+			<texture>resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</texture>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+		</control>
+		<control type="image">
+			<left>1710</left>
+			<top>205</top>
+			<width>100</width>
+			<height>90</height>			
+			<include>MediaFlagVars</include>			
+			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<aspectratio align="center">keep</aspectratio>
+		</control>		
+		</control>
+	</include>
+	<include name="SaunaLayoutMini">
+		<control type="label">
+			<left>0</left>
+			<top>255</top>
+			<width>1920</width>
+			<height>80</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font60</font>
+			<label>$INFO[ListItem.Label]</label>
+			<textcolor>white</textcolor>
+			<scrollspeed>60</scrollspeed>
+			<pauseatend>1500</pauseatend>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>0</left>
+			<top>365</top>
+			<width>1920</width>
+			<height>55</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>highlight</textcolor>
+			<font>font36</font>
+			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<scroll>false</scroll>
+		</control>
+	</include>
+	<include name="SaunaLayoutBoxshot">
+		<control type="image">
+			<left>60</left>
+			<top>120</top>
+			<width>440</width>
+			<height>440</height>
+			<fadetime>400</fadetime>
+			<texture background="true" diffuse="diffuse/fanart-square.png">$INFO[ListItem.Icon]</texture>
+			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordersize>10</bordersize>
+		</control>
+	<!--	<control type="image">
+			<left>540</left>
+			<top>120</top>
+			<right>70</right>
+			<bottom>520</bottom>
+			<texture colordiffuse="66000000" border="5">listselect_fo.png</texture>
+		</control>-->
+		<control type="label">
+			<left>540</left>
+			<top>150</top>
+			<width>760</width>
+			<height>55</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font36</font>
+			<label>$INFO[ListItem.Label]</label>
+			<textcolor>white</textcolor>
+			<scrollspeed>60</scrollspeed>
+			<pauseatend>1500</pauseatend>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>540</left>
+			<top>235</top>
+			<width>760</width>
+			<height>20</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textcolor>highlight</textcolor>
+			<font>font16</font>
+			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<scroll>false</scroll>
+		</control>
+		<control type="image">
+			<left>540</left>
+			<top>295</top>
+			<width>780</width>
+			<height>5</height>
+			<colordiffuse>FF32C4FF</colordiffuse>
+			<texture>lyretex/separator.png</texture>			
+		</control>
+		<control type="textbox">
+			<left>540</left>
+			<top>330</top>
+			<width>780</width>
+			<height>210</height>
+			<font>font11</font>
+			<align>left</align>
+			<textcolor>white</textcolor>
+			<label>$INFO[ListItem.Plot]</label>
+			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+		</control>
+		<control type="image">
+			<left>1360</left>
+			<top>150</top>
+			<width>500</width>
+			<height>290</height>
+			<fadetime>400</fadetime>
+			<texture diffuse="diffuse/thumbnail.png">$INFO[ListItem.Art(snap)]</texture>
+			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordersize>10</bordersize>			
+		</control>
+		<control type="image">
+			<left>1380</left>
+			<top>455</top>
+			<width>220</width>
+			<height>100</height>			
+			<include>MediaFlagVars</include>			
+			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<aspectratio align="center">keep</aspectratio>
+		</control>
+		<control type="image">
+			<left>1700</left>
+			<top>475</top>
+			<width>180</width>				
+			<height>60</height>
+			<texture>resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</texture>
+			<aspectratio align="center">keep</aspectratio>			
+			<include>MediaFlagVars</include>
+			<visible>!Skin.HasSetting(Arcade.Games.HideStudioFlags)</visible>
+		</control>	
+	</include>
+</includes>

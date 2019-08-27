@@ -4,7 +4,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$LOCALIZE[342]</label>
-			<label2>Custom item</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
 			<property name="labelID">movies</property>
@@ -15,9 +15,10 @@
 			<property name="widgetPath">videodb://recentlyaddedmovies/</property>
 			<property name="widgetTarget">videos</property>
 			<property name="widgetIcon">20021</property>
-			<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,sources://video/,return)</property>
-			<property name="list">sources://video/</property>
+			<onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
+			<property name="list">videodb://movies/titles/</property>
+			<onclick condition="![Library.HasContent(Movies)]">ActivateWindow(Videos,sources://video/,return)</onclick>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
@@ -74,23 +75,25 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<label>$LOCALIZE[10005]</label>
+			<label>$LOCALIZE[10502]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
-			<property name="labelID">music</property>
+			<property name="labelID">10502</property>
 			<property name="defaultID">music</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetName">359</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
-			<onclick condition="Library.HasContent(Music)">ActivateWindow(music,library://music/artists.xml/,return)</onclick>
-			<property name="path">ActivateWindow(music,library://music/artists.xml/,return)</property>
-			<property name="list">library://music/artists.xml/</property>
+			<property name="background">D:\Output\Kodibox\Themes\Blush\Music.jpg</property>
+			<property name="backgroundName">D:\Output\Kodibox\Themes\Blush\Music.jpg</property>
+			<onclick condition="Library.HasContent(Music)">ActivateWindow(music,musicdb://albums/,return)</onclick>
+			<property name="path">ActivateWindow(music,musicdb://albums/,return)</property>
+			<property name="list">musicdb://albums/</property>
 			<onclick condition="![Library.HasContent(Music)]">ActivateWindow(Music,sources://music/,return)</onclick>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
@@ -583,8 +586,8 @@
 			<onclick>PlayerControl(PartyMode)</onclick>
 			<property name="path">PlayerControl(PartyMode)</property>
 			<property name="list">PlayerControl(PartyMode)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -601,12 +604,12 @@
 			<thumb />
 			<property name="labelID">31314</property>
 			<property name="defaultID">31314</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+			<visible>[Library.HasContent(Music)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 			<onclick>ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</onclick>
 			<property name="path">ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</property>
 			<property name="list">musicdb://recentlyaddedalbums/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -623,12 +626,12 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+			<visible>[Library.HasContent(Music)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 			<onclick>ActivateWindow(Music,"library://music/genres.xml/",return)</onclick>
 			<property name="path">ActivateWindow(Music,"library://music/genres.xml/",return)</property>
 			<property name="list">library://music/genres.xml/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -648,8 +651,8 @@
 			<onclick>ActivateWindow(Music,root)</onclick>
 			<property name="path">ActivateWindow(Music,root)</property>
 			<property name="list">root</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -669,8 +672,8 @@
 			<onclick>UpdateLibrary(music,,true)</onclick>
 			<property name="path">UpdateLibrary(music,,true)</property>
 			<property name="list">UpdateLibrary(music,,true)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -1025,7 +1028,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$LOCALIZE[342]</label>
-			<label2>Custom item</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
 			<property name="labelID">movies</property>
@@ -1036,14 +1039,16 @@
 			<property name="widgetPath">videodb://recentlyaddedmovies/</property>
 			<property name="widgetTarget">videos</property>
 			<property name="widgetIcon">20021</property>
-			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,sources://video/,return)</property>
-			<property name="list">sources://video/</property>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),movies) + [Library.HasContent(Movies)]">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
+			<property name="list">videodb://movies/titles/</property>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),movies) + [![Library.HasContent(Movies)]]">ActivateWindow(Videos,sources://video/,return)</onclick>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
-			<onclick>SetProperty(submenuVisibility,movies,10000)</onclick>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),movies) + [Library.HasContent(Movies)]">SetProperty(submenuVisibility,movies,10000)</onclick>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),movies) + [![Library.HasContent(Movies)]]">SetProperty(submenuVisibility,movies,10000)</onclick>
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -1441,27 +1446,29 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<label>$LOCALIZE[10005]</label>
+			<label>$LOCALIZE[10502]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
-			<property name="labelID">music</property>
+			<property name="labelID">10502</property>
 			<property name="defaultID">music</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetName">359</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
-			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),music) + [Library.HasContent(Music)]">ActivateWindow(music,library://music/artists.xml/,return)</onclick>
-			<property name="path">ActivateWindow(music,library://music/artists.xml/,return)</property>
-			<property name="list">library://music/artists.xml/</property>
-			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),music) + [![Library.HasContent(Music)]]">ActivateWindow(Music,sources://music/,return)</onclick>
+			<property name="background">D:\Output\Kodibox\Themes\Blush\Music.jpg</property>
+			<property name="backgroundName">D:\Output\Kodibox\Themes\Blush\Music.jpg</property>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),num-10502) + [Library.HasContent(Music)]">ActivateWindow(music,musicdb://albums/,return)</onclick>
+			<property name="path">ActivateWindow(music,musicdb://albums/,return)</property>
+			<property name="list">musicdb://albums/</property>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),num-10502) + [![Library.HasContent(Music)]]">ActivateWindow(Music,sources://music/,return)</onclick>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
-			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),music) + [Library.HasContent(Music)]">SetProperty(submenuVisibility,music,10000)</onclick>
-			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),music) + [![Library.HasContent(Music)]]">SetProperty(submenuVisibility,music,10000)</onclick>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),num-10502) + [Library.HasContent(Music)]">SetProperty(submenuVisibility,num-10502,10000)</onclick>
+			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),num-10502) + [![Library.HasContent(Music)]]">SetProperty(submenuVisibility,num-10502,10000)</onclick>
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -1475,15 +1482,15 @@
 			<onclick>PlayerControl(PartyMode)</onclick>
 			<property name="path">PlayerControl(PartyMode)</property>
 			<property name="list">PlayerControl(PartyMode)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
@@ -1494,19 +1501,19 @@
 			<thumb />
 			<property name="labelID">31314</property>
 			<property name="defaultID">31314</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
+			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
 			<onclick>ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</onclick>
 			<property name="path">ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</property>
 			<property name="list">musicdb://recentlyaddedalbums/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
@@ -1517,19 +1524,19 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
+			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
 			<onclick>ActivateWindow(Music,"library://music/genres.xml/",return)</onclick>
 			<property name="path">ActivateWindow(Music,"library://music/genres.xml/",return)</property>
 			<property name="list">library://music/genres.xml/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
@@ -1543,15 +1550,15 @@
 			<onclick>ActivateWindow(Music,root)</onclick>
 			<property name="path">ActivateWindow(Music,root)</property>
 			<property name="list">root</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
@@ -1565,15 +1572,15 @@
 			<onclick>UpdateLibrary(music,,true)</onclick>
 			<property name="path">UpdateLibrary(music,,true)</property>
 			<property name="list">UpdateLibrary(music,,true)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
-			<property name="submenuVisibility">music</property>
+			<property name="submenuVisibility">num-10502</property>
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
@@ -2694,7 +2701,7 @@
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-music">
+	<include name="skinshortcuts-group-num-10502">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">4</property>
@@ -2708,7 +2715,7 @@
 			<property name="path">PlayerControl(PartyMode)</property>
 			<property name="list">PlayerControl(PartyMode)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2730,7 +2737,7 @@
 			<property name="path">ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</property>
 			<property name="list">musicdb://recentlyaddedalbums/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2752,7 +2759,7 @@
 			<property name="path">ActivateWindow(Music,"library://music/genres.xml/",return)</property>
 			<property name="list">library://music/genres.xml/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2773,7 +2780,7 @@
 			<property name="path">ActivateWindow(Music,root)</property>
 			<property name="list">root</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2794,7 +2801,7 @@
 			<property name="path">UpdateLibrary(music,,true)</property>
 			<property name="list">UpdateLibrary(music,,true)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2803,7 +2810,7 @@
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-music">
+	<include name="skinshortcuts-group-alt-num-10502">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">4</property>
@@ -2816,8 +2823,8 @@
 			<onclick>PlayerControl(PartyMode)</onclick>
 			<property name="path">PlayerControl(PartyMode)</property>
 			<property name="list">PlayerControl(PartyMode)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2834,12 +2841,12 @@
 			<thumb />
 			<property name="labelID">31314</property>
 			<property name="defaultID">31314</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
+			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
 			<onclick>ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</onclick>
 			<property name="path">ActivateWindow(music,musicdb://recentlyaddedalbums/,return)</property>
 			<property name="list">musicdb://recentlyaddedalbums/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2856,12 +2863,12 @@
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
+			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
 			<onclick>ActivateWindow(Music,"library://music/genres.xml/",return)</onclick>
 			<property name="path">ActivateWindow(Music,"library://music/genres.xml/",return)</property>
 			<property name="list">library://music/genres.xml/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">music</property>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2881,8 +2888,8 @@
 			<onclick>ActivateWindow(Music,root)</onclick>
 			<property name="path">ActivateWindow(Music,root)</property>
 			<property name="list">root</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -2902,8 +2909,8 @@
 			<onclick>UpdateLibrary(music,,true)</onclick>
 			<property name="path">UpdateLibrary(music,,true)</property>
 			<property name="list">UpdateLibrary(music,,true)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),music)</visible>
-			<property name="group">music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10502)</visible>
+			<property name="group">10502</property>
 			<property name="widget">recentalbums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
@@ -4543,7 +4550,7 @@
 				<animation condition="Integer.IsGreater(Container(80114).Column,0)" easing="inout" effect="slide" end="350,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80114" type="panel">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<include content="WidgetContents">
 					<param name="id">80114</param>
 					<param name="onup">80114</param>
@@ -4583,7 +4590,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<visible>Integer.IsGreater(Container(80114).NumItems,0) | Control.IsVisible(80124) | Control.IsVisible(80134)</visible>
 				<control type="label">
 					<visible>Control.HasFocus(9000) | Control.HasFocus(9010)</visible>
@@ -4613,7 +4620,7 @@
 				<animation condition="Integer.IsGreater(Container(80124).Column,0)" easing="inout" effect="slide" end="350,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80124" type="panel">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80124</param>
 					<param name="left">494</param>
@@ -4760,7 +4767,7 @@
 				<animation condition="Integer.IsGreater(Container(80134).Column,0)" easing="inout" effect="slide" end="350,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80134" type="panel">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80134</param>
 					<param name="left">494</param>
@@ -7656,7 +7663,7 @@
 				<animation condition="Integer.IsGreater(Container(80114).Column,0)" easing="inout" effect="slide" end="350,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80114" type="panel">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<include content="WidgetContents">
 					<param name="id">80114</param>
 					<param name="onup">80114</param>
@@ -7696,7 +7703,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<visible>Integer.IsGreater(Container(80114).NumItems,0) | Control.IsVisible(80124) | Control.IsVisible(80134)</visible>
 				<control type="label">
 					<visible>Control.HasFocus(9000) | Control.HasFocus(9010)</visible>
@@ -7728,7 +7735,7 @@
 				<animation condition="Integer.IsGreater(Container(80124).Column,0)" easing="inout" effect="slide" end="350,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80124" type="panel">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80124</param>
 					<param name="left">85</param>
@@ -7874,7 +7881,7 @@
 				<animation condition="Integer.IsGreater(Container(80134).Column,0)" easing="inout" effect="slide" end="350,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80134" type="panel">
-				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-10502)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80134</param>
 					<param name="left">85</param>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.lyrebird" name="Lyrebird" version="0.8.9" provider-name="Rufoo">
+<addon id="skin.lyrebird" name="Lyrebird" version="1.0.0a" provider-name="Rufoo">
     <requires>
         <import addon="xbmc.gui" version="5.14.0"/>
         <import addon="resource.images.studios.white" version="0.0.6"/>
-        <import addon="script.skinshortcuts" version="0.6.6"/>
+        <import addon="script.skinshortcuts" version="1.0.17"/>
         <import addon="script.toolbox" version="1.0.0"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_AU">Lyrebird: Mimic x Cirrus Extended</summary>
-        <summary lang="en_GB">Lyrebird: Mimic x Cirrus Extended</summary>
-        <summary lang="en_NZ">Lyrebird: Mimic x Cirrus Extended</summary>
-        <summary lang="en_US">Lyrebird: Mimic x Cirrus Extended</summary>
-        <description lang="en_AU">Lyrebird: Mimic x Cirrus Extended</description>
-        <description lang="en_GB">Lyrebird: Mimic x Cirrus Extended</description>
-        <description lang="en_NZ">Lyrebird: Mimic x Cirrus Extended</description>
-        <description lang="en_US">Lyrebird: Mimic x Cirrus Extended</description>
+        <summary lang="en_AU">Lyrebird</summary>
+        <summary lang="en_GB">Lyrebird</summary>
+        <summary lang="en_NZ">Lyrebird</summary>
+        <summary lang="en_US">Lyrebird</summary>
+        <description lang="en_AU">A blend of Mimic, Cirrus Extended, and others focusing on robust view support for gaming HTPC setups.</description>
+        <description lang="en_GB">A blend of Mimic, Cirrus Extended, and others focusing on robust view support for gaming HTPC setups.</description>
+        <description lang="en_NZ">A blend of Mimic, Cirrus Extended, and others focusing on robust view support for gaming HTPC setups.</description>
+        <description lang="en_US">A blend of Mimic, Cirrus Extended, and others focusing on robust view support for gaming HTPC setups.</description>
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
         <forum>http://forum.kodi.tv/forumdisplay.php?fid=218</forum>
@@ -38,6 +38,6 @@
             <screenshot>resources/screenshot-09.jpg</screenshot>
             <screenshot>resources/screenshot-10.jpg</screenshot>
         </assets>
-        <news>0.8.9 - Sneak Peek!</news>
+        <news>"There's no news like bad news" - Elliot Carver, Tomorrow Never Dies (1999)</news>
     </extension>
 </addon>

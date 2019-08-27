@@ -6,6 +6,7 @@
     <include file="Includes_CommonValues.xml" />
     <include file="Includes_Home.xml" />
     <include file="Includes_Menus.xml" />
+	<include file="Includes_Topbar.xml" />
     <include file="Includes_WidgetContent.xml" />
     <include file="Includes_VideoLyrics.xml" />
     <include file="View_50_List.xml" />
@@ -22,16 +23,22 @@
     <include file="View_507_BigList.xml" />
     <include file="View_508_SongList.xml" />
     <include file="View_509_Wall.xml" />
-	<!-- Lyrebird -->
-	<include file="Includes_Lyrebird.xml" />
-	<include file="View_960_Arcade.xml" />
-	<include file="View_980_SteamExplorer.xml" />
-	<include file="View_981_SteamThumbs.xml" />
+	<include file="View_900_Arcade.xml" />
+	<include file="View_902_KeibertzPlus.xml" />
+	<include file="View_903_Coverflow.xml" />
+	<include file="View_909_Sauna.xml" />
     <include file="variables.xml" />
     <include file="script-skinshortcuts-includes.xml" />
     <constant name="FanartCrossfadeTime">500</constant>
     <constant name="IconCrossfadeTime">400</constant>
     <constant name="FullScreenWidth">1920</constant>
+	<expression name="GameSupport">String.IsEqual(Container.PluginName,plugin.program.advanced.emulator.launcher)</expression>
+	<expression name="DetectSquare">String.IsEqual(ListItem.Property(platform),Atari Lynx) | String.IsEqual(ListItem.Property(platform),Microsoft Windows) | String.IsEqual(ListItem.Property(platform),NEC TurboGrafx CD) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy Advance) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy Color) | String.IsEqual(ListItem.Property(platform),Sega Dreamcast) | String.IsEqual(ListItem.Property(platform),Sega MegaCD) | String.IsEqual(ListItem.Property(platform),Sega SegaCD) | String.IsEqual(ListItem.Property(platform),Sony PlayStation)</expression>
+	<expression name="DetectBluray">String.IsEqual(ListItem.Property(platform),Sony PlayStation 3) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Vita)</expression>
+	<expression name="DetectSlim">String.IsEqual(ListItem.Property(platform),Nintendo Switch) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Portable)</expression>
+	<expression name="DetectWide">String.IsEqual(ListItem.Property(platform),Nintendo 64) | String.IsEqual(ListItem.Property(platform),Nintendo SNES)</expression>
+	<expression name="Detect3ds">String.IsEqual(ListItem.Property(platform),Nintendo 3DS) | String.IsEqual(ListItem.Property(platform),Nintendo DS)</expression>
+	<expression name="KnownGameSystems">[String.IsEqual(ListItem.Property(platform),Atari Lynx) | String.IsEqual(ListItem.Property(platform),Microsoft Windows) | String.IsEqual(ListItem.Property(platform),NEC TurboGrafx CD) | String.IsEqual(ListItem.Property(platform),Nintendo 3DS) | String.IsEqual(ListItem.Property(platform),Nintendo 64) | String.IsEqual(ListItem.Property(platform),Nintendo DS) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy Advance) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy Color) | String.IsEqual(ListItem.Property(platform),Nintendo SNES) | String.IsEqual(ListItem.Property(platform),Nintendo Switch) | String.IsEqual(ListItem.Property(platform),Sega Dreamcast) | String.IsEqual(ListItem.Property(platform),Sega MegaCD) | String.IsEqual(ListItem.Property(platform),Sega SegaCD) | String.IsEqual(ListItem.Property(platform),Sony PlayStation) | String.IsEqual(ListItem.Property(platform),Sony PlayStation 3) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Portable) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Vita)]</expression>
     <expression name="PluginAdvancedLauncher">String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/) | String.Contains(Container.FolderPath,plugin://plugin.program.advanced.emulator.launcher/)</expression>
     <expression name="isVideoAddon">String.Contains(Container.FolderPath,plugin://plugin.video)</expression>
     <expression name="isMovie">String.IsEqual(ListItem.DBTYPE,movie)</expression>
@@ -126,7 +133,7 @@
         <onback>50</onback>
         <itemgap>0</itemgap>
         <include condition="Skin.HasSetting(KioskMode.Enabled)">KioskModeButton</include>
-        <visible allowhiddenfocus="true">[String.IsEmpty(Window(home).Property(viewtypeselect)) + String.IsEmpty(Window(home).Property(viewtypeoptions))] + !Window.IsVisible(1133) + !Control.HasFocus(9013) + !Control.HasFocus(9014)</visible>
+        <visible allowhiddenfocus="true">String.IsEmpty(Window(home).Property(viewtypeselect)) + !Window.IsVisible(1133) + !Control.HasFocus(9013) + !Control.HasFocus(9014)</visible>
         <animation effect="slide" start="-440,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
         <control type="label" id="200">
             <width>400</width>
@@ -236,24 +243,6 @@
             <visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
             <enable>!Skin.HasSetting(Enable.WideList)</enable>
         </control>
-		<include>Arcade.Options</include>
-        <control type="button" id="98001">
-            <label>Template: Twin Fanart</label>
-			<width>400</width>
-			<textwidth>300</textwidth>
-			<font>font10</font>
-			<radioposx>340</radioposx>
-            <onclick>Skin.SetString(view980_template,doublefanart)</onclick>
-            <selected>String.IsEqual(Skin.String(view980_template),doublefanart)</selected>
-            <visible>Control.IsVisible(980) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-        </control>
-        <control type="button" id="98002">
-            <label>Template: Box Shot</label>
-            <include>ButtonCommonValues</include>
-            <onclick>Skin.SetString(view980_template,boxshot)</onclick>
-            <selected>String.IsEqual(Skin.String(view980_template),boxshot)</selected>
-            <visible>Control.IsVisible(980) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-        </control>			
     </include>
     <include name="PVRMediaMenu">
         <control type="group">
@@ -631,107 +620,6 @@
             </control>
         </control>
     </include>
-    <!-- Navigation Bar -->
-    <include name="Topbar">
-        <control type="group">
-            <visible>!Control.IsVisible(509)</visible>
-            <control type="image">
-                <visible>[Control.IsVisible(59) | Control.IsVisible(501)] + !$EXP[isInfoDialog]</visible>
-                <width>FullScreenWidth</width>
-                <height>120</height>
-                <texture>background.png</texture>
-                <colordiffuse>background</colordiffuse>
-            </control>
-            <control type="image">
-                <width>FullScreenWidth</width>
-                <height>120</height>
-                <texture>menu_fo.png</texture>
-                <colordiffuse>33000000</colordiffuse>
-            </control>
-            <control type="group">
-                <control type="group">
-                    <control type="image">
-                        <top>19</top>
-                        <left>19</left>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
-                    </control>
-                    <control type="image">
-                        <top>19</top>
-                        <left>19</left>
-                        <width>80</width>
-                        <height>80</height>
-                        <texture colordiffuse="maintext">$VAR[HeaderIcon]</texture>
-                        <visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
-                        <visible>!Window.IsVisible(busydialog) + !Control.IsVisible(12345)</visible>
-                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-                    </control>
-                    <control type="label">
-                        <top>17</top>
-                        <left>17</left>
-                        <width>80</width>
-                        <height>80</height>
-                        <font>font35_title</font>
-                        <align>center</align>
-                        <label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
-                        <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
-                        <visible>!Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(12345)</visible>
-                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-                    </control>
-                    <control type="image">
-                        <visible>Window.IsVisible(DialogBusy.xml)</visible>
-                        <description>Busy animation</description>
-                        <top>29</top>
-                        <left>29</left>
-                        <width>60</width>
-                        <height>60</height>
-                        <texture colordiffuse="maintext" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
-                        <aspectratio>keep</aspectratio>
-                        <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
-                    </control>
-                    <control type="group">
-                        <control type="button">
-                            <left>102</left>
-                            <top>17</top>
-                            <width>1715</width>
-                            <height>45</height>
-                            <font>font30</font>
-                            <textoffsetx>15</textoffsetx>
-                            <label>$VAR[BreadcrumbsVar]</label>
-                            <label2>$VAR[TopbarFadeLabel1]</label2>
-                            <onclick>noop</onclick>
-                            <texturefocus>blank.png</texturefocus>
-                        </control>
-                        <control type="button">
-                            <left>102</left>
-                            <top>59</top>
-                            <width>1715</width>
-                            <height>45</height>
-                            <font>font14</font>
-                            <textoffsetx>15</textoffsetx>
-                            <textcolor>highlight</textcolor>
-                            <label>$VAR[HeaderSubLabel]</label>
-                            <label2>$VAR[TopbarFadeLabel2]</label2>
-                            <onclick>noop</onclick>
-                            <texturefocus>blank.png</texturefocus>
-                            <focusedcolor>highlight</focusedcolor>
-                        </control>
-                    </control>
-                </control>
-            </control>
-            <control type="image">
-                <description>avatar</description>
-                <left>1821</left>
-                <top>19</top>
-                <width>80</width>
-                <height>80</height>
-                <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-                <texture diffuse="diffuse/nowplaying.png">$VAR[HomeNowPlayingThumbVar]</texture>
-                <visible>[!Window.IsVisible(volumebar) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-globalsearch-infodialog.xml) | Window.IsVisible(favourites)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog)]</visible>
-            </control>
-        </control>
-    </include>
     <include name="InfoDialogTopbar">
         <control type="group">
             <control type="image">
@@ -1051,7 +939,7 @@
         <control type="grouplist">
             <left>$PARAM[left]</left>
             <top>$PARAM[top]</top>
-            <width>880</width>
+            <width>840</width>
             <height>80</height>
             <itemgap>20</itemgap>
             <align>$PARAM[align]</align>
@@ -1099,7 +987,7 @@
                 <height>80</height>
                 <include>MediaFlagVars</include>
                 <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-                <visible>Container.Content(Movies) | [$EXP[isTvshow] | $EXP[isSeason]] + !Window.IsVisible(movieinformation)</visible>
+                <visible>[$EXP[isTvshow] | $EXP[isSeason]] + !Window.IsVisible(movieinformation)</visible>
             </control>
             <control type="image">
                 <height>80</height>

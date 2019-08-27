@@ -3,7 +3,8 @@
 	<color name="disabled">FF606060</color>
 	<color name="black">FF000000</color>
 	<color name="invalid">FFFF6666</color>
-	<color name="highlight">FFC55610</color>	
+	<color name="highlight">FFC55610</color>
+	<color name="focus">FFFFA500</color>	
 	<color name="shadow">AA000000</color>
 	<color name="background">FF2B2B2B</color>
 	<color name="dialog">FFBABABA</color>
