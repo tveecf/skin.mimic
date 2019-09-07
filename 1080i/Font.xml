@@ -27,6 +27,11 @@
             <size>26</size>
         </font>
         <font>
+            <name>font12plus</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>28</size>
+        </font>
+        <font>
             <name>font13</name>
             <filename>weblysleekuil.ttf</filename>
             <size>30</size>
@@ -81,6 +86,11 @@
             <name>font16</name>
             <filename>weblysleekuil.ttf</filename>
             <size>38</size>
+        </font>
+        <font>
+            <name>font18</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>40</size>
         </font>
         <font>
             <name>font30</name>

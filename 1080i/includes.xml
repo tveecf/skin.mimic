@@ -243,6 +243,10 @@
             <visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
             <enable>!Skin.HasSetting(Enable.WideList)</enable>
         </control>
+		<include>ArcadeOptions</include>
+		<include>KeibertzOptions</include>
+		<include>CoverflowOptions</include>
+		<include>SaunaOptions</include>
     </include>
     <include name="PVRMediaMenu">
         <control type="group">
