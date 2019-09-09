@@ -2162,16 +2162,6 @@
             </control>
         </control>
         <include>Topbar</include>
-        <control type="label">
-            <left>100</left>
-            <top>60</top>
-            <width>900</width>
-            <height>45</height>
-            <font>font14</font>
-            <textoffsetx>15</textoffsetx>
-            <textcolor>highlight</textcolor>
-            <label>$INFO[Window.Property(Location)]</label>
-        </control>
         <control type="group">
             <left>-440</left>
             <include>SideBladeLeft</include>
