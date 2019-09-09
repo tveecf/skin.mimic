@@ -84,7 +84,7 @@
 					<texture>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-					<visible>!Skin.HasSetting(HideTopbarWeather)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + Weather.IsFetched</visible>
 				</control>
 				<control type="label">
 					<width>auto</width>
@@ -94,7 +94,7 @@
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[Weather.Temperature][/B]</label>
 					<scroll>false</scroll>
-					<visible>!Skin.HasSetting(HideTopbarWeather)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + Weather.IsFetched</visible>
 				</control>
 				<control type="label">
 					<width>auto</width>
@@ -104,7 +104,7 @@
 					<textcolor>highlight</textcolor>
 					<label>•</label>
 					<scroll>false</scroll>
-					<visible>!Skin.HasSetting(HideTopbarWeather)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + Weather.IsFetched</visible>
 				</control>
 				<control type="label">
 					<width>auto</width>
