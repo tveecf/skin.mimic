@@ -85,7 +85,9 @@
         <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)">$INFO[Window.Property(label)]</value>
         <value condition="Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml)">$INFO[Window.Property(title)]</value>
         <value condition="Window.IsActive(favourites)">$LOCALIZE[1036]</value>
-        <value condition="String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/)">$INFO[System.AddonTitle(plugin.program.advanced.launcher)]</value>
+        <value condition="$EXP[GameSupport]">$LOCALIZE[10821]</value>
+        <value condition="Container.Content(Movies)">Movies</value>
+        <value condition="Container.Content(TVShows)">TV Shows</value>
         <value condition="Window.IsActive(script-The Big Picture-main.xml)">$INFO[Container(100).ListItem.Property(album_title)]</value>
         <value condition="Window.IsActive(addoninformation) + !Window.IsActive(textviewer)">$INFO[ListItem.AddonName]</value>
         <value condition="Window.IsActive(script-lazytv-BigScreenList.xml) | Window.IsActive(script-lazytv-main.xml)">$INFO[System.AddonTitle(script.lazytv)]</value>
@@ -368,7 +370,11 @@
         <value condition="String.Contains(ListItem.mpaa,Brazil:14) | String.Contains(ListItem.mpaa,14 anos)">flags/mpaa/MPAA_Brazil_14.png</value>
         <value condition="String.Contains(ListItem.mpaa,Brazil:16) | String.Contains(ListItem.mpaa,16 anos)">flags/mpaa/MPAA_Brazil_16.png</value>
         <value condition="String.Contains(ListItem.mpaa,Brazil:18) | String.Contains(ListItem.mpaa,18 anos)">flags/mpaa/MPAA_Brazil_18.png</value>
-        <value condition="String.Contains(ListItem.mpaa,Australia:)">$INFO[ListItem.MPAA,flags/mpaa/australia_,.png]</value>
+		<value condition="String.Contains(ListItem.mpaa,Australia:G)">flags/mpaa/australia_G.png</value>
+		<value condition="String.Contains(ListItem.mpaa,Australia:MA)">flags/mpaa/australia_MA.png</value>
+		<value condition="String.Contains(ListItem.mpaa,Australia:M)">flags/mpaa/australia_M.png</value>
+		<value condition="String.Contains(ListItem.mpaa,Australia:PG)">flags/mpaa/australia_PG.png</value>
+		<value condition="String.Contains(ListItem.mpaa,Australia:R)">flags/mpaa/australia_R.png</value>
         <value>$INFO[ListItem.MPAA,flags/mpaa/,.png]</value>
     </variable>
     <variable name="VideoRatingFlagVar">
@@ -409,6 +415,11 @@
         <value condition="String.Contains(VideoPlayer.mpaa,Brazil:14) | String.Contains(VideoPlayer.mpaa,14 anos)">flags/mpaa/MPAA_Brazil_14.png</value>
         <value condition="String.Contains(VideoPlayer.mpaa,Brazil:16) | String.Contains(VideoPlayer.mpaa,16 anos)">flags/mpaa/MPAA_Brazil_16.png</value>
         <value condition="String.Contains(VideoPlayer.mpaa,Brazil:18) | String.Contains(VideoPlayer.mpaa,18 anos)">flags/mpaa/MPAA_Brazil_18.png</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Australia:G)">flags/mpaa/australia_G.png</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Australia:MA)">flags/mpaa/australia_MA.png</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Australia:M)">flags/mpaa/australia_M.png</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Australia:PG)">flags/mpaa/australia_PG.png</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Australia:R)">flags/mpaa/australia_R.png</value>
         <value>$INFO[VideoPlayer.MPAA,flags/mpaa/,.png]</value>
     </variable>
     <variable name="VizArtistInfoVar">
@@ -507,7 +518,6 @@
         <value>.jpg</value>
     </variable>
     <variable name="HeaderIcon">
-		<value condition="$EXP[LyrebirdGameSupport]">DefaultGames.png</value>
         <value condition="Player.Muted">DefaultIconMute.png</value>
         <value condition="Window.IsVisible(movieinformation)">DefaultAddonInfoProvider.png</value>
         <value condition="Window.IsVisible(musicinformation)">DefaultAddonInfoProvider.png</value>
@@ -529,7 +539,8 @@
         <value condition="String.Contains(Container.FolderPath,plugin://plugin.video.npr/)">addons/npr.png</value>
         <value condition="Window.IsVisible(script-NextAired-TVGuide.xml) | Window.IsVisible(script-NextAired-TVGuide2.xml)">DefaultAddonPVRClient.png</value>
         <value condition="Window.IsVisible(script-globalsearch-main.xml)">DefaultIconSearch.png</value>
-        <value condition="String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/) | Window.IsActive(programs)">DefaultProgram.png</value>
+        <value condition="$EXP[GameSupport]">DefaultGames.png</value>
+        <value condition="Window.IsActive(programs)">DefaultProgram.png</value>
         <value condition="String.Contains(Container.FolderPath,sources://)">DefaultFile.png</value>
         <value condition="Window.IsVisible(musicplaylist) | Window.IsVisible(videoplaylist)">DefaultPlaylist.png</value>
         <value condition="String.Contains(Container.FolderPath,special://videoplaylists/)">DefaultPlaylist.png</value>
@@ -559,7 +570,6 @@
         <value condition="Window.IsVisible(SettingsSystemInfo.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(EventLog.xml) | Window.IsVisible(profiles)">DefaultIconSettings.png</value>
         <value condition="Window.IsVisible(FileManager.xml)">DefaultFile.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml)">DefaultMovies.png</value>
-        <value condition="Window.IsActive(home) + !String.IsEmpty(Container(9000).ListItem.Icon)">$INFO[Container(9000).ListItem.Icon]</value>
         <value condition="Window.IsActive(home)">DefaultIconHome.png</value>
         <value condition="Window.IsActive(1119)">DefaultAddon.png</value>
         <value>DefaultArtist.png</value>
@@ -783,17 +793,17 @@
         <value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,8)">starrating/8.png</value>
         <value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,9)">starrating/9.png</value>
         <value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,10)">starrating/10.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,1)">starrating/1.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,2)">starrating/2.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,3)">starrating/3.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,4)">starrating/4.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,5)">starrating/5.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,6)">starrating/6.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,7)">starrating/7.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,8)">starrating/8.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,9)">starrating/9.png</value>
-        <value condition="$EXP[LyrebirdGameSupport] + Integer.IsLessOrEqual(ListItem.Rating,10)">starrating/10.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,1)">starrating/1.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,2)">starrating/2.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,3)">starrating/3.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,4)">starrating/4.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,5)">starrating/5.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,6)">starrating/6.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,7)">starrating/7.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,8)">starrating/8.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,9)">starrating/9.png</value>
+        <value condition="$EXP[GameSupport] + Integer.IsLessOrEqual(ListItem.Rating,10)">starrating/10.png</value>
         <value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
         <value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,1)">starrating/1.png</value>
         <value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,2)">starrating/2.png</value>
@@ -890,4 +900,56 @@
         <value condition="Container.Content(tvshows)">$INFO[ListItem.Rating]</value>
         <value condition="!Container.Content(albums) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
     </variable>
+	<variable name="StudioFlagVar">
+		<value condition="Container.Content(Movies) | Container.Content(TVShows)">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</value>
+		<value condition="$EXP[GameSupport]">resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</value>
+	</variable>
+	<variable name="FanartIconVar">
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Thumb]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
+	<variable name="MainFanartWindowVar">
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Thumb]</value>
+		<value condition="Control.IsVisible(900) + Skin.HasSetting(Movies_900_Landscape) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="Control.IsVisible(900) + Skin.HasSetting(TVShows_900_Landscape) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>			
+		<value condition="Control.IsVisible(900) + Skin.HasSetting(ArcadeSnaps) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(900) + Skin.HasSetting(ArcadeTitles) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(902) + Skin.HasSetting(Movies_902_Landscape) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="Control.IsVisible(902) + Skin.HasSetting(TVShows_902_Landscape) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>	
+		<value condition="Control.IsVisible(902) + Skin.HasSetting(KeibertzPlusSnaps) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(902) + Skin.HasSetting(KeibertzPlusTitles) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(SaunaSnaps) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(SaunaTitles) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
+	<variable name="2ndFanartWindowVar">
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(Sauna2ndSnaps) + !String.IsEmpty(ListItem.Art(snap))">$INFO[ListItem.Art(snap)]</value>
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(Sauna2ndTitles) + !String.IsEmpty(ListItem.Art(title))">$INFO[ListItem.Art(title)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
+	<variable name="LayoutLabelVar">
+		<value condition="Control.IsVisible(900) + [Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesReversed) | Container.Content(Movies) + Skin.HasSetting(ArcadeMoviesReversed) | Container.Content(TVShows) + Skin.HasSetting(ArcadeTVShowsReversed) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Reversed)]">$LOCALIZE[90002]</value>
+		<value condition="Control.IsVisible(900) + [$EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Adaptive)]">$LOCALIZE[90003]</value>
+		<value condition="Control.IsVisible(900) + [Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesBigInfo) | Container.Content(Movies) + Skin.HasSetting(ArcadeMoviesBigInfo) | Container.Content(TVShows) + Skin.HasSetting(ArcadeTVShowsBigInfo) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.BigInfo)]">$LOCALIZE[90004]</value>
+		<value condition="Control.IsVisible(900) + [Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesMini) | Container.Content(Movies) + Skin.HasSetting(ArcadeMoviesMini) | Container.Content(TVShows) + Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Mini)]">$LOCALIZE[90005]</value>
+		<value condition="Control.IsVisible(903) + [$EXP[GameSupport] + Skin.HasSetting(CoverflowGamesBasic) | Container.Content(Movies) + Skin.HasSetting(CoverflowMoviesBasic) | Container.Content(TVShows) + Skin.HasSetting(CoverflowTVShowsBasic)]">$LOCALIZE[90301]</value>
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(SaunaBoxshot)">$LOCALIZE[90902]</value>
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(SaunaDouble)">$LOCALIZE[90903]</value>
+		<value>Default</value>
+	</variable>
+	<variable name="ImageLabelVar">
+		<value condition="Control.IsVisible(900) + Skin.HasSetting(ArcadeSnaps) | Control.IsVisible(902) + Skin.HasSetting(KeibertzPlusSnaps) | Control.IsVisible(909) + Skin.HasSetting(SaunaSnaps)">$LOCALIZE[89001]</value>
+		<value condition="Control.IsVisible(900) + Skin.HasSetting(ArcadeTitles) | Control.IsVisible(902) + Skin.HasSetting(KeibertzPlusTitles) | Control.IsVisible(909) + Skin.HasSetting(SaunaTitles)">$LOCALIZE[89002]</value>
+		<value condition="Control.IsVisible(900) + [Container.Content(Movies) + Skin.HasSetting(Movies_900_Landscape) | Container.Content(TVShows) + Skin.HasSetting(TVShows_900_Landscape)] | Control.IsVisible(902) + [Container.Content(Movies) + Skin.HasSetting(Movies_902_Landscape) | Container.Content(TVShows) + Skin.HasSetting(TVShows_902_Landscape)]">$LOCALIZE[89003]</value>	
+		<value>$LOCALIZE[20445]</value>		
+	</variable>
+	<variable name="2ndImageLabelVar">
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(Sauna2ndSnaps)">$LOCALIZE[89001]</value>
+		<value condition="Control.IsVisible(909) + Skin.HasSetting(Sauna2ndTitles)">$LOCALIZE[89002]</value>
+		<value>$LOCALIZE[20445]</value>		
+	</variable>
+	<variable name="MovementLabelVar">
+		<value condition="!Skin.HasSetting(SaunaVertical)">Horizontal</value>
+		<value condition="Skin.HasSetting(SaunaVertical)">Vertical</value>	
+	</variable>
 </includes>

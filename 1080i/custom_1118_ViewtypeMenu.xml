@@ -192,24 +192,30 @@
                         <visible>Container.Content(songs)</visible>
                         <visible>!Skin.HasSetting(Disable.SongView)</visible>
                     </item>
-					<item>
-						<description>Arcade</description>
-						<label>Arcade</label>
-						<onclick>Container.SetViewMode(960)</onclick>
-                        <visible>$EXP[GameSupport] | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows)</visible>						
-					</item>
-					<item>
-						<description>Steam Explorer</description>
-						<label>Steam Explorer</label>
-						<onclick>Container.SetViewMode(980)</onclick>
-                        <visible>$EXP[GameSupport]</visible>							
-					</item>
-					<item>
-						<description>Steam Thumbs</description>
-						<label>Steam Thumbs</label>
-						<onclick>Container.SetViewMode(981)</onclick>
-                        <visible>$EXP[GameSupport]</visible>							
-					</item>						
+                    <item>
+                        <description>Arcade</description>
+                        <label>Arcade</label>
+                        <onclick>Container.SetViewMode(900)</onclick>
+                        <visible>$EXP[GameSupport] | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                    </item>
+                    <item>
+                        <description>Keibertz</description>
+                        <label>Keibertz+</label>
+                        <onclick>Container.SetViewMode(902)</onclick>
+                        <visible>$EXP[GameSupport] | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                    </item>
+                    <item>
+                        <description>Coverflow</description>
+                        <label>Coverflow</label>
+                        <onclick>Container.SetViewMode(903)</onclick>
+                        <visible>$EXP[GameSupport] | Container.Content(Albums) | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                    </item>
+                    <item>
+                        <description>Sauna</description>
+                        <label>Sauna</label>
+                        <onclick>Container.SetViewMode(909)</onclick>
+                        <visible>$EXP[GameSupport]</visible>
+                    </item>
                 </content>
             </control>
             <control type="button" id="9012">

@@ -24,21 +24,36 @@ For example:,
 
 
 
-Credits & Thanks:
 
- * Braz, for Mimic.
- * Paradix, Butchabay, & YoHan, for Cirrus Extended.
- * Rufoo, SexyCirrus & Citris.
- * Wintermute0110, for [Advanced Emulator Launcher] & [Advanced MAME Launcher].
+THANKS AND CREDITS:
 
-[Lyrebird support thread] in [Kodi forum].
+	** $Rufo
+		- For Lyrbird
 
-Support Kodi by donating @ http://kodi.tv/contribute/donate/
-
-[Lyrebird support thread]: https://forum.kodi.tv/showthread.php?tid=336217
-[Kodi forum]: https://forum.kodi.tv/
-[Advanced Emulator Launcher]: https://forum.kodi.tv/showthread.php?tid=287826
-[Advanced MAME Launcher]: https://forum.kodi.tv/showthread.php?tid=304186
+	** @Braz
+		- For creating Mimic, the code of which is the basis for Lyrebird. Thank you for your blessing in starting this project.
+		
+	** @Wintermute0110
+		- For his continual work on Advanced Emulator Launcher and its sister projects. For always being somebody who has tolerated the whimsical nature of
+		  my development projects. Generally being an all around ace guy and someone who actively takes time to help out.
+		  
+	** @Chrisism
+		- For always being helpful and humble, contibuting silently in the background to Advanced Emulator Launcher and starting up the Game Studios flag collection
+		  which Lyrebird makes use of. Top guy who never seeks thanks but deserves it. =)
+		  
+	** @Paradix
+		- For your work on Cirrus Extended 3 back in the day, without it there wouldn't have been a beginning and without your initial encouragement back then things
+		  wouldn't be where they are now. Wherever you are in life, hope everything is roses. Cheers, bud.
+		  
+	** @Keibertz
+		- For creating a mod for Cirrus Extended (http://myxbmc.bplaced.net/blog/?p=736) that was far too nice to remain as obscure as the location it was found in.
+		  The design formed the start of the Keibertz view in Lyrebird, the name derived in honor of its origins.
+		  
+	** @Jondar
+		- For contibuting the fix to add Australian classification flags. Appreciate you saving me the time in doing so and giving back to the project.
+		
+	** @Rdyott & @Gman12
+		- For your continued interest and enthusiasm for the project.
 
 ***
 

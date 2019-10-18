@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.lyrebird.rmod" name="Lyrebird rmod" version="0.8.9.2" provider-name="Randall">
+<addon id="skin.lyrebird.rmod" name="Lyrebird rmod" version="1.0.0a.1" provider-name="Randall">
     <requires>
         <import addon="xbmc.gui" version="5.14.0"/>
         <import addon="resource.images.studios.white" version="0.0.6"/>
-        <import addon="script.skinshortcuts" version="0.6.6"/>
+        <import addon="script.skinshortcuts" version="1.0.17"/>
         <import addon="script.toolbox" version="1.0.0"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">

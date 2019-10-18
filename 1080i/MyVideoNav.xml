@@ -3,7 +3,7 @@
     <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9051</menucontrol>
     <allowoverlay>true</allowoverlay>
-    <views>50,52,507,51,57,59,500,501,502,504,505,509,520,55,960</views>
+    <views>50,52,507,51,57,59,500,501,502,504,505,509,520,55,900,902,903</views>
     <onload>SetProperty(Window.HasSettings,True,home)</onload>
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <onunload>ClearProperty(MediaMenu,Home)</onunload>
@@ -46,15 +46,19 @@
             <!-- view id = 501 -->
             <include>VideoEpisode</include>
             <!-- view id = 502 -->
+           <!-- <include>View_504_Gallery</include>-->
+            <!-- view id = 504 -->
             <include>View_505_Panel</include>
             <!-- view id = 505 -->
             <include>View_507_BigList</include>
             <!-- view id = 507 -->
             <include>View_509_Wall</include>
             <!-- view id = 509 -->
-			<include>View_960_Arcade</include>
+			<include>View_900_Arcade</include>
+			<include>View_902_KeibertzPlus</include>
+			<include>View_903_Coverflow</include>
         </control>
-        <include>common.lyrebird.header</include>
+        <include>Topbar</include>
         <control type="group">
             <left>-440</left>
             <include>SideBladeLeft</include>

@@ -11,7 +11,7 @@
                 <control type="image">
                     <visible>Control.HasFocus(52)</visible>
                     <left>95</left>
-                    <top>205</top>
+                    <top>180</top>
                     <width>330</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
@@ -29,7 +29,7 @@
                 <control type="image">
                     <visible>Control.HasFocus(52)</visible>
                     <left>95</left>
-                    <top>205</top>
+                    <top>180</top>
                     <width>330</width>
                     <height>240</height>
                     <include>FocusedBackgroundFade</include>
@@ -43,7 +43,7 @@
                 </control>
             </control>
             <control type="panel" id="52">
-                <top>195</top>
+                <top>170</top>
                 <left>85</left>
                 <width>1750</width>
                 <height>780</height>

@@ -7,120 +7,29 @@
     *********************************-->
     <fontset id="Default" idloc="31390">
         <font>
-            <name>lyrefont10</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>10</size>
-        </font>
-        <font>
-            <name>lyrefont18</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>18</size>
-        </font>
-        <font>
-            <name>lyrefont20</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>20</size>
-        </font>		
-        <font>
-            <name>lyrefont22</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>22</size>
-        </font>			
-        <font>
-            <name>lyrefont24</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>24</size>
-        </font>
-        <font>
-            <name>lyrefont25</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>25</size>
-        </font>		
-        <font>
-            <name>lyrefont26</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>26</size>
-        </font>		
-        <font>
-            <name>lyrefont28</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>28</size>
-        </font>			
-        <font>
-            <name>lyrefont30</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
-            <name>lyrefont32</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>32</size>
-        </font>
-        <font>
-            <name>lyrefont35</name>
+            <name>lyre35</name>
             <filename>weblysleekuil.ttf</filename>
             <size>35</size>
-        </font>		
-        <font>
-            <name>lyrefont36</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>36</size>
-        </font>		
-        <font>
-            <name>lyrefont40</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>40</size>
         </font>
         <font>
-            <name>lyrefont45</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>45</size>
-        </font>		
-        <font>
-            <name>lyrefont48</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>48</size>
-        </font>
-        <font>
-            <name>lyrefont50</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>50</size>
-        </font>
-        <font>
-            <name>lyrefont55</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>55</size>
-        </font>		
-        <font>
-            <name>lyrefont60</name>
+            <name>lyre60</name>
             <filename>weblysleekuil.ttf</filename>
             <size>60</size>
         </font>
-        <font>
-            <name>lyrefont64</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>64</size>
-        </font>
-        <font>
-            <name>lyrefont70</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>70</size>
-        </font>		
         <font>
             <name>font10</name>
             <filename>weblysleekuil.ttf</filename>
             <size>21</size>
         </font>
         <font>
-            <name>font11</name>
-            <filename>weblysleekuil.ttf</filename>
-            <size>22</size>
-            <linespacing>1.0</linespacing>			
-        </font>
-        <font>
             <name>font12</name>
             <filename>weblysleekuil.ttf</filename>
             <size>26</size>
+        </font>
+        <font>
+            <name>font12plus</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>28</size>
         </font>
         <font>
             <name>font13</name>
@@ -179,14 +88,44 @@
             <size>38</size>
         </font>
         <font>
+            <name>font18</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>40</size>
+        </font>
+        <font>
             <name>font30</name>
             <filename>weblysleekuil.ttf</filename>
             <size>45</size>
         </font>
         <font>
+            <name>font32</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>50</size>
+        </font>
+        <font>
             <name>font36</name>
             <filename>weblysleekuil.ttf</filename>
             <size>55</size>
+        </font>
+        <font>
+            <name>font48</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>font52</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>65</size>
+        </font>		
+        <font>
+            <name>font54</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>70</size>
+        </font>
+        <font>
+            <name>font60</name>
+            <filename>weblysleekuil.ttf</filename>
+            <size>80</size>
         </font>
         <font>
             <name>font12_title</name>

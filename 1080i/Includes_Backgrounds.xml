@@ -2,7 +2,7 @@
 <includes>
     <include name="CommonBackground">
         <control type="group">
-            <include>GlobalFanart</include>
+			<include>GlobalFanart</include>
             <include condition="Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml)">TVShowNextAiredBackground</include>
             <include condition="Window.IsActive(weather)">WeatherBackground</include>
             <include condition="Window.IsActive(script-globalsearch-main.xml)">GlobalSearchBG</include>
@@ -12,7 +12,7 @@
                 <visible>String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
             </control>
             <control type="group">
-                <visible>!Control.IsVisible(960) + Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels) + !SlideShow.IsActive</visible>
+                <visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels) + !SlideShow.IsActive + !Control.IsVisible(909)</visible>
                 <control type="image">
                     <include>FullscreenDimensions</include>
                     <texture>black.png</texture>
@@ -46,7 +46,7 @@
                 </item>
             </content>
         </control>
-        <control type="multiimage">
+		<control type="multiimage">
             <description>Normal Default Background Image</description>
             <include>FullscreenDimensions</include>
             <include>BackgroundFadeAnimation</include>

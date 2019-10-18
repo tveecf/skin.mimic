@@ -85,6 +85,8 @@
 			<property name="widgetType">albums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
+			<property name="background">D:\Output\Kodibox\Themes\MyMix\Music.jpg</property>
+			<property name="backgroundName">D:\Output\Kodibox\Themes\MyMix\Music.jpg</property>
 			<onclick condition="Library.HasContent(Music)">ActivateWindow(music,library://music/artists.xml/,return)</onclick>
 			<property name="path">ActivateWindow(music,library://music/artists.xml/,return)</property>
 			<property name="list">library://music/artists.xml/</property>
@@ -1452,6 +1454,8 @@
 			<property name="widgetType">albums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
+			<property name="background">D:\Output\Kodibox\Themes\MyMix\Music.jpg</property>
+			<property name="backgroundName">D:\Output\Kodibox\Themes\MyMix\Music.jpg</property>
 			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),music) + [Library.HasContent(Music)]">ActivateWindow(music,library://music/artists.xml/,return)</onclick>
 			<property name="path">ActivateWindow(music,library://music/artists.xml/,return)</property>
 			<property name="list">library://music/artists.xml/</property>
