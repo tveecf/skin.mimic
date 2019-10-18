@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+    <onload>SetProperty(CurrentSkin,skin.lyrebird.rmod,home)</onload>
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu|quicknav)</onload>
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <onunload condition="!Skin.HasSetting(Enable.HorizontalMenu) + Skin.HasSetting(Enable.CombineMenus)">RunScript(script.skinshortcuts,type=hidesubmenu&amp;mainmenuID=9000)</onunload>

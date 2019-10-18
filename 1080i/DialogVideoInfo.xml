@@ -329,6 +329,7 @@
                     <orientation>horizontal</orientation>
                     <itemlayout height="450" width="289">
                         <control type="group">
+
                             <top>32</top>
                             <control type="image">
                                 <top>6</top>
@@ -375,6 +376,10 @@
                     </itemlayout>
                     <focusedlayout height="450" width="289">
                         <control type="group">
+<!-- 
+							<onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
+							<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
+-->
                             <top>32</top>
                             <include>PanelFocusedItemZoom</include>
                             <control type="image">

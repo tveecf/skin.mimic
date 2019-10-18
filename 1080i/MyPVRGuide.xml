@@ -198,7 +198,7 @@
                     <height>30</height>
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
-                    <label>[COLOR highlight]$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,: ][/COLOR]$INFO[ListItem.Title][I]$INFO[ListItem.Season, - S,]$INFO[ListItem.Episode,E,][/I][COLOR highlight][I]$INFO[ListItem.EpisodeName, - ,][/I][/COLOR]</label>
+                    <label>[COLOR highlight]$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,: ][/COLOR]$INFO[ListItem.Title] [I]$INFO[ListItem.Season,- S,]$INFO[ListItem.Episode,E,][/I][COLOR highlight][I]$INFO[ListItem.EpisodeName, - ,][/I][/COLOR]</label>
                 </control>
                 <control type="label">
                     <top>58</top>
