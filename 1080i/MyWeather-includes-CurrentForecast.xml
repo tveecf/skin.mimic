@@ -103,7 +103,7 @@
 						<height>40</height>
 						<align>right</align>
 						<font>font14</font>
-						<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise)</visible>
+						<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
 					</control>
 					<control type="label">
 						<label>[COLOR highlight]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
@@ -111,7 +111,7 @@
 						<height>40</height>
 						<align>right</align>
 						<font>font14</font>
-						<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset)</visible>
+						<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
 					</control>
 				</control>
 			</control>
