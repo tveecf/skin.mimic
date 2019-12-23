@@ -2,7 +2,8 @@
 <window>
     <coordinates>
         <left>0</left>
-        <top>-1</top>
+<!--        <top>-1</top>-->
+<top>965</top>
     </coordinates>
     <controls>
         <control type="group">
