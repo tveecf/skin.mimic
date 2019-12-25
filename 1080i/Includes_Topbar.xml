@@ -151,7 +151,7 @@
 		</control>
 
 		<control type="group">
-			<top>0</top>
+			<top>-8</top>
 			<left>40</left>
 			<right>40</right>
 
@@ -185,14 +185,14 @@
 						<label>$VAR[TopbarNowPlayingTitle]</label>
 						<top>-10</top>
 						<align>right</align>
-						<height>50</height>
+						<height>48</height>
 						<font>font36</font>
 						<textcolor>highlight</textcolor>
 					</control>
 					<control type="label">
 						<description>Album</description>
 						<label>$VAR[TopbarNowPlayingArtistAlbum]</label>
-						<top>51</top>
+						<top>45</top>
 						<align>right</align>
 						<height>40</height>
 						<font>font16</font>

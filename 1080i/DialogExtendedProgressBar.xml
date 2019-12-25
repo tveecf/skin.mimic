@@ -5,10 +5,12 @@
         <top>80</top>
     </coordinates>
     <controls>
+    	
         <control type="group">
-        <width>800</width>
             <visible>!Window.IsActive(fullscreenvideo) + !Window.IsActive(visualisation) + !Window.IsActive(slideshow)</visible>
+        	<width>900</width>
             <left>0</left>
+            <top>-16</top>
             <animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
             <control type="group">
