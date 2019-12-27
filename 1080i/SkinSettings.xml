@@ -403,7 +403,15 @@
                         <onclick>Skin.ToggleSetting(Disable.ShowBackgroundVis)</onclick>
                         <selected>!Skin.HasSetting(Disable.ShowBackgroundVis)</selected>
                     </control>
+                    <control type="button" id="650">
+                        <include>SkinSettingsButtonDefaults</include>
+                        <label>Transparency Mask for Visualization + fanart</label>
+                        <label2>$INFO[Skin.String(VisBackgroundMask)]</label2>
+                        <onclick>Skin.SetString(VisBackgroundMask)</onclick>
+                    </control>
+                
                 </control>
+                
                 <control type="grouplist" id="9002">
                     <description>General control area</description>
                     <left>522</left>

@@ -5,13 +5,18 @@
 
     <onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(hide_background_fanart) +!Skin.HasSetting(HideVisualizationFanart)">RunScript(script.artistslideshow)</onload>
     <controls>
-        <control type="visualisation" id="2">
-            <!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
+
+           <!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
+         <control type="visualisation" id="2">
             <description>visualisation</description>
             <include>FullscreenDimensions</include>
-            <visible>Player.HasAudio + !SlideShow.IsActive</visible>
+<!--        <visible>Player.HasAudio + !SlideShow.IsActive</visible> -->
+       		<visible>Player.HasAudio</visible>
         </control>
-        <control type="image">
+
+
+<!--     
+   <control type="image">
             <aspectratio>scale</aspectratio>
             <include>FullscreenDimensions</include>
             <texture background="true">$VAR[MusicVizBackground]</texture>
@@ -19,52 +24,45 @@
             <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="!Skin.HasSetting(Disable.AnimateFanart)">Conditional</animation>
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="!Skin.HasSetting(Disable.AnimateFanart)">Conditional</animation>
 			<colordiffuse>99FFFFFF</colordiffuse>
-        </control>
-<!--     <control type="multiimage">
-            <aspectratio>scale</aspectratio>
-            <include>FullscreenDimensions</include>
-            <timeperimage>10000</timeperimage>
-            <randomize>true</randomize>
-            <fadetime>600</fadetime>
-            <loop>yes</loop>
-            <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-            <visible>System.HasAddon(script.artistslideshow) + String.IsEqual(Skin.String(musicvis.background),artistslideshow) + !Skin.HasSetting(HideVisualizationFanart)</visible>
-            <animation effect="fade" start="100" end="40" time="0" condition="!Skin.HasSetting(HideVisualizationFanart) + Visualisation.Enabled">Conditional</animation>
-            <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="!Skin.HasSetting(Disable.AnimateFanart)">Conditional</animation>
-            <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="!Skin.HasSetting(Disable.AnimateFanart)">Conditional</animation>
-        </control>
--->
-
+   </control>
+-->    
+    
 <control type="image">
     <aspectratio>scale</aspectratio>
+    <include>FullscreenDimensions</include>
     <fadetime>400</fadetime>
     <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 	<texture background="true">$INFO[Player.Art(album.fanart)]</texture>
- <visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
- <colordiffuse>99FFFFFF</colordiffuse>
+ 	<visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
+	<colordiffuse>$VAR[VisBackgroundMask]</colordiffuse>
 </control>
+
 
 <control type="image">
     <aspectratio>scale</aspectratio>
+    <include>FullscreenDimensions</include>
     <fadetime>400</fadetime>
     <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
     <texture background="true">$INFO[Player.Art(fanart)]</texture>
 	<visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + String.IsEmpty(Player.Art(album.fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
-	<colordiffuse>99FFFFFF</colordiffuse>
+	<colordiffuse>$VAR[VisBackgroundMask]</colordiffuse>
 </control>
 
 <control type="image">
     <aspectratio>scale</aspectratio>
+    <include>FullscreenDimensions</include>
     <fadetime>400</fadetime>
     <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
     <texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
     <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
-	<colordiffuse>99FFFFFF</colordiffuse>
+	<colordiffuse>$VAR[VisBackgroundMask]</colordiffuse>
 </control>
 
+
+<!-- 
 <control type="multiimage">
     <aspectratio>scale</aspectratio>
     <timeperimage>10000</timeperimage>
@@ -74,6 +72,8 @@
     <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
     <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
 </control>        
+ -->    
+   
         
         <control type="group">
             <visible>String.IsEqual(Skin.String(musicvis.background),albumwall) + !Skin.HasSetting(HideVisualizationFanart)</visible>
@@ -114,6 +114,9 @@
                 <content>special://skin/extras/albumwall.xsp</content>
             </control>
         </control>
+        
+        
+        
         <!-- media infos -->
         <control type="fadelabel">
             <left>0</left>
