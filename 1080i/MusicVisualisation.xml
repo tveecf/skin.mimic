@@ -5,7 +5,7 @@
 
 
     <onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(hide_background_fanart) +!Skin.HasSetting(HideVisualizationFanart)">RunScript(script.artistslideshow)</onload>
-    <onload condition="String.IsEmpty(Skin.String(VisBackgroundMask)">Skin.SetString(VisBackgroundMask,88FFFFFF)</onload>
+    <onload condition="String.IsEmpty(Skin.String(VisBackgroundMask))">Skin.SetString(VisBackgroundMask,88FFFFFF)</onload>
     <controls>
 
            <!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->

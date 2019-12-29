@@ -8,7 +8,7 @@
 	-->
 
 	<variable name="VisBackgroundMask">
-        <value condition="Visualisation.Enabled + !String.IsEmpty(Skin.String(VisBackgroundMask)">$INFO[Skin.String(VisBackgroundMask)]</value>
+        <value condition="Visualisation.Enabled + !String.IsEmpty(Skin.String(VisBackgroundMask))">$INFO[Skin.String(VisBackgroundMask)]</value>
 		<value condition="Visualisation.Enabled">88FFFFFF</value>
 		<value>FFFFFFFF</value>	
 	</variable>
