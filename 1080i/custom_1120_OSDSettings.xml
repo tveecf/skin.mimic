@@ -62,6 +62,19 @@
                  <label2>$INFO[Skin.String(VisBackgroundMask)]</label2>
                  <onclick>Skin.SetString(VisBackgroundMask)</onclick>
              </control>
+
+            <control type="button" id="90216">
+                <description>View</description>
+                <width>1074</width>
+                <label>View</label>
+                <label2>$INFO[Skin.String(musicvis.view)]</label2>
+                <onclick>SetProperty(Dialog.1.Label,StandardView)</onclick>
+                <onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(musicvis.view,StandardView))</onclick>
+                <onclick>SetProperty(Dialog.2.Label,CoverView)</onclick>
+                <onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(musicvis.view,CoverView))</onclick>
+                <onclick>RunScript(script.toolbox,info=selectdialog,header=Choose View)</onclick>
+            </control>
+
             <control type="radiobutton" id="90203">
                 <description>Big Ass Label Button</description>
                 <width>1074</width>

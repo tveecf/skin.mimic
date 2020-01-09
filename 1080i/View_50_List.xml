@@ -981,23 +981,9 @@
                             <width>560</width>
                             <height>30</height>
                             <font>font14</font>
-                            <label>$INFO[ListItem.Album]</label>
+                            <label>$INFO[ListItem.Album]$INFO[ListItem.Year, (,)]</label>
                         </control>
-                        <control type="label">
-                            <visible>$EXP[isSong] + !String.IsEmpty(ListItem.Year)</visible>
-                            <width>560</width>
-                            <height>30</height>
-                            <font>font14</font>
-                            <textcolor>highlight</textcolor>
-                            <label>$LOCALIZE[562]:</label>
-                        </control>
-                        <control type="label">
-                            <visible>$EXP[isSong] + !String.IsEmpty(ListItem.Year)</visible>
-                            <width>560</width>
-                            <height>30</height>
-                            <font>font14</font>
-                            <label>$INFO[ListItem.Year]</label>
-                        </control>
+
                         <control type="label">
                             <visible>$EXP[isSong] + !String.IsEmpty(ListItem.Genre)</visible>
                             <width>560</width>
@@ -1013,6 +999,17 @@
                             <font>font14</font>
                             <label>$INFO[ListItem.Genre]</label>
                         </control>
+
+                        <control type="image">
+                            <visible>$EXP[isSong]</visible>
+                            <width>560</width>
+                            <height>60</height>
+                            <font>font14</font>
+                            <include>MediaFlagVars</include>
+                            <texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
+                        </control>
+
+
                         <control type="textbox">
                             <visible>$EXP[isMusicvideo]</visible>
                             <description>Description</description>
