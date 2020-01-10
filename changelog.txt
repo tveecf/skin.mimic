@@ -3,3 +3,6 @@
 
 1.0.0-r4
 * update topnav to reintroduce the now-playing info, and move progress bar to a better spot
+
+1.0.0-r5
+* add new alternate music visualzation screen to better display cover, plus some cleanups.
