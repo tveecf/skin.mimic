@@ -1,20 +1,12 @@
 <colors>
-	<color name="maintext">FFFAFAFA</color>
-<!-- 	<color name="disabled">FF606060</color> -->
+	<color name="maintext">FFFAF5F9</color>
+	<color name="disabled">FF606060</color>
 	<color name="black">FF000000</color>
-<!-- 	<color name="invalid">FFFF6666</color> -->
- 	<color name="highlight">FFC30310</color>
-<!-- 	<color name="highlight">FFC40300</color> -->
-<!-- 	<color name="shadow">AA333333</color> -->
-<!-- 	<color name="background">33000000</color> -->
-<!-- 	<color name="dialog">FF000000</color> -->
-<!-- 	<color name="white11">EEFFFFFF</color> -->
+	<color name="invalid">FFFF6666</color>
+	<color name="highlight">FAC00016</color>
+	<color name="shadow">AA333333</color>
+	<color name="background">F0100003</color>
+	<color name="dialog">FF000000</color>
+	<color name="white11">EEFF0FF2</color>
 	<color name="blue">FF6DB9E5</color>
 </colors>
-<!-- 
-	<color name="primary_background">FF6B1414</color>
-	<color name="secondary_background">33DB2C83</color>
-	<color name="dialog_tint">FF262020</color>
-	<color name="button_focus">FFC40300</color>
-	<color name="selected">FF24C6C9</color>
--->
