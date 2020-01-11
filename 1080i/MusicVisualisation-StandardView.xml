@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 <include name="MusicVisStandardView">
-    <controls>
 
-           <!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
-         <control type="visualisation" id="2">
-            <description>visualisation</description>
-            <include>FullscreenDimensions</include>
-<!--        <visible>Player.HasAudio + !SlideShow.IsActive</visible> -->
-       		<visible>Player.HasAudio</visible>
-        </control>
 
 
 <!--     
@@ -283,9 +275,6 @@
                 </control>
             </control>
             
-            
-            
-            
             <control type="grouplist">
                 <left>1050</left>
                 <top>267</top>
@@ -353,6 +342,6 @@
                 </control>
             </control>
         </control>
-    </controls>
+
 </include>
 </includes>

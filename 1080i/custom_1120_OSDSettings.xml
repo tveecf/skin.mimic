@@ -72,6 +72,8 @@
                 <onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(musicvis.view,StandardView))</onclick>
                 <onclick>SetProperty(Dialog.2.Label,CoverView)</onclick>
                 <onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(musicvis.view,CoverView))</onclick>
+                <onclick>SetProperty(Dialog.3.Label,CoverView2)</onclick>
+                <onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString(musicvis.view,CoverView2))</onclick>
                 <onclick>RunScript(script.toolbox,info=selectdialog,header=Choose View)</onclick>
             </control>
 
