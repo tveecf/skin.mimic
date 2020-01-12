@@ -264,6 +264,15 @@
                     </include>
                 </focusedlayout>
             </control>
+<!--                     <include content="MediaFlags"> -->
+<!--                         <param name="left" value="0" /> -->
+<!--                         <param name="top" value="1028" /> -->
+<!--                         <param name="width" value="1920" /> -->
+<!--                         <param name="height" value="50"/> -->
+<!--                         <param name="align" value="center"/> -->
+<!--                         <param name="orientation" value="horizontal" /> -->
+<!--         </include> -->
+            
         </control>
         <control type="group">
             <animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsVisible(programs) | Window.IsVisible(addonbrowser)">Conditional</animation>

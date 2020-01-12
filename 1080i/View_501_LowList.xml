@@ -60,12 +60,12 @@
                     <include>InfoPanelButtonsValues</include>
                     <include>AutoscrollDefault</include>
                 </control>
-                <include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags">
-                    <param name="left" value="10" />
-                    <param name="top" value="330" />
-                    <param name="align" value="left" />
-                </include>
-            </control>
+<!--                 <include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags"> -->
+<!--                     <param name="left" value="10" /> -->
+<!--                     <param name="top" value="330" /> -->
+<!--                     <param name="align" value="left" /> -->
+<!--                 </include> -->
+<!--             </control> -->
             <control type="grouplist">
                 <visible>Container.Content(addons)</visible>
                 <left>1280</left>
@@ -274,6 +274,14 @@
                     </include>
                 </focusedlayout>
             </control>
+<!--         <include content="MediaFlags"> -->
+<!--                         <param name="left" value="0" /> -->
+<!--                         <param name="top" value="1028" /> -->
+<!--                         <param name="width" value="1920" /> -->
+<!--                         <param name="height" value="50"/> -->
+<!--                         <param name="align" value="center"/> -->
+<!--                         <param name="orientation" value="horizontal" /> -->
+<!--         </include> -->
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
@@ -666,6 +674,14 @@
                     </control>
                 </focusedlayout>
             </control>
+<!--         <include content="MediaFlags"> -->
+<!--                         <param name="left" value="0" /> -->
+<!--                         <param name="top" value="1028" /> -->
+<!--                         <param name="width" value="1920" /> -->
+<!--                         <param name="height" value="50"/> -->
+<!--                         <param name="align" value="center"/> -->
+<!--                         <param name="orientation" value="horizontal" /> -->
+<!--         </include> -->
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>

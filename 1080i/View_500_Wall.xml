@@ -625,17 +625,17 @@
                         <label>[UPPERCASE]$LOCALIZE[13409][/UPPERCASE] $INFO[ListItem.Top250,#]</label>
                     </control>
                 </control>
-                <control type="group">
-                    <visible>Control.IsVisible(500) + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
-                    <include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags">
-                        <param name="left" value="975" />
-                        <param name="top" value="905" />
-                        <param name="align" value="right" />
-                    </include>
-                </control>
             </control>
         </control>
-        <control type="group">
+<!--         <include content="MediaFlags"> -->
+<!--                         <param name="left" value="0" /> -->
+<!--                         <param name="top" value="1028" /> -->
+<!--                         <param name="width" value="1920" /> -->
+<!--                         <param name="height" value="50"/> -->
+<!--                         <param name="align" value="center"/> -->
+<!--                         <param name="orientation" value="horizontal" /> -->
+<!--         </include> -->
+<!--         <control type="group"> -->
             <visible>Control.IsVisible(500) + !$EXP[isInfoDialog]</visible>
             <top>-15</top>
             <include>Scrollbar_Vertical</include>
@@ -783,6 +783,14 @@
                 </control>
             </control>
         </control>
+<!--         <include content="MediaFlags"> -->
+<!--                         <param name="left" value="0" /> -->
+<!--                         <param name="top" value="1028" /> -->
+<!--                         <param name="width" value="1920" /> -->
+<!--                         <param name="height" value="50"/> -->
+<!--                         <param name="align" value="center"/> -->
+<!--                         <param name="orientation" value="horizontal" /> -->
+<!--         </include> -->
         <control type="group">
             <visible>Control.IsVisible(500) + !$EXP[isInfoDialog]</visible>
             <top>-15</top>
@@ -929,6 +937,14 @@
                 </control>
             </control>
         </control>
+<!--         <include content="MediaFlags"> -->
+<!--                         <param name="left" value="0" /> -->
+<!--                         <param name="top" value="1028" /> -->
+<!--                         <param name="width" value="1920" /> -->
+<!--                         <param name="height" value="50"/> -->
+<!--                         <param name="align" value="center"/> -->
+<!--                         <param name="orientation" value="horizontal" /> -->
+<!--         </include> -->
         <control type="group">
             <visible>Control.IsVisible(510) + !$EXP[isInfoDialog]</visible>
             <top>-15</top>

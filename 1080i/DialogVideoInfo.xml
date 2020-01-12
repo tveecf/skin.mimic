@@ -221,7 +221,9 @@
                     <include content="MediaFlags">
                         <param name="left" value="0" />
                         <param name="top" value="890" />
-                        <param name="align" value="left" />
+                        <param name="width" value="300" />
+                        <param name="height" value="$VAR[MediaFlagHeight]"/>
+                        <param name="align" value="center"/>
                         <param name="orientation" value="horizontal" />
                     </include>
                 </control>
