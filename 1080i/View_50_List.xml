@@ -921,7 +921,8 @@
 				<control type="group">
 					<left>1276</left>
 					<visible>[$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors)] + !String.Contains(Container.FolderPath,plugin.video) +
-						!String.StartsWith(ListItem.Icon,Default)</visible>
+						!String.StartsWith(ListItem.Icon,Default)
+					</visible>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
@@ -934,7 +935,8 @@
 					<left>1276</left>
 					<visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] |
 						Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo]] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode]]] +
-						!String.StartsWith(ListItem.Icon,Default)</visible>
+						!String.StartsWith(ListItem.Icon,Default)
+					</visible>
 					<animation effect="slide" start="0,0" end="0,15" time="0" tween="cubic" easing="inout" condition="$EXP[PluginAdvancedLauncher]">Conditional</animation>
 					<control type="image">
 						<width>560</width>
@@ -947,7 +949,8 @@
 				<control type="group">
 					<left>1276</left>
 					<visible>[Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content(studios)] |
-						String.StartsWith(ListItem.Icon,Default)</visible>
+						String.StartsWith(ListItem.Icon,Default)
+					</visible>
 					<animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsActive(programs) | Window.IsActive(addonbrowser)">Conditional</animation>
 					<control type="image">
 						<visible>String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
@@ -1046,14 +1049,14 @@
 				</control>
 			</control>
 		</control>
-<!-- 			<include content="MediaFlags"> -->
-<!-- 				<param name="left" value="0" /> -->
-<!-- 				<param name="top" value="1028" /> -->
-<!-- 				<param name="width" value="1920" /> -->
-<!-- 				<param name="height" value="50" /> -->
-<!-- 				<param name="align" value="center" /> -->
-<!-- 				<param name="orientation" value="horizontal" /> -->
-<!-- 			</include> -->
+		<!-- <include content="MediaFlags"> -->
+		<!-- <param name="left" value="0" /> -->
+		<!-- <param name="top" value="1028" /> -->
+		<!-- <param name="width" value="1920" /> -->
+		<!-- <param name="height" value="50" /> -->
+		<!-- <param name="align" value="center" /> -->
+		<!-- <param name="orientation" value="horizontal" /> -->
+		<!-- </include> -->
 		<control type="group">
 			<visible>Control.IsVisible(50) + !$EXP[isInfoDialog]</visible>
 			<animation effect="slide" time="0" start="0,0" end="0,-15"

@@ -1001,7 +1001,7 @@
 			<control type="image">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
-				<texture>$VAR[FileSourceFlagVar,flags/video/,.png]</texture>
+				<texture>$VAR[FileSourceFlagVar,flags/source/,.png]</texture>
 			</control>
 			<control type="image">
 				<include>MediaFlagVars</include>
@@ -1064,7 +1064,6 @@
 			</control>
 		</control>
 	</include>
-
 
 	<include name="GlobalSearchScrollbar">
 		<control type="scrollbar" id="$PARAM[id]">
