@@ -201,7 +201,7 @@
                 <top>210</top>
                 <width>198</width>
 				<include>MediaFlagVars</include>
-				<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+				<texture>$VAR[AudioPlayerSourceFlagVar,flags/source/,.png]</texture>
 			</control>
 
             <control type="progress">

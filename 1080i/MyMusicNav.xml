@@ -26,7 +26,7 @@
 <!-- 				<label>$INFO[ListItem.Property(Album_Type)]</label> -->
 <!-- 			</control> -->
 	
-			<visible>[Control.IsVisible(50) | Control.IsVisible(51)| Control.IsVisible(500)| Control.IsVisible(501)| Control.IsVisible(52)| Control.IsVisible(55)| Control.IsVisible(57)] + !$EXP[isInfoDialog]</visible>
+			<visible>[Control.IsVisible(501)| Control.IsVisible(55)| Control.IsVisible(57)] + !$EXP[isInfoDialog]</visible>
 			<include content="AudioMediaFlags">
 				<param name="left" value="0" />
 				<param name="top" value="0" />

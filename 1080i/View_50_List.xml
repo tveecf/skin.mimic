@@ -960,14 +960,28 @@
 					</control>
 					<control type="grouplist">
 						<itemgap>15</itemgap>
-						<control type="image">
-							<visible>!Container.Content(addons)</visible>
+						<control type="group">
 							<width>560</width>
 							<height>560</height>
-							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-							<texture background="true" diffuse="diffuse/list-square.png" fallback="DefaultFolder.png">$VAR[ThumbViewImage]</texture>
-							<fadetime>IconCrossfadeTime</fadetime>
+							<visible>!Container.Content(addons)</visible>
+							<control type="image">
+								<width>560</width>
+								<height>560</height>
+								<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+								<texture background="true" diffuse="diffuse/list-square.png" fallback="DefaultFolder.png">$VAR[ThumbViewImage]</texture>
+								<fadetime>IconCrossfadeTime</fadetime>
+							</control>
+							<control type="image">
+								<visible>$EXP[isSong] | $EXP[isAlbum]</visible>
+								<left>5</left>
+								<top>5</top>
+								<width>130</width>
+								<height>50</height>
+								<aspectratio align="center" aligny="center">keep</aspectratio>
+								<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+							</control>
 						</control>
+
 						<control type="image">
 							<visible>Container.Content(addons)</visible>
 							<width>560</width>
@@ -976,6 +990,9 @@
 							<texture background="true" diffuse="diffuse/list-square.png">$INFO[ListItem.Icon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
+
+
+
 						<control type="label">
 							<visible>$EXP[isSong] + !String.IsEmpty(ListItem.Album)</visible>
 							<width>560</width>
@@ -1011,13 +1028,6 @@
 						<control type="grouplist">
 							<itemgap>10</itemgap>
 							<orientation>horizontal</orientation>
-							<control type="image">
-								<visible>$EXP[isSong] | $EXP[isAlbum]</visible>
-								<width>560</width>
-								<height>60</height>
-								<include>MediaFlagVars</include>
-								<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
-							</control>
 
 							<control type="image">
 								<visible>$EXP[isSong]</visible>

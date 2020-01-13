@@ -441,6 +441,15 @@
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<texture fallback="DefaultFallback.png" background="true" diffuse="diffuse/wall-square.png">$VAR[ThumbVar]</texture>
 						</control>
+						<control type="image">
+							<visible>Container.Content(albums)</visible>
+							<top>8</top>
+							<left>8</left>
+							<width>100</width>
+							<height>50</height>
+							<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+						</control>
+
 						<control type="group">
 							<animation center="auto" condition="Control.HasFocus(51)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
 							<animation center="auto" condition="Control.HasFocus(51)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
@@ -479,14 +488,45 @@
 				<left>1195</left>
 				<itemgap>15</itemgap>
 				<visible>Control.IsVisible(51)</visible>
-				<control type="image">
+
+				<control type="group">
 					<width>680</width>
 					<height>384</height>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture background="true" diffuse="diffuse/infowall-fanart.png">$INFO[ListItem.Art(fanart)]</texture>
-					<fadetime>400</fadetime>
 					<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+					<control type="image">
+						<width>680</width>
+						<height>384</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture background="true" diffuse="diffuse/infowall-fanart.png">$INFO[ListItem.Art(fanart)]</texture>
+						<fadetime>400</fadetime>
+						<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+					</control>
+					<control type="image">
+						<visible>$EXP[isSong] | $EXP[isAlbum]</visible>
+						<left>5</left>
+						<top>5</top>
+						<width>130</width>
+						<height>50</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+					</control>
 				</control>
+				<control type="image">
+					<visible>String.IsEmpty(ListItem.Art(fanart)) +[$EXP[isSong] | $EXP[isAlbum]]</visible>
+					<width>130</width>
+					<height>50</height>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+				</control>
+
+					<control type="image">
+						<visible>$EXP[isSong]</visible>
+						<width>130</width>
+						<height>50</height>
+						<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+					</control>
+
+
 				<control type="label">
 					<visible>Container.Content(albums)</visible>
 					<width>680</width>
@@ -514,26 +554,7 @@
 					<textcolor>highlight</textcolor>
 					<visible>Container.Content(albums)</visible>
 				</control>
-					<control type="grouplist">
-							<itemgap>10</itemgap>
-							<orientation>horizontal</orientation>
-							<control type="image">
-								<visible>$EXP[isSong] | $EXP[isAlbum]</visible>
-								<width>560</width>
-								<height>60</height>
-								<include>MediaFlagVars</include>
-								<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
-							</control>
 
-							<control type="image">
-								<visible>$EXP[isSong]</visible>
-								<width>560</width>
-								<height>60</height>
-								<include>MediaFlagVars</include>
-								<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
-							</control>
-						</control>
-				
 				<control type="label">
 					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
 					<width>680</width>

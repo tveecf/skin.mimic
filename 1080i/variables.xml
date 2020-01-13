@@ -231,7 +231,7 @@
 
 
 	<variable name="VideoSourceFlagVar">
-		<value condition="[String.Contains(ListItem.filename,PDTV) | String.Contains(ListItem.filename,sdtv) | String.Contains(ListItem.filename,sd tv)]">sdtv</value>
+		<value condition="[String.Contains(ListItem.Filename,PDTV) | String.Contains(ListItem.filename,sdtv) | String.Contains(ListItem.filename,sd tv)]">sdtv</value>
 		<value condition="[String.Contains(ListItem.Filename,hdtv) | String.Contains(ListItem.Filename,hd tv)]">hdtv</value>
 		<value condition="[String.Contains(ListItem.Filename,hddvd) | String.Contains(ListItem.Filename,hd-dvd)]">hddvd</value>
 		<!-- <value condition="ListItem.IsStereoscopic">bluray3d</value> -->
@@ -245,53 +245,52 @@
 
 	<variable name="AudioSourceFlagVar">
 
-		<value condition="String.Contains(ListItem.Folderpath,DVDA UM)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,bidule)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,qsxt)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,upmix)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,DVDA UM)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,SACD UM)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,SACD)">SACD</value>
-		<value condition="String.Contains(ListItem.Folderpath,DVDA)">mlp</value>
-		<value condition="String.Contains(ListItem.Folderpath,DVD-A)">mlp</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTS 9624)">dts9624</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTS9624)">dts9624</value>
-		<value condition="String.Contains(ListItem.Folderpath,ADVD)">DVDV</value>
-		<value condition="String.Contains(ListItem.Folderpath,DVDV)">DVDV</value>
-		<value condition="String.Contains(ListItem.Folderpath,DVD-V)">DVDV</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad BDA)">BDA</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad SQ)">QuadSQ</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad Q8)">QuadQ8</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad QR)">QuadQR</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad Reel)">QuadQR</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad QS)">QuadQS</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad CD4)">QuadCD4</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad Q4)">QuadQ4</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quadradisc)">quadradisc</value>
-		<value condition="String.Contains(ListItem.Folderpath,Quad)">quadraphonic</value>
-		<value condition="String.Contains(ListItem.Folderpath,BDA)">BDA</value>
-		<value condition="String.Contains(ListItem.Folderpath,BDV)">BDA</value>
-		<value condition="String.Contains(ListItem.Folderpath,Penteo)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,Upmix)">upmix</value>
-		<value condition="String.Contains(ListItem.Folderpath,Multitrack)">multitrack</value>
-		<value condition="String.Contains(ListItem.Folderpath,Atmos)">dolbyatmos</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTSX)">dtsx</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTS-CD)">dtssurround</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTSCD)">dtssurround</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTS CD)">dtssurround</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTSDVD)">dtssurround</value>
-		<value condition="String.Contains(ListItem.Folderpath,Dolby DVD)">dolbydigital</value>
-		<value condition="String.Contains(ListItem.Folderpath,DTS DVD)">dtssurround</value>
-		<value condition="String.Contains(ListItem.Folderpath,DSF)">dsd</value>
-		<value condition="String.Contains(ListItem.Filename,dvd) | String.IsEqual(ListItem.FileExtension,iso) | String.IsEqual(ListItem.FileExtension,ifo)">dvd</value>
-		<value condition="String.Contains(ListItem.Filename,.flac)">flac</value>
-		<value condition="String.Contains(ListItem.Filename,.dsf)">dsd</value>
-		<value condition="String.Contains(ListItem.Filename,.dff)">dsd</value>
-		<value condition="String.Contains(ListItem.Filename,.mp3)">mp3</value>
-		<value condition="[String.Contains(ListItem.Folderpath,hddvd) | String.Contains(ListItem.Filename,hd-dvd)]">hddvd</value>
-		<value condition="String.Contains(ListItem.Folderpath,dvb)">dvb</value>
-		<value
-			condition="[String.Contains(ListItem.Folderpath,bluray) | String.Contains(ListItem.Filename,blu-ray) | String.Contains(ListItem.Filename,bdrip) | String.Contains(ListItem.Filename,brrip)]">bluray</value>
+		<value condition="String.Contains(ListItem.Album,bidule)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,qsxt)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,upmix)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,DVDA UM)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,SACD UM)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,SACD)">SACD</value>
+		<value condition="String.Contains(ListItem.Album,DVDA)">DVDA</value>
+		<value condition="String.Contains(ListItem.Album,DVD-A)">DVDA</value>
+		<value condition="String.Contains(ListItem.Album,DTS 9624)">dts9624</value>
+		<value condition="String.Contains(ListItem.Album,DTS9624)">dts9624</value>
+		<value condition="String.Contains(ListItem.Album,ADVD)">DVDV</value>
+		<value condition="String.Contains(ListItem.Album,DVDV)">DVDV</value>
+		<value condition="String.Contains(ListItem.Album,DVD-V)">DVDV</value>
+		<value condition="String.Contains(ListItem.Album,Quad BDA)">BDA</value>
+		<value condition="String.Contains(ListItem.Album,Quad SQ)">QuadSQ</value>
+		<value condition="String.Contains(ListItem.Album,Quad Q8)">QuadQ8</value>
+		<value condition="String.Contains(ListItem.Album,Quad QR)">QuadQR</value>
+		<value condition="String.Contains(ListItem.Album,Quad Reel)">QuadQR</value>
+		<value condition="String.Contains(ListItem.Album,Quad QS)">QuadQS</value>
+		<value condition="String.Contains(ListItem.Album,Quad CD4)">QuadCD4</value>
+		<value condition="String.Contains(ListItem.Album,Quad Q4)">QuadQ4</value>
+		<value condition="String.Contains(ListItem.Album,Quadradisc)">quadradisc</value>
+		<value condition="String.Contains(ListItem.Album,Quad)">quadraphonic</value>
+		<value condition="String.Contains(ListItem.Album,BDA)">BDA</value>
+		<value condition="String.Contains(ListItem.Album,BDV)">BDA</value>
+		<value condition="String.Contains(ListItem.Album,Penteo)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,Upmix)">upmix</value>
+		<value condition="String.Contains(ListItem.Album,Multitrack)">multitrack</value>
+		<value condition="String.Contains(ListItem.Album,Atmos)">dolbyatmos</value>
+		<value condition="String.Contains(ListItem.Album,DTSX)">dtsx</value>
+		<value condition="String.Contains(ListItem.Album,DTS-CD)">dtssurround</value>
+		<value condition="String.Contains(ListItem.Album,DTSCD)">dtssurround</value>
+		<value condition="String.Contains(ListItem.Album,DTS CD)">dtssurround</value>
+		<value condition="String.Contains(ListItem.Album,DTSDVD)">dtssurround</value>
+		<value condition="String.Contains(ListItem.Album,Dolby DVD)">dolbydigital</value>
+		<value condition="String.Contains(ListItem.Album,DTS DVD)">dtssurround</value>
+		<value condition="String.Contains(ListItem.Album,DSF)">dsd</value>
+		<value condition="String.Contains(ListItem.Album,dvd) | String.IsEqual(ListItem.FileExtension,iso) | String.IsEqual(ListItem.FileExtension,ifo)">dvd</value>
+<!-- 		<value condition="String.Contains(ListItem.Filename,.flac)">flac</value> -->
+ 		<value condition="String.Contains(ListItem.Filename,.dsf)">dsd</value>
+ 		<value condition="String.Contains(ListItem.Filename,.dff)">dsd</value> 
+<!-- 		<value condition="String.Contains(ListItem.Filename,.mp3)">mp3</value> -->
+ 		<value condition="String.Contains(ListItem.Filename,mlp)">mlp</value> 
+<!-- 		<value condition="[String.Contains(ListItem.Folderpath,hddvd) | String.Contains(ListItem.Filename,hd-dvd)]">hddvd</value> -->
+<!-- 		<value condition="String.Contains(ListItem.Folderpath,dvb)">dvb</value> -->
+<!-- 		<value condition="[String.Contains(ListItem.Album,bluray) | String.Contains(ListItem.Album,blu-ray) | String.Contains(ListItem.Filename,bdrip) | String.Contains(ListItem.Filename,brrip)]">bluray</value> -->
 
 
 	</variable>
@@ -311,19 +310,16 @@
 	</variable>
 
 	<variable name="AudioPlayerSourceFlagVar">
-		<value condition="String.Contains(Player.Filenameandpath,web-dl)">web-dl</value>
-		<value condition="String.Contains(Player.Filenameandpath,dvd) | String.Contains(Player.Filenameandpath,.iso,Right) | String.Contains(Player.Filenameandpath,.ifo,Right)">dvd</value>
-		<value condition="String.Contains(Player.Filenameandpath,vhs)">vhs</value>
 
-		<value condition="String.Contains(ListItem.Folderpath,bidule)">upmix</value>
+		<value condition="String.Contains(Player.Folderpath,bidule)">upmix</value>
 		<value condition="String.Contains(Player.Folderpath,qsxt)">upmix</value>
 		<value condition="String.Contains(Player.Folderpath,upmix)">upmix</value>
 
 		<value condition="String.Contains(Player.Folderpath,DVDA UM)">upmix</value>
 		<value condition="String.Contains(Player.Folderpath,SACD UM)">upmix</value>
 		<value condition="String.Contains(Player.Folderpath,SACD)">SACD</value>
-		<value condition="String.Contains(Player.Folderpath,DVDA)">mlp</value>
-		<value condition="String.Contains(Player.Folderpath,DVD-A)">mlp</value>
+		<value condition="String.Contains(Player.Folderpath,DVDA)">DVDA</value>
+		<value condition="String.Contains(Player.Folderpath,DVD-A)">DVDA</value>
 		<value condition="String.Contains(Player.Folderpath,DTS 9624)">dts9624</value>
 		<value condition="String.Contains(Player.Folderpath,DTS9624)">dts9624</value>
 		<value condition="String.Contains(Player.Folderpath,ADVD)">DVDV</value>
@@ -359,6 +355,10 @@
 		<value
 			condition="[String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,brrip)]">bluray</value>
 		<value condition="String.Contains(Player.Filenameandpath,dvb)">dvb</value>
+		<value condition="String.Contains(Player.Filenameandpath,web-dl)">web-dl</value>
+		<value condition="String.Contains(Player.Filenameandpath,dvd) | String.Contains(Player.Filenameandpath,.iso,Right) | String.Contains(Player.Filenameandpath,.ifo,Right)">dvd</value>
+		<value condition="String.Contains(Player.Filenameandpath,vhs)">vhs</value>
+		
 	</variable>
 
 	<!-- <variable name="MusicSourceFlagVar"> -->
