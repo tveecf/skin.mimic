@@ -203,8 +203,16 @@
 						<include>MediaFlagVars</include>
 						<left>30</left>
 						<shadowcolor>FF000000</shadowcolor>
-						<texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+						<texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					</control>
+					<control type="image">
+						<include>MediaFlagVars</include>
+						<left>30</left>
+						<shadowcolor>FF000000</shadowcolor>
+						<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+					</control>
+
+
 				</control>
 
 

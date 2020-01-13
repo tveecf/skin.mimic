@@ -143,22 +143,6 @@
                     <label>[UPPERCASE]$LOCALIZE[13409][/UPPERCASE] $INFO[ListItem.Top250,#]</label>
                 </control>
             </control>
-<!--             <control type="group"> -->
-<!--                 <visible>Control.IsVisible(55) + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible> -->
-<!--                 <include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags"> -->
-<!--                     <param name="left" value="1050" /> -->
-<!--                     <param name="top" value="540" /> -->
-<!--                     <param name="align" value="right" /> -->
-<!--                 </include> -->
-<!--             </control> -->
-<!--         <include content="MediaFlags"> -->
-<!--                         <param name="left" value="0" /> -->
-<!--                         <param name="top" value="1028" /> -->
-<!--                         <param name="width" value="1920" /> -->
-<!--                         <param name="height" value="50"/> -->
-<!--                         <param name="align" value="center"/> -->
-<!--                         <param name="orientation" value="horizontal" /> -->
-<!--         </include> -->
         </control>
         <control type="group">
             <visible>Control.IsVisible(55) + !$EXP[isInfoDialog]</visible>
@@ -277,14 +261,6 @@
                     <label>$VAR[MusicPlotVar]</label>
                 </control>
             </control>
-<!--         <include content="MediaFlags"> -->
-<!--                         <param name="left" value="0" /> -->
-<!--                         <param name="top" value="1028" /> -->
-<!--                         <param name="width" value="1920" /> -->
-<!--                         <param name="height" value="50"/> -->
-<!--                         <param name="align" value="center"/> -->
-<!--                         <param name="orientation" value="horizontal" /> -->
-<!--         </include> -->
         </control>
         <control type="group">
             <visible>Control.IsVisible(55) + !$EXP[isInfoDialog]</visible>

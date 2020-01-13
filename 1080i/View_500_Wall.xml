@@ -639,14 +639,6 @@
 				</control>
 			</control>
 		</control>
-		<!-- <include content="MediaFlags"> -->
-		<!-- <param name="left" value="0" /> -->
-		<!-- <param name="top" value="1028" /> -->
-		<!-- <param name="width" value="1920" /> -->
-		<!-- <param name="height" value="50"/> -->
-		<!-- <param name="align" value="center"/> -->
-		<!-- <param name="orientation" value="horizontal" /> -->
-		<!-- </include> -->
 		<control type="group">
 			<visible>Control.IsVisible(500) + !$EXP[isInfoDialog]</visible>
 			<top>-15</top>
@@ -795,14 +787,6 @@
 				</control>
 			</control>
 		</control>
-		<!-- <include content="MediaFlags"> -->
-		<!-- <param name="left" value="0" /> -->
-		<!-- <param name="top" value="1028" /> -->
-		<!-- <param name="width" value="1920" /> -->
-		<!-- <param name="height" value="50"/> -->
-		<!-- <param name="align" value="center"/> -->
-		<!-- <param name="orientation" value="horizontal" /> -->
-		<!-- </include> -->
 		<control type="group">
 			<visible>Control.IsVisible(500) + !$EXP[isInfoDialog]</visible>
 			<top>-15</top>
@@ -949,14 +933,6 @@
 				</control>
 			</control>
 		</control>
-		<!-- <include content="MediaFlags"> -->
-		<!-- <param name="left" value="0" /> -->
-		<!-- <param name="top" value="1028" /> -->
-		<!-- <param name="width" value="1920" /> -->
-		<!-- <param name="height" value="50"/> -->
-		<!-- <param name="align" value="center"/> -->
-		<!-- <param name="orientation" value="horizontal" /> -->
-		<!-- </include> -->
 		<control type="group">
 			<visible>Control.IsVisible(510) + !$EXP[isInfoDialog]</visible>
 			<top>-15</top>

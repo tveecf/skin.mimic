@@ -48,7 +48,7 @@
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>flags/video/3d.png</texture>
+					<texture>flags/videocodec/3d.png</texture>
 					<visible>VideoPlayer.IsStereoscopic</visible>
 				</control>
 
@@ -57,15 +57,15 @@
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>$VAR[VideoSourceFlagVar,flags/video/,.png]</texture>
-					<visible>!String.IsEmpty(VideoSourceFlagVar)</visible>
+					<texture>$VAR[PlayerSourceFlagVar,flags/source/,.png]</texture>
+					<visible>!String.IsEmpty(PlayerSourceFlagVar)</visible>
 				</control>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>$INFO[VideoPlayer.VideoResolution,flags/resolution/,.png]</texture>
+					<texture>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</texture>
 					<visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
 				</control>
 				<control type="image">
@@ -73,7 +73,7 @@
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>$INFO[VideoPlayer.VideoCodec,flags/video/,.png]</texture>
+					<texture>$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]</texture>
 					<visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
 				</control>
 				<control type="image">
@@ -89,7 +89,7 @@
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
+					<texture>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</texture>
 					<visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
 				</control>
 				<control type="image">
@@ -97,7 +97,7 @@
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>$INFO[VideoPlayer.AudioChannels,flags/channels/,.png]</texture>
+					<texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
 					<visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
 				</control>
 				<control type="image">

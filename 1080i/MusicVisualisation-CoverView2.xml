@@ -335,12 +335,16 @@
 
 					<control type="image">
 						<include>MediaFlagVars</include>
-						<texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+						<texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					</control>
 					<control type="image">
 						<include>MediaFlagVars</include>
-						<texture colordiffuse="maintext">$INFO[MusicPlayer.Channels,flags/channels/,.png]</texture>
+						<texture colordiffuse="maintext">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
 					</control>
+			<control type="image">
+				<include>MediaFlagVars</include>
+				<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+			</control>
 				</control>
 
 				

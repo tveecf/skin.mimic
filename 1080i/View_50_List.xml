@@ -1008,15 +1008,25 @@
 							<label>$INFO[ListItem.Genre]</label>
 						</control>
 
-						<control type="image">
-							<visible>$EXP[isSong]</visible>
-							<width>560</width>
-							<height>60</height>
-							<font>font14</font>
-							<include>MediaFlagVars</include>
-							<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
-						</control>
+						<control type="grouplist">
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<control type="image">
+								<visible>$EXP[isSong] | $EXP[isAlbum]</visible>
+								<width>560</width>
+								<height>60</height>
+								<include>MediaFlagVars</include>
+								<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+							</control>
 
+							<control type="image">
+								<visible>$EXP[isSong]</visible>
+								<width>560</width>
+								<height>60</height>
+								<include>MediaFlagVars</include>
+								<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+							</control>
+						</control>
 
 						<control type="textbox">
 							<visible>$EXP[isMusicvideo]</visible>
@@ -1049,14 +1059,6 @@
 				</control>
 			</control>
 		</control>
-		<!-- <include content="MediaFlags"> -->
-		<!-- <param name="left" value="0" /> -->
-		<!-- <param name="top" value="1028" /> -->
-		<!-- <param name="width" value="1920" /> -->
-		<!-- <param name="height" value="50" /> -->
-		<!-- <param name="align" value="center" /> -->
-		<!-- <param name="orientation" value="horizontal" /> -->
-		<!-- </include> -->
 		<control type="group">
 			<visible>Control.IsVisible(50) + !$EXP[isInfoDialog]</visible>
 			<animation effect="slide" time="0" start="0,0" end="0,-15"

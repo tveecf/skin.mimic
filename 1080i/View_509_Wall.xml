@@ -473,14 +473,6 @@
                     </control>
                 </focusedlayout>
             </control>
-<!--         <include content="MediaFlags"> -->
-<!--                         <param name="left" value="0" /> -->
-<!--                         <param name="top" value="1028" /> -->
-<!--                         <param name="width" value="1920" /> -->
-<!--                         <param name="height" value="50"/> -->
-<!--                         <param name="align" value="center"/> -->
-<!--                         <param name="orientation" value="horizontal" /> -->
-<!--         </include> -->
         </control>
         <control type="scrollbar" id="60">
             <visible allowhiddenfocus="true">Control.IsVisible(509) + [Control.HasFocus(60) | Container.Scrolling]</visible>

@@ -343,15 +343,6 @@
 
 		</control>
 
-<!-- 			<include content="MediaFlags"> -->
-<!-- 				<param name="left" value="0" /> -->
-<!-- 				<param name="top" value="1000" /> -->
-<!-- 				<param name="width" value="1920" /> -->
-<!-- 				<param name="height" value="50" /> -->
-<!-- 				<param name="align" value="center" /> -->
-<!-- 				<param name="orientation" value="horizontal" /> -->
-<!-- 			</include> -->
-
 		<control type="group">
 			<visible>Control.IsVisible(51) + !$EXP[isInfoDialog]</visible>
 			<top>-15</top>
@@ -409,6 +400,16 @@
 						<height>268</height>
 						<texture border="5">overlays/diffuse-overlay.png</texture>
 					</control>
+
+					<control type="image">
+						<visible>Container.Content(albums)</visible>
+						<top>8</top>
+						<left>8</left>
+						<width>100</width>
+						<height>50</height>
+						<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+					</control>
+
 					<control type="group">
 						<visible>Container.Content(artists)</visible>
 						<control type="image">
@@ -513,6 +514,26 @@
 					<textcolor>highlight</textcolor>
 					<visible>Container.Content(albums)</visible>
 				</control>
+					<control type="grouplist">
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<control type="image">
+								<visible>$EXP[isSong] | $EXP[isAlbum]</visible>
+								<width>560</width>
+								<height>60</height>
+								<include>MediaFlagVars</include>
+								<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+							</control>
+
+							<control type="image">
+								<visible>$EXP[isSong]</visible>
+								<width>560</width>
+								<height>60</height>
+								<include>MediaFlagVars</include>
+								<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+							</control>
+						</control>
+				
 				<control type="label">
 					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
 					<width>680</width>
@@ -533,14 +554,6 @@
 			</control>
 
 		</control>
-<!-- 			<include content="MediaFlags"> -->
-<!-- 				<param name="left" value="0" /> -->
-<!-- 				<param name="top" value="1000" /> -->
-<!-- 				<param name="width" value="1920" /> -->
-<!-- 				<param name="height" value="50" /> -->
-<!-- 				<param name="align" value="center" /> -->
-<!-- 				<param name="orientation" value="horizontal" /> -->
-<!-- 			</include> -->
 		<control type="group">
 			<visible>Control.IsVisible(51) + !$EXP[isInfoDialog]</visible>
 			<top>-15</top>
