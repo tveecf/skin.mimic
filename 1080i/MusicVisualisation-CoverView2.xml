@@ -319,10 +319,10 @@
 					<scroll>true</scroll>
 					<shadowcolor>FF000000</shadowcolor>
 					<!-- <label>$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Title]</label> -->
-					<label>[COLOR highlight]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Artist,, -
-						]$INFO[MusicPlayer.offset(1).Album,,]$INFO[MusicPlayer.offset(1).Year, (,)]$INFO[MusicPlayer.offset(1).Title, - ]
-					</label>
+					<label>[COLOR highlight]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Album,,]$INFO[MusicPlayer.offset(1).Year, (,)]$INFO[MusicPlayer.offset(1).Title, - ]</label>
+
 				</control>
+
 
 			</control>
 
