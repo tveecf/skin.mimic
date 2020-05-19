@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol />
+	<defaultcontrol></defaultcontrol>
 	<allowoverlay>true</allowoverlay>
-
+	<backgroundcolor>background</backgroundcolor>
 
 	<onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(hide_background_fanart) +!Skin.HasSetting(HideVisualizationFanart)">RunScript(script.artistslideshow)</onload>
 	<onload condition="String.IsEmpty(Skin.String(VisBackgroundMask))">Skin.SetString(VisBackgroundMask,88FFFFFF)</onload>
 
 		<controls>
-
-			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
 			<control type="visualisation" id="2">
 				<description>visualisation</description>
 				<include>FullscreenDimensions</include>

@@ -40,7 +40,7 @@
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true">$INFO[Player.Art(album.fanart)]</texture>
-			<visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
+			<visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image)) + !String.IsEmpty(Player.Art(album.fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
 			<colordiffuse>$VAR[VisBackgroundMask]</colordiffuse>
 		</control>
 
@@ -72,7 +72,7 @@
 		<!-- <control type="multiimage"> <aspectratio>scale</aspectratio> <timeperimage>10000</timeperimage> <randomize>true</randomize> <fadetime>600</fadetime> <loop>yes</loop> <imagepath 
 			background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath> <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible> 
 			</control> -->
-
+<!-- 
 
 		<control type="group">
 			<visible>String.IsEqual(Skin.String(musicvis.background),albumwall) + !Skin.HasSetting(HideVisualizationFanart)</visible>
@@ -114,7 +114,7 @@
 			</control>
 		</control>
 
-
+-->
 
 
 
@@ -291,51 +291,79 @@
 					</control>
 				</control>
 
-
 				<control type="label">
 					<!-- <width>700</width> -->
 					<height>40</height>
 					<font>font36</font>
 					<align>center</align>
-					<label>$INFO[MusicPlayer.TrackNumber,, - ]$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,)]$INFO[Player.Title, - ]</label>
+					<label>$INFO[MusicPlayer.TrackNumber,, - ]$INFO[Player.Title]</label>
 					<shadowcolor>FF000000</shadowcolor>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
-					<height>20</height>
-					<font>font12</font>
+					<!-- <width>700</width> -->
+					<height>36</height>
+					<font>font30</font>
 					<align>center</align>
+					<label>[COLOR highlight]$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,)][/COLOR]</label>
 					<shadowcolor>FF000000</shadowcolor>
-					<label>$INFO[musicplayer.Channels, ,ch]$INFO[musicplayer.bitspersample, ,bit]$INFO[musicplayer.Samplerate, ,kHz] $INFO[musicplayer.Codec,,]$INFO[musicplayer.Bitrate, ,kbps]
-					</label>
-
+					<scroll>true</scroll>
 				</control>
 
 				<control type="label">
 					<!-- <width>700</width> -->
 					<height>30</height>
 					<align>center</align>
-					<font>font14_textbox</font>
+					<font>font12_textbox</font>
 					<scroll>true</scroll>
 					<shadowcolor>FF000000</shadowcolor>
 					<!-- <label>$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Title]</label> -->
 					<label>[COLOR highlight]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Album,,]$INFO[MusicPlayer.offset(1).Year, (,)]$INFO[MusicPlayer.offset(1).Title, - ]</label>
-
 				</control>
+			</control>
 
+			<control type="grouplist">
+				<left>40</left>
+				<top>60</top>
+				<itemgap>5</itemgap>
+
+				<control type="label">
+					<height>20</height>
+					<font>font12</font>
+					<align>left</align>
+					<shadowcolor>FF000000</shadowcolor>
+					<label>$INFO[musicplayer.Channels,,ch]$INFO[musicplayer.bitspersample, ,bit]$INFO[musicplayer.Samplerate, ,kHz]
+					</label>
+				</control>
+				<control type="label">
+					<height>20</height>
+					<font>font12</font>
+					<align>left</align>
+					<shadowcolor>FF000000</shadowcolor>
+					<label>$INFO[musicplayer.Codec,,]$INFO[musicplayer.Bitrate, ,kbps]
+					</label>
+				</control>
 
 			</control>
 
 
 			<control type="grouplist">
-				<left>20</left>
-				<top>150</top>
+				<left>40</left>
+				<top>120</top>
 				<!-- <width>980</width> -->
 				<!-- <height>400</height> -->
 				<itemgap>5</itemgap>
 				<orientation>horizontal</orientation>
 
 				<control type="image">
+					<visible>!String.IsEmpty(MusicPlayer.Channels)</visible>
+					<height>40</height>
+					<width>120</width>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="maintext">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
+				</control>
+				<control type="image">
+					<visible>!String.IsEmpty(MusicPlayer.Codec)</visible>
 					<height>40</height>
 					<width>120</width>
 					<aspectratio>keep</aspectratio>
@@ -345,15 +373,10 @@
 					<height>40</height>
 					<width>120</width>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="maintext">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
-				</control>
-				<control type="image">
-					<height>40</height>
-					<width>120</width>
-					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="maintext">$VAR[AudioPlayerSourceFlagVar,flags/source/,.png]</texture>
 				</control>
 			</control>
+			
 
 
 		</control>

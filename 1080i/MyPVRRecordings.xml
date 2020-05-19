@@ -119,6 +119,15 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                 </control>
+               <control type="textbox">
+                    <description>Title</description>
+                    <width>570</width>
+                    <height>50</height>
+                    <font>font14_textbox</font>
+                    <label>$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,E,]  [COLOR highlight]$INFO[ListItem.EpisodeName][/COLOR]</label>
+                    <include>AutoscrollDefault</include>
+                </control>
+                
                 <control type="textbox">
                     <description>Description</description>
                     <visible>!String.IsEmpty(ListItem.Plot)</visible>

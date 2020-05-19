@@ -1,3 +1,8 @@
+1.0.0-r10
+* some tweaks on full-screen music sceens
+* Add episode number and title to PVR recordings (tvheadend 4.3 supplies that info)
+* Add episode air-date and thumb to LowList view
+
 1.0.0-r8
 * redo all the flag-icon stuff with some nicer icons (mostly from estruary)
 * make flags show up consitently at the bottom of (most) views
