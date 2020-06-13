@@ -4,7 +4,8 @@
     <allowoverlay>no</allowoverlay>
     <onload>SendClick(9000,5)</onload>
     <controls>
-        <include>InfoDialogTopbar</include>
+<!--         <include>InfoDialogTopbar</include> -->
+<!-- <include>Topbar</include> -->
         <control type="group">
             <include>Animation.Common</include>
             <left>703</left>

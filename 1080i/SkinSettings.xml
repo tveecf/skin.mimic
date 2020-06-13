@@ -467,6 +467,13 @@
                         <label2>$INFO[Skin.String(busyloader)]</label2>
                         <onclick>Skin.SetImage(busyloader,special://skin/extras/spinners)</onclick>
                     </control>
+                    
+                    <control type="radiobutton" id="404">
+                        <include>SkinSettingsButtonDefaults</include>
+                        <label>Show Touch Screen Controls</label>
+                        <onclick>Skin.ToggleSetting(Enable.TouchScreen)</onclick>
+                        <selected>Skin.HasSetting(Enable.TouchScreen)</selected>
+                    </control>
                 </control>
                 <control type="grouplist" id="9003">
                     <description>Extras control area</description>

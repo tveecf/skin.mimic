@@ -1,3 +1,9 @@
+1.0.0-r11
+* fix clicking on favorites widget
+* added back button functionality for touch-screen usage (turned on via property in general setting tab for skin settings
+* added cancel buttons to some dialogs that were missing it
+* consolitated the topnav so it is consistent on all screens.
+
 1.0.0-r10
 * some tweaks on full-screen music sceens
 * Add episode number and title to PVR recordings (tvheadend 4.3 supplies that info)
