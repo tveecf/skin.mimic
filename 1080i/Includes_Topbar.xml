@@ -37,16 +37,24 @@
 					<texturefocus colordiffuse="white">special://skin/extras/icons/back.png</texturefocus>
 			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/back.png</texturenofocus>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<animation effect="fade" start="0" end="100" time="150">VisibleChange
-					</animation>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
 				</control>
 				<control type="image">
 					<width>60</width>
 					<height>80</height>
 					<texture colordiffuse="white">$VAR[HeaderIcon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<animation effect="fade" start="0" end="100" time="150">VisibleChange
-					</animation>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+				<control type="label">
+					<width>auto</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>cirrus_30</font>
+					<textcolor>highlight</textcolor>
+					<label>$VAR[externalGenreIcon]</label>
+<!-- 					<label>$INFO[Container.FolderPath]-$INFO[ListItem.DBTYPE]</label> -->
+					<scroll>false</scroll>
 				</control>
 				<control type="label">
 					<width>auto</width>

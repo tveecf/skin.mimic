@@ -159,7 +159,7 @@
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
 					<itemlayout height="120" width="1150" condition="!Skin.HasSetting(Enable.2ColumnList) + !Skin.HasSetting(Enable.SlimList) + !Skin.HasSetting(Enable.WideList)">
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -169,7 +169,7 @@
 						</control>
 						<!-- Fix for default icons not showing up for addons that don't have one -->
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -177,6 +177,15 @@
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<texture background="true" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
+
+					<include content="external-genre-icon">
+						<param name="left" value="10" />
+						<param name="top" value="10" />
+						<param name="width" value="100" />
+						<param name="height" value="100" />
+					</include>
+
+
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 							<left>10</left>
@@ -245,7 +254,7 @@
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="!Skin.HasSetting(Enable.2ColumnList) + !Skin.HasSetting(Enable.SlimList) + !Skin.HasSetting(Enable.WideList)">
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -254,7 +263,7 @@
 							<texture background="true" diffuse="diffuse/list-icon.png" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
 						</control>
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -262,6 +271,13 @@
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<texture background="true" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
+					<include content="external-genre-icon">
+						<param name="left" value="10" />
+						<param name="top" value="10" />
+						<param name="width" value="100" />
+						<param name="height" value="100" />
+					</include>
+						
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 							<left>10</left>
@@ -330,7 +346,7 @@
 					</focusedlayout>
 					<itemlayout height="120" width="1740" condition="!Skin.HasSetting(Enable.2ColumnList) + !Skin.HasSetting(Enable.SlimList) + Skin.HasSetting(Enable.WideList)">
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -339,7 +355,7 @@
 							<texture background="true" diffuse="diffuse/list-icon.png">$VAR[ListIcon]</texture>
 						</control>
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -347,6 +363,14 @@
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<texture background="true" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
+
+					<include content="external-genre-icon">
+						<param name="left" value="10" />
+						<param name="top" value="10" />
+						<param name="width" value="100" />
+						<param name="height" value="100" />
+					</include>
+
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 							<left>10</left>
@@ -415,7 +439,7 @@
 					</itemlayout>
 					<focusedlayout height="120" width="1740" condition="!Skin.HasSetting(Enable.2ColumnList) + !Skin.HasSetting(Enable.SlimList) + Skin.HasSetting(Enable.WideList)">
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -424,7 +448,7 @@
 							<texture background="true" diffuse="diffuse/list-icon.png">$VAR[ListIcon]</texture>
 						</control>
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -432,6 +456,12 @@
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<texture background="true" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
+					<include content="external-genre-icon">
+						<param name="left" value="10" />
+						<param name="top" value="10" />
+						<param name="width" value="100" />
+						<param name="height" value="100" />
+					</include>
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 							<left>10</left>
@@ -684,7 +714,7 @@
 					</focusedlayout>
 					<itemlayout height="120" width="870" condition="Skin.HasSetting(Enable.2ColumnList) + !Skin.HasSetting(Enable.SlimList)">
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -694,7 +724,7 @@
 						</control>
 						<!-- Fix for default icons not showing up for addons that don't have one -->
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -702,6 +732,12 @@
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<texture background="true" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
+					<include content="external-genre-icon">
+						<param name="left" value="10" />
+						<param name="top" value="10" />
+						<param name="width" value="100" />
+						<param name="height" value="100" />
+					</include>
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 							<left>10</left>
@@ -762,7 +798,7 @@
 					</itemlayout>
 					<focusedlayout height="120" width="870" condition="Skin.HasSetting(Enable.2ColumnList) + !Skin.HasSetting(Enable.SlimList)">
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -771,7 +807,7 @@
 							<texture background="true" diffuse="diffuse/list-icon.png">$VAR[ListIcon]</texture>
 						</control>
 						<control type="image">
-							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Container.Content(addons)</visible>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -779,6 +815,12 @@
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<texture background="true" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 						</control>
+					<include content="external-genre-icon">
+						<param name="left" value="10" />
+						<param name="top" value="10" />
+						<param name="width" value="100" />
+						<param name="height" value="100" />
+					</include>
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 							<left>10</left>
@@ -930,6 +972,7 @@
 						<texture background="true" diffuse="diffuse/list-poster.png">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
+
 				</control>
 				<control type="group">
 					<left>1276</left>
@@ -953,7 +996,7 @@
 					</visible>
 					<animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsActive(programs) | Window.IsActive(addonbrowser)">Conditional</animation>
 					<control type="image">
-						<visible>String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
+						<visible>!$EXP[externalGenreIcon]+String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
 						<width>560</width>
 						<height>560</height>
 						<texture colordiffuse="33000000" border="5">listselect_fo.png</texture>
@@ -963,7 +1006,7 @@
 						<control type="group">
 							<width>560</width>
 							<height>560</height>
-							<visible>!Container.Content(addons)</visible>
+							<visible>!$EXP[externalGenreIcon]+!Container.Content(addons) + !String.IsEqual(Container.Content,sources)</visible>
 							<control type="image">
 								<width>560</width>
 								<height>560</height>
@@ -985,11 +1028,16 @@
 						<control type="image">
 							<visible>Container.Content(addons)</visible>
 							<width>560</width>
-							<height>560</height>
+							<height>840</height>
 							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 							<texture background="true" diffuse="diffuse/list-square.png">$INFO[ListItem.Icon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
+
+					<include content="external-genre-icon">
+						<param name="width" value="560" />
+						<param name="height" value="560" />
+					</include>
 
 
 

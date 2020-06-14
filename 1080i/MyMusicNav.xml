@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <include file="View_IconIncludes.xml"/>    
+
     <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9051</menucontrol>
     <allowoverlay>no</allowoverlay>

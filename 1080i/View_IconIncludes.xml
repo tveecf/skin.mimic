@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+
+	<expression name="externalGenreIcon">Skin.HasSetting(Enable.ExternalGenreIcons) 
+	+ [
+	String.IsEqual(ListItem.DBTYPE,tag)
+	|String.EndsWith(Container.FolderPath,/movies/genres/)
+	|String.EndsWith(Container.FolderPath,/tvshows/genres/)
+	|String.IsEqual(ListItem.DBTYPE,source)
+	|String.EndsWith(Container.FolderPath,musicdb://sources/)
+	|String.EndsWith(Container.FolderPath,/music/genres/)
+	]</expression>
+
+	<!-- includes -->
+<include name="external-genre-icon">
+	<param name="left"/>
+	<param name="top"/>
+	<param name="width"/>
+	<param name="height"/>
+	<definition>
+
+
+	<control type="group">
+		<left>$PARAM[left]</left>
+		<top>$PARAM[top]</top>
+		<visible>$EXP[externalGenreIcon]+[String.IsEqual(ListItem.DBTYPE,tag)|String.EndsWith(Container.FolderPath,/movies/genres/)]</visible>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/movies/$INFO[ListItem.Label].jpg</texture>
+	</control>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/movies/$INFO[ListItem.Label].png</texture>
+	</control>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/movies/$INFO[ListItem.Label].gif</texture>
+	</control>
+	</control>
+
+	<control type="group">
+		<left>$PARAM[left]</left>
+		<top>$PARAM[top]</top>
+		<visible>$EXP[externalGenreIcon]+[String.EndsWith(Container.FolderPath,/tvshows/genres/)]</visible>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/tvshows/$INFO[ListItem.Label].jpg</texture>
+	</control>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/tvshows/$INFO[ListItem.Label].png</texture>
+	</control>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/tvshows/$INFO[ListItem.Label].gif</texture>
+	</control>
+	</control>
+
+	<control type="group">
+		<left>$PARAM[left]</left>
+		<top>$PARAM[top]</top>
+		<visible>$EXP[externalGenreIcon]+[String.IsEqual(ListItem.DBTYPE,source)|String.EndsWith(Container.FolderPath,musicdb://sources/)|String.EndsWith(Container.FolderPath,/music/genres/)]</visible>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/music/$INFO[ListItem.Label].jpg</texture>
+	</control>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/music/$INFO[ListItem.Label].png</texture>
+	</control>
+	<control type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>$PARAM[width]</width>
+		<height>$PARAM[height]</height>
+		<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		<texture background="true">/media-share/icons/music/$INFO[ListItem.Label].gif</texture>
+	</control>
+	</control>
+
+	</definition>
+</include>
+
+</includes>

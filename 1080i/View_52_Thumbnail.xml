@@ -76,7 +76,7 @@
 						<height>310</height>
 						<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$VAR[ThumbViewImage]</texture>
-						<visible>!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons)</visible>
+						<visible>!$EXP[externalGenreIcon]+!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons)</visible>
 					</control>
 					<control type="image">
 						<left>20</left>
@@ -87,6 +87,12 @@
 						<texture fallback="DefaultAudio.png" background="true" diffuse="diffuse/thumbnail.png">$VAR[ThumbViewImage]</texture>
 						<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs)</visible>
 					</control>
+					<include content="external-genre-icon">
+						<param name="left" value="20" />
+						<param name="top" value="20" />
+						<param name="width" value="310" />
+						<param name="height" value="310" />
+					</include>
 					<control type="image">
 						<left>20</left>
 						<top>20</top>
@@ -135,7 +141,7 @@
 						<height>310</height>
 						<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$VAR[ThumbViewImage]</texture>
-						<visible>!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons)</visible>
+						<visible>!$EXP[externalGenreIcon]+!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons)</visible>
 					</control>
 					<control type="image">
 						<left>20</left>
@@ -146,6 +152,12 @@
 						<texture fallback="DefaultAudio.png" background="true" diffuse="diffuse/thumbnail.png">$VAR[ThumbViewImage]</texture>
 						<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs)</visible>
 					</control>
+					<include content="external-genre-icon">
+						<param name="left" value="20" />
+						<param name="top" value="20" />
+						<param name="width" value="310" />
+						<param name="height" value="310" />
+					</include>
 					<control type="image">
 						<left>20</left>
 						<top>20</top>
