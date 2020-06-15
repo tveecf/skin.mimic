@@ -7,6 +7,7 @@
 	String.IsEqual(ListItem.DBTYPE,tag)
 	|String.EndsWith(Container.FolderPath,/movies/genres/)
 	|String.EndsWith(Container.FolderPath,/tvshows/genres/)
+	|[String.Contains(Container.FolderPath,/playlists/video/)+String.IsEqual(ListItem.DBTYPE,genre)]
 	|String.IsEqual(ListItem.DBTYPE,source)
 	|String.EndsWith(Container.FolderPath,musicdb://sources/)
 	|String.EndsWith(Container.FolderPath,/music/genres/)
@@ -24,7 +25,7 @@
 	<control type="group">
 		<left>$PARAM[left]</left>
 		<top>$PARAM[top]</top>
-		<visible>$EXP[externalGenreIcon]+[String.IsEqual(ListItem.DBTYPE,tag)|String.EndsWith(Container.FolderPath,/movies/genres/)]</visible>
+		<visible>$EXP[externalGenreIcon]+[String.IsEqual(ListItem.DBTYPE,tag)|String.EndsWith(Container.FolderPath,/movies/genres/)|[String.Contains(Container.FolderPath,/playlists/video/)+String.IsEqual(ListItem.DBTYPE,genre)]]</visible>
 	<control type="image">
 		<left>0</left>
 		<top>0</top>

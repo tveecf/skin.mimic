@@ -52,8 +52,7 @@
 <!-- 					<aligny>center</aligny> -->
 <!-- 					<font>cirrus_30</font> -->
 <!-- 					<textcolor>highlight</textcolor> -->
-<!-- 					<label>$VAR[externalGenreIcon]</label> -->
-<!-- <!-- 					<label>$INFO[Container.FolderPath]-$INFO[ListItem.DBTYPE]</label> --> -->
+<!-- 					<label>$INFO[Container.FolderPath]-$INFO[ListItem.DBTYPE]</label> -->
 <!-- 					<scroll>false</scroll> -->
 <!-- 				</control> -->
 				<control type="label">
