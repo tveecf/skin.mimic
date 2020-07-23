@@ -30,7 +30,7 @@ Note that movies and tvshows are separated, you can have different genre icons f
 The names must exaclty match the names of the Genre/Tag/Souce, and can have either jpg/png/gif extensions.
 example: /media-share/Icons/movies/Adventure.png
 
-Note, if you don't have kodi set up to use /media-share as a path, you cav update your advancedsettings.xml to rewrite the paths to wherever you choose to actually put the files:
+Note, if you don't have kodi set up to use /media-share as a path, you can update your advancedsettings.xml to rewrite the paths to wherever you choose to actually put the files:
 
 	<pathsubstitution>
 		<substitute>
