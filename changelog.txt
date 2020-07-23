@@ -1,3 +1,6 @@
+1.0.0-r13
+ * fixes
+
 1.0.0-r12
 * Add functionality to use external directory for music Source icons and Genres. Applicable to the List view, Thumnail view, and home-page widgets.
 

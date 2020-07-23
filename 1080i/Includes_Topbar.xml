@@ -95,7 +95,7 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>1300</left>
+				<left>1280</left>
 				<top>0</top>
 				<width>600</width>
 				<height>80</height>
@@ -121,7 +121,7 @@
 					<scroll>false</scroll>
 				</control>
 				<control type="image">
-					<width>60</width>
+					<width>30</width>
 					<height>80</height>
 					<texture>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]
 					</texture>
