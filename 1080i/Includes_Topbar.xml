@@ -95,9 +95,9 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>1280</left>
+				<left>1200</left>
 				<top>0</top>
-				<width>600</width>
+				<width>650</width>
 				<height>80</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
@@ -120,17 +120,34 @@
 					<label>•</label>
 					<scroll>false</scroll>
 				</control>
+				<!-- weather icon when weather addon provies remote image -->
 				<control type="image">
 					<width>30</width>
 					<height>80</height>
-					<texture>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]
-					</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<animation effect="fade" start="0" end="100" time="150">VisibleChange
-					</animation>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + Weather.IsFetched
-					</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window.Property(Alerts.IsFetched)) + Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+					<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+					<texture background="true">$INFO[Window(weather).Property(Current.RemoteIcon)]</texture>
 				</control>
+				<!-- weather icon when using only local mapped icons -->
+				<control type="image">
+					<width>30</width>
+					<height>80</height>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window.Property(Alerts.IsFetched)) + !Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+					<aspectratio scalediffuse="false" align="center"
+						aligny="center">keep</aspectratio>
+					<texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
+				</control>
+				<control type="label">
+					<description>weather alerts</description>
+					<width>auto</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font31</font>
+					<textcolor>yellow</textcolor>
+					<label>[B]!!![/B]</label>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + !String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+				</control>
+
 				<control type="label">
 					<width>auto</width>
 					<align>left</align>

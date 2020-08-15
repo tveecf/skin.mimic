@@ -78,15 +78,15 @@
 						<label>31300</label>
 						<icon />
 					</item>
-					<item id="2">
-						<label>31904</label>
-						<icon />
-						<visible>!String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-					</item>
 					<item id="12">
 						<label>Alerts</label>
 						<icon />
 						<visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+					</item>
+					<item id="2">
+						<label>31904</label>
+						<icon />
+						<visible>!String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
 					<item id="11">
 						<label>Detailed Forecast</label>
