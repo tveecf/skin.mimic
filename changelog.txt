@@ -1,3 +1,6 @@
+1.0.0-r15
+* add alert notice to main weather screen
+
 1.0.0-r14
  * fixes
 

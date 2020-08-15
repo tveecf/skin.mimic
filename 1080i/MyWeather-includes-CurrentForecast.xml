@@ -68,6 +68,15 @@
 					</control>
 				</control>
 				<control type="label">
+					<description>weather alerts</description>
+					<width>auto</width>
+					<left>270</left>
+					<height>216</height>
+					<font>font16</font>
+					<label>[COLOR yellow]ALERT![/COLOR]</label>
+					<visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+				</control>
+				<control type="label">
 					<description>current condition label</description>
 					<top>210</top>
 					<left>350</left>
