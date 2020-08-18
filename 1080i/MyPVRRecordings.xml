@@ -114,10 +114,10 @@
                 <control type="image">
                     <width>570</width>
                     <height>321</height>
-                    <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+                    <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
                     <texture background="true" diffuse="diffuse/pvr-recordings.png">$INFO[ListItem.Art(thumb)]</texture>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
+                   <visible>!String.IsEmpty(ListItem.Art(thumb))</visible>
                 </control>
                <control type="textbox">
                     <description>Title</description>
