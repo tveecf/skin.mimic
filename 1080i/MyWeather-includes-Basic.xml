@@ -18,14 +18,34 @@
 						<height>310</height>
 						<texture border="5">overlays/diffuse-overlay.png</texture>
 					</control>
-					<control type="label">
-						<left>20</left>
-						<right>20</right>
-						<top>327</top>
-						<height>50</height>
-						<label>31204</label>
+                    <control type="grouplist">
+                        <left>20</left>
+                        <right>20</right>
+                        <top>327</top>
+                        <height>50</height>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>font13</font>
+                            <label>$LOCALIZE[31204]</label>
 						<selectedcolor>highlight</selectedcolor>
-					</control>
+                        </control>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>font13</font>
+                            <label> $LOCALIZE[19107] </label>
+                            <visible>!String.IsEmpty(Window(weather).Property(Location))</visible>
+						<selectedcolor>highlight</selectedcolor>
+                        </control>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>font13</font>
+                            <label>$INFO[Window(weather).Property(Location)]</label>
+						<selectedcolor>highlight</selectedcolor>
+                        </control>
+                    </control>
+
+
 					<!-- display either remote image, or local image depending on setting -->
 					<control type="image">
 						<visible>Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
