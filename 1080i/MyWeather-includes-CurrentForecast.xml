@@ -19,13 +19,29 @@
 					<height>310</height>
 					<texture border="5">overlays/diffuse-overlay.png</texture>
 				</control>
-				<control type="label">
-					<left>20</left>
-					<right>20</right>
-					<top>327</top>
-					<height>50</height>
-					<label>31204</label>
-				</control>
+                    <control type="grouplist">
+                        <left>20</left>
+                        <right>20</right>
+                        <top>327</top>
+                        <height>50</height>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>font13</font>
+                            <label>$LOCALIZE[31204]</label>
+                        </control>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>font13</font>
+                            <label> $LOCALIZE[19107] </label>
+                            <visible>!String.IsEmpty(Window(weather).Property(Location))</visible>
+                        </control>
+                        <control type="label">
+                            <width>auto</width>
+                            <font>font13</font>
+                            <label>$INFO[Window(weather).Property(Location)]</label>
+                        </control>
+                    </control>
 
 				<!-- weather icon when weather addon provies remote image -->
 				<control type="image">
@@ -46,7 +62,7 @@
 						aligny="center">keep</aspectratio>
 					<texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
 				</control>
-
+				
 				<control type="grouplist">
 					<top>0</top>
 					<left>350</left>
@@ -66,16 +82,17 @@
 						<font>font16</font>
 						<label>$INFO[System.TemperatureUnits]</label>
 					</control>
+					<control type="label">
+						<description>weather alerts</description>
+						<width>auto</width>	
+						<left>270</left>
+						<height>216</height>
+						<font>font16</font>
+						<label>[COLOR yellow]ALERT![/COLOR]</label>
+						<visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+					</control>
 				</control>
-				<control type="label">
-					<description>weather alerts</description>
-					<width>auto</width>
-					<left>270</left>
-					<height>216</height>
-					<font>font16</font>
-					<label>[COLOR yellow]ALERT![/COLOR]</label>
-					<visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
-				</control>
+				
 				<control type="label">
 					<description>current condition label</description>
 					<top>210</top>

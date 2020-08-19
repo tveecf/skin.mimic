@@ -252,7 +252,8 @@
 					<description>Change weather location</description>
 					<width>400</width>
 					<font>font13</font>
-					<label>$INFO[Weather.Location]</label>
+					<label>--$INFO[Window.Property(Location)]--</label>
+<!-- 					<label>$INFO[Weather.Location]</label> -->
 					<onclick>Weather.LocationNext</onclick>
 				</control>
 				<control type="button" id="210">
@@ -262,7 +263,7 @@
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
-			<control type="radiobutton" id="214">
+				<control type="radiobutton" id="214">
 					<include>ButtonCommonValues</include>
 					<label>Use Icons From Weather Provider</label>
 					<onclick>Skin.ToggleSetting(Enable.RemoteWeatherIcons)</onclick>
