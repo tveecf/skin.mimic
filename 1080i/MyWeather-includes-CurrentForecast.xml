@@ -88,8 +88,8 @@
 						<left>270</left>
 						<height>216</height>
 						<font>font16</font>
-						<label>[COLOR yellow]ALERT![/COLOR]</label>
-						<visible>!String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+						<label>  [COLOR yellow]Weather Alert![/COLOR]</label>
+						<visible>!String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 					</control>
 				</control>
 				

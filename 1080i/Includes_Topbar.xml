@@ -124,7 +124,7 @@
 				<control type="image">
 					<width>30</width>
 					<height>80</height>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window.Property(Alerts.IsFetched)) + Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window(weather).Property(Alerts.IsFetched)) + Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
 					<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[Window(weather).Property(Current.RemoteIcon)]</texture>
 				</control>
@@ -132,7 +132,7 @@
 				<control type="image">
 					<width>30</width>
 					<height>80</height>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window.Property(Alerts.IsFetched)) + !Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window(weather).Property(Alerts.IsFetched)) + !Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
 					<aspectratio scalediffuse="false" align="center"
 						aligny="center">keep</aspectratio>
 					<texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
@@ -145,7 +145,7 @@
 					<font>font31</font>
 					<textcolor>yellow</textcolor>
 					<label>[B]!!![/B]</label>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + !String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + !String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 				</control>
 
 				<control type="label">
