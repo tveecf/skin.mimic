@@ -20,21 +20,22 @@ For example:,
   *   /media-share/People/Bruce Campbell - Final Shemp.jpg
   *   /media-share/People/Bruce Campbell - Jack Stiles.jpg
      
-4.  You can turn on using external files for Genres/tags and Music Source icons.  (see property under the skin's General settings).  The icons files are expected under the following directories:
-  *   /media-share/Icons/movies
-  *   /media-share/Icons/tvshows
-  *   /media-share/Icons/music
+4.  You can use external files for Genres/tags and Music Source icons.  (see property under the skin's General settings).  The icons files are expected under the following directories:
+  *   /media-share/icons/movies
+  *   /media-share/icons/tvshows
+  *   /media-share/icons/music
 
 These will show up in the Thumbnail view, and List view, or on various home-page widgets when displaying Genres, Music Sources, or Tags.  
 Note that movies and tvshows are separated, you can have different genre icons for tv and movies. (or copy the same icons into both, your choice)
 The names must exaclty match the names of the Genre/Tag/Souce, and can have either jpg/png/gif extensions.
-example: /media-share/Icons/movies/Adventure.png
+example: /media-share/icons/movies/Adventure.png
+
 
 Note, if you don't have kodi set up to use /media-share as a path, you can update your advancedsettings.xml to rewrite the paths to wherever you choose to actually put the files:
 
 	<pathsubstitution>
 		<substitute>
-			<from>/media-share/Icons/movies/</from>
+			<from>/media-share/icons/movies/</from>
 			<to>nfs://123.456.789.123/my/nas/directory/for/movie/icons/</to>
 		</substitute>
 	</pathsubstitution>
