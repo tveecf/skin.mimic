@@ -1,84 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-<!-- 	<expression name="externalGenreIcon"> -->
-<!-- 		Skin.HasSetting(Enable.ExternalGenreIcons) -->
-<!-- 		+ [ -->
-<!-- 		String.IsEqual(ListItem.DBTYPE,tag) -->
-<!-- 		|String.EndsWith(Container.FolderPath,/movies/genres/) -->
-<!-- 		|String.EndsWith(Container.FolderPath,/tvshows/genres/) -->
-<!-- 		| [ -->
-<!-- 		String.Contains(Container.FolderPath,/playlists/video/)+String.IsEqual(ListItem.DBTYPE,genre) -->
-<!-- 		] -->
-<!-- 		|String.IsEqual(ListItem.DBTYPE,source) -->
-<!-- 		|String.EndsWith(Container.FolderPath,musicdb://sources/) -->
-<!-- 		|String.EndsWith(Container.FolderPath,/music/genres/) -->
-<!-- 		] -->
-<!-- 	</expression> -->
 
-				<expression name="tvvis">
-				Skin.HasSetting(Enable.ExternalGenreIcons)
-				+
-				[
-					[
-						String.StartsWith(ListItem.FolderPath,videodb://tvshows/) 
-					]
-					+ [
-						String.IsEqual(ListItem.DBTYPE,source)
-						| String.IsEqual(ListItem.DBTYPE,genre)
-						| String.IsEqual(ListItem.DBTYPE,tag)
-					]
-				]
-				</expression>
-
-<!-- 				<expression name="movievis"> -->
-<!-- 				Skin.HasSetting(Enable.ExternalGenreIcons) -->
-<!-- 				+[ -->
-<!-- 				String.IsEqual(ListItem.DBTYPE,tag) -->
-<!-- 				|String.EndsWith(Container.FolderPath,/movies/genres/) -->
-<!-- 				|[String.Contains(Container.FolderPath,/playlists/video/)+String.IsEqual(ListItem.DBTYPE,genre)] -->
-<!-- 				]</expression> -->
-
-				<expression name="movievis">
-				Skin.HasSetting(Enable.ExternalGenreIcons)
-				+
-				[
-					[
-						String.StartsWith(ListItem.FolderPath,videodb://movies/) 
-						| String.StartsWith(ListItem.FolderPath,videodb://playlists/video/) 
-					]
-					+ [
-						String.IsEqual(ListItem.DBTYPE,source)
-						| String.IsEqual(ListItem.DBTYPE,genre)
-						| String.IsEqual(ListItem.DBTYPE,tag)
-					]
-				]
-				</expression>
-
-
-				<expression name="musicvis">
-
-				Skin.HasSetting(Enable.ExternalGenreIcons)
-				+
-				[
-					String.IsEqual(ListItem.Path,/music/)
-					| [
-						[
-							String.StartsWith(ListItem.FolderPath,musicdb:/) 
-						]
-						+ [
-							String.IsEqual(ListItem.DBTYPE,source)
-							| String.IsEqual(ListItem.DBTYPE,tag)
-							| String.IsEqual(ListItem.DBTYPE,genre)
-						]
-					]
-				]
-				</expression>
-
-	<expression name="externalGenreIcon">
-	$EXP[movievis] | $EXP[tvvis] | $EXP[musicvis]
+	<expression name="tvvis">
+		Skin.HasSetting(Enable.ExternalGenreIcons)
+		+
+		[
+		[
+		String.StartsWith(ListItem.FolderPath,videodb://tvshows/)
+		]
+		+ [
+		String.IsEqual(ListItem.DBTYPE,source)
+		| String.IsEqual(ListItem.DBTYPE,genre)
+		| String.IsEqual(ListItem.DBTYPE,tag)
+		]
+		]
 	</expression>
 
+	<expression name="movievis">
+		Skin.HasSetting(Enable.ExternalGenreIcons)
+		+
+		[
+		[
+		String.StartsWith(ListItem.FolderPath,videodb://movies/)
+		| String.StartsWith(ListItem.FolderPath,videodb://playlists/video/)
+		]
+		+ [
+		String.IsEqual(ListItem.DBTYPE,source)
+		| String.IsEqual(ListItem.DBTYPE,genre)
+		| String.IsEqual(ListItem.DBTYPE,tag)
+		]
+		]
+	</expression>
+
+	<expression name="musicvis">
+
+		Skin.HasSetting(Enable.ExternalGenreIcons)
+		+
+		[
+		String.IsEqual(ListItem.Path,/music/)
+		| [
+		[
+		String.StartsWith(ListItem.FolderPath,musicdb:/)
+		]
+		+ [
+		String.IsEqual(ListItem.DBTYPE,source)
+		| String.IsEqual(ListItem.DBTYPE,tag)
+		| String.IsEqual(ListItem.DBTYPE,genre)
+		]
+		]
+		]
+	</expression>
+
+	<expression name="externalGenreIcon">
+		$EXP[movievis] | $EXP[tvvis] | $EXP[musicvis]
+	</expression>
 
 	<include name="external-genre-icon">
 		<param name="left" />
@@ -133,7 +109,7 @@
 		<param name="width" />
 		<param name="height" />
 		<param name="icon" />
-		<param name="visible"/>
+		<param name="visible" />
 		<definition>
 			<control type="image">
 				<visible>$PARAM[visible]</visible>
