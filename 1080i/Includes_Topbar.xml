@@ -95,9 +95,9 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>1200</left>
+				<left>1100</left>
 				<top>0</top>
-				<width>650</width>
+				<width>800</width>
 				<height>80</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
