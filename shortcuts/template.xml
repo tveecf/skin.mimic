@@ -246,6 +246,7 @@
                         <width>800</width>
                         <height>60</height>
                         <label>$INFO[Window(weather).Property(Current.Condition)], $LOCALIZE[402] $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+						<scroll>true</scroll>
                         <font>font30</font>
                     </control>
                     <control type="grouplist">
@@ -554,6 +555,7 @@
                         <width>800</width>
                         <height>60</height>
                         <label>$INFO[Window(weather).Property(Current.Condition)], $LOCALIZE[402] $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+						<scroll>true</scroll>
                         <font>font30</font>
                     </control>
                     <control type="grouplist">
