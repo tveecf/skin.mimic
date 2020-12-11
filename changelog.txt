@@ -1,3 +1,9 @@
+1.0.0-r18
+* version bump
+
+1.0.0-r17
+* adjustment to weather alert notices
+
 1.0.0-r15
 * add alert notice to main weather screen
 

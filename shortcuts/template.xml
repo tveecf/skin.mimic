@@ -229,6 +229,15 @@
                             <font>font16</font>
                             <label>$INFO[System.TemperatureUnits]</label>
                         </control>
+						<control type="label">
+							<description>weather alerts</description>
+							<width>auto</width>	
+							<left>270</left>
+							<height>216</height>
+							<font>font16</font>
+							<label>  [COLOR yellow]Weather Alert![/COLOR]</label>
+							<visible>!String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
+					</control>
                     </control>
                     <control type="label">
                         <description>current condition label</description>
@@ -237,6 +246,7 @@
                         <width>800</width>
                         <height>60</height>
                         <label>$INFO[Window(weather).Property(Current.Condition)], $LOCALIZE[402] $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+						<scroll>true</scroll>
                         <font>font30</font>
                     </control>
                     <control type="grouplist">
@@ -545,6 +555,7 @@
                         <width>800</width>
                         <height>60</height>
                         <label>$INFO[Window(weather).Property(Current.Condition)], $LOCALIZE[402] $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+						<scroll>true</scroll>
                         <font>font30</font>
                     </control>
                     <control type="grouplist">

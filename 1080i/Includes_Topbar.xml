@@ -52,7 +52,7 @@
 <!-- 					<aligny>center</aligny> -->
 <!-- 					<font>cirrus_30</font> -->
 <!-- 					<textcolor>highlight</textcolor> -->
-<!-- 					<label>$INFO[Container.FolderPath]-$INFO[ListItem.DBTYPE]</label> -->
+<!-- 					<label>$INFO[ListItem.DBTYPE] : $INFO[ListItem.FolderPath]</label> -->
 <!-- 					<scroll>false</scroll> -->
 <!-- 				</control> -->
 				<control type="label">
@@ -95,9 +95,9 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>1200</left>
+				<left>1100</left>
 				<top>0</top>
-				<width>650</width>
+				<width>800</width>
 				<height>80</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
@@ -124,7 +124,7 @@
 				<control type="image">
 					<width>30</width>
 					<height>80</height>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window.Property(Alerts.IsFetched)) + Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window(weather).Property(Alerts.IsFetched)) + Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
 					<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[Window(weather).Property(Current.RemoteIcon)]</texture>
 				</control>
@@ -132,7 +132,7 @@
 				<control type="image">
 					<width>30</width>
 					<height>80</height>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window.Property(Alerts.IsFetched)) + !Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + String.IsEmpty(Window(weather).Property(Alerts.IsFetched)) + !Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
 					<aspectratio scalediffuse="false" align="center"
 						aligny="center">keep</aspectratio>
 					<texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
@@ -145,7 +145,7 @@
 					<font>font31</font>
 					<textcolor>yellow</textcolor>
 					<label>[B]!!![/B]</label>
-					<visible>!Skin.HasSetting(HideTopbarWeather) + !String.IsEmpty(Window.Property(Alerts.IsFetched))</visible>
+					<visible>!Skin.HasSetting(HideTopbarWeather) + !String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 				</control>
 
 				<control type="label">
