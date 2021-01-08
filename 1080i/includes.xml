@@ -868,7 +868,7 @@
 			<control type="image">
 				<width>60</width>
 				<height>60</height>
-				<texture colordiffuse="highlight">$VAR[OverlayBGVar]</texture>
+				<texture background="true" colordiffuse="highlight">$VAR[OverlayBGVar]</texture>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 			</control>
 			<control type="label">

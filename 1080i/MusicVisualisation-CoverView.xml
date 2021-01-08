@@ -180,7 +180,7 @@
 						<aspectratio>keep</aspectratio>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
-						<texture colordiffuse="maintext">$VAR[StarRatingPlayerVar]</texture>
+						<texture background="true" colordiffuse="maintext">$VAR[StarRatingPlayerVar]</texture>
 					</control>
 
 					<control type="label">
@@ -203,7 +203,7 @@
 						<include>MediaFlagVars</include>
 						<left>30</left>
 						<shadowcolor>FF000000</shadowcolor>
-						<texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+						<texture background="true" colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					</control>
 					<control type="image">
 						<include>MediaFlagVars</include>

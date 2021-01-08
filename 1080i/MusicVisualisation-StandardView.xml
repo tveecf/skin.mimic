@@ -165,7 +165,7 @@
                 <width>400</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
-                <texture colordiffuse="maintext">$VAR[StarRatingPlayerVar]</texture>
+                <texture background="true" colordiffuse="maintext">$VAR[StarRatingPlayerVar]</texture>
             </control>
 			
             <control type="label">
@@ -194,7 +194,7 @@
                 <top>175</top>
                 <width>198</width>
                 <include>MediaFlagVars</include>
-                <texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+                <texture background="true" colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
             </control>
 			<control type="image">
                 <left>1730</left>
@@ -279,7 +279,7 @@
                     <width>280</width>
                     <height>280</height>
                     <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                    <texture fallback="DefaultAlbumCover.png" diffuse="diffuse/musicviz.png">$INFO[Player.Art(thumb)]</texture>
+                    <texture background="true" fallback="DefaultAlbumCover.png" diffuse="diffuse/musicviz.png">$INFO[Player.Art(thumb)]</texture>
                 </control>
             </control>
             

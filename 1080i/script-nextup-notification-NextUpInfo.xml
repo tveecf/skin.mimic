@@ -28,7 +28,7 @@
                 <height>100%</height>
                 <fadetime>350</fadetime>
                 <aspectratio scalediffuse="false">scale</aspectratio>
-                <texture diffuse="diffuse/nextup.png">$INFO[Player.Art(fanart)]</texture>
+                <texture background="true" diffuse="diffuse/nextup.png">$INFO[Player.Art(fanart)]</texture>
             </control>
 
             <control type="image" description="blackline">

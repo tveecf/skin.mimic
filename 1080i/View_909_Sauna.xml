@@ -207,7 +207,7 @@
 			<width>624</width>
 			<height>360</height>
 			<fadetime>400</fadetime>
-			<texture diffuse="diffuse/thumbnail.png">$VAR[MainFanartWindowVar]</texture>
+			<texture background="true" diffuse="diffuse/thumbnail.png">$VAR[MainFanartWindowVar]</texture>
 			<bordersize>10</bordersize>
 			<animation effect="fade" start="0" end="100" time="1200">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="800">Hidden</animation>
@@ -373,7 +373,7 @@
 			<width>100</width>
 			<height>90</height>			
 			<include>MediaFlagVars</include>			
-			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<texture background="true" colordiffuse="maintext">$VAR[StarRatingVar]</texture>
 			<aspectratio align="center">keep</aspectratio>
 		</control>		
 		</control>
@@ -490,7 +490,7 @@
 			<width>500</width>
 			<height>290</height>
 			<fadetime>400</fadetime>
-			<texture diffuse="diffuse/thumbnail.png" fallback="black.png">$VAR[MainFanartWindowVar]</texture>
+			<texture background="true" diffuse="diffuse/thumbnail.png" fallback="black.png">$VAR[MainFanartWindowVar]</texture>
 			<bordersize>10</bordersize>	
 			<visible>!Player.HasVideo</visible>
 		</control>
@@ -500,7 +500,7 @@
 			<width>220</width>
 			<height>100</height>			
 			<include>MediaFlagVars</include>			
-			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<texture background="true" colordiffuse="maintext">$VAR[StarRatingVar]</texture>
 			<aspectratio align="center">keep</aspectratio>
 		</control>
 		<control type="image">
