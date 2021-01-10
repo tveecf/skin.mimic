@@ -219,7 +219,7 @@
 				<top>-10</top>
 				<aspectratio align="center" aligny="center"
 					scalediffuse="false">keep</aspectratio>
-				<texture diffuse="diffuse/nowplaying.png">$VAR[TopbarNowPlayingThumb]</texture>
+				<texture background="true" diffuse="diffuse/nowplaying.png">$VAR[TopbarNowPlayingThumb]</texture>
 <!-- 
 				<visible>[!Window.IsVisible(volumebar) +
 					[!Window.IsVisible(extendedprogressdialog) |
@@ -292,7 +292,7 @@
 					<width>110</width>
 					<aspectratio align="center" aligny="center"
 						scalediffuse="false">keep</aspectratio>
-					<texture diffuse="diffuse/nowplaying.png">$VAR[HomeNowPlayingThumbVar]</texture>
+					<texture background="true" diffuse="diffuse/nowplaying.png">$VAR[HomeNowPlayingThumbVar]</texture>
 					<visible>[!Window.IsVisible(volumebar) +
 						[!Window.IsVisible(extendedprogressdialog) |
 						Window.IsVisible(script-globalsearch-main.xml) |

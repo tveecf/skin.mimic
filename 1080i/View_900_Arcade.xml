@@ -2351,7 +2351,7 @@
 			<height>36</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<texture colordiffuse="white">$INFO[ListItem.Rating,starrating/,.png]</texture>
+			<texture background="true" colordiffuse="white">$INFO[ListItem.Rating,starrating/,.png]</texture>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
 		</control>
 	</include>

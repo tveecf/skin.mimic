@@ -360,20 +360,20 @@
 					<height>40</height>
 					<width>120</width>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="maintext">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
+					<texture background="true" colordiffuse="maintext">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
 				</control>
 				<control type="image">
 					<visible>!String.IsEmpty(MusicPlayer.Codec)</visible>
 					<height>40</height>
 					<width>120</width>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<texture background="true" colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 				</control>
 				<control type="image">
 					<height>40</height>
 					<width>120</width>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="maintext">$VAR[AudioPlayerSourceFlagVar,flags/source/,.png]</texture>
+					<texture background="true" colordiffuse="maintext">$VAR[AudioPlayerSourceFlagVar,flags/source/,.png]</texture>
 				</control>
 			</control>
 			

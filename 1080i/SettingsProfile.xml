@@ -156,7 +156,7 @@
                     <width>100</width>
                     <height>100</height>
                     <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-                    <texture fallback="DefaultActor.png" diffuse="diffuse/list-icon.png">$INFO[System.ProfileThumb]</texture>
+                    <texture background="true" fallback="DefaultActor.png" diffuse="diffuse/list-icon.png">$INFO[System.ProfileThumb]</texture>
                 </control>
                 <control type="label">
                     <width>980</width>

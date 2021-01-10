@@ -523,7 +523,7 @@
 						<visible>$EXP[isSong]</visible>
 						<width>130</width>
 						<height>50</height>
-						<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+						<texture background="true" colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
 					</control>
 
 

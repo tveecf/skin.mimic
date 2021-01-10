@@ -118,7 +118,7 @@
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-				<texture background="false">$PARAM[icon].jpg</texture>
+				<texture background="true">$PARAM[icon].jpg</texture>
 			</control>
 			<control type="image">
 				<visible>$PARAM[visible]</visible>
@@ -127,7 +127,7 @@
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-				<texture background="false">$PARAM[icon].png</texture>
+				<texture background="true">$PARAM[icon].png</texture>
 			</control>
 			<control type="image">
 				<visible>$PARAM[visible]</visible>
@@ -136,7 +136,7 @@
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-				<texture background="false">$PARAM[icon].gif</texture>
+				<texture background="true">$PARAM[icon].gif</texture>
 			</control>
 		</definition>
 	</include>
