@@ -21,7 +21,8 @@ For example:,
   *   /media-share/People/Bruce Campbell - Jack Stiles.jpg
      
 4.  You can use external files for Genres/tags and Music Source icons.  (see properties under the skin's Extra settings).  The icon paths are set via the settings.
-For Examples:
+
+For example:
   *   /media-share/icons/movies
   *   /media-share/icons/tvshows
   *   /media-share/icons/music
