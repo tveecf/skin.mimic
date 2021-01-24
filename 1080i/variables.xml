@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-	<!-- <variable name="CustomActorRolePath"> <value>$INFO[Skin.String(CustomActorRolePath)]</value> </variable> -->
+	<variable name="CustomActorRolePath">
+		<value>$INFO[Skin.String(CustomActorRolePath)]</value>
+	</variable>
 
 	<variable name="VisBackgroundMask">
 		<value condition="Visualisation.Enabled + !String.IsEmpty(Skin.String(VisBackgroundMask))">$INFO[Skin.String(VisBackgroundMask)]</value>
@@ -813,14 +815,18 @@
 		<value condition="!Window.IsActive(movieinformation) + !Window.IsActive(DialogMusicInfo.xml) + !Window.IsActive(script-script.extendedinfo-DialogInfo.xml)">$INFO[Container.CurrentItem,, $LOCALIZE[1443] ]$INFO[Container.NumItems,, $LOCALIZE[31025]]</value>
 		<value>$LOCALIZE[14116]</value>
 	</variable>
+
+
 	<variable name="ThumbViewImage">
 		<value condition="Container.Content(studios)">$INFO[ListItem.Label,resource://resource.images.studios.squarehd/,.jpg]</value>
 		<value condition="Container.Content(playlists)">DefaultPlaylist.png</value>
 		<value condition="Container.Content(directors)">DefaultDirector.png</value>
 		<value condition="Container.Content(years)">DefaultYear.png</value>
 		<value condition="Window.IsActive(music) + Container.Content(genres)">DefaultMusicGenres.png</value>
+		<value condition="Window.IsActive(videos) + Container.Content(genres) + !String.isEmpty(Skin.String(MovieGenreIcons.path))">$INFO[Skin.String(MovieGenreIcons.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreIcons.ext)]</value>
 		<value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/videogenre/,.png]</value>
 		<value condition="Window.IsActive(videos) + Container.Content(countries) + System.HasAddon(resource.images.moviecountryicons.maps)">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</value>
+
 		<value
 			condition="Skin.HasSetting(Enable.ThumbnailFanart) + !String.IsEmpty(ListItem.Art(fanart)) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="Skin.HasSetting(Enable.ThumbnailLandscape) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
@@ -834,6 +840,7 @@
 		<value condition="Container.Content(directors)">DefaultDirector.png</value>
 		<value condition="Container.Content(years)">DefaultYear.png</value>
 		<value condition="Window.IsActive(music) + Container.Content(genres)">DefaultMusicGenres.png</value>
+		<value condition="Window.IsActive(videos) + Container.Content(genres) + !String.isEmpty(Skin.String(MovieGenreIcons.path))">$INFO[Skin.String(MovieGenreIcons.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreIcons.ext)]</value>
 		<value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/videogenre/,.png]</value>
 		<value condition="Window.IsActive(videos) + Container.Content(countries) + System.HasAddon(resource.images.moviecountryicons.maps)">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</value>
 		<value>$INFO[ListItem.Icon]</value>
