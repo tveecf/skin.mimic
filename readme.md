@@ -7,11 +7,11 @@ Lyrebird Rmod is a fork from Lyrebird which is a fork of Mimic.
 
 This mod adds the following features:
 
-1.  This has some updates to the PVR guide to display the Show poster, rather than the channel icon, as well as other adjustments/fixes
+1.  Some updates to the PVR guide to display the Show poster, rather than the channel icon, as well as other adjustments/fixes
 
 2.  This supports the weather.noaa (https://github.com/randallspicher/weather.noaa) weather plugin, which fetches weather reports from the National Weather Service https://www.weather.gov (eg NOAA).  weather.gov provides seperate forecasts for Days and Nights, rather than just one per day.   It also provides much more verbose forecasts, so there's now a Detailed weather screen. In addition, there is the option to display the weather.gov weather icons (which are much more expansive than Kodi's icons, and include things like the % chance of rain on them)
 
-3.  There's a feature to display the Actor-Role based images (ala thetvdb.com images), that is, show a different character image of the actor in that TV show (or Movie), instead of always showing the same generic image that Kodi scrapes.  Note, that this is accomplished by placing images in a static directory (currently hard-coded to /media-share/People),  where the image name is  Actor - Role.jpg.  The actor name and role must match what kodi has in the database for that actor's name and role.  In many cases, this will require using .nfo files to "clean up" many of the names to clean out chars which cannot be used in filenames, such as when thetvdb uses a / to display multiple roles, "Some Actor as Joe/Bob/Bob's Ghost" 
+3.  There's a feature to display the Actor-Role based images (ala thetvdb.com images), that is, show a different character image of the actor in that TV show (or Movie), instead of always showing the same generic image that Kodi scrapes.  Note, that this is accomplished by placing images in a directory (path configured in the skin "extra" settings),  where the image name is  "Actor - Role.jpg".  The actor name and role must match what kodi has in the database for that actor's name and role.  In many cases, this will require using .nfo files to "clean up" many of the names to clean out special chars which cannot be used in filenames, such as when thetvdb uses a / to display multiple roles, "Some Actor as Joe/Bob/Bob's Ghost" 
 
 For example:,  
   *   /media-share/People/Bruce Campbell - Ash Williams.jpg
@@ -20,7 +20,8 @@ For example:,
   *   /media-share/People/Bruce Campbell - Final Shemp.jpg
   *   /media-share/People/Bruce Campbell - Jack Stiles.jpg
      
-4.  You can use external files for Genres/tags and Music Source icons.  (see property under the skin's General settings).  The icons files are expected under the following directories:
+4.  You can use external files for Genres/tags and Music Source icons.  (see properties under the skin's Extra settings).  The icon paths are set via the settings.
+For Examples:
   *   /media-share/icons/movies
   *   /media-share/icons/tvshows
   *   /media-share/icons/music
@@ -29,30 +30,6 @@ These will show up in the Thumbnail view, and List view, or on various home-page
 Note that movies and tvshows are separated, you can have different genre icons for tv and movies. (or copy the same icons into both, your choice)
 The names must exaclty match the names of the Genre/Tag/Souce, and can have either jpg/png/gif extensions.
 example: /media-share/icons/movies/Adventure.png
-
-
-Note, if you don't have kodi set up to use /media-share as a path, you can update your advancedsettings.xml to rewrite the paths to wherever you choose to actually put the files:
-
-	<pathsubstitution>
-		<substitute>
-			<from>/media-share/icons/movies/</from>
-			<to>nfs://123.456.789.123/my/nas/directory/for/movie/icons/</to>
-		</substitute>
-	</pathsubstitution>
-or
-	<pathsubstitution>
-		<substitute>
-			<from>/media-share/People/</from>
-			<to>smb://123.456.789.123/my/windows/share/People-folder/</to>
-		</substitute>
-	</pathsubstitution>
-or 
-	<pathsubstitution>
-		<substitute>
-			<from>/media-share/</from>
-			<to>c:/my/local/windows/directory</to>
-		</substitute>
-	</pathsubstitution>
 
 5. Various other fixes/changes, (example, addtional full-screen-music views can be togged though)
 
