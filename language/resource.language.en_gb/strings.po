@@ -754,7 +754,7 @@ msgid "About"
 msgstr ""
 
 msgctxt "#31196"
-msgid "Lyrebird"
+msgid "Lyrebird Rmod"
 msgstr ""
 
 msgctxt "#31197"
@@ -765,8 +765,12 @@ msgctxt "#31198"
 msgid "Original Mimic code from Braz / Enhanced into Lyrebird by Rufoo"
 msgstr ""
 
+msgctxt "#31203"
+msgid "Further Modded/Enhanced by Randall"
+msgstr ""
+
 msgctxt "#31199"
-msgid "Lyrebird is a merging of ideas from Mimic, Cirrus Extended, and assorted other MODs and sources.[CR][CR][B]— Mimic Credits:[/B] Braz, BigNoid, Jeroen, BobCratchett, Phil65, Marcelveldt, & JurialMunkey.[CR][B]— Cirrus Credits:[/B] Paradix, Butchabay, & YoHan.[CR][CR][B]Thanks & Greets:[/B][CR]Wintermute0110, Chrisism, Braz, Paradix, Zachmorris, Garbear, Jondar, Rdyott, Gman12. [CR][CR]And finally, all of the users and people who could be bothered to give Lyrebird the time of day. :)[CR][CR]Support Kodi by donating @ http://kodi.tv/contribute/donate/"
+msgid "Lyrebird is a merging of ideas from Mimic, Cirrus Extended, and assorted other MODs and sources.[CR][CR][B]— Mimic Credits:[/B] Braz, BigNoid, Jeroen, BobCratchett, Phil65, Marcelveldt, & JurialMunkey.[CR][B]— Cirrus Credits:[/B] Paradix, Butchabay, & YoHan.[CR][CR][B]Thanks & Greets:[/B][CR]Wintermute0110, Chrisism, Braz, Paradix, Zachmorris, Garbear, Jondar, Rdyott, Gman12, Rufoo. [CR][CR]And finally, all of the users and people who could be bothered to give Lyrebird the time of day. :)[CR][CR]Support Kodi by donating @ http://kodi.tv/contribute/donate/"
 msgstr ""
 
 msgctxt "#31200"
@@ -781,7 +785,6 @@ msgctxt "#31202"
 msgid "View extended information"
 msgstr ""
 
-#empty string with id 31203
 
 msgctxt "#31204"
 msgid "Current conditions"

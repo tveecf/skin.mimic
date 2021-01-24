@@ -4,6 +4,50 @@
 	<include name="Topbar">
 
 		<control type="group">
+		
+<!-- 			<control type="label" id="6662"> -->
+<!--     			<description>Dummy label to for movie icon resource path</description> -->
+<!--     			<label>$INFO[Skin.String(MovieGenreIcons.path)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6663"> -->
+<!--     			<description>Dummy label to for movie icon resorce ext</description> -->
+<!--     			<label>$INFO[Skin.String(MovieGenreIcons.ext)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6664"> -->
+<!--     			<description>Dummy label to for tv icon resource path</description> -->
+<!--     			<label>$INFO[Skin.String(TVGenreIcons.path)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6665"> -->
+<!--     			<description>Dummy label to for tv icon resource ext</description> -->
+<!--     			<label>$INFO[Skin.String(TVGenreIcons.ext)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6666"> -->
+<!--     			<description>Dummy label to for music icon path</description> -->
+<!--     			<label>$INFO[Skin.String(MusicGenreIcons.path)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6667"> -->
+<!--     			<description>Dummy label to for music icon ext</description> -->
+<!--     			<label>$INFO[Skin.String(MusicGenreIcons.ext)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6668"> -->
+<!--     			<description>Dummy label to for custom icon path</description> -->
+<!--     			<label>$INFO[Skin.String(CustomGenreIcons.path)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+<!-- 			<control type="label" id="6669"> -->
+<!--     			<description>Dummy label to for custom actor-role image path</description> -->
+<!--     			<label>$INFO[Skin.String(CustomActorRoleImages.path)]</label> -->
+<!--     			<visible>false</visible> -->
+<!-- 			</control> -->
+
+
+
 			<visible>!Control.IsVisible(509)</visible>
 			<control type="image">
 				<visible>[Control.IsVisible(59) | Control.IsVisible(501)] +

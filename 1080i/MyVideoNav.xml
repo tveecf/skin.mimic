@@ -61,7 +61,7 @@
 
         </control>
 		<control type="group">
-			<visible>[Control.IsVisible(50) | Control.IsVisible(51)| Control.IsVisible(500)| Control.IsVisible(501)| Control.IsVisible(52)| Control.IsVisible(55)| Control.IsVisible(57)] + !$EXP[isInfoDialog]</visible>
+			<visible>Skin.HasSetting(Enable.MediaFlags)+[Control.IsVisible(50) | Control.IsVisible(51)| Control.IsVisible(500)| Control.IsVisible(501)| Control.IsVisible(52)| Control.IsVisible(55)| Control.IsVisible(57)] + !$EXP[isInfoDialog]</visible>
 			<include content="VideoMediaFlags">
 				<param name="left" value="0" />
 				<param name="top" value="1028" />
