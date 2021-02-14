@@ -1,4 +1,7 @@
 1.0.0-r19
+* fix incorrect actor-role path url in info dialog
+
+1.0.0-r19
 * settings to use resource bundles on movie/tv/music genres (tv, movies can use different bundles)
 * when displaying tags, or sources, it will also use the resource bundle (if source-name or tag-name matches a genre)
 * settings for selecting custom icon paths for movies/tv/music genres/tags/sources
