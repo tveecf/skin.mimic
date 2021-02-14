@@ -351,7 +351,7 @@
                                 <width>277</width>
                                 <height>406</height>
                                 <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                                <texture background="true" diffuse="diffuse/videoinfo-actor.png">$VAR[CustomActorRolePath]/$INFO[ListItem.Label] - $INFO[ListItem.Label2].jpg</texture>
+                                <texture background="true" diffuse="diffuse/videoinfo-actor.png">$VAR[CustomActorRolePath]$INFO[ListItem.Label] - $INFO[ListItem.Label2].jpg</texture>
 		                    </control>
 
                             <control type="image">
@@ -397,7 +397,6 @@
 
 
                             <!-- Block for overriding the actor image with Actor - Role.jpg -->
-                            <!-- note that the path has to be hard-coded  -->
                             <control type="image">
                             	<visible>Skin.HasSetting(Enable.ActorRoleImages)</visible>
                                 <top>6</top>
@@ -405,7 +404,7 @@
                                 <width>277</width>
                                 <height>406</height>
                                 <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                                <texture background="true" diffuse="diffuse/videoinfo-actor.png">$VAR[CustomActorRolePath]/$INFO[ListItem.Label] - $INFO[ListItem.Label2].jpg</texture>
+                                <texture background="true" diffuse="diffuse/videoinfo-actor.png">$VAR[CustomActorRolePath]$INFO[ListItem.Label] - $INFO[ListItem.Label2].jpg</texture>
 		                    </control>
 
                             <control type="image">

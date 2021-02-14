@@ -2,7 +2,7 @@
 <includes>
 
 	<variable name="CustomActorRolePath">
-		<value>$INFO[Skin.String(CustomActorRolePath)]</value>
+		<value>$INFO[Skin.String(CustomActorRoleImages.path)]</value>
 	</variable>
 
 	<variable name="VisBackgroundMask">
