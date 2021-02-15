@@ -1,4 +1,7 @@
-1.0.0-r19
+1.0.0-r21
+* show large actor image when selected in video info dialog
+
+1.0.0-r20
 * fix incorrect actor-role path url in info dialog
 
 1.0.0-r19
