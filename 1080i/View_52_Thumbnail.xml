@@ -219,10 +219,10 @@
 						<right>20</right>
 						<height>180</height>
 						<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
-						<texture background="true" diffuse="diffuse/fanart-widget.png">$INFO[ListItem.Art(thumb)]</texture>
+						<texture background="true" diffuse="diffuse/fanart-widget.png">$INFO[ListItem.Art(poster)]</texture>
 					</control>
 					<control type="image">
-						<visible>String.IsEmpty(ListItem.Art(thumb))</visible>
+						<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 						<left>20</left>
 						<top>20</top>
 						<right>20</right>
