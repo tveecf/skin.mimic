@@ -1082,7 +1082,7 @@
 								<width>560</width>
 								<height>60</height>
 								<include>MediaFlagVars</include>
-								<texture colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+								<texture background="true" colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
 							</control>
 						</control>
 

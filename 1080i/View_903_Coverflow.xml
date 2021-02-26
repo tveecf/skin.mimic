@@ -269,7 +269,7 @@
 			<top>895</top>
 			<width>175</width>
 			<height>50</height>
-			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<texture background="true" colordiffuse="maintext">$VAR[StarRatingVar]</texture>
 			<aspectratio align="center">keep</aspectratio>
 		</control>
 		<control type="image">

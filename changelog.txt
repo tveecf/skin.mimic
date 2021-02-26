@@ -1,3 +1,20 @@
+1.0.0-r22
+* fix "record" button in video OSD
+
+1.0.0-r21
+* show large actor image when selected in video info dialog
+
+1.0.0-r20
+* fix incorrect actor-role path url in info dialog
+
+1.0.0-r19
+* settings to use resource bundles on movie/tv/music genres (tv, movies can use different bundles)
+* when displaying tags, or sources, it will also use the resource bundle (if source-name or tag-name matches a genre)
+* settings for selecting custom icon paths for movies/tv/music genres/tags/sources
+* settings for whether to use actor-role images, and select the path via settings
+* pay attention to MediaFlags skin setting to decide whether to show media flags in footer area
+ 
+
 1.0.0-r18
 * version bump
 
