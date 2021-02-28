@@ -1,3 +1,7 @@
+1.0.0-r23
+* version bump
+
+
 1.0.0-r22
 * fix "record" button in video OSD
 
