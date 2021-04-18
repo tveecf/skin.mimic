@@ -1,3 +1,8 @@
+2.0.1
+* Some Matrix related updates
+* revamp "List" view so that images work under matrix.  Now shares the "right info" area with InfoWall
+  
+
 1.0.0-r23
 * version bump
 
