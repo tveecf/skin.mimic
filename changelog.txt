@@ -1,3 +1,6 @@
+2.0.3-b1
+* suppress chance of precipitaiton label when we don't have percentage to display
+
 2.0.1
 * Some Matrix related updates
 * revamp "List" view so that images work under matrix.  Now shares the "right info" area with InfoWall
