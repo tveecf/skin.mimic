@@ -98,8 +98,18 @@
 			<itemgap>15</itemgap>
 
 			<control type="multiimage">
+			   <description>Image when not Poster, Logo or Banner (scaled landscape)</description>
 				<visible>
-					!String.IsEmpty(ListItem.Art(fanart))
+					![
+						  [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Poster)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Poster)] 
+						| [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Banner)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Banner)] 
+						| [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Logo)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Logo)] 
+						| [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Thumb)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Thumb)] 
+					]	
 					+ !Container.Content(files)
 					+ !Container.Content(episodes)
 					+ !Container.Content(videos)
@@ -109,6 +119,61 @@
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<imagepath background="true" diffuse="diffuse/infowall-fanart.png">$VAR[ExtraFanartVar]</imagepath>
 			</control>
+
+			<control type="multiimage">
+				<description>Image when Banner</description>
+				<visible>
+					[
+					  	  [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Banner)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Banner)] 
+					]				
+					+ !Container.Content(files)
+					+ !Container.Content(episodes)
+					+ !Container.Content(videos)
+				</visible>
+				<width>680</width>
+				<height>130</height>
+				<aspectratio scalediffuse="false">Keep</aspectratio>
+				<imagepath background="true" diffuse="diffuse/infowall-fanart.png">$VAR[ExtraFanartVar]</imagepath>
+			</control>
+
+
+			<control type="multiimage">
+				<description>Image when Thumb or Logo view (landscape shrink to fit)</description>
+				<visible>
+					[
+						  [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Logo)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Logo)] 
+						| [Control.IsVisible(50) + Skin.HasSetting(List.Art2.Thumb)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Thumb)] 
+					]				
+					+ !Container.Content(files)
+					+ !Container.Content(episodes)
+					+ !Container.Content(videos)
+				</visible>
+				<width>680</width>
+				<height>384</height>
+				<aspectratio scalediffuse="false">Keep</aspectratio>
+				<imagepath background="true" diffuse="diffuse/infowall-fanart.png">$VAR[ExtraFanartVar]</imagepath>
+			</control>
+
+			<control type="multiimage">
+				<description>Image when Poster View (Tall shrink to fit)</description>
+				<visible>
+					[
+						[Control.IsVisible(50) + Skin.HasSetting(List.Art2.Poster)] 
+						| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Poster)] 
+					]					
+					+ !Container.Content(files)
+					+ !Container.Content(episodes)
+					+ !Container.Content(videos)
+				</visible>
+				<width>680</width>
+				<height>680</height>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<imagepath background="true" diffuse="diffuse/infowall-fanart.png">$VAR[ExtraFanartVar]</imagepath>
+			</control>
+
 
 			<control type="image">
 				<visible>Container.Content(files) | Container.Content(episodes) | Container.Content(videos)</visible>
@@ -145,14 +210,18 @@
 				<include>AutoscrollDefault</include>
 			</control>
 			<control type="textbox">
+				<visible>
+				![
+					[Control.IsVisible(50) + Skin.HasSetting(List.Art2.Poster)] 
+					| [Control.IsVisible(51) + Skin.HasSetting(InfoWall.Art2.Poster)] 
+				]
+				</visible>					
 				<label>$VAR[VideoPlotVar]</label>
 				<width>680</width>
  				<height>300</height>
 				<font>font14_textbox</font>
 				<autoscroll delay="5000" time="3000" repeat="5000">true</autoscroll>
 			</control>
-
-
 
 			<!-- <control type="group"> -->
 			<!-- <width>560</width> -->

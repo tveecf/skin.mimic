@@ -64,28 +64,184 @@
                     </control>
                 </focusedlayout>
                 <content>
+                    
+<!-- LIST ART2 -->
                     <item>
-                        <description>Art 2 - Fanart</description>
+                        <description>List Art 2 - Poster</description>
+                        <label>31016</label>
+                        <onclick>Skin.Reset(List.Art2.ExtraFanart)</onclick>
+<!--                         <onclick>Skin.Reset(List.Art2.Poster)</onclick> -->
+                        <onclick>Skin.Reset(List.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(List.Art2.Poster)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[535]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>List Art 2 - Banner</description>
+                        <label>31085</label>
+                        <onclick>Skin.Reset(List.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Poster)</onclick>
+<!--                         <onclick>Skin.Reset(List.Art2.Banner)</onclick> -->
+                        <onclick>Skin.Reset(List.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(List.Art2.Banner)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[535]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>List Art 2 - Logo</description>
+                        <label>31088</label>
+                        <onclick>Skin.Reset(List.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Banner)</onclick>
+<!--                         <onclick>Skin.Reset(List.Art2.Logo)</onclick> -->
+                        <onclick>Skin.Reset(List.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(List.Art2.Logo)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[535]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>List Art 2 - Fanart</description>
                         <label>20445</label>
-                        <onclick>Skin.Reset(Enable.Extra.Fanart)</onclick>
-                        <onclick>Skin.Reset(Enable.Landscape.Art)</onclick>
+                        <onclick>Skin.Reset(List.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Logo)</onclick>
+<!--                         <onclick>Skin.Reset(List.Art2.Fanart)</onclick> -->
+                        <onclick>Skin.Reset(List.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(List.Art2.Fanart)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[535]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>List Art 2 - Landscape</description>
+                        <label>31100</label>
+                        <onclick>Skin.Reset(List.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Fanart)</onclick>
+<!--                         <onclick>Skin.Reset(List.Art2.Landscape)</onclick> -->
+                        <onclick>Skin.Reset(List.Art2.Thumb)</onclick>
+                        <onclick>Skin.SetBool(List.Art2.Landscape)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[535]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>List Art 2 - Thumb</description>
+                        <label>21371</label>
+                        <onclick>Skin.Reset(List.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(List.Art2.Landscape)</onclick>
+<!--                         <onclick>Skin.Reset(List.Art2.Thumb)</onclick> -->
+						<onclick>Skin.SetBool(List.Art2.Thumb)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[535]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+<!-- /LIST ART2 -->
+
+<!-- INFOWALL ART2 -->
+                    <item>
+                        <description>InfoWAll Art 2 - Poster</description>
+                        <label>31016</label>
+                        <onclick>Skin.Reset(InfoWall.Art2.ExtraFanart)</onclick>
+<!--                         <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick> -->
+                        <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(InfoWall.Art2.Poster)</onclick>
                         <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
                     </item>
                     <item>
-                        <description>Art 2 - Extra fanart</description>
+                        <description>InfoWAll Art 2 - Banner</description>
+                        <label>31085</label>
+                        <onclick>Skin.Reset(InfoWall.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick>
+<!--                         <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick> -->
+                        <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(InfoWall.Art2.Banner)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>InfoWAll Art 2 - Logo</description>
+                        <label>31088</label>
+                        <onclick>Skin.Reset(InfoWall.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick>
+<!--                         <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick> -->
+                        <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(InfoWall.Art2.Logo)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>InfoWAll Art 2 - Fanart</description>
+                        <label>20445</label>
+                        <onclick>Skin.Reset(InfoWall.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick>
+<!--                         <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick> -->
+                        <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick>
+						<onclick>Skin.SetBool(InfoWall.Art2.Fanart)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>InfoWall Art 2 - Landscape</description>
+                        <label>31100</label>
+                        <onclick>Skin.Reset(InfoWall.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick>
+<!--                         <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick> -->
+                        <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick>
+                        <onclick>Skin.SetBool(InfoWAll.Art2.Landscape)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>InfoWAll Art 2 - Thumb</description>
+                        <label>21371</label>
+                        <onclick>Skin.Reset(InfoWall.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick>
+<!--                         <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick> -->
+						<onclick>Skin.SetBool(InfoWall.Art2.Thumb)</onclick>
+                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
+                    </item>
+                    <item>
+                        <description>InfoWall Art 2 - Extra fanart</description>
                         <label>31118</label>
-                        <onclick>Skin.SetBool(Enable.Extra.Fanart)</onclick>
-                        <onclick>Skin.Reset(Enable.Landscape.Art)</onclick>
+                        <onclick>Skin.SetBool(InfoWall.Art2.ExtraFanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Poster)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Banner)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Logo)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Fanart)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Landscape)</onclick>
+                        <onclick>Skin.Reset(InfoWall.Art2.Thumb)</onclick>
                         <visible>System.HasAddon(script.toolbox)</visible>
                         <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
                     </item>
-                    <item>
-                        <description>Art 2 - Landscape</description>
-                        <label>31100</label>
-                        <onclick>Skin.SetBool(Enable.Landscape.Art)</onclick>
-                        <onclick>Skin.Reset(Enable.Extra.Fanart)</onclick>
-                        <visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + Skin.HasSetting(Art2Customizer)</visible>
-                    </item>
+
+<!-- /END INFOWALL ART2 -->
+
+                    
                     <item>
                         <description>Wall - Poster</description>
                         <label>31016</label>

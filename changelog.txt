@@ -1,3 +1,6 @@
+2.0.3-b2
+* Expand Art2 selection (Right column artwork) for InfoWall and List Views
+
 2.0.3-b1
 * suppress chance of precipitation label when we don't have percentage to display
 
