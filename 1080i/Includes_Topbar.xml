@@ -234,7 +234,7 @@
 		</visible>
 		<width>FullScreenWidth</width>
 		<top>80</top>
-		<height>120</height>
+		<height>100</height>
 
 		<control type="image">
 			<visible>[Control.IsVisible(59) | Control.IsVisible(501)] +

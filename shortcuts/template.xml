@@ -235,7 +235,7 @@
 							<left>270</left>
 							<height>216</height>
 							<font>font16</font>
-							<label>  [COLOR yellow]Weather Alert![/COLOR]</label>
+							<label>  [COLOR yellow]$LOCALIZE[90916][/COLOR]</label>
 							<visible>!String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 					</control>
                     </control>

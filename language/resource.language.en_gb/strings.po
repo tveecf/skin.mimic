@@ -1366,3 +1366,132 @@ msgstr ""
 msgctxt "#90903"
 msgid "Double Fanart"
 msgstr ""
+
+# empty 90904-90909
+
+msgctxt "#90910"
+msgid "Alerts"
+msgstr ""
+
+msgctxt "#90911"
+msgid "Detailed Forecast"
+msgstr ""
+
+msgctxt "#90912"
+msgid "Use Icons From Weather Provider"
+msgstr ""
+
+msgctxt "#90913"
+msgid "Zoom Radar Images to Fit Screen"
+msgstr ""
+
+msgctxt "#90914"
+msgid "Transparency Mask for Music Visualization"
+msgstr ""
+
+msgctxt "#90915"
+msgid "View"
+msgstr ""
+
+msgctxt "#90916"
+msgid "Weather Alert!"
+msgstr ""
+
+msgctxt "#90917"
+msgid "Show Touch Screen Controls"
+msgstr ""
+
+msgctxt "#90918"
+msgid "Use Custom Actor/Role Images"
+msgstr ""
+
+msgctxt "#90919"
+msgid "Path for Custom Actor-Role Images"
+msgstr ""
+
+msgctxt "#90920"
+msgid "Use Custom Movie Genre Icons"
+msgstr ""
+
+msgctxt "#90921"
+msgid "Path for Custom Movie Genre Icons"
+msgstr ""
+
+msgctxt "#90922"
+msgid "Select Movie Genre Icon Pack"
+msgstr ""
+
+msgctxt "#90923"
+msgid "Use Custom TV Genre Icons"
+msgstr ""
+
+msgctxt "#90924"
+msgid "Path for Custom TV Genre Icons"
+msgstr ""
+
+msgctxt "#90925"
+msgid "Select TV Genre Icon Pack"
+msgstr ""
+
+msgctxt "#90926"
+msgid "Use Custom Music Genre Icons"
+msgstr ""
+
+msgctxt "#90927"
+msgid "Path for Custom Music Genre Icons"
+msgstr ""
+
+msgctxt "#90928"
+msgid "Select Music Genre Icon Pack"
+msgstr ""
+
+msgctxt "#90929"
+msgid ""
+msgstr ""
+
+msgctxt "#90930"
+msgid ""
+msgstr ""
+
+msgctxt "#90931"
+msgid ""
+msgstr ""
+
+msgctxt "#90932"
+msgid ""
+msgstr ""
+
+msgctxt "#90933"
+msgid ""
+msgstr ""
+
+msgctxt "#90934"
+msgid ""
+msgstr ""
+
+msgctxt "#90935"
+msgid ""
+msgstr ""
+
+msgctxt "#90936"
+msgid ""
+msgstr ""
+
+msgctxt "#90937"
+msgid ""
+msgstr ""
+
+msgctxt "#90938"
+msgid ""
+msgstr ""
+
+msgctxt "#90939"
+msgid ""
+msgstr ""
+
+msgctxt "#90940"
+msgid ""
+msgstr ""
+
+
+

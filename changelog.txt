@@ -1,3 +1,8 @@
+2.0.3-b3
+* Changes to weather map screen
+* push a lot of hardcoded strings into localization PO instead
+
+
 2.0.3-b2
 * Expand Art2 selection (Right column artwork) for InfoWall and List Views
 

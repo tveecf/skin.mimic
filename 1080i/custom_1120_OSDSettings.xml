@@ -58,7 +58,7 @@
             </control>
             <control type="button" id="90215">
                  <width>1074</width>
-                 <label>Transparency Mask for Background</label>
+                 <label>90914</label>
                  <label2>$INFO[Skin.String(VisBackgroundMask)]</label2>
                  <onclick>Skin.SetString(VisBackgroundMask)</onclick>
              </control>
@@ -66,7 +66,7 @@
             <control type="button" id="90216">
                 <description>View</description>
                 <width>1074</width>
-                <label>View</label>
+                <label>90915</label>
                 <label2>$INFO[Skin.String(musicvis.view)]</label2>
                 <onclick>SetProperty(Dialog.1.Label,StandardView)</onclick>
                 <onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(musicvis.view,StandardView))</onclick>
