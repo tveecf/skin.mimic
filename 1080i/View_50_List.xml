@@ -251,7 +251,7 @@
 						</control>
 						<include content="OverlayList">
 							<param name="OverlayListLeft" value="961" />
-<!-- 							<param name="OverlayListLeft" value="1081" /> -->
+							<!-- <param name="OverlayListLeft" value="1081" /> -->
 							<param name="OverlayListTop" value="27" />
 						</include>
 					</itemlayout>
@@ -968,11 +968,10 @@
 					<width>680</width>
 
 					<!-- We have a special rendering for music -->
-
-					<include file="Includes_InfoSideView.xml" condition="Window.IsVisible(MyMusicNav.xml)" content="MusicInfoSide" />
+					<include file="Includes_InfoSideView.xml" condition="Window.IsVisible(MyMusicNav.xml)" content="MusicInfoSide"/>
 
 					<!-- otherwise, use video logic for everything else -->
-					<include file="Includes_InfoSideView.xml" condition="!Window.IsVisible(MyMusicNav.xml)" content="VideoInfoSide" />
+					<include file="Includes_InfoSideView.xml" condition="!Window.IsVisible(MyMusicNav.xml)" content="VideoInfoSide"/>
 
 				</control>
 

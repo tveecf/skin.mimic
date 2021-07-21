@@ -303,14 +303,13 @@
 				</focusedlayout>
 			</control>
 
- 			<control type="group">
+			<control type="group">
 				<top>196</top>
 				<left>1171</left>
 				<width>680</width>
 				<visible>Control.IsVisible(51)</visible>
-				
 				<include content="VideoInfoSide" file="Includes_InfoSideView.xml"/>
-				
+
 			</control>
 		</control>
 
@@ -320,8 +319,8 @@
 			<include>Scrollbar_Vertical</include>
 		</control>
 	</include>
-	
-	
+
+
 	<!-- Music InfoWall -->
 	<include name="MusicInfoWall">
 		<control type="group">
@@ -463,7 +462,7 @@
 				<visible>Control.IsVisible(51)</visible>
 				<include content="MusicInfoSide" file="Includes_InfoSideView.xml"/>
 			</control>
-		
+
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(51) + !$EXP[isInfoDialog]</visible>

@@ -237,9 +237,12 @@
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SetBool(Art2Customizer)</onclick>
 			<onclick>ActivateWindow(1133)</onclick>
+<!-- 			<visible> -->
+<!-- 			Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)]  -->
+<!-- 			+ !Container.Content(sets) + !Container.Content(seasons) + !Container.Content(addons) + !Container.Content(musicvideos)</visible> -->
 			<visible>
 			Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)] 
-			+ !Container.Content(sets) + !Container.Content(seasons) + !Container.Content(addons) + !Container.Content(musicvideos)</visible>
+			</visible>
 		</control>
 
 <!-- 		<control type="button" id="1821"> -->

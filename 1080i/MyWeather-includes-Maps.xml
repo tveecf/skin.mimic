@@ -7,7 +7,7 @@
 			<left>420</left>
 			<top>0</top>
 			<width>1420</width>
-			<height>890</height>
+			<height>900</height>
 
 			<control type="image">
 				<visible>Control.HasFocus(310) + !Container(310).IsUpdating</visible>
@@ -32,12 +32,14 @@
 				<onup>310</onup>
 				<ondown>310</ondown>
 				<onleft>9000</onleft>
+				<onclick>Skin.ToggleSetting(Enable.ZoomRadar)</onclick>
 				<orientation>vertical</orientation>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
-				<itemlayout height="890" width="1420">
+				<itemlayout height="900" width="1420">
 
 					<control type="image">
 						<visible>Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Area))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Area)]</texture>
@@ -45,6 +47,7 @@
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Area))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Area)]</texture>
@@ -53,6 +56,7 @@
 
 					<control type="image">
 						<visible>!Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Layer))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Layer)]</texture>
@@ -60,6 +64,7 @@
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Layer))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Layer)]</texture>
@@ -78,17 +83,16 @@
 					<control type="textbox">
 						<width>1390</width>
 						<height>30</height>
-						<top>860</top>
-						<font>font13</font>
+						<top>0</top>
+						<font>font10</font>
 						<selectedcolor>highlight</selectedcolor>
-						<scrolltime>200</scrolltime>
-						<autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="890" width="1420">
+				<focusedlayout height="900" width="1420">
 					<control type="image">
 						<visible>!Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Area))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Area)]</texture>
@@ -96,6 +100,7 @@
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Area))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Area)]</texture>
@@ -112,6 +117,7 @@
 					<!-- </control> -->
 					<control type="image">
 						<visible>!Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Layer))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Layer)]</texture>
@@ -119,6 +125,7 @@
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(Enable.ZoomRadar) + !isEmpty(ListItem.Property(Layer))</visible>
+						<top>25</top>
 						<width>1390</width>
 						<height>860</height>
 						<texture background="true" xdiffuse="diffuse/weathermap.png">$INFO[ListItem.Property(Layer)]</texture>
@@ -137,12 +144,9 @@
 					<control type="textbox">
 						<width>1420</width>
 						<height>30</height>
-						<top>860</top>
-						<font>font13</font>
+						<top>0</top>
+						<font>font10</font>
 						<selectedcolor>highlight</selectedcolor>
-						<shadowcolor>00000000</shadowcolor>
-						<scrolltime>200</scrolltime>
-						<!-- <autoscroll delay="3000" time="1000" repeat="10000"></autoscroll> -->
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>

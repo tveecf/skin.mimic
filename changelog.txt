@@ -1,12 +1,11 @@
+2.0.3-b4
+* Refinement of Art2 - settings per content-type of focused item
+
+
 2.0.3-b3
 * Changes to weather map screen
-* push a lot of hardcoded strings into localization PO instead
-
-
-2.0.3-b2
+* push a lot of hard-coded strings into localization PO instead
 * Expand Art2 selection (Right column artwork) for InfoWall and List Views
-
-2.0.3-b1
 * suppress chance of precipitation label when we don't have percentage to display
 
 2.0.1

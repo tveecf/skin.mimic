@@ -109,8 +109,6 @@
 					<texture background="true">$VAR[ResourceIcon]</texture>
 				</control>
 			</control>
-			
-
 
 <!-- 			<control type="group"> -->
 <!-- 				<visible>$EXP[movievis]</visible> -->
