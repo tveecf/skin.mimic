@@ -62,18 +62,16 @@
 		<value condition="String.IsEqual(Control.GetLabel(360),logo)
 		+ !String.IsEmpty(ListItem.Art(logo))">$INFO[ListItem.Art(logo)]</value>
 		<value condition="String.IsEqual(Control.GetLabel(360),fanart)
-		!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		+ !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="String.IsEqual(Control.GetLabel(360),landscape)
 		+ !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value condition="String.IsEqual(Control.GetLabel(360),thumb)
 		+ !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<!-- Try to default to thumb for episodes, otheriwise fanart if it's populated -->
 		<value condition="String.IsEqual(ListItem.DBTYPE,episode)
-		+!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
-		<value condition="
-		!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="
-		!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		+ !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 
@@ -126,19 +124,75 @@
 				<font>font30</font>
 			</control>
 
-			<control type="image">
-				<visible>String.IsEmpty(ListItem.Art(fanart)) +[$EXP[isSong] | $EXP[isAlbum]]</visible>
-				<width>130</width>
+
+			<control type="label" id='361'>
+				<visible>false</visible>
+				<label>$VAR[AudioSourceFlagVar]</label>
+			</control>
+			<control type="grouplist">
 				<height>50</height>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+				<itemgap>5</itemgap>
+				<width>680</width>
+				<orientation>horizontal</orientation>
+
+				<control type="image">
+					<!-- <visible>String.IsEmpty(ListItem.Art(fanart)) +[$EXP[isSong] | $EXP[isAlbum]]</visible> -->
+					<visible>
+						!String.IsEmpty(Control.GetLabel(361))
+						+String.IsEmpty(ListItem.Art(fanart))
+						+[$EXP[isSong] | $EXP[isAlbum]]
+					</visible>
+					<width>120</width>
+					<height>50</height>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+				</control>
+
+				<control type="image">
+					<visible>$EXP[isSong]</visible>
+					<width>120</width>
+					<height>50</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+				</control>
+				<control type="image">
+					<visible>!String.IsEmpty(ListItem.MusicChannels)</visible>
+					<width>120</width>
+					<height>50</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="maintext">$INFO[ListItem.MusicChannels,flags/audiochannel/,.png]</texture>
+				</control>
+				<control type="image">
+					<visible>!String.IsEmpty(ListItem.Codec)</visible>
+					<width>120</width>
+					<height>50</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="maintext">$INFO[ListItem.Codec,flags/audiocodec/,.png]</texture>
+				</control>
+				<control type="image">
+					<height>50</height>
+					<width>120</width>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="maintext">$VAR[AudioPlayerSourceFlagVar,flags/source/,.png]</texture>
+				</control>
 			</control>
 
-			<control type="image">
-				<visible>$EXP[isSong]</visible>
-				<width>130</width>
-				<height>50</height>
-				<texture background="true" colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+
+			<control type="label">
+				<height>20</height>
+				<font>font12</font>
+				<align>left</align>
+				<shadowcolor>FF000000</shadowcolor>
+				<label>$INFO[ListItem.MusicChannels,,ch]$INFO[ListItem.BitsPerSample, ,bit]$INFO[ListItem.Samplerate, ,kHz]
+				</label>
+			</control>
+			<control type="label">
+				<height>20</height>
+				<font>font12</font>
+				<align>left</align>
+				<shadowcolor>FF000000</shadowcolor>
+				<label>$INFO[ListItem.MusicCodec,,]$INFO[ListItem.Bitrate, ,kbps]
+				</label>
 			</control>
 
 
