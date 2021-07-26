@@ -1,3 +1,6 @@
+2.0.4
+* updates to codec icon images
+
 2.0.3-b5
 * Add some of the newly available audio info to list screen for songs
 

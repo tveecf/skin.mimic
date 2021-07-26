@@ -103,6 +103,11 @@
                             <visible>!String.IsEmpty(ListItem.Studio)</visible>
                         </item>
                         <item>
+                            <label>$INFO[ListItem.mpaa]</label>
+                            <label2>Certification:</label2>
+                            <visible>!String.IsEmpty(ListItem.mpaa)</visible>
+                        </item>
+                        <item>
                             <label>$INFO[Window(Home).Property(NextAired.NextNumber),, - ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
                             <label2>$LOCALIZE[31010]:</label2>
                             <visible>$EXP[isTvshow] + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
@@ -177,6 +182,36 @@
                             <label>$INFO[ListItem.Filename]</label>
                             <label2>$LOCALIZE[21800]:</label2>
                             <visible>!String.IsEmpty(ListItem.Filename)</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[ListItem.VideoResolution]</label>
+                            <label2>Resolution:</label2>
+                            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[ListItem.IsStereoscopic]</label>
+                            <label2>3D:</label2>
+                            <visible>ListItem.IsStereoscopic</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[ListItem.VideoCodec]</label>
+                            <label2>Video Codec:</label2>
+                            <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[ListItem.VideoAspect]</label>
+                            <label2>Video Aspect:</label2>
+                            <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[ListItem.AudioCodec]</label>
+                            <label2>Audio Codec:</label2>
+                            <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[ListItem.AudioChannels]</label>
+                            <label2>Audio Channels:</label2>
+                            <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                         </item>
                     </content>
                 </control>

@@ -50,9 +50,11 @@
 		GameBoy Advance) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy Color) | String.IsEqual(ListItem.Property(platform),Nintendo SNES) |
 		String.IsEqual(ListItem.Property(platform),Nintendo Switch) | String.IsEqual(ListItem.Property(platform),Sega Dreamcast) | String.IsEqual(ListItem.Property(platform),Sega MegaCD)
 		| String.IsEqual(ListItem.Property(platform),Sega SegaCD) | String.IsEqual(ListItem.Property(platform),Sony PlayStation) | String.IsEqual(ListItem.Property(platform),Sony
-		PlayStation 3) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Portable) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Vita)]</expression>
+		PlayStation 3) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Portable) | String.IsEqual(ListItem.Property(platform),Sony PlayStation Vita)]
+	</expression>
 	<expression name="PluginAdvancedLauncher">String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/) |
-		String.Contains(Container.FolderPath,plugin://plugin.program.advanced.emulator.launcher/)</expression>
+		String.Contains(Container.FolderPath,plugin://plugin.program.advanced.emulator.launcher/)
+	</expression>
 	<expression name="isVideoAddon">String.Contains(Container.FolderPath,plugin://plugin.video)</expression>
 	<expression name="isMovie">String.IsEqual(ListItem.DBTYPE,movie)</expression>
 	<expression name="isVideo">String.IsEqual(ListItem.DBTYPE,video)</expression>
@@ -165,7 +167,8 @@
 			<onclick>ActivateWindow(1118)</onclick>
 			<visible>![Window.IsActive(musicplaylisteditor) | Window.IsActive(tvguide) | Window.IsActive(tvchannels) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) |
 				Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiotimers) | Window.IsActive(radiotimerrules) |
-				Window.IsActive(radiorecordings) | Window.IsActive(radiosearch)]</visible>
+				Window.IsActive(radiorecordings) | Window.IsActive(radiosearch)]
+			</visible>
 			<enable>!Window.IsActive(eventlog)</enable>
 		</control>
 		<control type="button" id="3">
@@ -207,29 +210,30 @@
 				Control.IsVisible(51) | Control.IsVisible(509) | Control.IsVisible(505)] + !Container.Content(episodes) + !Container.Content(sets) + !Container.Content(addons) +
 				!Container.Content(musicvideos) + !Container.Content(files)] | [Control.IsVisible(507) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(artists)]]
 				| [Window.IsActive(music) + Control.IsVisible(57) + !Container.Content(addons)] | [Control.IsVisible(52) + [Container.Content(movies) | Container.Content(tvshows) |
-				Container.Content(seasons) | Container.Content(sets)]]</visible>
-<!-- 			<visible>[Window.IsActive(videos) + [Control.IsVisible(500) | Control.IsVisible(59) | [Control.IsVisible(57) + !Container.Content(seasons) + !Container.Content(addons)] | -->
-<!-- 				Control.IsVisible(509) | Control.IsVisible(505)] + !Container.Content(episodes) + !Container.Content(sets) + !Container.Content(addons) + -->
-<!-- 				!Container.Content(musicvideos) + !Container.Content(files)] | [Control.IsVisible(507) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(artists)]] -->
-<!-- 				| [Window.IsActive(music) + Control.IsVisible(57) + !Container.Content(addons)] | [Control.IsVisible(52) + [Container.Content(movies) | Container.Content(tvshows) | -->
-<!-- 				Container.Content(seasons) | Container.Content(sets)]]</visible> -->
+				Container.Content(seasons) | Container.Content(sets)]]
+			</visible>
+			<!-- <visible>[Window.IsActive(videos) + [Control.IsVisible(500) | Control.IsVisible(59) | [Control.IsVisible(57) + !Container.Content(seasons) + !Container.Content(addons)] | -->
+			<!-- Control.IsVisible(509) | Control.IsVisible(505)] + !Container.Content(episodes) + !Container.Content(sets) + !Container.Content(addons) + -->
+			<!-- !Container.Content(musicvideos) + !Container.Content(files)] | [Control.IsVisible(507) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(artists)]] -->
+			<!-- | [Window.IsActive(music) + Control.IsVisible(57) + !Container.Content(addons)] | [Control.IsVisible(52) + [Container.Content(movies) | Container.Content(tvshows) | -->
+			<!-- Container.Content(seasons) | Container.Content(sets)]]</visible> -->
 		</control>
-<!-- 		<control type="button" id="1823"> -->
-<!-- 			<label>$LOCALIZE[31152]</label> -->
-<!-- 			<label2>$VAR[ArtLabelVar]</label2> -->
-<!-- 			<include>ButtonCommonValues</include> -->
-<!-- 			<onclick> -->
-<!-- 			Skin.SelectBool($LOCALIZE[31152], Poster|InfoWall.Art.Poster, Banner|InfoWall.Art.Banner, Logo|InfoWall.Art.Logo) -->
-<!--  			</onclick> -->
-<!-- 			<visible> -->
-<!-- 				Control.IsVisible(51) -->
-<!-- 				+ !Container.Content(episodes)  -->
-<!-- 				+ !Container.Content(sets)  -->
-<!-- 				+ !Container.Content(addons)  -->
-<!-- 				+ !Container.Content(musicvideos)  -->
-<!-- 				+ !Container.Content(files) -->
-<!-- 			</visible> -->
-<!-- 		</control> -->
+		<!-- <control type="button" id="1823"> -->
+		<!-- <label>$LOCALIZE[31152]</label> -->
+		<!-- <label2>$VAR[ArtLabelVar]</label2> -->
+		<!-- <include>ButtonCommonValues</include> -->
+		<!-- <onclick> -->
+		<!-- Skin.SelectBool($LOCALIZE[31152], Poster|InfoWall.Art.Poster, Banner|InfoWall.Art.Banner, Logo|InfoWall.Art.Logo) -->
+		<!-- </onclick> -->
+		<!-- <visible> -->
+		<!-- Control.IsVisible(51) -->
+		<!-- + !Container.Content(episodes) -->
+		<!-- + !Container.Content(sets) -->
+		<!-- + !Container.Content(addons) -->
+		<!-- + !Container.Content(musicvideos) -->
+		<!-- + !Container.Content(files) -->
+		<!-- </visible> -->
+		<!-- </control> -->
 
 		<control type="button" id="1808">
 			<label>$LOCALIZE[31152] 2</label>
@@ -237,45 +241,45 @@
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SetBool(Art2Customizer)</onclick>
 			<onclick>ActivateWindow(1133)</onclick>
-<!-- 			<visible> -->
-<!-- 			Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)]  -->
-<!-- 			+ !Container.Content(sets) + !Container.Content(seasons) + !Container.Content(addons) + !Container.Content(musicvideos)</visible> -->
+			<!-- <visible> -->
+			<!-- Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)] -->
+			<!-- + !Container.Content(sets) + !Container.Content(seasons) + !Container.Content(addons) + !Container.Content(musicvideos)</visible> -->
 			<visible>
-			Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)] 
+				Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)]
 			</visible>
 		</control>
 
-<!-- 		<control type="button" id="1821"> -->
-<!-- 			<label>$LOCALIZE[31152] 2</label> -->
-<!-- 			<label2>$VAR[Art2LabelVar]</label2> -->
-<!-- 			<include>ButtonCommonValues</include> -->
-<!-- 			<onclick> -->
-<!-- 			Skin.SelectBool(31152,  -->
-<!-- 			31016|List.Art2.Poster,  -->
-<!-- 			31085|List.Art2.Banner,  -->
-<!-- 			31088|List.Art2.Logo,  -->
-<!-- 			20445|List.Art2.Fanart,  -->
-<!-- 			31100|List.Art2.Landscape, -->
-<!-- 			21371|List.Art2.Thumb) -->
-<!-- 			</onclick> -->
-<!-- 			<visible>Control.IsVisible(50)</visible> -->
-<!-- 		</control> -->
+		<!-- <control type="button" id="1821"> -->
+		<!-- <label>$LOCALIZE[31152] 2</label> -->
+		<!-- <label2>$VAR[Art2LabelVar]</label2> -->
+		<!-- <include>ButtonCommonValues</include> -->
+		<!-- <onclick> -->
+		<!-- Skin.SelectBool(31152, -->
+		<!-- 31016|List.Art2.Poster, -->
+		<!-- 31085|List.Art2.Banner, -->
+		<!-- 31088|List.Art2.Logo, -->
+		<!-- 20445|List.Art2.Fanart, -->
+		<!-- 31100|List.Art2.Landscape, -->
+		<!-- 21371|List.Art2.Thumb) -->
+		<!-- </onclick> -->
+		<!-- <visible>Control.IsVisible(50)</visible> -->
+		<!-- </control> -->
 
-<!-- 		<control type="button" id="1822"> -->
-<!-- 			<label>$LOCALIZE[31152] 2</label> -->
-<!-- 			<label2>$VAR[Art2LabelVar]</label2> -->
-<!-- 			<include>ButtonCommonValues</include> -->
-<!-- 			<onclick> -->
-<!-- 			Skin.SelectBool(31152,  -->
-<!-- 			31016|InfoWall.Art2.Poster,  -->
-<!-- 			31085|InfoWall.Art2.Banner,  -->
-<!-- 			31088|InfoWall.Art2.Logo,  -->
-<!-- 			20445|InfoWall.Art2.Fanart,  -->
-<!-- 			31100|InfoWall.Art2.Landscape), -->
-<!-- 			21371|InfoWall.Art2.Thumb) -->
-<!-- 			</onclick> -->
-<!-- 			<visible>Control.IsVisible(51)</visible> -->
-<!-- 		</control> -->
+		<!-- <control type="button" id="1822"> -->
+		<!-- <label>$LOCALIZE[31152] 2</label> -->
+		<!-- <label2>$VAR[Art2LabelVar]</label2> -->
+		<!-- <include>ButtonCommonValues</include> -->
+		<!-- <onclick> -->
+		<!-- Skin.SelectBool(31152, -->
+		<!-- 31016|InfoWall.Art2.Poster, -->
+		<!-- 31085|InfoWall.Art2.Banner, -->
+		<!-- 31088|InfoWall.Art2.Logo, -->
+		<!-- 20445|InfoWall.Art2.Fanart, -->
+		<!-- 31100|InfoWall.Art2.Landscape), -->
+		<!-- 21371|InfoWall.Art2.Thumb) -->
+		<!-- </onclick> -->
+		<!-- <visible>Control.IsVisible(51)</visible> -->
+		<!-- </control> -->
 
 		<control type="button" id="1897">
 			<description>Fallback</description>
@@ -307,7 +311,8 @@
 			<selected>Skin.HasSetting(Enable.SlimList)</selected>
 			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) |
 				Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) |
-				Window.IsActive(radiosearch)]</visible>
+				Window.IsActive(radiosearch)]
+			</visible>
 		</control>
 		<control type="radiobutton" id="1899">
 			<label>31237</label>
@@ -316,7 +321,8 @@
 			<selected>Skin.HasSetting(Enable.WideList)</selected>
 			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) |
 				Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) |
-				Window.IsActive(radiosearch)]</visible>
+				Window.IsActive(radiosearch)]
+			</visible>
 			<enable>!Skin.HasSetting(Enable.2ColumnList)</enable>
 		</control>
 		<control type="radiobutton" id="1898">
@@ -326,7 +332,8 @@
 			<selected>Skin.HasSetting(Enable.2ColumnList)</selected>
 			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) |
 				Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) |
-				Window.IsActive(radiosearch)]</visible>
+				Window.IsActive(radiosearch)]
+			</visible>
 			<enable>!Skin.HasSetting(Enable.WideList)</enable>
 		</control>
 		<include>ArcadeOptions</include>
@@ -703,103 +710,103 @@
 			</control>
 		</control>
 	</include>
-<!-- 	<include name="InfoDialogTopbar"> -->
-<!-- 		<control type="group"> -->
-<!-- 			<control type="image"> -->
-<!-- 				<description>Normal Default Background Image</description> -->
-<!-- 				<include>FullscreenDimensions</include> -->
-<!-- 				<aspectratio align="center" aligny="center">scale</aspectratio> -->
-<!-- 				<texture fallback="special://skin/backgrounds/default_bg.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture> -->
-<!-- 			</control> -->
-<!-- 			<control type="image"> -->
-<!-- 				<include>FullscreenDimensions</include> -->
-<!-- 				<texture>$VAR[CommonBackgroundOverlay]</texture> -->
-<!-- 				<colordiffuse>background</colordiffuse> -->
-<!-- 			</control> -->
-<!-- 			<control type="image"> -->
-<!-- 				<width>FullScreenWidth</width> -->
-<!-- 				<height>120</height> -->
-<!-- 				<texture>menu_fo.png</texture> -->
-<!-- 				<colordiffuse>33000000</colordiffuse> -->
-<!-- 			</control> -->
-<!-- 			<control type="grouplist"> -->
-<!-- 				<left>20</left> -->
-<!-- 				<top>0</top> -->
-<!-- 				<width>900</width> -->
-<!-- 				<height>80</height> -->
-<!-- 				<orientation>horizontal</orientation> -->
-<!-- 				<itemgap>20</itemgap> -->
-			
-			
-<!-- 				<control type="button"> -->
-<!-- 					<visible>Skin.HasSetting(Enable.TouchScreen)</visible> -->
-<!-- 					<width>80</width> -->
-<!-- 					<height>80</height> -->
-<!-- 					<onclick>Back</onclick> -->
-<!-- 					<texturefocus colordiffuse="white">special://skin/extras/icons/back.png</texturefocus> -->
-<!-- 			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/back.png</texturenofocus> -->
-<!-- 					<aspectratio align="center" aligny="center">keep</aspectratio> -->
-<!-- 					<animation effect="fade" start="0" end="100" time="150">VisibleChange -->
-<!-- 					</animation> -->
-<!-- 				</control> -->
+	<!-- <include name="InfoDialogTopbar"> -->
+	<!-- <control type="group"> -->
+	<!-- <control type="image"> -->
+	<!-- <description>Normal Default Background Image</description> -->
+	<!-- <include>FullscreenDimensions</include> -->
+	<!-- <aspectratio align="center" aligny="center">scale</aspectratio> -->
+	<!-- <texture fallback="special://skin/backgrounds/default_bg.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture> -->
+	<!-- </control> -->
+	<!-- <control type="image"> -->
+	<!-- <include>FullscreenDimensions</include> -->
+	<!-- <texture>$VAR[CommonBackgroundOverlay]</texture> -->
+	<!-- <colordiffuse>background</colordiffuse> -->
+	<!-- </control> -->
+	<!-- <control type="image"> -->
+	<!-- <width>FullScreenWidth</width> -->
+	<!-- <height>120</height> -->
+	<!-- <texture>menu_fo.png</texture> -->
+	<!-- <colordiffuse>33000000</colordiffuse> -->
+	<!-- </control> -->
+	<!-- <control type="grouplist"> -->
+	<!-- <left>20</left> -->
+	<!-- <top>0</top> -->
+	<!-- <width>900</width> -->
+	<!-- <height>80</height> -->
+	<!-- <orientation>horizontal</orientation> -->
+	<!-- <itemgap>20</itemgap> -->
 
-<!-- 				<control type="image"> -->
-<!-- 					<top>19</top> -->
-<!-- 					<left>19</left> -->
-<!-- 					<width>80</width> -->
-<!-- 					<height>80</height> -->
-<!-- 					<texture colordiffuse="33787878" border="5">listselect_fo.png</texture> -->
-<!-- 				</control> -->
-				
-<!-- 				<control type="image"> -->
-<!-- 					<top>19</top> -->
-<!-- 					<left>19</left> -->
-<!-- 					<width>80</width> -->
-<!-- 					<height>80</height> -->
-<!-- 					<texture colordiffuse="maintext">$VAR[HeaderIcon]</texture> -->
-<!-- 					<visible>!Window.IsVisible(busydialog) + !Control.IsVisible(12345)</visible> -->
-<!-- 					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation> -->
-<!-- 				</control> -->
-<!-- 				<control type="image"> -->
-<!-- 					<visible>Window.IsVisible(DialogBusy.xml)</visible> -->
-<!-- 					<description>Busy animation</description> -->
-<!-- 					<top>29</top> -->
-<!-- 					<left>29</left> -->
-<!-- 					<width>60</width> -->
-<!-- 					<height>60</height> -->
-<!-- 					<texture colordiffuse="maintext" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture> -->
-<!-- 					<aspectratio>keep</aspectratio> -->
-<!-- 					<animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation> -->
-<!-- 				</control> -->
-<!-- 				<control type="group"> -->
-<!-- 					<control type="button"> -->
-<!--  						<left>102</left>  -->
-<!--  						<top>59</top>  -->
-<!-- 						<width>1715</width> -->
-<!-- 						<height>45</height> -->
-<!-- 						<font>font14</font> -->
-<!-- 						<textoffsetx>15</textoffsetx> -->
-<!-- 						<textcolor>highlight</textcolor> -->
-<!-- 						<label>$VAR[HeaderSubLabelInfoDialog]</label> -->
-<!-- 						<label2>$VAR[TopbarFadeLabel2]</label2> -->
-<!-- 						<onclick>noop</onclick> -->
-<!-- 						<texturefocus>blank.png</texturefocus> -->
-<!-- 						<focusedcolor>highlight</focusedcolor> -->
-<!-- 					</control> -->
-<!-- 				</control> -->
-<!-- 			</control> -->
-<!-- 			<control type="image"> -->
-<!-- 				<description>avatar</description> -->
-<!-- 				<left>1821</left> -->
-<!-- 				<top>19</top> -->
-<!-- 				<width>80</width> -->
-<!-- 				<height>80</height> -->
-<!-- 				<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio> -->
-<!-- 				<texture diffuse="diffuse/nowplaying.png">$VAR[HomeNowPlayingThumbVar]</texture> -->
-<!-- 				<visible>!Window.IsVisible(volumebar) | Player.Muted</visible> -->
-<!-- 			</control> -->
-<!-- 		</control> -->
-<!-- 	</include> -->
+
+	<!-- <control type="button"> -->
+	<!-- <visible>Skin.HasSetting(Enable.TouchScreen)</visible> -->
+	<!-- <width>80</width> -->
+	<!-- <height>80</height> -->
+	<!-- <onclick>Back</onclick> -->
+	<!-- <texturefocus colordiffuse="white">special://skin/extras/icons/back.png</texturefocus> -->
+	<!-- <texturenofocus colordiffuse="white">special://skin/extras/icons/back.png</texturenofocus> -->
+	<!-- <aspectratio align="center" aligny="center">keep</aspectratio> -->
+	<!-- <animation effect="fade" start="0" end="100" time="150">VisibleChange -->
+	<!-- </animation> -->
+	<!-- </control> -->
+
+	<!-- <control type="image"> -->
+	<!-- <top>19</top> -->
+	<!-- <left>19</left> -->
+	<!-- <width>80</width> -->
+	<!-- <height>80</height> -->
+	<!-- <texture colordiffuse="33787878" border="5">listselect_fo.png</texture> -->
+	<!-- </control> -->
+
+	<!-- <control type="image"> -->
+	<!-- <top>19</top> -->
+	<!-- <left>19</left> -->
+	<!-- <width>80</width> -->
+	<!-- <height>80</height> -->
+	<!-- <texture colordiffuse="maintext">$VAR[HeaderIcon]</texture> -->
+	<!-- <visible>!Window.IsVisible(busydialog) + !Control.IsVisible(12345)</visible> -->
+	<!-- <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation> -->
+	<!-- </control> -->
+	<!-- <control type="image"> -->
+	<!-- <visible>Window.IsVisible(DialogBusy.xml)</visible> -->
+	<!-- <description>Busy animation</description> -->
+	<!-- <top>29</top> -->
+	<!-- <left>29</left> -->
+	<!-- <width>60</width> -->
+	<!-- <height>60</height> -->
+	<!-- <texture colordiffuse="maintext" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture> -->
+	<!-- <aspectratio>keep</aspectratio> -->
+	<!-- <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation> -->
+	<!-- </control> -->
+	<!-- <control type="group"> -->
+	<!-- <control type="button"> -->
+	<!-- <left>102</left> -->
+	<!-- <top>59</top> -->
+	<!-- <width>1715</width> -->
+	<!-- <height>45</height> -->
+	<!-- <font>font14</font> -->
+	<!-- <textoffsetx>15</textoffsetx> -->
+	<!-- <textcolor>highlight</textcolor> -->
+	<!-- <label>$VAR[HeaderSubLabelInfoDialog]</label> -->
+	<!-- <label2>$VAR[TopbarFadeLabel2]</label2> -->
+	<!-- <onclick>noop</onclick> -->
+	<!-- <texturefocus>blank.png</texturefocus> -->
+	<!-- <focusedcolor>highlight</focusedcolor> -->
+	<!-- </control> -->
+	<!-- </control> -->
+	<!-- </control> -->
+	<!-- <control type="image"> -->
+	<!-- <description>avatar</description> -->
+	<!-- <left>1821</left> -->
+	<!-- <top>19</top> -->
+	<!-- <width>80</width> -->
+	<!-- <height>80</height> -->
+	<!-- <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio> -->
+	<!-- <texture diffuse="diffuse/nowplaying.png">$VAR[HomeNowPlayingThumbVar]</texture> -->
+	<!-- <visible>!Window.IsVisible(volumebar) | Player.Muted</visible> -->
+	<!-- </control> -->
+	<!-- </control> -->
+	<!-- </include> -->
 	<include name="DialogBackgroundCommons">
 		<control type="image">
 			<description>background image</description>
@@ -921,7 +928,8 @@
 	<include name="OverlayIcons">
 		<control type="group">
 			<visible>$EXP[isVideo] | $EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | $EXP[isSet] | $EXP[isMusicvideo] | Container.Content(files) |
-				Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(videos)</visible>
+				Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(videos)
+			</visible>
 			<left>$PARAM[OverlayLeft]</left>
 			<top>$PARAM[OverlayTop]</top>
 			<control type="image">
@@ -1052,7 +1060,7 @@
 					<visible>ListItem.IsStereoscopic</visible>
 				</control>
 			</control>
-			
+
 			<control type="image">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
@@ -1065,24 +1073,45 @@
 				<texture>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</texture>
 				<!-- <visible>!String.IsEmpty(ListItem.VideoResolution)</visible> -->
 			</control>
-			<control type="image">
+			<!-- <control type="label"> <include>MediaFlagVars</include> <height>$PARAM[height]</height> <font>font13</font> <label>$INFO[ListItem.VideoResolution]</label> </control> -->
+			<control type="group">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
-				<texture>$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
-				<!-- <visible>!String.IsEmpty(ListItem.VideoCodec)</visible> -->
+				<control type="label">
+					<label>$INFO[ListItem.VideoCodec]</label>
+					<scroll>true</scroll>
+					<visible>String.IsEqual(Control.GetLabel(30001),blank.png)</visible>
+				</control>
+				<control type="image" id="30001">
+					<include>MediaFlagVars</include>
+					<height>$PARAM[height]</height>
+					<texture fallback="blank.png">$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
+				</control>
 			</control>
+
+
 			<control type="image">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
 				<texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
 				<!-- <visible>!String.IsEmpty(ListItem.VideoAspect)</visible> -->
 			</control>
-			<control type="image">
+
+			<control type="group">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
-				<texture>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
-				<!-- <visible>!String.IsEmpty(ListItem.AudioCodec)</visible> -->
+				<control type="image" id="30002">
+					<include>MediaFlagVars</include>
+					<height>$PARAM[height]</height>
+					<texture fallback="blank.png">$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
+				</control>
+				<control type="label">
+					<label>$INFO[ListItem.AudioCodec]</label>
+					<scroll>true</scroll>
+					<visible>String.IsEqual(Control.GetLabel(30002),blank.png)</visible>
+				</control>
 			</control>
+
 			<control type="image">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
@@ -1096,7 +1125,8 @@
 					<height>$PARAM[height]</height>
 					<texture>flags/cc.png</texture>
 					<visible>!String.IsEmpty(ListItem.SubtitleLanguage) + ![$EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | Control.IsVisible(500) | Control.IsVisible(501) |
-						Control.IsVisible(57) | Control.IsVisible(55)]</visible>
+						Control.IsVisible(57) | Control.IsVisible(55)]
+					</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -1113,9 +1143,9 @@
 				<control type="image">
 					<include>MediaFlagVars</include>
 					<height>$PARAM[height]</height>
-<!-- 					<texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture> -->
- 					<texture>$VAR[RatingFlagVar]</texture> 
-<!-- 					<visible> !Window.IsVisible(movieinformation)</visible> -->
+					<!-- <texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture> -->
+					<texture>$VAR[RatingFlagVar]</texture>
+					<!-- <visible> !Window.IsVisible(movieinformation)</visible> -->
 				</control>
 			</control>
 		</control>
@@ -1133,54 +1163,54 @@
 			<orientation>horizontal</orientation>
 			<include>VisibleFadeEffect</include>
 
-	
+
 			<control type="image">
 				<include>MediaFlagVars</include>
 				<height>$PARAM[height]</height>
 				<texture>$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
 			</control>
 
-<!-- 			<control type="image"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<height>$PARAM[height]</height> -->
-<!-- 				<texture>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</texture> -->
-<!-- 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible> -->
-<!-- 			</control> -->
-<!-- 			<control type="image"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<height>$PARAM[height]</height> -->
-<!-- 				<texture>$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture> -->
-<!-- 				<visible>!String.IsEmpty(ListItem.VideoCodec)</visible> -->
-<!-- 			</control> -->
-<!-- 			<control type="image"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<height>$PARAM[height]</height> -->
-<!-- 				<texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture> -->
-<!-- 				<visible>!String.IsEmpty(ListItem.VideoAspect)</visible> -->
-<!-- 			</control> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</texture> -->
+			<!-- <visible>!String.IsEmpty(ListItem.VideoResolution)</visible> -->
+			<!-- </control> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture> -->
+			<!-- <visible>!String.IsEmpty(ListItem.VideoCodec)</visible> -->
+			<!-- </control> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture> -->
+			<!-- <visible>!String.IsEmpty(ListItem.VideoAspect)</visible> -->
+			<!-- </control> -->
 
-<!-- 			<control type="image"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<height>$PARAM[height]</height> -->
-<!-- 				<texture>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture> -->
-<!-- 				<visible>!String.IsEmpty(ListItem.AudioCodec)</visible> -->
-<!-- 			</control> -->
-<!-- 			<control type="image"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<height>$PARAM[height]</height> -->
-<!-- 				<texture>$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture> -->
-<!-- 				<visible>!String.IsEmpty(ListItem.AudioChannels)</visible> -->
-<!-- 			</control> -->
-<!-- 			<control type="group"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<control type="image"> -->
-<!-- 					<include>MediaFlagVars</include> -->
-<!-- 					<height>$PARAM[height]</height> -->
-<!-- 					<texture>flags/cc.png</texture> -->
-<!-- 					<visible>!String.IsEmpty(ListItem.SubtitleLanguage) + ![$EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | Control.IsVisible(500) | Control.IsVisible(501) | -->
-<!-- 						Control.IsVisible(57) | Control.IsVisible(55)]</visible> -->
-<!-- 				</control> -->
-<!-- 			</control> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture> -->
+			<!-- <visible>!String.IsEmpty(ListItem.AudioCodec)</visible> -->
+			<!-- </control> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture> -->
+			<!-- <visible>!String.IsEmpty(ListItem.AudioChannels)</visible> -->
+			<!-- </control> -->
+			<!-- <control type="group"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>flags/cc.png</texture> -->
+			<!-- <visible>!String.IsEmpty(ListItem.SubtitleLanguage) + ![$EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | Control.IsVisible(500) | Control.IsVisible(501) | -->
+			<!-- Control.IsVisible(57) | Control.IsVisible(55)]</visible> -->
+			<!-- </control> -->
+			<!-- </control> -->
 			<control type="group">
 				<include>MediaFlagVars</include>
 				<control type="image">
@@ -1190,14 +1220,14 @@
 					<visible>!IsEmpty(ListItem.Studio)</visible>
 				</control>
 			</control>
-<!-- 			<control type="group"> -->
-<!-- 				<include>MediaFlagVars</include> -->
-<!-- 				<control type="image"> -->
-<!-- 					<include>MediaFlagVars</include> -->
-<!-- 					<height>$PARAM[height]</height> -->
-<!--  					<texture>$VAR[RatingFlagVar]</texture>  -->
-<!-- 				</control> -->
-<!-- 			</control> -->
+			<!-- <control type="group"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <control type="image"> -->
+			<!-- <include>MediaFlagVars</include> -->
+			<!-- <height>$PARAM[height]</height> -->
+			<!-- <texture>$VAR[RatingFlagVar]</texture> -->
+			<!-- </control> -->
+			<!-- </control> -->
 		</control>
 	</include>
 
@@ -1411,7 +1441,8 @@
 		<control type="label">
 			<height>50</height>
 			<label>$LOCALIZE[169]:$INFO[Player.Process(videowidth), ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA ,
-				AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
+				AR]$INFO[Player.Process(videofps),$COMMA , FPS]
+			</label>
 			<visible>!String.IsEmpty(Player.Process(videowidth)) | !String.IsEmpty(Player.Process(videoheight)) | !String.IsEmpty(Player.Process(videodar))</visible>
 		</control>
 		<control type="label">

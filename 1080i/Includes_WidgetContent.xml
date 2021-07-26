@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include file="View_IconIncludes.xml"/>    
+    <include file="Includes_GenreIcons.xml"/>    
 
     <include name="WidgetBusyAnimation">
         <control type="image" id="12345">
