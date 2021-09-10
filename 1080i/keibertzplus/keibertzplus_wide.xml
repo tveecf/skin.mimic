@@ -7,7 +7,7 @@
 		<param name="colordiffuse" default="33787878" />
 		<param name="diffuse" default="false" />
 		<param name="flipy" default="false" />
-		<param name="texture" default="$INFO[ListItem.Icon]" />
+		<param name="texture" default="$INFO[ListItem.Art(thumb)]" />
 		<param name="texturecolor" default="false" />
 		<param name="textureborder" default="0" />
 		<param name="top" default="210" />
