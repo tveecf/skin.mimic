@@ -1,3 +1,29 @@
+2.0.5
+* Fix "poster" for Arcade, Kiebertz, and Coverflow views (ListItem.Icon no longer shows a poster in matrix)
+* Handle Seasons and Sets in Archade, Kieertz, and Coverflow views
+
+2.0.4
+* updates to codec icon images
+
+2.0.3-b5
+* Add some of the newly available audio info to list screen for songs
+
+2.0.3-b4
+* Refinement of Art2 - settings per content-type of focused item
+
+2.0.3-b3
+* Changes to weather map screen
+* push a lot of hard-coded strings into localization PO instead
+* Expand Art2 selection (Right column artwork) for InfoWall and List Views
+* suppress chance of precipitation label when we don't have percentage to display
+
+2.0.1
+* Some Matrix related updates
+* revamp "List" view so that images work under matrix.  Now shares the "right info" area with InfoWall
+  
+1.0.0-r23
+* version bump
+
 1.0.0-r22
 * fix "record" button in video OSD
 
@@ -14,7 +40,6 @@
 * settings for whether to use actor-role images, and select the path via settings
 * pay attention to MediaFlags skin setting to decide whether to show media flags in footer area
  
-
 1.0.0-r18
 * version bump
 

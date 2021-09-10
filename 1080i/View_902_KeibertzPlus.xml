@@ -8,10 +8,10 @@
 	<include file="keibertzplus/keibertzplus_slim.xml" />
 	<include file="keibertzplus/keibertzplus_3ds.xml" />
 	<!-- expressions -->
-	<expression name="KeibertzPlusBrightIcons">Container.Content(Episodes) + !Skin.HasSetting(Episodes_902_BrightIcons) | Container.Content(Movies) + !Skin.HasSetting(Movies_902_BrightIcons) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_902_BrightIcons) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_BrightIcons)</expression>
-	<expression name="KeibertzPlusHideLabels">Container.Content(Episodes) + !Skin.HasSetting(Episodes_902_HideLabels) | Container.Content(Movies) + !Skin.HasSetting(Movies_902_HideLabels) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_902_HideLabels) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_HideLabels)</expression>
-	<expression name="KeibertzPlusHideReflections">Container.Content(Episodes) + !Skin.HasSetting(Episodes_902_HideReflections) | Container.Content(Movies) + !Skin.HasSetting(Movies_902_HideReflections) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_902_HideReflections) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_HideReflections)</expression>
-	<expression name="KeibertzPlusStaticIcons">Container.Content(TVShows) + !Skin.HasSetting(TVShows_902_StaticIcons) | Container.Content(Movies) + !Skin.HasSetting(Movies_902_StaticIcons) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_902_StaticIcons) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_StaticIcons)</expression>
+	<expression name="KeibertzPlusBrightIcons">Container.Content(Episodes) + !Skin.HasSetting(Episodes_902_BrightIcons) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_902_BrightIcons) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_902_BrightIcons) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_BrightIcons)</expression>
+	<expression name="KeibertzPlusHideLabels">Container.Content(Episodes) + !Skin.HasSetting(Episodes_902_HideLabels) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_902_HideLabels) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_902_HideLabels) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_HideLabels)</expression>
+	<expression name="KeibertzPlusHideReflections">Container.Content(Episodes) + !Skin.HasSetting(Episodes_902_HideReflections) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_902_HideReflections) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_902_HideReflections) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_HideReflections)</expression>
+	<expression name="KeibertzPlusStaticIcons">[Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_902_StaticIcons) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_902_StaticIcons) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_902_StaticIcons) | $EXP[GameSupport] + !Skin.HasSetting(Games_902_StaticIcons)</expression>
 	<!-- keibertzplus_label -->
 	<include name="KeibertzPlusCommonLabel">
 		<definition>
@@ -76,35 +76,35 @@
 			<label2>$VAR[ImageLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(89000, 20445|, 89003|Movies_902_Landscape)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="90211">
 			<description>Bright Icons</description>
 			<label>Bright icons</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_902_BrightIcons)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="90212">
 			<description>Disable Icon Zoom</description>
 			<label>Disable zoom</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_902_StaticIcons)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="90213">
 			<description>Hide Reflections</description>
 			<label>Hide reflections</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_902_HideReflections)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="90214">
 			<description>Hide Labels</description>
 			<label>Hide labels</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_902_HideLabels)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="button" id="90220">
 			<description>Art Selector</description>
@@ -112,35 +112,35 @@
 			<label2>$VAR[ImageLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(89000, 20445|, 89003|TVShows_902_Landscape)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="90221">
 			<description>Bright Icons</description>
 			<label>Bright icons</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_902_BrightIcons)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="90222">
 			<description>Disable Icon Zoom</description>
 			<label>Disable zoom</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_902_StaticIcons)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="90223">
 			<description>Hide Reflections</description>
 			<label>Hide reflections</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_902_HideReflections)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="90224">
 			<description>Hide Labels</description>
 			<label>Hide labels</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_902_HideLabels)</onclick>
-			<visible>Control.IsVisible(902) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(902) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="button" id="90231">
 			<description>Art Selector</description>

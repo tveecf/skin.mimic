@@ -8,7 +8,7 @@
 	<include file="coverflow/coverflow_slim.xml" />
 	<include file="coverflow/coverflow_3ds.xml" />
 	<!-- expressions -->
-	<expression name="CoverflowBrightIcons">$EXP[GameSupport] + !Skin.HasSetting(Games_903_BrightIcons) | Container.Content(Albums) + !Skin.HasSetting(Albums_903_BrightIcons) | Container.Content(Episodes) + !Skin.HasSetting(Episodes_903_BrightIcons) | Container.Content(Movies) + !Skin.HasSetting(Movies_903_BrightIcons) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_903_BrightIcons)</expression>
+	<expression name="CoverflowBrightIcons">$EXP[GameSupport] + !Skin.HasSetting(Games_903_BrightIcons) | Container.Content(Albums) + !Skin.HasSetting(Albums_903_BrightIcons) | Container.Content(Episodes) + !Skin.HasSetting(Episodes_903_BrightIcons) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_903_BrightIcons) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_903_BrightIcons)</expression>
 	<!-- view -->
 	<include name="View_903_Coverflow">
 		<control type="group">
@@ -47,7 +47,7 @@
 			</control>
 			<control type="group">
 				<description>Poster</description>
-				<visible>Container.Content(Movies) | Container.Content(TVShows) | $EXP[GameSupport] + !$EXP[KnownGameSystems]</visible>
+				<visible>[Container.Content(Movies)| Container.Content(sets)] | [Container.Content(TVShows)| Container.Content(seasons)] | $EXP[GameSupport] + !$EXP[KnownGameSystems]</visible>
 				<control type="group" id="7001">
 					<visible>Container.OnNext</visible>
 					<animation effect="slide" end="-225" time="250" reversible="false">Hidden</animation>
@@ -191,11 +191,11 @@
 				<effect type="zoom" end="75" start="100" time="200" center="auto" tween="quadratic" easing="in" />
 			</animation>
 			<control type="group">
-				<visible>Container.Content(Movies) + !Skin.HasSetting(CoverflowMoviesBasic) | Container.Content(TVShows) + !Skin.HasSetting(CoverflowTVShowsBasic)| $EXP[GameSupport] + !Skin.HasSetting(CoverflowGamesBasic)</visible>
+				<visible>[Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(CoverflowMoviesBasic) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(CoverflowTVShowsBasic)| $EXP[GameSupport] + !Skin.HasSetting(CoverflowGamesBasic)</visible>
 				<include>CoverflowLayoutDefault</include>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Albums) | Container.Content(Movies) + Skin.HasSetting(CoverflowMoviesBasic) | Container.Content(TVShows) + Skin.HasSetting(CoverflowTVShowsBasic) | $EXP[GameSupport] + Skin.HasSetting(CoverflowGamesBasic)</visible>
+				<visible>Container.Content(Albums) | [Container.Content(Movies)| Container.Content(sets)] + Skin.HasSetting(CoverflowMoviesBasic) | [Container.Content(TVShows)| Container.Content(seasons)] + Skin.HasSetting(CoverflowTVShowsBasic) | $EXP[GameSupport] + Skin.HasSetting(CoverflowGamesBasic)</visible>
 				<include>CoverflowLayoutSimple</include>
 			</control>
 		</control>
@@ -325,14 +325,14 @@
 			<label2>$VAR[LayoutLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(90301, 90901|, 90301|CoverflowMoviesBasic)</onclick>
-			<visible>Control.IsVisible(903) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(903) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="90302">
 			<description>Bright Icons (Movies)</description>
 			<label>Bright icons</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_903_BrightIcons)</onclick>
-			<visible>Control.IsVisible(903) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(903) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="button" id="90311">
 			<description>Choose Template (TV Shows)</description>
@@ -340,14 +340,14 @@
 			<label2>$VAR[LayoutLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(90301, 90901|, 90301|CoverflowTVShowsBasic)</onclick>
-			<visible>Control.IsVisible(903) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(903) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="90312">
 			<description>Bright Icons (TV Shows)</description>
 			<label>Bright icons</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_903_BrightIcons)</onclick>
-			<visible>Control.IsVisible(903) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(903) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>		
 		<control type="radiobutton" id="90342">
 			<description>Bright Icons (Albums)</description>

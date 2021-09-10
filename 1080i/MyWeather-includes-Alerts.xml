@@ -85,7 +85,7 @@
 						<font>font15</font>
 						<selectedcolor>highlight</selectedcolor>
 						<scrolltime>200</scrolltime>
-					    <autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
+<!-- 					    <autoscroll delay="3000" time="1000" repeat="10000"></autoscroll> -->
 						<label>$INFO[ListItem.Property(description)]</label>
 					</control>
 
@@ -141,7 +141,7 @@
 						<height>500</height>
 						<font>font15</font>
 						<scrolltime>200</scrolltime>
-					    <autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
+					    <autoscroll delay="3000" time="1000" repeat="10000">true</autoscroll>
 						<label>$INFO[ListItem.Property(description)]</label>
 					</control>
 

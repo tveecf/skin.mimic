@@ -99,7 +99,7 @@
 								<height>50</height>
 								<font>font15</font>
 								<selectedcolor>highlight</selectedcolor>
-								<label>$LOCALIZE[1442] $LOCALIZE[1443] [LOWERCASE]$LOCALIZE[1448][/LOWERCASE]: $INFO[ListItem.Property(ChancePrecipitation)]</label>
+								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[1442] $LOCALIZE[1443] [LOWERCASE]$LOCALIZE[1448][/LOWERCASE]: ]</label>
 							</control>
 							<control type="label">
 								<left>200</left>
@@ -180,7 +180,7 @@
 								<width>525</width>
 								<height>50</height>
 								<font>font15</font>
-								<label>$LOCALIZE[1442] $LOCALIZE[1443] [LOWERCASE]$LOCALIZE[1448][/LOWERCASE]: $INFO[ListItem.Property(ChancePrecipitation)]</label>
+								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[1442] $LOCALIZE[1443] [LOWERCASE]$LOCALIZE[1448][/LOWERCASE]: ]</label>
 							</control>
 							<control type="label">
 								<left>200</left>

@@ -405,7 +405,7 @@
                     </control>
                     <control type="button" id="209">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Transparency Mask for Visualization + fanart</label>
+                        <label>90914</label>
                         <label2>$INFO[Skin.String(VisBackgroundMask)]</label2>
                         <onclick>Skin.SetString(VisBackgroundMask)</onclick>
                     </control>
@@ -469,7 +469,7 @@
                     </control>
                     <control type="radiobutton" id="308">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Show Touch Screen Controls</label>
+                        <label>90917</label>
                         <onclick>Skin.ToggleSetting(Enable.TouchScreen)</onclick>
                         <selected>Skin.HasSetting(Enable.TouchScreen)</selected>
                     </control>
@@ -536,41 +536,47 @@
                     
                     <control type="radiobutton" id="408">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Use Icons From Weather Provider</label>
+                        <label>90912</label>
                         <onclick>Skin.ToggleSetting(Enable.RemoteWeatherIcons)</onclick>
                         <selected>Skin.HasSetting(Enable.RemoteWeatherIcons)</selected>
                     </control>
+                    <control type="radiobutton" id="420">
+                        <include>SkinSettingsButtonDefaults</include>
+                        <label>90913</label>
+                        <onclick>Skin.ToggleSetting(Enable.ZoomRadar)</onclick>
+                        <selected>Skin.HasSetting(Enable.ZoomRadar)</selected>
+                    </control>
                     <control type="radiobutton" id="409">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Use Custom Actor/Role Images</label>
+                        <label>90918</label>
                         <onclick>Skin.ToggleSetting(Enable.ActorRoleImages)</onclick>
                         <selected>Skin.HasSetting(Enable.ActorRoleImages)</selected>
                     </control>
                     <control type="button" id="410">
  						<visible>Skin.HasSetting(Enable.ActorRoleImages)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Path for Custom Actor-Role Images</label>
+                        <label>90919</label>
                         <label2>$INFO[Skin.String(CustomActorRoleImages.path)]</label2>
                         <onclick>Skin.SetPath(CustomActorRoleImages.path,special://profile)</onclick>
                     </control>
                     
                     <control type="radiobutton" id="411">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Use Custom Movie Genre Icons</label>
+                        <label>90920</label>
                         <onclick>Skin.ToggleSetting(Enable.ExternalMovieGenreIcons)</onclick>
                         <selected>Skin.HasSetting(Enable.ExternalMovieGenreIcons)</selected>
                     </control>
                     <control type="button" id="412">
  						<visible>Skin.HasSetting(Enable.ExternalMovieGenreIcons)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Path for Custom Movie Genre Icons</label>
+                        <label>90921</label>
                         <label2>$INFO[Skin.String(CustomMovieGenreIcons.path)]</label2>
                         <onclick>Skin.SetPath(CustomMovieGenreIcons.path,special://profile)</onclick>
                     </control>
                     <control type="button" id="413">
  						<visible>!Skin.HasSetting(Enable.ExternalMovieGenreIcons)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Select Movie Genre Icon Pack</label>
+                        <label>90922</label>
                         <label2>$INFO[Skin.String(MovieGenreIcons.name)]</label2>
                         <onclick>RunScript(script.image.resource.select,property=MovieGenreIcons&amp;type=resource.images.moviegenreicons)</onclick>
                     </control>
@@ -578,43 +584,42 @@
 
                     <control type="radiobutton" id="414">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Use Custom TV Genre Icons</label>
+                        <label>90923</label>
                         <onclick>Skin.ToggleSetting(Enable.ExternalTVGenreIcons)</onclick>
                         <selected>Skin.HasSetting(Enable.ExternalTVGenreIcons)</selected>
                     </control>
                     <control type="button" id="415">
  						<visible>Skin.HasSetting(Enable.ExternalTVGenreIcons)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Path for Custom TV Genre Icons</label>
+                        <label>90924</label>
                         <label2>$INFO[Skin.String(CustomTVGenreIcons.path)]</label2>
                         <onclick>Skin.SetPath(CustomTVGenreIcons.path,special://profile)</onclick>
                     </control>
                     <control type="button" id="416">
  						<visible>!Skin.HasSetting(Enable.ExternalTVGenreIcons)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Select TV Genre Icon Pack</label>
+                        <label>90925</label>
                         <label2>$INFO[Skin.String(TVGenreIcons.name)]</label2>
                         <onclick>RunScript(script.image.resource.select,property=TVGenreIcons&amp;type=resource.images.moviegenreicons)</onclick>
                     </control>
 
-
                     <control type="radiobutton" id="417">
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Use Custom Music Genre Icons</label>
+                        <label>90926</label>
                         <onclick>Skin.ToggleSetting(Enable.ExternalMusicGenreIcons)</onclick>
                         <selected>Skin.HasSetting(Enable.ExternalMusicGenreIcons)</selected>
                     </control>
                     <control type="button" id="418">
  						<visible>Skin.HasSetting(Enable.ExternalMusicGenreIcons)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Path for Custom Music Genre Icons</label>
+                        <label>90927</label>
                         <label2>$INFO[Skin.String(CustomMusicGenreIcons.path)]</label2>
                         <onclick>Skin.SetPath(CustomMusicGenreIcons.path,special://profile)</onclick>
                     </control>
                     <control type="button" id="419">
  						<visible>!Skin.HasSetting(Enable.ExternalMusicGenreIcons)</visible>
                         <include>SkinSettingsButtonDefaults</include>
-                        <label>Select Music Genre Icon Pack</label>
+                        <label>90928</label>
                         <label2>$INFO[Skin.String(MusicGenreIcons.name)]</label2>
                         <onclick>RunScript(script.image.resource.select,property=MusicGenreIcons&amp;type=resource.images.musicgenreicons)</onclick>
                     </control>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<!-- expressions -->
-	<expression name="ArcadeBrightIcons">Container.Content(Episodes) + !Skin.HasSetting(Episodes_900_BrightIcons) | Container.Content(Movies) + !Skin.HasSetting(Movies_900_BrightIcons) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_900_BrightIcons) | $EXP[GameSupport] + !Skin.HasSetting(Games_900_BrightIcons)</expression>
-	<expression name="ArcadeHideStars">Container.Content(Episodes) + !Skin.HasSetting(Episodes_900_HideStars) | Container.Content(Movies) + !Skin.HasSetting(Movies_900_HideStars) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_900_HideStars)</expression>
-	<expression name="ArcadeHideStudioFlags">Container.Content(Episodes) + !Skin.HasSetting(Episodes_900_HideStudioFlags) | Container.Content(Movies) + !Skin.HasSetting(Movies_900_HideStudioFlags) | Container.Content(TVShows) + !Skin.HasSetting(TVShows_900_HideStudioFlags)</expression>
+	<expression name="ArcadeBrightIcons">Container.Content(Episodes) + !Skin.HasSetting(Episodes_900_BrightIcons) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_900_BrightIcons) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_900_BrightIcons) | $EXP[GameSupport] + !Skin.HasSetting(Games_900_BrightIcons)</expression>
+	<expression name="ArcadeHideStars">Container.Content(Episodes) + !Skin.HasSetting(Episodes_900_HideStars) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_900_HideStars) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_900_HideStars)</expression>
+	<expression name="ArcadeHideStudioFlags">Container.Content(Episodes) + !Skin.HasSetting(Episodes_900_HideStudioFlags) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_900_HideStudioFlags) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_900_HideStudioFlags)</expression>
 	<!-- view -->
 	<include name="View_900_Arcade">
 		<control type="group">
@@ -59,7 +59,7 @@
 			</control>		
 		</control>
 		<control type="group">
-				<animation type="Conditional" condition="Skin.HasSetting(Arcade.Games.Cirrus" reversible="true">
+				<animation type="Conditional" condition="Skin.HasSetting(Arcade.Games.Cirrus)" reversible="true">
 					<effect type="zoom" center="auto" start="100" end="100" time="0" />
 				</animation>			
 			<description>Arcade</description>
@@ -100,7 +100,7 @@
 				<animation type="Conditional" condition="$EXP[GameSupport] + [$EXP[DetectSquare]]" reversible="true">
 					<effect type="slide" start="0,0" end="-635,0" time="0" />				
 				</animation>				
-				<animation type="Conditional" condition="Container.Content(Movies) | Container.Content(TVShows) | $EXP[GameSupport] + !$EXP[KnownGameSystems]" reversible="true">
+				<animation type="Conditional" condition="[Container.Content(Movies)| Container.Content(sets)] | [Container.Content(TVShows)| Container.Content(seasons)] | $EXP[GameSupport] + !$EXP[KnownGameSystems]" reversible="true">
 					<effect type="slide" start="0,0" end="-305,0" time="0" />
 				</animation>
 				<animation type="Conditional" condition="Container.Content(Episodes)" reversible="true">
@@ -113,7 +113,7 @@
 						<top>387</top>
 						<width>306</width>
 						<height>270</height>
-						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
 						<animation type="Conditional" condition="true" reversible="false">
@@ -125,7 +125,7 @@
 						<top>115</top>
 						<width>306</width>
 						<height>270</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -171,7 +171,7 @@
 							<top>387</top>
 							<width>306</width>
 							<height>270</height>
-							<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
 							<animation type="Conditional" condition="true" reversible="false">
@@ -197,7 +197,7 @@
 							<top>115</top>
 							<width>306</width>
 							<height>270</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -227,7 +227,7 @@
 						<top>388</top>
 						<width>226</width>
 						<height>270</height>
-						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
 						<animation type="Conditional" condition="true" reversible="false">
@@ -240,7 +240,7 @@
 						<top>115</top>
 						<width>226</width>
 						<height>270</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -289,7 +289,7 @@
 							<top>388</top>
 							<width>226</width>
 							<height>270</height>
-							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
 							<animation type="Conditional" condition="true" reversible="false">
@@ -314,7 +314,7 @@
 							<top>115</top>
 							<width>226</width>
 							<height>270</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -344,7 +344,7 @@
 						<top>384</top>
 						<width>180</width>
 						<height>316</height>
-						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
 						<animation type="Conditional" condition="true" reversible="false">
@@ -356,7 +356,7 @@
 						<top>68</top>
 						<width>180</width>
 						<height>316</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -406,7 +406,7 @@
 							<top>384</top>
 							<width>180</width>
 							<height>316</height>
-							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
 							<animation type="Conditional" condition="true" reversible="false">
@@ -432,7 +432,7 @@
 							<top>68</top>
 							<width>180</width>
 							<height>316</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -462,7 +462,7 @@
 						<top>384</top>
 						<width>360</width>
 						<height>262</height>
-						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
 						<animation type="Conditional" condition="true" reversible="false">
@@ -474,7 +474,7 @@
 						<top>120</top>
 						<width>360</width>
 						<height>262</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -520,7 +520,7 @@
 							<top>384</top>
 							<width>360</width>
 							<height>262</height>
-							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
 							<animation type="Conditional" condition="true" reversible="false">
@@ -546,7 +546,7 @@
 							<top>120</top>
 							<width>360</width>
 							<height>262</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -576,7 +576,7 @@
 						<top>387</top>
 						<width>270</width>
 						<height>270</height>
-						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
 						<animation type="Conditional" condition="true" reversible="false">
@@ -589,7 +589,7 @@
 						<top>115</top>
 						<width>270</width>
 						<height>270</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -641,7 +641,7 @@
 								<top>387</top>
 								<width>270</width>
 								<height>270</height>
-								<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+								<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
 								<aspectratio>stretch</aspectratio>
 								<bordersize>5</bordersize>
 							</control>
@@ -667,7 +667,7 @@
 							<top>115</top>
 							<width>270</width>
 							<height>270</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -694,13 +694,13 @@
 					</control>
 				</focusedlayout>
 				<!-- Poster -->
-				<itemlayout width="230" height="500" condition="Container.Content(Movies) | Container.Content(TVShows) | $EXP[GameSupport] + !$EXP[KnownGameSystems]">
+				<itemlayout width="230" height="500" condition="[Container.Content(Movies)| Container.Content(sets)] | [Container.Content(TVShows)| Container.Content(seasons)] | $EXP[GameSupport] + !$EXP[KnownGameSystems]">
 					<control type="image">
 						<left>10</left>
 						<top>384</top>
 						<width>210</width>
 						<height>316</height>
-						<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" colordiffuse="15FFFFFF" flipy="true">$INFO[ListItem.Art(poster)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
 						<animation type="Conditional" condition="true" reversible="false">
@@ -712,7 +712,7 @@
 						<top>68</top>
 						<width>210</width>
 						<height>316</height>
-						<texture background="true" diffuse="diftest.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="diftest.png">$INFO[ListItem.Art(poster)]</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -728,16 +728,16 @@
 						<visible>$EXP[ArcadeBrightIcons]</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="230" height="500" condition="Container.Content(Movies) | Container.Content(TVShows) | $EXP[GameSupport] + !$EXP[KnownGameSystems]">
+				<focusedlayout width="230" height="500" condition="Container.Content(sets) | Container.Content(seasons) | Container.Content(Movies) | Container.Content(TVShows) | $EXP[GameSupport] + !$EXP[KnownGameSystems]">
 					<control type="group">
 						<visible>$EXP[GameSupport] + Skin.HasSetting(Arcade.Trailers)</visible>
 						<include>GameTrailerAutoplay</include>
 					</control>
 					<control type="group">
-						<animation type="Focus" condition="Container.Content(Movies) + !Skin.HasSetting(ArcadeMoviesMini) | Container.Content(TVShows) + !Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + !Skin.HasSetting(ArcadeGamesMini)" reversible="false">
+						<animation type="Focus" condition="[Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(ArcadeMoviesMini) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + !Skin.HasSetting(ArcadeGamesMini)" reversible="false">
 							<effect type="zoom" center="119,216" start="100" end="127" time="800" tween="back" easing="out" />
 						</animation>
-						<animation type="Unfocus" condition="Container.Content(Movies) + !Skin.HasSetting(ArcadeMoviesMini) | Container.Content(TVShows) + !Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + !Skin.HasSetting(ArcadeGamesMini)">
+						<animation type="Unfocus" condition="[Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(ArcadeMoviesMini) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + !Skin.HasSetting(ArcadeGamesMini)">
 							<effect type="zoom" center="119,216" start="127" end="100" time="400" tween="quadratic" easing="out" />
 						</animation>
 						<control type="image">
@@ -761,7 +761,7 @@
 							<top>384</top>
 							<width>210</width>
 							<height>316</height>
-							<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true" colordiffuse="10FFFFFF" flipy="true">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
 							<animation type="Conditional" condition="true" reversible="false">
@@ -786,7 +786,7 @@
 							<top>68</top>
 							<width>210</width>
 							<height>316</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -1015,7 +1015,7 @@
 			<control type="group">
 				<control type="group">
 					<description>Default</description>
-					<visible>Container.Content(Episodes) + [!Skin.HasSetting(ArcadeEpisodesReversed) + !Skin.HasSetting(ArcadeEpisodesBigInfo) + !Skin.HasSetting(ArcadeEpisodesMini)] | Container.Content(Movies) + [!Skin.HasSetting(ArcadeMoviesReversed) + !Skin.HasSetting(ArcadeMoviesBigInfo) + !Skin.HasSetting(ArcadeMoviesMini)] | Container.Content(TVShows) + [!Skin.HasSetting(ArcadeTVShowsReversed) + !Skin.HasSetting(ArcadeTVShowsBigInfo) + !Skin.HasSetting(ArcadeTVShowsMini)] | $EXP[GameSupport] + [!Skin.HasSetting(Arcade.Games.Reversed) + !Skin.HasSetting(Arcade.Games.Adaptive) + !Skin.HasSetting(Arcade.Games.Mini) + !Skin.HasSetting(Arcade.Games.BigInfo)]</visible>
+					<visible>Container.Content(Episodes) + [!Skin.HasSetting(ArcadeEpisodesReversed) + !Skin.HasSetting(ArcadeEpisodesBigInfo) + !Skin.HasSetting(ArcadeEpisodesMini)] | [Container.Content(Movies) | Container.Content(sets)] + [!Skin.HasSetting(ArcadeMoviesReversed) + !Skin.HasSetting(ArcadeMoviesBigInfo) + !Skin.HasSetting(ArcadeMoviesMini)] | [Container.Content(TVShows)| Container.Content(seasons)] + [!Skin.HasSetting(ArcadeTVShowsReversed) + !Skin.HasSetting(ArcadeTVShowsBigInfo) + !Skin.HasSetting(ArcadeTVShowsMini)] | $EXP[GameSupport] + [!Skin.HasSetting(Arcade.Games.Reversed) + !Skin.HasSetting(Arcade.Games.Adaptive) + !Skin.HasSetting(Arcade.Games.Mini) + !Skin.HasSetting(Arcade.Games.BigInfo)]</visible>
 					<include>Arcade.Template.Default</include>
 					<animation type="Visible">
 						<effect type="fade" time="800" />
@@ -1023,7 +1023,7 @@
 				</control>
 				<control type="group">
 					<description>Reversed</description>
-					<visible>Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesReversed) | Container.Content(Movies) + Skin.HasSetting(ArcadeMoviesReversed) | Container.Content(TVShows) + Skin.HasSetting(ArcadeTVShowsReversed) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Reversed)</visible>
+					<visible>Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesReversed) | [Container.Content(Movies) | Container.Content(sets)] + Skin.HasSetting(ArcadeMoviesReversed) | [Container.Content(TVShows)| Container.Content(seasons)] + Skin.HasSetting(ArcadeTVShowsReversed) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Reversed)</visible>
 					<include>Arcade.Template.Reversed</include>
 					<animation type="Visible">
 						<effect type="fade" time="800" />
@@ -1039,7 +1039,7 @@
 				</control>			
 				<control type="group">
 					<description>Mini</description>
-					<visible>Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesMini) | Container.Content(Movies) + Skin.HasSetting(ArcadeMoviesMini) | Container.Content(TVShows) + Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Mini)</visible>
+					<visible>Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesMini) | [Container.Content(Movies)| Container.Content(sets)] + Skin.HasSetting(ArcadeMoviesMini) | [Container.Content(TVShows)| Container.Content(seasons)] + Skin.HasSetting(ArcadeTVShowsMini) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.Mini)</visible>
 					<include>Arcade.Template.Mini</include>
 					<animation type="Visible">
 						<effect type="fade" time="800" />
@@ -1047,7 +1047,7 @@
 				</control>
 				<control type="group">
 					<description>Big Info</description>
-					<visible>Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesBigInfo) | Container.Content(Movies) + Skin.HasSetting(ArcadeMoviesBigInfo) | Container.Content(TVShows) + Skin.HasSetting(ArcadeTVShowsBigInfo) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.BigInfo)</visible>
+					<visible>Container.Content(Episodes) + Skin.HasSetting(ArcadeEpisodesBigInfo) | [Container.Content(Movies)| Container.Content(sets)] + Skin.HasSetting(ArcadeMoviesBigInfo) | [Container.Content(TVShows)| Container.Content(seasons)] + Skin.HasSetting(ArcadeTVShowsBigInfo) | $EXP[GameSupport] + Skin.HasSetting(Arcade.Games.BigInfo)</visible>
 					<include>Arcade.Template.BigInfo</include>
 					<animation type="Visible">
 						<effect type="fade" time="800" />
@@ -1064,7 +1064,7 @@
 			<label2>$VAR[LayoutLabelVar]</label2>
             <include>ButtonCommonValues</include>		
             <onclick>Skin.SelectBool(89010, 90001|Arcade.Default, 90002|ArcadeMoviesReversed, 90004|ArcadeMoviesBigInfo, 90005|ArcadeMoviesMini)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="button" id="90011">
 			<description>Art Selector (Movies)</description>
@@ -1073,14 +1073,14 @@
 			<include>ButtonCommonValues</include>
 			<enable>!Skin.HasSetting(ArcadeMoviesBigInfo) + !Skin.HasSetting(ArcadeMoviesMini)</enable>
 			<onclick>Skin.SelectBool(89000, 20445|, 89003|Movies_900_Landscape)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="radiobutton" id="90012">
 			<description>Bright Icons (Movies)</description>
 			<label>Bright icons</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_900_BrightIcons)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
         <control type="radiobutton" id="90013">
 			<description>Hide Star Rating (Movies)</description>			
@@ -1088,7 +1088,7 @@
             <include>ButtonCommonValues</include>
 			<enable>!Skin.HasSetting(ArcadeMoviesBigInfo) + !Skin.HasSetting(ArcadeMoviesMini)</enable>
             <onclick>Skin.ToggleSetting(Movies_900_HideStars)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(Movies)| Container.Content(sets)]</visible>
         </control>
         <control type="radiobutton" id="90014">
 			<description>Hide Studio Flags (Movies)</description>			
@@ -1096,7 +1096,7 @@
             <include>ButtonCommonValues</include>
 			<enable>!Skin.HasSetting(ArcadeMoviesBigInfo) + !Skin.HasSetting(ArcadeMoviesMini)</enable>
             <onclick>Skin.ToggleSetting(Movies_900_HideStudioFlags)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(Movies)| Container.Content(sets)]</visible>
         </control>
         <control type="button" id="90020">
 			<description>Layout Selector (TV Shows)</description>
@@ -1104,7 +1104,7 @@
 			<label2>$VAR[LayoutLabelVar]</label2>
             <include>ButtonCommonValues</include>		
             <onclick>Skin.SelectBool(89010, 90001|Arcade.Default, 90002|ArcadeTVShowsReversed, 90004|ArcadeTVShowsBigInfo, 90005|ArcadeTVShowsMini)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="button" id="90021">
 			<description>Art Selector (TVShows)</description>
@@ -1113,14 +1113,14 @@
 			<include>ButtonCommonValues</include>
 			<enable>!Skin.HasSetting(ArcadeTVShowsBigInfo) + !Skin.HasSetting(ArcadeTVShowsMini)</enable>
 			<onclick>Skin.SelectBool(89000, 20445|, 89003|TVShows_900_Landscape)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
 		<control type="radiobutton" id="90022">
 			<description>Bright Icons (TVShows)</description>
 			<label>Bright icons</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_900_BrightIcons)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>
         <control type="radiobutton" id="90023">
 			<description>Hide Star Rating (TVShows)</description>			
@@ -1128,7 +1128,7 @@
             <include>ButtonCommonValues</include>
 			<enable>!Skin.HasSetting(ArcadeTVShowsBigInfo) + !Skin.HasSetting(ArcadeTVShowsMini)</enable>
             <onclick>Skin.ToggleSetting(TVShows_900_HideStars)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
         </control>
         <control type="radiobutton" id="90024">
 			<description>Hide Studio Flags (TVShows)</description>			
@@ -1136,7 +1136,7 @@
             <include>ButtonCommonValues</include>
 			<enable>!Skin.HasSetting(ArcadeTVShowsBigInfo) + !Skin.HasSetting(ArcadeTVShowsMini)</enable>
             <onclick>Skin.ToggleSetting(TVShows_900_HideStudioFlags)</onclick>
-			<visible>Control.IsVisible(900) + Container.Content(TVShows)</visible>
+			<visible>Control.IsVisible(900) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
         </control>
         <control type="button" id="90030">
 			<description>Layout Selector (Episodes)</description>
@@ -1315,7 +1315,7 @@
 		</control>
         <control type="grouplist">
 			<description>Movie / Episode Flags</description>
-			<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+			<visible>[Container.Content(Movies)| Container.Content(sets)] | Container.Content(Episodes)</visible>
             <left>80</left>
             <top>480</top>
             <width>880</width>
@@ -1358,7 +1358,7 @@
         </control>
 		<control type="group">
 			<description>TV Shows Stats</description>
-			<visible>Container.Content(TVShows)</visible>
+			<visible>[Container.Content(TVShows)| Container.Content(seasons)]</visible>
 			<control type="group">
 				<left>60</left>
 				<top>455</top>
@@ -1707,7 +1707,7 @@
 		</control>
         <control type="grouplist">
 			<description>Movie / Episode Flags</description>
-			<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
+			<visible>[Container.Content(Movies)| Container.Content(sets)] | Container.Content(Episodes)</visible>
             <left>810</left>
             <top>480</top>
             <width>880</width>
@@ -1750,7 +1750,7 @@
         </control>		
 		<control type="group">
 			<description>TV Shows Stats</description>
-			<visible>Container.Content(TVShows)</visible>
+			<visible>[Container.Content(TVShows)| Container.Content(seasons)]</visible>
 			<control type="group">
 				<left>785</left>
 				<top>455</top>
@@ -1846,7 +1846,7 @@
 			<height>60</height>
 			<include>MediaFlagVars</include>
 			<texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-			<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
+			<visible>[Container.Content(Movies)| Container.Content(sets)] | [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>						
 	</include>	
 	<include name="Arcade.Template.Mini">
