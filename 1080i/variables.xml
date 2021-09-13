@@ -165,6 +165,15 @@
 		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
+
+	<variable name="GalleryArtVar">
+		<value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value>DefaultFallback.png</value>
+	</variable>
+
 	<variable name="LandscapeArtVar">
 		<value condition="Container.Content(videos)">$INFO[ListItem.Icon]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(landscape)) + !Container.Content(episodes)">$INFO[ListItem.Art(landscape)]</value>

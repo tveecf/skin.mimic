@@ -175,7 +175,7 @@
                         <description>Gallery</description>
                         <label>31054</label>
                         <onclick>Container.SetViewMode(504)</onclick>
-                        <visible>[Container.Content(movies) | Container.Content(tvshows) | [Container.Content(images) + Container(504).HasFiles] | [Container.Content(artists) + !Window.IsActive(videos)]] + !Container.Content(addons)</visible>
+                        <visible>[Container.Content(sets) |Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows) | [Container.Content(images) + Container(504).HasFiles] | Container.Content(artists)|Container.Content(albums)  ] + !Container.Content(addons)</visible>
                         <visible>!Skin.HasSetting(Disable.GalleryView)</visible>
                     </item>
                     <item>

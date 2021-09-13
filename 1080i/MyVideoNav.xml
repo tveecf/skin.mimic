@@ -50,7 +50,7 @@
             <!-- view id = 501 -->
             <include>VideoEpisode</include>
             <!-- view id = 502 -->
-           <!-- <include>View_504_Gallery</include>-->
+            <include>View_504_Gallery</include>
             <!-- view id = 504 -->
             <include>View_505_Panel</include>
             <!-- view id = 505 -->
