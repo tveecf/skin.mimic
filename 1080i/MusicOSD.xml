@@ -42,6 +42,21 @@
                 <ondown>706</ondown>
                 <onleft>202</onleft>
                 <onright>202</onright>
+
+
+                <control type="button" id="700">
+					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
+                    <texturefocus colordiffuse="highlight">osd/button_bg.png</texturefocus>
+                    <texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
+                    <label>z</label>
+                    <align>center</align>
+                    <width>100</width>
+                    <height>64</height>
+                    <font>IconSmall</font>
+                    <onclick>Action(Close,visualisation)</onclick>
+                </control>
+
+
                 <control type="button" id="700">
                     <texturefocus colordiffuse="highlight">osd/button_bg.png</texturefocus>
                     <texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>

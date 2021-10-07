@@ -1,6 +1,8 @@
 2.0.6
 * Fix "gallery" view
 * make "gallery" work for sets,seasons, and albums, use fallback logic to find an image (fanart->landscape->thumb)
+* some touch-screen button updates: switch to "full screen" when playing something, left-hand menu pop-out, back button from fullscreen OSD, back-button from "Info" dialogs
+
 
 2.0.5
 * Fix "poster" for Arcade, Kiebertz, and Coverflow views (ListItem.Icon no longer shows a poster in matrix)

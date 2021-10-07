@@ -74,12 +74,61 @@
 				<orientation>horizontal</orientation>
 				<itemgap>20</itemgap>
 				<control type="button">
+					<description>Back button</description>
 					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
 					<width>80</width>
 					<height>80</height>
 					<onclick>Back</onclick>
 					<texturefocus colordiffuse="white">special://skin/extras/icons/back.png</texturefocus>
 			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/back.png</texturenofocus>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+				<control type="button">
+					<description>Menu button</description>
+					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
+					<width>80</width>
+					<height>80</height>
+					<onclick>9010</onclick>
+					<texturefocus colordiffuse="white">special://skin/extras/icons/set.png</texturefocus>
+			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/set.png</texturenofocus>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+				<control type="button">
+					<description>Menu button</description>
+					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
+					<width>80</width>
+					<height>80</height>
+					<onclick>Menu</onclick>
+					<texturefocus colordiffuse="white">special://skin/extras/icons/playlist.png</texturefocus>
+			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/playlist.png</texturenofocus>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+<!--  				<control type="button">
+					<description>ContextMenu button</description>
+					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
+					<width>80</width>
+					<height>80</height>
+					<onclick>SetProperty(MediaMenu,True,home)</onclick>
+					<onclick>SetFocus(9050)</onclick>
+					<texturefocus colordiffuse="white">special://skin/extras/icons/set.png</texturefocus>
+			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/set.png</texturenofocus>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+-->
+				<control type="button">
+					<description>full-screen display button</description>
+					<visible>Skin.HasSetting(Enable.TouchScreen)
+					+ [ Player.HasVideo | Player.HasAudio]</visible>
+					<width>80</width>
+					<height>80</height>
+					<onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
+					<onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
+					<texturefocus colordiffuse="white">special://skin/extras/icons/tv.png</texturefocus>
+			       	<texturenofocus colordiffuse="white">special://skin/extras/icons/tv.png</texturenofocus>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
 				</control>
