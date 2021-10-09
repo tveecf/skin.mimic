@@ -7,17 +7,34 @@
         <top>0</top>
     </coordinates>
     <controls>
-        <control type="slider">
-            <description>Seek Slider</description>
-            <left>345</left>
-            <top>1014</top>
-            <width>1543</width>
-            <height>35</height>
-            <texturesliderbar />
-            <textureslidernib />
-            <textureslidernibfocus />
-            <action>seek</action>
-        </control>
+			<control type="slider">
+				<description>progress bar click for standard view</description>
+				<visible>String.IsEmpty(Skin.String(musicvis.view)) | String.IsEqual(Skin.String(musicvis.view),StandardView)</visible>
+				<description>Seek Slider</description>
+				<left>345</left>
+				<top>1014</top>
+				<width>1543</width>
+				<height>35</height>
+				<texturesliderbar />
+				<textureslidernib />
+				<textureslidernibfocus />
+				<action>seek</action>
+			</control>
+
+			<control type="slider">
+				<description>progress bar click for coverview2 view</description>
+				<visible>!String.IsEmpty(Skin.String(musicvis.view)) + String.IsEqual(Skin.String(musicvis.view),CoverView2)</visible>
+				<description>Seek Slider</description>
+				<width>1880</width>
+				<height>200</height>
+				<left>40</left>
+				<top>895</top>
+				<texturesliderbar />
+				<textureslidernib />
+				<textureslidernibfocus />
+				<action>seek</action>
+			</control>
+
         <control type="group">
             <animation effect="slide" end="0,-120" time="240" tween="quadratic" condition="Window.IsVisible(selectdialog) | Window.IsVisible(okdialog) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
             <animation effect="slide" start="0,-120" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
@@ -44,7 +61,7 @@
                 <onright>202</onright>
 
 
-                <control type="button" id="700">
+                <control type="button" id="713">
 					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
                     <texturefocus colordiffuse="highlight">osd/button_bg.png</texturefocus>
                     <texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>

@@ -72,49 +72,14 @@
 		<!-- <control type="multiimage"> <aspectratio>scale</aspectratio> <timeperimage>10000</timeperimage> <randomize>true</randomize> <fadetime>600</fadetime> <loop>yes</loop> <imagepath 
 			background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath> <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible> 
 			</control> -->
-<!-- 
-
-		<control type="group">
-			<visible>String.IsEqual(Skin.String(musicvis.background),albumwall) + !Skin.HasSetting(HideVisualizationFanart)</visible>
-			<control type="panel" id="9032">
-				<left>0</left>
-				<top>0</top>
-				<width>1920</width>
-				<height>1080</height>
-				<viewtype label="31086">icons</viewtype>
-				<onleft>9032</onleft>
-				<onright>9032</onright>
-				<onup>9032</onup>
-				<ondown>9032</ondown>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="cubic" easing="inout">600</scrolltime>
-				<orientation>vertical</orientation>
-				<preloaditems>2</preloaditems>
-				<itemlayout height="192" width="192">
-					<control type="image">
-						<animation effect="fade" start="100" end="40" time="0" condition="!Skin.HasSetting(HideVisualizationFanart) + Visualisation.Enabled">Conditional</animation>
-						<width>192</width>
-						<height>192</height>
-						<aspectratio>scale</aspectratio>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<fadetime>400</fadetime>
-					</control>
-				</itemlayout>
-				<focusedlayout height="192" width="192">
-					<control type="image">
-						<animation effect="fade" start="100" end="40" time="0" condition="!Skin.HasSetting(HideVisualizationFanart) + Visualisation.Enabled">Conditional</animation>
-						<width>192</width>
-						<height>192</height>
-						<aspectratio>scale</aspectratio>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<fadetime>400</fadetime>
-					</control>
-				</focusedlayout>
-				<content>special://skin/extras/albumwall.xsp</content>
-			</control>
-		</control>
-
--->
+		<!-- <control type="group"> <visible>String.IsEqual(Skin.String(musicvis.background),albumwall) + !Skin.HasSetting(HideVisualizationFanart)</visible> <control type="panel" id="9032"> 
+			<left>0</left> <top>0</top> <width>1920</width> <height>1080</height> <viewtype label="31086">icons</viewtype> <onleft>9032</onleft> <onright>9032</onright> <onup>9032</onup> <ondown>9032</ondown> 
+			<pagecontrol>60</pagecontrol> <scrolltime tween="cubic" easing="inout">600</scrolltime> <orientation>vertical</orientation> <preloaditems>2</preloaditems> <itemlayout height="192" width="192"> 
+			<control type="image"> <animation effect="fade" start="100" end="40" time="0" condition="!Skin.HasSetting(HideVisualizationFanart) + Visualisation.Enabled">Conditional</animation> <width>192</width> 
+			<height>192</height> <aspectratio>scale</aspectratio> <texture background="true">$INFO[ListItem.Icon]</texture> <fadetime>400</fadetime> </control> </itemlayout> <focusedlayout height="192" 
+			width="192"> <control type="image"> <animation effect="fade" start="100" end="40" time="0" condition="!Skin.HasSetting(HideVisualizationFanart) + Visualisation.Enabled">Conditional</animation> 
+			<width>192</width> <height>192</height> <aspectratio>scale</aspectratio> <texture background="true">$INFO[ListItem.Icon]</texture> <fadetime>400</fadetime> </control> </focusedlayout> 
+			<content>special://skin/extras/albumwall.xsp</content> </control> </control> -->
 
 
 
@@ -157,11 +122,6 @@
 			<visible>Skin.HasSetting(BigAssLabel)</visible>
 			<animation effect="rotate" tween="cubic" time="720" center="auto" end="90" condition="true">Conditonal</animation>
 		</control>
-
-
-
-
-
 
 		<control type="group">
 			<description>Currently Playing</description>
@@ -212,7 +172,6 @@
 					<!-- <bottom>0</bottom> -->
 					<!-- <texture colordiffuse="DD181818" border="5">listselect_fo.png</texture> -->
 					<!-- </control> -->
-
 
 					<control type="progress">
 						<!-- <width>1000</width> -->
@@ -318,7 +277,8 @@
 					<scroll>true</scroll>
 					<shadowcolor>FF000000</shadowcolor>
 					<!-- <label>$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Title]</label> -->
-					<label>[COLOR highlight]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Album,,]$INFO[MusicPlayer.offset(1).Year, (,)]$INFO[MusicPlayer.offset(1).Title, - ]</label>
+					<label>[COLOR highlight]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).TrackNumber,, - ]$INFO[MusicPlayer.offset(1).Artist,, -
+						]$INFO[MusicPlayer.offset(1).Album,,]$INFO[MusicPlayer.offset(1).Year, (,)]$INFO[MusicPlayer.offset(1).Title, - ]</label>
 				</control>
 			</control>
 
@@ -376,7 +336,7 @@
 					<texture background="true" colordiffuse="maintext">$VAR[AudioPlayerSourceFlagVar,flags/source/,.png]</texture>
 				</control>
 			</control>
-			
+
 
 
 		</control>
