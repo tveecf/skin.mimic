@@ -1,11 +1,9 @@
-## Lyrebird Rmod ##
+## Mimic-LR ##
 
-`Lyrebirds are ground-dwelling birds that are native to Australia. They are known for their
-noteworthy mimicking abilities.`
+Mimic-LR is a continuation of the Mimic skin (which was discontinued as of kodi 18) , which includes the Lyrebird updates.
+This was renamed from the former Lyrebird-Rmod fork.
 
-Lyrebird Rmod is a fork from Lyrebird which is a fork of Mimic.
-
-This mod adds the following features:
+This adds the following features to the original Mimic skin
 
 1.  Some updates to the PVR guide to display the Show poster, rather than the channel icon, as well as other adjustments/fixes
 
