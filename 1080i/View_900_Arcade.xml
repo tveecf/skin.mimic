@@ -727,6 +727,10 @@
 						<bordersize>5</bordersize>
 						<visible>$EXP[ArcadeBrightIcons]</visible>
 					</control>
+				<include content="OverlayIcons">
+					<param name="OverlayLeft" value="10"/>
+					<param name="OverlayTop" value="70" />
+				</include>
 				</itemlayout>
 				<focusedlayout width="230" height="500" condition="Container.Content(sets) | Container.Content(seasons) | Container.Content(Movies) | Container.Content(TVShows) | $EXP[GameSupport] + !$EXP[KnownGameSystems]">
 					<control type="group">
@@ -807,6 +811,10 @@
 							</animation>
 							<visible>$EXP[ArcadeBrightIcons]</visible>
 						</control>
+				<include content="OverlayIcons">
+					<param name="OverlayLeft" value="10"/>
+					<param name="OverlayTop" value="70" />
+				</include>
 					</control>
 				</focusedlayout>
 				<!-- Widescreen -->
@@ -883,6 +891,10 @@
 							<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=ff666666]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
 							<scroll>false</scroll>
 						</control>
+				<include content="OverlayIcons">
+					<param name="OverlayLeft" value="10"/>
+					<param name="OverlayTop" value="70" />
+				</include>
 					</control>
 				</itemlayout>
 				<focusedlayout width="510" height="450" condition="Container.Content(Episodes)">
@@ -1004,6 +1016,10 @@
 								<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=ff666666]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
 								<scroll>false</scroll>
 							</control>
+				<include content="OverlayIcons">
+					<param name="OverlayLeft" value="10"/>
+					<param name="OverlayTop" value="70" />
+				</include>
 						</control>
 					</control>
 				</focusedlayout>
