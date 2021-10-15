@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.lyrebird.rmod" name="Lyrebird rmod" version="2.0.6-b4" provider-name="Randall">
+<addon id="skin.mimic.lr" name="Mimic-LR" version="7.0.0-b1" provider-name="Randall">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
 		<import addon="resource.images.studios.white" version="0.0.25"/>
@@ -30,14 +30,14 @@
  	</extension>
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Lyrebird rmod</summary>
-        <description lang="en_GB">Randalls Mod of Lyrebird</description>
+        <summary lang="en_GB">Mimic-LR</summary>
+        <description lang="en_GB">Mimic reborn</description>
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
         <forum>http://forum.kodi.tv/forumdisplay.php?fid=218</forum>
         <website></website>
         <email></email>
-        <source>https://github.com/randallspicher/skin.lyrebird.rmod</source>
+        <source>https://github.com/randallspicher/skin.mimic.lr</source>
         <assets>
             <icon>resources/icon.png</icon>
 <!--             <fanart>resources/fanart.jpg</fanart> -->
