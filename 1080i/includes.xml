@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include file="defaults.xml" />
-	<!--<include file="Includes_MyWeather-default.xml" /> <include file="Includes_MyWeather-NOAA.xml" /> -->
-	<include file="Includes_WeatherObjects.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_CommonValues.xml" />
@@ -31,6 +29,7 @@
 	<include file="View_909_Sauna.xml" />
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
+
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="FullScreenWidth">1920</constant>
@@ -248,38 +247,6 @@
 				Window.IsActive(videos) + [Control.IsVisible(51)|Control.IsVisible(50)]
 			</visible>
 		</control>
-
-		<!-- <control type="button" id="1821"> -->
-		<!-- <label>$LOCALIZE[31152] 2</label> -->
-		<!-- <label2>$VAR[Art2LabelVar]</label2> -->
-		<!-- <include>ButtonCommonValues</include> -->
-		<!-- <onclick> -->
-		<!-- Skin.SelectBool(31152, -->
-		<!-- 31016|List.Art2.Poster, -->
-		<!-- 31085|List.Art2.Banner, -->
-		<!-- 31088|List.Art2.Logo, -->
-		<!-- 20445|List.Art2.Fanart, -->
-		<!-- 31100|List.Art2.Landscape, -->
-		<!-- 21371|List.Art2.Thumb) -->
-		<!-- </onclick> -->
-		<!-- <visible>Control.IsVisible(50)</visible> -->
-		<!-- </control> -->
-
-		<!-- <control type="button" id="1822"> -->
-		<!-- <label>$LOCALIZE[31152] 2</label> -->
-		<!-- <label2>$VAR[Art2LabelVar]</label2> -->
-		<!-- <include>ButtonCommonValues</include> -->
-		<!-- <onclick> -->
-		<!-- Skin.SelectBool(31152, -->
-		<!-- 31016|InfoWall.Art2.Poster, -->
-		<!-- 31085|InfoWall.Art2.Banner, -->
-		<!-- 31088|InfoWall.Art2.Logo, -->
-		<!-- 20445|InfoWall.Art2.Fanart, -->
-		<!-- 31100|InfoWall.Art2.Landscape), -->
-		<!-- 21371|InfoWall.Art2.Thumb) -->
-		<!-- </onclick> -->
-		<!-- <visible>Control.IsVisible(51)</visible> -->
-		<!-- </control> -->
 
 		<control type="button" id="1897">
 			<description>Fallback</description>
@@ -1542,7 +1509,7 @@
 			</item>
 			<item id="7">
 				<label>$LOCALIZE[13000]</label>
-				<label2>$LOCALIZE[15088] • $LOCALIZE[14094] • $LOCALIZE[14095]</label2>
+				<label2>$LOCALIZE[90929] • $LOCALIZE[90930] • $LOCALIZE[14094] • $LOCALIZE[14095]</label2>
 				<icon>DefaultProgram.png</icon>
 				<onclick>ActivateWindow(SystemSettings)</onclick>
 			</item>

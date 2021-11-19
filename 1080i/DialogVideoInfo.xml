@@ -117,7 +117,7 @@
                         </item>
                         <item>
                             <label>$INFO[ListItem.mpaa]</label>
-                            <label2>Certification:</label2>
+                            <label2>$LOCALIZE[31191]:</label2>
                             <visible>!String.IsEmpty(ListItem.mpaa)</visible>
                         </item>
                         <item>
@@ -198,32 +198,32 @@
                         </item>
                         <item>
                             <label>$INFO[ListItem.VideoResolution]</label>
-                            <label2>Resolution:</label2>
+                            <label2>$LOCALIZE[31187]:</label2>
                             <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                         </item>
                         <item>
                             <label>$INFO[ListItem.IsStereoscopic]</label>
-                            <label2>3D:</label2>
+                            <label2>$LOCALIZE[90940]:</label2>
                             <visible>ListItem.IsStereoscopic</visible>
                         </item>
                         <item>
                             <label>$INFO[ListItem.VideoCodec]</label>
-                            <label2>Video Codec:</label2>
+                            <label2>$LOCALIZE[90941]:</label2>
                             <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                         </item>
                         <item>
                             <label>$INFO[ListItem.VideoAspect]</label>
-                            <label2>Video Aspect:</label2>
+                            <label2>$LOCALIZE[90942]:</label2>
                             <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
                         </item>
                         <item>
                             <label>$INFO[ListItem.AudioCodec]</label>
-                            <label2>Audio Codec:</label2>
+                            <label2>$LOCALIZE[90943]:</label2>
                             <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                         </item>
                         <item>
                             <label>$INFO[ListItem.AudioChannels]</label>
-                            <label2>Audio Channels:</label2>
+                            <label2>$LOCALIZE[90944]:</label2>
                             <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                         </item>
                     </content>

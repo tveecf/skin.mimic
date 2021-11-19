@@ -46,7 +46,6 @@
 				<top>615</top>
 				<width>1830</width>
 				<height>420</height>
-				<include>OnBackInclude</include>
 				<include condition="!Skin.HasSetting(SaunaVertical)">SaunaHorizontalControls</include>
 				<include condition="Skin.HasSetting(SaunaVertical)">SaunaVerticalControls</include>
 				<viewtype label="$LOCALIZE[90900]">list</viewtype>
@@ -518,7 +517,7 @@
 	<include name="SaunaOptions">
 		<control type="button" id="90901">
 			<description>Layout Selector</description>
-			<label>Layout</label>
+			<label>89010</label>
 			<label2>$VAR[LayoutLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(89010, 90901|, 90902|SaunaBoxshot, 90903|SaunaDouble)</onclick>
@@ -526,7 +525,7 @@
 		</control>
 		<control type="button" id="90902">
 			<description>Art Selector</description>
-			<label>Window art</label>
+			<label>89000</label>
 			<label2>$VAR[ImageLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(89000, 20445|, 89001|SaunaSnaps, 89002|SaunaTitles)</onclick>
@@ -534,7 +533,7 @@
 		</control>
 		<control type="button" id="90903">
 			<description>Art Selector</description>
-			<label> - Secondary</label>
+			<label> - $LOCALIZE[90959]</label>
 			<label2>$VAR[2ndImageLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(89000, 20445|, 89001|Sauna2ndSnaps, 89002|Sauna2ndTitles)</onclick>
@@ -542,21 +541,21 @@
 		</control>
 		<control type="radiobutton" id="90904">
 			<description>Bright Icons</description>
-			<label>Bright icons</label>
+			<label>90945</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(SaunaBrightIcons)</onclick>
 			<visible>Control.IsVisible(909)</visible>
 		</control>
 		<control type="radiobutton" id="90905">
 			<description>Disable Icon Zoom</description>
-			<label>Disable zoom</label>
+			<label>90946</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(SaunaDisableZoom)</onclick>
 			<visible>Control.IsVisible(909)</visible>
 		</control>
 		<control type="radiobutton" id="90906">
 			<description>Autoplay Trailers</description>
-			<label>Trailers</label>
+			<label>90949</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(SaunaTrailers)</onclick>
 			<onclick condition="Player.HasVideo">PlayerControl(stop)</onclick>
@@ -564,7 +563,7 @@
 		</control>
 		<control type="radiobutton" id="90907">
 			<description>Autoplay Trailers</description>
-			<label> - Switch window</label>
+			<label> - $LOCALIZE[90958]</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(SaunaSwitchVideo)</onclick>
 			<onclick condition="Player.HasVideo">PlayerControl(stop)</onclick>

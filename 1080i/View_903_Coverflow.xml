@@ -321,7 +321,7 @@
 	<include name="CoverflowOptions">
 		<control type="button" id="90301">
 			<description>Layout Selector (Movies)</description>
-			<label>Layout</label>
+			<label>89010</label>
 			<label2>$VAR[LayoutLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(90301, 90901|, 90301|CoverflowMoviesBasic)</onclick>
@@ -329,14 +329,14 @@
 		</control>
 		<control type="radiobutton" id="90302">
 			<description>Bright Icons (Movies)</description>
-			<label>Bright icons</label>
+			<label>90945</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Movies_903_BrightIcons)</onclick>
 			<visible>Control.IsVisible(903) + [Container.Content(Movies)| Container.Content(sets)]</visible>
 		</control>
 		<control type="button" id="90311">
 			<description>Choose Template (TV Shows)</description>
-			<label>Layout</label>
+			<label>89010</label>
 			<label2>$VAR[LayoutLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(90301, 90901|, 90301|CoverflowTVShowsBasic)</onclick>
@@ -344,21 +344,21 @@
 		</control>
 		<control type="radiobutton" id="90312">
 			<description>Bright Icons (TV Shows)</description>
-			<label>Bright icons</label>
+			<label>90945</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_903_BrightIcons)</onclick>
 			<visible>Control.IsVisible(903) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
 		</control>		
 		<control type="radiobutton" id="90342">
 			<description>Bright Icons (Albums)</description>
-			<label>Bright icons</label>
+			<label>90945</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Albums_903_BrightIcons)</onclick>
 			<visible>Control.IsVisible(903) + Container.Content(Albums)</visible>
 		</control>
 		<control type="button" id="90351">
 			<description>Choose Template (Games)</description>
-			<label>Layout</label>
+			<label>89010</label>
 			<label2>$VAR[LayoutLabelVar]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.SelectBool(89010, 90901|, 90301|CoverflowGamesBasic)</onclick>
@@ -366,7 +366,7 @@
 		</control>
 		<control type="radiobutton" id="90352">
 			<description>Bright Icons (Movies)</description>
-			<label>Bright icons</label>
+			<label>90945</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(Games_903_BrightIcons)</onclick>
 			<visible>Control.IsVisible(903) + $EXP[GameSupport]</visible>

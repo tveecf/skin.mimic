@@ -133,7 +133,7 @@
                     <ondown>9000</ondown>
                     <onleft>24</onleft>
                     <onright>23</onright>
-                    <label>15064</label>
+                    <label>90934</label>
                     <font>font15_title</font>
                     <radioposx>575</radioposx>
                     <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>

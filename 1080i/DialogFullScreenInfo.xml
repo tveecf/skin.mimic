@@ -57,8 +57,8 @@
 					<colordiffuse>maintext</colordiffuse>
 					<height>90</height>
 					<width>200</width>
-					<texture>$VAR[PlayerSourceFlagVar,flags/source/,.png]</texture>
-					<visible>!String.IsEmpty(PlayerSourceFlagVar)</visible>
+					<texture>$VAR[VideoPlayerSourceFlagVar,flags/source/,.png]</texture>
+					<visible>!String.IsEmpty(VideoPlayerSourceFlagVar)</visible>
 				</control>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
