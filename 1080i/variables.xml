@@ -165,6 +165,15 @@
 		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
+
+	<variable name="GalleryArtVar">
+		<value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value>DefaultFallback.png</value>
+	</variable>
+
 	<variable name="LandscapeArtVar">
 		<value condition="Container.Content(videos)">$INFO[ListItem.Icon]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(landscape)) + !Container.Content(episodes)">$INFO[ListItem.Art(landscape)]</value>
@@ -465,7 +474,7 @@
 		<value condition="Control.HasFocus(207)">$LOCALIZE[31252]</value>
 		<value condition="Control.HasFocus(208)">$LOCALIZE[31253]</value>
 		<value condition="Control.HasFocus(303)">$LOCALIZE[31121]</value>
-		<value condition="Control.HasFocus(305)">$LOCALIZE[31938]</value>
+		<value condition="Control.HasFocus(305)">$LOCALIZE[31938]</value><!-- Next Aired plugin -->
 		<value condition="Control.HasFocus(306)">$LOCALIZE[31114]</value>
 		<value condition="Control.HasFocus(312)">$LOCALIZE[31136]</value>
 		<value condition="Control.HasFocus(402)">$LOCALIZE[31942]</value>
@@ -474,7 +483,7 @@
 		<value condition="Control.HasFocus(602)">$LOCALIZE[31918]</value>
 		<value condition="Control.HasFocus(603)">$LOCALIZE[31919]</value>
 		<value condition="Control.HasFocus(605)">$LOCALIZE[31164]</value>
-		<value condition="Control.HasFocus(607)">$LOCALIZE[31275]</value>
+<!-- 		<value condition="Control.HasFocus(607)">$LOCALIZE[31275]</value> -->
 		<value condition="Control.HasFocus(9007)">$LOCALIZE[31183]</value>
 	</variable>
 	<variable name="SkinShortcutsDescriptionVar">
@@ -1253,4 +1262,79 @@
 		<value condition="!Skin.HasSetting(SaunaVertical)">Horizontal</value>
 		<value condition="Skin.HasSetting(SaunaVertical)">Vertical</value>
 	</variable>
+	
+		<variable name="Art2Setting">
+		<!-- genre and tags are special -->
+		<value condition="String.IsEqual(ListItem.DBTYPE,tag) | String.IsEqual(ListItem.DBTYPE,source)
+		| String.IsEqual(ListItem.DBTYPE,genre)">genreicon</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,movie)">$INFO[Skin.String(InfoWall.movie.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,set)">$INFO[Skin.String(InfoWall.set.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,tvshow)">$INFO[Skin.String(InfoWall.tvshow.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,season)">$INFO[Skin.String(InfoWall.season.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,episode)">$INFO[Skin.String(InfoWall.episode.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,musicvideo)">$INFO[Skin.String(InfoWall.musicvideo.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,album)">$INFO[Skin.String(InfoWall.album.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,actor)">$INFO[Skin.String(InfoWall.actor.Art2)]</value>
+
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,movie)">$INFO[Skin.String(List.movie.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,set)">$INFO[Skin.String(List.set.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,tvshow)">$INFO[Skin.String(List.tvshow.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,season)">$INFO[Skin.String(List.season.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,episode)">$INFO[Skin.String(List.episode.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,musicvideo)">$INFO[Skin.String(List.musicvideo.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,album)">$INFO[Skin.String(List.album.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,actor)">$INFO[Skin.String(List.actor.Art2)]</value>
+		<!-- default to fanart if no property set -->
+		<value>thumb</value>
+	</variable>
+
+	<variable name="Art2LabelVar">
+		<value condition="String.IsEqual(Control.GetLabel(360),poster)">$LOCALIZE[31016]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),banner)">$LOCALIZE[31085]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),logo)">$LOCALIZE[31088]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),fanart)">$LOCALIZE[20445]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),landscape)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),thumb)">$LOCALIZE[21371]</value>
+		<!-- <value>$LOCALIZE[20445]</value> -->
+	</variable>
+
+	<variable name="Art2Image">
+		<value condition="String.IsEqual(Control.GetLabel(360),poster)
+		+ !String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),banner)
+		+ !String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),logo)
+		+ !String.IsEmpty(ListItem.Art(logo))">$INFO[ListItem.Art(logo)]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),fanart)
+		+ !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),landscape)
+		+ !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="String.IsEqual(Control.GetLabel(360),thumb)
+		+ !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<!-- Try to default to thumb for episodes, otheriwise fanart if it's populated -->
+		<value condition="String.IsEqual(ListItem.DBTYPE,episode)
+		+ !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+	
+	
+	
 </includes>

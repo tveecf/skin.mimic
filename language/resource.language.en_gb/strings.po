@@ -453,7 +453,17 @@ msgctxt "#31110"
 msgid "Set path to music library"
 msgstr ""
 
-#empty strings from id 31111 to 31113
+#msgctxt "#31111"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#31112"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#31113"
+#msgid ""
+#msgstr ""
 
 msgctxt "#31114"
 msgid "When enabled, the selected playlist will play on startup."
@@ -719,7 +729,9 @@ msgctxt "#31186"
 msgid "Results for"
 msgstr ""
 
-#empty string with id 31187
+msgctxt "#31187"
+msgid "Resolution"
+msgstr ""
 
 msgctxt "#31188"
 msgid "Decoder"
@@ -754,11 +766,11 @@ msgid "About"
 msgstr ""
 
 msgctxt "#31196"
-msgid "Lyrebird Rmod"
+msgid "Mimic-LR"
 msgstr ""
 
 msgctxt "#31197"
-msgid "Mimic x Cirrus Extended"
+msgid "Mimic Reborn"
 msgstr ""
 
 msgctxt "#31198"
@@ -1446,52 +1458,131 @@ msgid "Select Music Genre Icon Pack"
 msgstr ""
 
 msgctxt "#90929"
-msgid ""
+msgid "Display"
 msgstr ""
 
 msgctxt "#90930"
-msgid ""
+msgid "Audio"
 msgstr ""
 
 msgctxt "#90931"
-msgid ""
+msgid "Auto-Apply Changes"
 msgstr ""
 
 msgctxt "#90932"
-msgid ""
+msgid "Add-Ons"
 msgstr ""
 
-msgctxt "#90933"
-msgid ""
+#msgctxt "#90933"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90934"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90935"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90936"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90937"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90938"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90939"
+#msgid ""
+#msgstr ""
+
+#msgctxt "#90940"
+#msgid "3D"
+#msgstr ""
+
+msgctxt "#90941"
+msgid "Video Codec"
 msgstr ""
 
-msgctxt "#90934"
-msgid ""
+msgctxt "#90942"
+msgid "Video Aspect"
 msgstr ""
 
-msgctxt "#90935"
-msgid ""
+msgctxt "#90943"
+msgid "Audio Codec"
 msgstr ""
 
-msgctxt "#90936"
-msgid ""
+msgctxt "#90944"
+msgid "Audio Channels"
 msgstr ""
 
-msgctxt "#90937"
-msgid ""
+msgctxt "#90945"
+msgid "Bright Icons"
 msgstr ""
 
-msgctxt "#90938"
-msgid ""
+msgctxt "#90946"
+msgid "Disable Zoom"
 msgstr ""
 
-msgctxt "#90939"
-msgid ""
+msgctxt "#90947"
+msgid "Hide Star Ratings"
 msgstr ""
 
-msgctxt "#90940"
-msgid ""
+msgctxt "#90948"
+msgid "Hide Studio Flags"
 msgstr ""
 
+msgctxt "#90949"
+msgid "Show Trailers"
+msgstr ""
+
+msgctxt "#90950"
+msgid "Hide Labels"
+msgstr ""
+
+msgctxt "#90951"
+msgid "Seasons"
+msgstr ""
+
+msgctxt "#90952"
+msgid "Episodes"
+msgstr ""
+
+msgctxt "#90953"
+msgid "Watched"
+msgstr ""
+
+msgctxt "#90954"
+msgid "Unwatched"
+msgstr ""
+
+msgctxt "#90955"
+msgid "Year"
+msgstr ""
+
+msgctxt "#90956"
+msgid "Genre"
+msgstr ""
+
+msgctxt "#90957"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#90958"
+msgid "Switch window"
+msgstr ""
+
+msgctxt "#90959"
+msgid "Secondary"
+msgstr ""
+
+msgctxt "#90960"
+msgid "Hide Reflections"
+msgstr ""
 
 

@@ -1210,6 +1210,10 @@
 				</animation>
 				<visible>$EXP[CoverflowBrightIcons]</visible>
 			</control>
+				<include content="OverlayIcons">
+					<param name="OverlayLeft" value="10"/>
+					<param name="OverlayTop" value="10" />
+				</include>
 		</control>
 	</include>
 </includes>

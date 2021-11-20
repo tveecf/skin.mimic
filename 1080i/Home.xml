@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>SetProperty(CurrentSkin,skin.lyrebird.rmod,home)</onload>
+    <onload>SetProperty(CurrentSkin,skin.mimic.lr,home)</onload>
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu|quicknav)</onload>
 <!-- 	<onload>RunScript(special://skin/scripts/icons.py)</onload> -->
 
