@@ -766,11 +766,11 @@ msgid "About"
 msgstr ""
 
 msgctxt "#31196"
-msgid "Lyrebird Rmod"
+msgid "Mimic-LR"
 msgstr ""
 
 msgctxt "#31197"
-msgid "Mimic x Cirrus Extended"
+msgid "Mimic Reborn"
 msgstr ""
 
 msgctxt "#31198"
