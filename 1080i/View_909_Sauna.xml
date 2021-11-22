@@ -20,7 +20,7 @@
 	<!-- view -->
 	<include name="View_909_Sauna">
 		<control type="group">
-			<visible>Control.IsVisible(909)</visible>
+			<visible>Control.IsVisible(909) + !$EXP[isInfoDialog]</visible>
 			<animation type="Visible" reversible="false">
 				<effect type="fade" center="960,345" start="0" end="100" time="300" tween="sine" easing="in" />
 				<effect type="slide" start="0,600" end="0" time="300" center="auto" tween="quadratic" easing="out" />

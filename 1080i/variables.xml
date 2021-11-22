@@ -10,6 +10,14 @@
 		<value condition="Visualisation.Enabled">88FFFFFF</value>
 		<value>FFFFFFFF</value>
 	</variable>
+	<variable name="WeatherFanArtExtension">
+		<value condition="Skin.HasSetting(weatherfanart.multi)">/</value>
+		<value>.jpg</value>
+	</variable>
+
+	<variable name="WeatherFanArtSingleImage_Current">
+			<value>$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanArtExtension]</value>
+	</variable>
 
 	<variable name="GlobalBackgroundVar">
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart)) + !Skin.HasSetting(Disable.Fanart)">$INFO[Container.ListItem.Art(fanart)]</value>
@@ -17,7 +25,7 @@
 		<value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
 		<value condition="Window.IsActive(1119) + !String.IsEmpty(Container(51).ListItem.Art(fanart)) + Control.HasFocus(51)">$INFO[Container(51).ListItem.Art(fanart)]</value>
-		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),23)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
+		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),23)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanArtExtension]</value>
 		<value condition="!String.IsEmpty(Container(9033).ListItem.Art(thumb))">$INFO[Container(9033).ListItem.Art(thumb)]</value>
 		<value condition="!String.IsEmpty(Skin.String(CustomBackground))">$INFO[Skin.String(CustomBackground)]</value>
 		<value>$INFO[Window(home).Property(fakelabel)]</value>
@@ -26,12 +34,12 @@
 		<value condition="!String.IsEmpty(Skin.String(CustomHomeSlideshow))">$INFO[Skin.String(CustomHomeSlideshow)]</value>
 
 		<!-- Sub menu backgrounds -->
-		<value condition="String.IsEqual(Container(9010).ListItem.Property(background),weatherBackground)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
+		<value condition="String.IsEqual(Container(9010).ListItem.Property(background),weatherBackground)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanArtExtension]</value>
 		<value condition="String.IsEqual(Container(9010).ListItem.Property(background),playlistBackground)">$INFO[Container(9033).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(9010).ListItem.Property(background))">$INFO[Container(9010).ListItem.Property(background)]</value>
 
 		<!-- Main menu backgrounds -->
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),weatherBackground)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),weatherBackground)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanArtExtension]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),playlistBackground)">$INFO[Container(9034).ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
 
@@ -139,7 +147,7 @@
 		<value condition="Container.Content(albums) | Container.Content(songs)">$INFO[ListItem.Artist]</value>
 		<value condition="Container.Content(images)">$INFO[ListItem.PictureResolution]</value>
 		<value condition="Window.IsActive(videoplaylist) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Premiered]</value>
-		<value condition="[Container.Content(actors) | Container.Content(directors)] + !Window.IsActive(musicvideos) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2] $LOCALIZE[31123]</value>
+		<value condition="[Container.Content(actors) | Container.Content(directors)] + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2] $LOCALIZE[31123]</value>
 		<value condition="!Container.Content(genres)">$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="PosterVar">
@@ -686,10 +694,6 @@
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetLimit))">$INFO[Container(211).ListItem.Property(widgetLimit)]</value>
 		<value>$LOCALIZE[16018]</value>
 	</variable>
-	<variable name="WeatherFanartExtension">
-		<value condition="Skin.HasSetting(weatherfanart.multi)">/</value>
-		<value>.jpg</value>
-	</variable>
 	<variable name="HeaderIcon">
 		<value condition="Player.Muted">DefaultIconMute.png</value>
 		<value condition="Window.IsVisible(movieinformation)">DefaultAddonInfoProvider.png</value>
@@ -1073,15 +1077,15 @@
 		<value>$LOCALIZE[547]</value>
 	</variable>
 	<variable name="MusicInfoYoutubePath">
-		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $LOCALIZE[2]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,album)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Label] $LOCALIZE[558]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,song)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Title]</value>
+		<value condition="System.HasAddon(script.extendedinfo) +String.IsEqual(ListItem.DBTYPE,artist)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $LOCALIZE[2]</value>
+		<value condition="System.HasAddon(script.extendedinfo) +String.IsEqual(ListItem.DBTYPE,album)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Label] $LOCALIZE[558]</value>
+		<value condition="System.HasAddon(script.extendedinfo) +String.IsEqual(ListItem.DBTYPE,song)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Title]</value>
 	</variable>
 	<variable name="VideoInfoYoutubePath">
-		<value condition="String.IsEqual(ListItem.DBTYPE,movie)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Title] $LOCALIZE[20338] $LOCALIZE[20410]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Title] $LOCALIZE[20364]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,episode)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.TVShowTitle] $LOCALIZE[20364]</value>
-		<value>plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Label]</value>
+		<value condition="System.HasAddon(script.extendedinfo) + String.IsEqual(ListItem.DBTYPE,movie)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Title] $LOCALIZE[20338] $LOCALIZE[20410]</value>
+		<value condition="System.HasAddon(script.extendedinfo) + String.IsEqual(ListItem.DBTYPE,tvshow)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Title] $LOCALIZE[20364]</value>
+		<value condition="System.HasAddon(script.extendedinfo) + String.IsEqual(ListItem.DBTYPE,episode)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.TVShowTitle] $LOCALIZE[20364]</value>
+		<value condition="System.HasAddon(script.extendedinfo)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Label]</value>
 	</variable>
 	<variable name="StarRatingVar">
 		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsLessOrEqual(ListItem.UserRating,0)">starrating/0.png</value>

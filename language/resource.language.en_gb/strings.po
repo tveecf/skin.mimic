@@ -1501,9 +1501,9 @@ msgstr ""
 #msgid ""
 #msgstr ""
 
-#msgctxt "#90940"
-#msgid "3D"
-#msgstr ""
+msgctxt "#90940"
+msgid "3D"
+msgstr ""
 
 msgctxt "#90941"
 msgid "Video Codec"

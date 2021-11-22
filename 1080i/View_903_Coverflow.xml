@@ -8,11 +8,11 @@
 	<include file="coverflow/coverflow_slim.xml" />
 	<include file="coverflow/coverflow_3ds.xml" />
 	<!-- expressions -->
-	<expression name="CoverflowBrightIcons">$EXP[GameSupport] + !Skin.HasSetting(Games_903_BrightIcons) | Container.Content(Albums) + !Skin.HasSetting(Albums_903_BrightIcons) | Container.Content(Episodes) + !Skin.HasSetting(Episodes_903_BrightIcons) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_903_BrightIcons) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_903_BrightIcons)</expression>
+	<expression name="CoverflowBrightIcons">$EXP[GameSupport] + !Skin.HasSetting(Games_903_BrightIcons) | Container.Content(Albums) + !Skin.HasSetting(Albums_903_BrightIcons) | Container.Content(Episodes) + !Skin.HasSetting(Episodes_903_BrightIcons) | [Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(Movies_903_BrightIcons) |[Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(TVShows_903_BrightIcons)</expression>
 	<!-- view -->
 	<include name="View_903_Coverflow">
 		<control type="group">
-			<visible>Control.IsVisible(903)</visible>
+			<visible>Control.IsVisible(903) + !$EXP[isInfoDialog]</visible>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="fade" start="0" end="100" delay="300" time="300" tween="sine" easing="in" />
 				<effect type="zoom" center="960,470" start="50" end="100" delay="300" time="300" tween="quadratic" easing="out" />
@@ -173,7 +173,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(903)</visible>
+			<visible>Control.IsVisible(903) + !$EXP[isInfoDialog]</visible>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
 				<effect type="slide" center="auto" start="0,300" end="0,0" time="300" tween="quadratic" easing="out" />
@@ -191,7 +191,7 @@
 				<effect type="zoom" end="75" start="100" time="200" center="auto" tween="quadratic" easing="in" />
 			</animation>
 			<control type="group">
-				<visible>[Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(CoverflowMoviesBasic) | [Container.Content(TVShows)| Container.Content(seasons)] + !Skin.HasSetting(CoverflowTVShowsBasic)| $EXP[GameSupport] + !Skin.HasSetting(CoverflowGamesBasic)</visible>
+				<visible>[Container.Content(Movies)| Container.Content(sets)] + !Skin.HasSetting(CoverflowMoviesBasic) | [Container.Content(TVShows)| Container.Content(seasons)] +	!Skin.HasSetting(CoverflowTVShowsBasic)| $EXP[GameSupport] + !Skin.HasSetting(CoverflowGamesBasic)</visible>
 				<include>CoverflowLayoutDefault</include>
 			</control>
 			<control type="group">
@@ -231,7 +231,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font30</font>
-			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 			<textcolor>highlight</textcolor>
 			<scroll>false</scroll>
 		</control>
@@ -242,7 +242,7 @@
 			<height>220</height>
 			<aspectratio>stretch</aspectratio>
 			<texture colordiffuse="highlight">separator_vertical.png</texture>
-		</control>		
+		</control>
 		<control type="textbox">
 			<left>930</left>
 			<top>900</top>
@@ -274,13 +274,13 @@
 		</control>
 		<control type="image">
 			<left>1710</left>
-			<top>960</top>		
-			<width>190</width>				
+			<top>960</top>
+			<width>190</width>
 			<height>80</height>
 			<texture>$VAR[StudioFlagVar]</texture>
-			<aspectratio align="center">keep</aspectratio>			
+			<aspectratio align="center">keep</aspectratio>
 			<include>MediaFlagVars</include>
-		</control>		
+		</control>
 	</include>
 	<include name="CoverflowLayoutSimple">
 		<control type="image">
@@ -312,7 +312,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font30</font>
-			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 			<textcolor>highlight</textcolor>
 			<scroll>false</scroll>
 		</control>
@@ -348,7 +348,7 @@
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(TVShows_903_BrightIcons)</onclick>
 			<visible>Control.IsVisible(903) + [Container.Content(TVShows)| Container.Content(seasons)]</visible>
-		</control>		
+		</control>
 		<control type="radiobutton" id="90342">
 			<description>Bright Icons (Albums)</description>
 			<label>90945</label>
