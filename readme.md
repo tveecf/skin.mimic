@@ -1,5 +1,6 @@
 ## Mimic-LR ##
 
+
 Mimic-LR is a continuation of the Mimic skin (which was discontinued as of kodi 18) to keep Mimic alive for Kodi Matrix (and beyond), which includes the Lyrebird updates.
 
 This was renamed from the former Lyrebird-Rmod fork.
