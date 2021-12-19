@@ -473,6 +473,12 @@
                         <onclick>Skin.ToggleSetting(Enable.TouchScreen)</onclick>
                         <selected>Skin.HasSetting(Enable.TouchScreen)</selected>
                     </control>
+					<control type="radiobutton" id="308">
+						<label>90945</label>
+						<include>ButtonCommonValues</include>
+						<onclick>Skin.ToggleSetting(Enable.HighlightFocused)</onclick>
+						<selected>Skin.HasSetting(Enable.HighlightFocused)</selected>
+					</control>
                 </control>
                 <control type="grouplist" id="9003">
                     <description>Extras control area</description>
