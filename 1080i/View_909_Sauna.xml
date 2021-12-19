@@ -64,7 +64,7 @@
 						<texture diffuse="diffuse/thumbnail.png">overlays/icon-overlay.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordersize>5</bordersize>
-						<visible>!Skin.HasSetting(SaunaBrightIcons)</visible>
+						<visible>!Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="305" height="140">
@@ -100,7 +100,7 @@
 							<bordersize>5</bordersize>
 							<animation effect="fade" start="100" end="0" time="400">Focus</animation>
 							<animation effect="fade" start="0" end="100" time="200">UnFocus</animation>
-							<visible>!Skin.HasSetting(SaunaBrightIcons)</visible>
+							<visible>!Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 					</control>
 					<control type="group">
@@ -539,13 +539,13 @@
 			<onclick>Skin.SelectBool(89000, 20445|, 89001|Sauna2ndSnaps, 89002|Sauna2ndTitles)</onclick>
 			<visible>Control.IsVisible(909) + Skin.HasSetting(SaunaDouble)</visible>
 		</control>
-		<control type="radiobutton" id="90904">
-			<description>Bright Icons</description>
-			<label>90945</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(SaunaBrightIcons)</onclick>
-			<visible>Control.IsVisible(909)</visible>
-		</control>
+<!-- 		<control type="radiobutton" id="90904"> -->
+<!-- 			<description>Bright Icons</description> -->
+<!-- 			<label>90945</label> -->
+<!-- 			<include>ButtonCommonValues</include> -->
+<!-- 			<onclick>Skin.ToggleSetting(Enable.HighlightFocused)</onclick> -->
+<!-- 			<visible>Control.IsVisible(909)</visible> -->
+<!-- 		</control> -->
 		<control type="radiobutton" id="90905">
 			<description>Disable Icon Zoom</description>
 			<label>90946</label>

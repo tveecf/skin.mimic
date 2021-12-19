@@ -398,6 +398,7 @@
                                     <width>567</width>
                                     <height>319</height>
                                     <texture border="5">overlays/diffuse-overlay.png</texture>
+  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                                 </control>
                                 <control type="image">
                                     <top>230</top>
@@ -437,6 +438,7 @@
                                     <width>567</width>
                                     <height>319</height>
                                     <texture border="5">overlays/diffuse-overlay.png</texture>
+  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                                 </control>                          
                                 <control type="image">
                                     <top>230</top>
@@ -507,6 +509,7 @@
                                     <width>373</width>
                                     <height>373</height>
                                     <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                                 </control>
                                 <control type="image">
                                     <top>289</top>
@@ -554,6 +557,7 @@
                                     <width>373</width>
                                     <height>373</height>
                                     <texture border="5">overlays/diffuse-overlay.png</texture>
+  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                                 </control>
                                 <control type="image">
                                     <top>289</top>

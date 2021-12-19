@@ -118,6 +118,7 @@
 							<width>230</width>
 							<height>345</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<include content="OverlayIcons">
 							<param name="OverlayLeft" value="178" />
@@ -146,6 +147,7 @@
 							<width>230</width>
 							<height>345</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<include content="OverlayIcons">
 							<param name="OverlayLeft" value="178" />
@@ -207,6 +209,7 @@
 							<width>401</width>
 							<height>226</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<include content="OverlayIcons" condition="Skin.HasSetting(Enable.IconLandscape)">
 							<param name="OverlayLeft" value="349" />
@@ -274,6 +277,7 @@
 							<width>401</width>
 							<height>226</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<include content="OverlayIcons" condition="Skin.HasSetting(Enable.IconLandscape)">
 							<param name="OverlayLeft" value="349" />
@@ -325,6 +329,7 @@
 						<width>897</width>
 						<height>166</height>
 						<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 					<include content="OverlayIcons">
 						<param name="OverlayLeft" value="845" />
@@ -383,6 +388,7 @@
 							<width>897</width>
 							<height>166</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<include content="OverlayIcons">
 							<param name="OverlayLeft" value="845" />
@@ -407,6 +413,7 @@
 							<width>412</width>
 							<height>345</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<control type="image">
 							<left>6</left>
@@ -451,6 +458,7 @@
 								<width>412</width>
 								<height>345</height>
 								<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 							</control>
 							<control type="image">
 								<left>6</left>
@@ -492,6 +500,7 @@
 							<width>345</width>
 							<height>345</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<control type="image">
 							<left>6</left>
@@ -536,6 +545,7 @@
 								<width>345</width>
 								<height>345</height>
 								<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 							</control>
 							<control type="image">
 								<left>6</left>
@@ -696,6 +706,7 @@
 							<width>345</width>
 							<height>345</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<control type="image">
 							<visible>Container.Content(albums)</visible>
@@ -757,6 +768,7 @@
 								<width>345</width>
 								<height>345</height>
 								<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 							</control>
 
 							<control type="group">
@@ -860,6 +872,7 @@
 						<width>412</width>
 						<height>345</height>
 						<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 					<control type="group">
 						<visible>!Skin.HasSetting(PictureInfo.Disabled)</visible>
@@ -901,6 +914,7 @@
 								<width>412</width>
 								<height>345</height>
 								<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 							</control>
 							<control type="group">
 								<visible>!Skin.HasSetting(PictureInfo.Disabled)</visible>
@@ -1009,6 +1023,7 @@
 							<width>345</width>
 							<height>345</height>
 							<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 						</control>
 						<control type="image">
 							<left>6</left>
@@ -1049,6 +1064,7 @@
 								<width>345</width>
 								<height>345</height>
 								<texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 							</control>
 							<control type="image">
 								<left>6</left>

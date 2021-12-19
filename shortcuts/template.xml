@@ -170,6 +170,7 @@
                         <right>20</right>
                         <height>310</height>
                         <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                     </control>
                     <control type="grouplist">
                         <left>20</left>
@@ -487,6 +488,7 @@
                         <right>20</right>
                         <height>310</height>
                         <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                     </control>
                     <control type="grouplist">
                         <left>20</left>

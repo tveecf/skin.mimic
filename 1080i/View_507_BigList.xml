@@ -397,6 +397,7 @@
                 <width>346</width>
                 <height>195</height>
                 <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
             </control>
             <control type="group">
                 <visible>!Skin.HasSetting(Enable.BigListLogo)</visible>
@@ -427,6 +428,7 @@
                 <width>130</width>
                 <height>195</height>
                 <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
             </control>
             <include content="OverlayIcons">
                 <param name="OverlayLeft" value="72" />
@@ -454,6 +456,7 @@
                 <width>195</width>
                 <height>195</height>
                 <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
             </control>
         </control>
     </include>

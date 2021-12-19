@@ -180,6 +180,7 @@
                                 <width>566</width>
                                 <height>319</height>
                                 <texture border="5">overlays/diffuse-overlay.png</texture>
+    						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                             </control>
                         </control>
                     </itemlayout>
@@ -203,6 +204,7 @@
                                 <width>566</width>
                                 <height>319</height>
                                 <texture border="5">overlays/diffuse-overlay.png</texture>
+   						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                             </control>                          
                         </control>
                     </focusedlayout>

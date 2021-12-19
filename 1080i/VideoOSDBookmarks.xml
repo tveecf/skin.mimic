@@ -59,6 +59,7 @@
                     <width>362</width>
                     <height>210</height>
                     <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                 </control>
                 <control type="image">
                     <top>166</top>
@@ -95,6 +96,7 @@
                         <width>362</width>
                         <height>210</height>
                         <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                     </control>
                     <control type="image">
                         <top>166</top>

@@ -303,6 +303,13 @@
 			</visible>
 			<enable>!Skin.HasSetting(Enable.WideList)</enable>
 		</control>
+		<control type="radiobutton" id="1900">
+			<label>90945</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Enable.HighlightFocused)</onclick>
+			<selected>Skin.HasSetting(Enable.HighlightFocused)</selected>
+			<visible></visible>
+		</control>
 		<include>ArcadeOptions</include>
 		<include>KeibertzOptions</include>
 		<include>CoverflowOptions</include>

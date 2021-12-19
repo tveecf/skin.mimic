@@ -1522,7 +1522,7 @@ msgid "Audio Channels"
 msgstr ""
 
 msgctxt "#90945"
-msgid "Bright Icons"
+msgid "Dim Unfocused Items"
 msgstr ""
 
 msgctxt "#90946"

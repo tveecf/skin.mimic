@@ -64,6 +64,7 @@
                         <width>256</width>
                         <height>384</height>
                         <texture border="5">overlays/diffuse-overlay.png</texture>
+  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                     </control>
                     <control type="group">
                         <visible>ListItem.IsSelected</visible>
@@ -116,6 +117,7 @@
                             <width>256</width>
                             <height>384</height>
                             <texture border="5">overlays/diffuse-overlay.png</texture>
+ 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                         </control>
                         <control type="group">
                             <visible>ListItem.IsSelected</visible>
