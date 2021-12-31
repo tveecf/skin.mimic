@@ -39,6 +39,7 @@
    | String.IsEqual(ListItem.DBTYPE,year)
    | String.IsEqual(ListItem.DBTYPE,artist)
    | String.IsEqual(ListItem.DBTYPE,album)
+   | String.IsEqual(ListItem.DBTYPE,tvshow)
   ]
 "
 >activatewindow(videos,$INFO[ListItem.FolderPath])</onclick>
