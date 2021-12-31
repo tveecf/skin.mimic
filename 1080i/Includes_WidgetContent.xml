@@ -23,7 +23,45 @@
         <ondown>$PARAM[ondown]</ondown>
         <onleft>$PARAM[onleft]</onleft>
         <onright>$PARAM[onright]</onright>
-<!--         <onclick condition="String.StartsWith(Container(9000).ListItem.Property(widgetPath),favourites)">$INFO[ListItem.FileNameAndPath]</onclick> -->
+
+<!--  work around for items which are playlist groups, which are otherwise not clickable -->
+<onclick condition="
+  String.Contains(ListItem.FolderPath,xsp=)
++ String.StartsWith(ListItem.FolderPath,videodb) 
++ [
+   String.IsEqual(ListItem.DBTYPE,tag)
+   | String.IsEqual(ListItem.DBTYPE,set)
+   | String.IsEqual(ListItem.DBTYPE,genre)
+   | String.IsEqual(ListItem.DBTYPE,director)
+   | String.IsEqual(ListItem.DBTYPE,studio)
+   | String.IsEqual(ListItem.DBTYPE,actor)
+   | String.IsEqual(ListItem.DBTYPE,country)
+   | String.IsEqual(ListItem.DBTYPE,year)
+   | String.IsEqual(ListItem.DBTYPE,artist)
+   | String.IsEqual(ListItem.DBTYPE,album)
+  ]
+"
+>activatewindow(videos,$INFO[ListItem.FolderPath])</onclick>
+
+
+<onclick condition="
+  String.Contains(ListItem.FolderPath,xsp=)
++ String.StartsWith(ListItem.FolderPath,musicdb) 
++ [
+   String.IsEqual(ListItem.DBTYPE,tag)
+   | String.IsEqual(ListItem.DBTYPE,set)
+   | String.IsEqual(ListItem.DBTYPE,genre)
+   | String.IsEqual(ListItem.DBTYPE,director)
+   | String.IsEqual(ListItem.DBTYPE,studio)
+   | String.IsEqual(ListItem.DBTYPE,actor)
+   | String.IsEqual(ListItem.DBTYPE,country)
+   | String.IsEqual(ListItem.DBTYPE,year)
+   | String.IsEqual(ListItem.DBTYPE,artist)
+   | String.IsEqual(ListItem.DBTYPE,album)
+  ]
+"
+>activatewindow(music,$INFO[ListItem.FolderPath])</onclick>
+
         <onback>9000</onback>
         <preloaditems>2</preloaditems>
         <viewtype label="21371">list</viewtype>

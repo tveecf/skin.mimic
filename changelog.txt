@@ -1,6 +1,7 @@
 7.0.3
 * rebuild BusyDialog.xml so that it works
 * make dimming of unfocused items optional
+* work-around to make items in widgets using grouped playlists clickable
 
 7.0.2
 * multiple fixes
