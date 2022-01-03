@@ -44,7 +44,6 @@
 "
 >activatewindow(videos,$INFO[ListItem.FolderPath])</onclick>
 
-
 <onclick condition="
   String.Contains(ListItem.FolderPath,xsp=)
 + String.StartsWith(ListItem.FolderPath,musicdb) 

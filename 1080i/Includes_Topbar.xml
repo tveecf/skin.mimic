@@ -127,15 +127,15 @@
 				</control>
 
 
-				<control type="label">
-				<width>800</width>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>cirrus_30</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[ListItem.DBTYPE] : $INFO[ListItem.FolderPath]</label>
-				<scroll>true</scroll>
-				</control>
+<!-- 				<control type="label"> -->
+<!-- 				<width>800</width> -->
+<!-- 				<align>left</align> -->
+<!-- 				<aligny>center</aligny> -->
+<!-- 				<font>cirrus_30</font> -->
+<!-- 				<textcolor>white</textcolor> -->
+<!-- 				<label>$INFO[ListItem.DBTYPE] : $INFO[ListItem.FolderPath]</label> -->
+<!-- 				<scroll>true</scroll> -->
+<!-- 				</control> -->
 
 				<control type="label">
 					<width>auto</width>
