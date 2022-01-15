@@ -95,7 +95,7 @@
 						<param name="bordersize">0</param>
 						<param name="texture">listselect_fo.png</param>
 						<param name="textureborder">5</param>
-						<param name="texturecolor">ff32c4ff</param>
+						<param name="texturecolor">FocusColor</param>
 					</include>
 					<animation effect="fade" start="0" end="100" time="200" reversible="true">Focus</animation>
 					<animation effect="fade" start="100" end="0" time="200">UnFocus</animation>

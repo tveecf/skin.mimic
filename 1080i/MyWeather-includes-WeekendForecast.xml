@@ -39,7 +39,7 @@
 								<top>717</top>
 								<height>50</height>
 								<label>$INFO[ListItem.Label]</label>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 							</control>
 							<control type="image">
 								<description>current weather icon</description>
@@ -55,7 +55,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 								<label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature), | [COLOR ff8de0ff],[/COLOR]]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -65,7 +65,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -75,7 +75,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 								<label>$INFO[ListItem.Property(WindSpeed),$LOCALIZE[383]: ]$INFO[ListItem.Property(WindDirection),  ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -85,7 +85,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 								<label>$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>
@@ -95,7 +95,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 								<label>$INFO[ListItem.Property(ChancePrecipitation),$LOCALIZE[31908]: ]</label>
 								<textoffsetx>15</textoffsetx>
 							</control>

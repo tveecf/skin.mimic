@@ -21,7 +21,7 @@
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -39,7 +39,7 @@
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<animation effect="slide" end="870,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
@@ -58,7 +58,7 @@
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -76,7 +76,7 @@
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
@@ -101,7 +101,7 @@
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
@@ -126,7 +126,7 @@
 						<visible>Control.HasFocus(50)</visible>
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<animation effect="slide" end="870,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
@@ -239,6 +239,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
+		                    <textcolor>AltTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
@@ -332,6 +333,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
+		                    <textcolor>AltTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
@@ -425,6 +427,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
+		                    <textcolor>AltTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
@@ -516,6 +519,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
+		                    <textcolor>AltTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
@@ -792,6 +796,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
+		                    <textcolor>AltTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<include content="OverlayList">
@@ -875,6 +880,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
+		                    <textcolor>AltTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<include content="OverlayList">
@@ -1064,7 +1070,7 @@
 				<!-- <width>560</width> -->
 				<!-- <height>30</height> -->
 				<!-- <font>font14</font> -->
-				<!-- <textcolor>highlight</textcolor> -->
+				<!-- <textcolor>NormalTextColor</textcolor> -->
 				<!-- <label>$LOCALIZE[558]:</label> -->
 				<!-- </control> -->
 				<!-- <control type="label"> -->
@@ -1080,7 +1086,7 @@
 				<!-- <width>560</width> -->
 				<!-- <height>30</height> -->
 				<!-- <font>font14</font> -->
-				<!-- <textcolor>highlight</textcolor> -->
+				<!-- <textcolor>NormalTextColor</textcolor> -->
 				<!-- <label>$LOCALIZE[515]:</label> -->
 				<!-- </control> -->
 				<!-- <control type="label"> -->
@@ -1100,7 +1106,7 @@
 				<!-- <width>560</width> -->
 				<!-- <height>60</height> -->
 				<!-- <include>MediaFlagVars</include> -->
-				<!-- <texture background="true" colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture> -->
+				<!-- <texture background="true" colordiffuse="TitleTextColor">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture> -->
 				<!-- </control> -->
 				<!-- </control> -->
 

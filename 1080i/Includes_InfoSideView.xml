@@ -64,7 +64,7 @@
 						[$EXP[isSong] | $EXP[isAlbum]] 
 						+ !String.IsEmpty(Control.GetLabel(361))
 					</visible>
-					<texture colordiffuse="maintext">$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+					<texture colordiffuse="TitleTextColor">$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
 					<left>5</left>
 					<top>5</top>
 					<width>130</width>
@@ -94,7 +94,7 @@
 						+String.IsEmpty(ListItem.Art(fanart))
 						+[$EXP[isSong] | $EXP[isAlbum]]
 					</visible>
-					<texture colordiffuse="maintext">$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
+					<texture colordiffuse="TitleTextColor">$VAR[AudioSourceFlagVar,flags/source/,.png]</texture>
 					<width>120</width>
 					<height>50</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -102,27 +102,27 @@
 
 				<control type="image">
 					<visible>$EXP[isSong]</visible>
-					<texture background="true" colordiffuse="maintext">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
+					<texture background="true" colordiffuse="TitleTextColor">$INFO[ListItem.FileExtension,flags/audiocodec/,.png]</texture>
 					<width>120</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
 					<visible>!String.IsEmpty(ListItem.MusicChannels)</visible>
-					<texture background="true" colordiffuse="maintext">$INFO[ListItem.MusicChannels,flags/audiochannel/,.png]</texture>
+					<texture background="true" colordiffuse="TitleTextColor">$INFO[ListItem.MusicChannels,flags/audiochannel/,.png]</texture>
 					<width>120</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
 					<visible>!String.IsEmpty(ListItem.Codec)</visible>
-					<texture background="true" colordiffuse="maintext">$INFO[ListItem.Codec,flags/audiocodec/,.png]</texture>
+					<texture background="true" colordiffuse="TitleTextColor">$INFO[ListItem.Codec,flags/audiocodec/,.png]</texture>
 					<width>120</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 				</control>
 <!-- 				<control type="image"> -->
-<!-- 					<texture background="true" colordiffuse="maintext">$VAR[AudioSourceFlagVar,flags/source/,.png]</texture> -->
+<!-- 					<texture background="true" colordiffuse="TitleTextColor">$VAR[AudioSourceFlagVar,flags/source/,.png]</texture> -->
 <!-- 					<height>50</height> -->
 <!-- 					<width>120</width> -->
 <!-- 					<aspectratio>keep</aspectratio> -->
@@ -172,6 +172,7 @@
 				<font>font30</font>
 				<aligny>bottom</aligny>
 				<scroll>true</scroll>
+				<textcolor>TitleTextColor</textcolor>
 			</control>
 			<control type="label">
 				<visible>Container.Content(albums) + !String.IsEmpty(ListItem.Artist)</visible>
@@ -180,7 +181,7 @@
 				<height>42</height>
 				<aligny>top</aligny>
 				<font>font14</font>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 			</control>
 			<control type="label">
 				<visible>Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
@@ -189,7 +190,7 @@
 				<height>42</height>
 				<font>font14</font>
 				<aligny>top</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 			</control>
 			<control type="textbox">
 				<visible>!String.IsEmpty(Control.GetLabel(363))</visible>
@@ -288,7 +289,7 @@
 				<height>42</height>
 				<font>font14</font>
 				<aligny>top</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 			</control>
 			<control type="textbox">
 				<description>Description</description>

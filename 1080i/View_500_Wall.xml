@@ -18,7 +18,7 @@
 					<width>254</width>
 					<height>369</height>
 					<include>FocusedBackgroundFade</include>
-					<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+					<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 					<animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
 					<animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,5)">Conditional</animation>
 					<animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,4)">Conditional</animation>
@@ -35,7 +35,7 @@
 					<width>425</width>
 					<height>250</height>
 					<include>FocusedBackgroundFade</include>
-					<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+					<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 					<animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
 					<animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
 					<animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -49,7 +49,7 @@
 					<width>921</width>
 					<height>190</height>
 					<include>FocusedBackgroundFade</include>
-					<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+					<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 					<animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,2)">Conditional</animation>
 					<animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
 					<animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
@@ -62,7 +62,7 @@
 					<width>436</width>
 					<height>369</height>
 					<include>FocusedBackgroundFade</include>
-					<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+					<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 					<animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
 					<animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
 					<animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
@@ -75,7 +75,7 @@
 					<width>369</width>
 					<height>369</height>
 					<include>FocusedBackgroundFade</include>
-					<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+					<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 					<animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
 					<animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
 					<animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -592,7 +592,7 @@
 					<width>1740</width>
 					<height>30</height>
 					<font>font14</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>AltTextColor</textcolor>
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -618,7 +618,7 @@
 					<width>1280</width>
 					<height>30</height>
 					<font>font14</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>AltTextColor</textcolor>
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -635,7 +635,7 @@
 					<visible>Control.IsVisible(500) + String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
 					<control type="image">
 						<height>50</height>
-						<colordiffuse>maintext</colordiffuse>
+						<colordiffuse>TitleTextColor</colordiffuse>
 						<texture>imdb.png</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
@@ -667,7 +667,7 @@
 				<width>369</width>
 				<height>369</height>
 				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 				<animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
 				<animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
 				<animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -812,7 +812,7 @@
 					<width>1800</width>
 					<height>30</height>
 					<font>font14</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>NormalTextColor</textcolor>
 					<label>$VAR[FloorLabel2Var]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -836,7 +836,7 @@
 				<width>436</width>
 				<height>369</height>
 				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 				<animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(510).Row,0)">Conditional</animation>
 				<animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(510).Column,2)">Conditional</animation>
 				<animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(510).Column,1)">Conditional</animation>
@@ -959,7 +959,7 @@
 						<width>1300</width>
 						<height>30</height>
 						<font>font14</font>
-						<textcolor>highlight</textcolor>
+						<textcolor>NormalTextColor</textcolor>
 						<label>$INFO[ListItem.PictureResolution]</label>
 						<textoffsetx>30</textoffsetx>
 					</control>
@@ -984,7 +984,7 @@
 				<width>369</width>
 				<height>369</height>
 				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 				<animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Row,0)">Conditional</animation>
 				<animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,3)">Conditional</animation>
 				<animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,2)">Conditional</animation>
@@ -1104,7 +1104,7 @@
 					<width>1800</width>
 					<height>30</height>
 					<font>font14</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>NormalTextColor</textcolor>
 					<label>$INFO[ListItem.AddonSummary]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>

@@ -10,7 +10,7 @@
             <left>30</left>
             <width>60</width>
             <height>60</height>
-            <texture colordiffuse="maintext" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
+            <texture colordiffuse="TitleTextColor" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
             <aspectratio>keep</aspectratio>
             <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
         </control>

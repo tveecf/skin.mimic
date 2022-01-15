@@ -18,7 +18,7 @@
 				<width>1400</width>
 				<height>360</height>
 				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 				<animation effect="slide" end="0,360" time="300"
 					tween="cubic" easing="inout"
 					condition="Integer.IsGreater(Container(307).Row,1)">Conditional</animation>
@@ -72,7 +72,6 @@
 						<width>1060</width>
 						<height>50</height>
 						<font>font16</font>
-<!-- 						<color>highlight</color> -->
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -81,7 +80,7 @@
 						<height>50</height>
 						<font>font36</font>
 						<align>right</align>
-						<selectedcolor>highlight</selectedcolor>
+						<selectedcolor>SelectedColor</selectedcolor>
 						<label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR ff8de0ff],[/COLOR]]</label>
 					</control>
 					<control type="label">
@@ -90,7 +89,7 @@
 						<top>75</top>
 						<height>30</height>
 						<font>font15</font>
-						<selectedcolor>highlight</selectedcolor>
+						<selectedcolor>SelectedColor</selectedcolor>
 						<label>$LOCALIZE[383]: $INFO[ListItem.Property(WindDirection)] $INFO[ListItem.Property(WindSpeed)]</label>
 					</control>
 					<control type="textbox">
@@ -99,7 +98,7 @@
 						<top>120</top>
 						<height>200</height>
 <!-- 						<font>font15</font> -->
-						<selectedcolor>highlight</selectedcolor>
+						<selectedcolor>SelectedColor</selectedcolor>
 <!-- 						<scrolltime>200</scrolltime> -->
 <!-- 					    <autoscroll delay="3000" time="1000" repeat="10000"></autoscroll> -->
 						<label>$INFO[ListItem.Property(DetailedOutlook)]</label>
@@ -146,7 +145,7 @@
 						<width>1060</width>
 						<height>50</height>
  						<font>font16</font> 
- 						<color>highlight</color> 
+ 						<color>NormalTextColor</color> 
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">

@@ -77,7 +77,7 @@
                 <control type="button">
                 	<description>Back button</description>
 					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
-                    <texturefocus colordiffuse="highlight">osd/button_bg.png</texturefocus>
+                    <texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus>
                     <texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
                     <label>z</label>
                     <align>center</align>
@@ -90,7 +90,7 @@
                 <control type="button">
 					<description>Menu button</description>
 					<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
-                    <texturefocus colordiffuse="highlight">osd/button_bg.png</texturefocus>
+                    <texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus>
                     <texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
                     <label>E</label>
                     <align>center</align>
@@ -106,7 +106,7 @@
 					<visible>Skin.HasSetting(Enable.TouchScreen)
 						+ [ Player.HasVideo | Player.HasAudio]
 					</visible>
-                    <texturefocus colordiffuse="highlight">osd/button_bg.png</texturefocus>
+                    <texturefocus colordiffuse="FocusColor">osd/button_bg.png</texturefocus>
                     <texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
                     <label>q</label>
                     <align>center</align>
@@ -121,7 +121,7 @@
 					<width>60</width>
 					<height>80</height>
 					<visible>!Skin.HasSetting(Enable.TouchScreen)</visible>
-					<texture colordiffuse="white">$VAR[HeaderIcon]</texture>
+					<texture colordiffuse="TitleTextColor">$VAR[HeaderIcon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
 				</control>
@@ -132,7 +132,7 @@
 <!-- 				<align>left</align> -->
 <!-- 				<aligny>center</aligny> -->
 <!-- 				<font>cirrus_30</font> -->
-<!-- 				<textcolor>white</textcolor> -->
+<!-- 				<textcolor>TitleTextColor</textcolor> -->
 <!-- 				<label>$INFO[ListItem.DBTYPE] : $INFO[ListItem.FolderPath]</label> -->
 <!-- 				<scroll>true</scroll> -->
 <!-- 				</control> -->
@@ -142,7 +142,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_30</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>LabelTextColor</textcolor>
 					<label>•</label>
 					<scroll>false</scroll>
 				</control>
@@ -152,7 +152,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_30</font>
-					<textcolor>white</textcolor>
+					<textcolor>TitleTextColor</textcolor>
 					<label>$VAR[BreadcrumbsVar]</label>
 					<scroll>false</scroll>
 				</control>
@@ -162,7 +162,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_30</font>
-					<textcolor>white</textcolor>
+					<textcolor>TitleTextColor</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<label2>$VAR[HeaderSubLabelInfoDialog]</label2>
 				</control>
@@ -172,7 +172,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_30</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>TitleTextColor</textcolor>
 					<label>$VAR[HeaderSubLabelInfoDialog]</label>
 				</control>
 			</control>
@@ -189,7 +189,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font31</font>
-					<textcolor>white</textcolor>
+					<textcolor>TitleTextColor</textcolor>
 					<label>$INFO[System.Date]</label>
 					<scroll>false</scroll>
 				</control>
@@ -198,7 +198,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_30</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>LabelTextColor</textcolor>
 					<label>•</label>
 					<scroll>false</scroll>
 				</control>
@@ -234,7 +234,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font31</font>
-					<textcolor>white</textcolor>
+					<textcolor>TitleTextColor</textcolor>
 					<label>[B]$INFO[Weather.Temperature][/B]</label>
 					<scroll>false</scroll>
 					<visible>!Skin.HasSetting(HideTopbarWeather) + Weather.IsFetched
@@ -245,7 +245,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_30</font>
-					<textcolor>highlight</textcolor>
+					<textcolor>LabelTextColor</textcolor>
 					<label>•</label>
 					<scroll>false</scroll>
 					<visible>!Skin.HasSetting(HideTopbarWeather) + Weather.IsFetched
@@ -256,7 +256,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font31</font>
-					<textcolor>white</textcolor>
+					<textcolor>TitleTextColor</textcolor>
 					<label>$INFO[System.Time]</label>
 					<scroll>false</scroll>
 				</control>
@@ -336,7 +336,7 @@
 							<align>right</align>
 							<height>48</height>
 							<font>font36</font>
-							<textcolor>highlight</textcolor>
+							<textcolor>NormalTextColor</textcolor>
 						</control>
 						<control type="label">
 							<description>Album</description>
@@ -345,7 +345,7 @@
 							<align>right</align>
 							<height>40</height>
 							<font>font16</font>
-							<textcolor>highlight</textcolor>
+							<textcolor>AltTextColor</textcolor>
 						</control>
 					</control>
 				</control>

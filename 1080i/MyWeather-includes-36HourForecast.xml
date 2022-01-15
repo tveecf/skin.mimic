@@ -39,7 +39,7 @@
 								<top>717</top>
 								<height>50</height>
 								<label>$INFO[ListItem.Label]</label>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 							</control>
 							<control type="image">
 								<description>current weather icon</description>
@@ -56,7 +56,7 @@
 								<height>392</height>
 								<align>center</align>
 								<font>font15_textbox</font>
-								<selectedcolor>highlight</selectedcolor>
+								<selectedcolor>SelectedColor</selectedcolor>
 								<label>$INFO[ListItem.Label2]$INFO[ListItem.Property(TemperatureHeading),[CR],: ]$INFO[ListItem.Property(Temperature)]$INFO[ListItem.Property(FeelsLike),[CR]$LOCALIZE[402]: ]$INFO[ListItem.Property(Precipitation),[CR]$LOCALIZE[1448]: ]$INFO[ListItem.Property(Wind),[CR]]$INFO[ListItem.Property(Humidity),[CR]$LOCALIZE[406]: ]</label>
 							</control>
 							<control type="image">

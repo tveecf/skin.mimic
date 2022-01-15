@@ -18,7 +18,7 @@
 				<width>1420</width>
 				<height>890</height>
 				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 				<animation effect="slide" end="0,360" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(310).Row,1)">Conditional</animation>
 				<animation effect="slide" end="0,360" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(310).Row,0)">Conditional</animation>
 				<animation effect="slide" end="700,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(310).Column,0)">Conditional</animation>
@@ -85,7 +85,7 @@
 						<height>30</height>
 						<top>0</top>
 						<font>font10</font>
-						<selectedcolor>highlight</selectedcolor>
+						<selectedcolor>SelectedColor</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -146,7 +146,7 @@
 						<height>30</height>
 						<top>0</top>
 						<font>font10</font>
-						<selectedcolor>highlight</selectedcolor>
+						<selectedcolor>SelectedColor</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>

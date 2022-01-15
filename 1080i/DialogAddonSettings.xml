@@ -106,31 +106,31 @@
             <aligny>center</aligny>
             <font>font14</font>
             <textoffsetx>20</textoffsetx>
-            <textcolor>maintext</textcolor>
+            <textcolor>TitleTextColor</textcolor>
         </control>
         <control type="button" id="7">
             <description>Default Button</description>
             <width>960</width>
             <height>60</height>
             <font>font14</font>
-            <textcolor>maintext</textcolor>
-            <focusedcolor>maintext</focusedcolor>
+            <textcolor>TitleTextColor</textcolor>
+            <focusedcolor>TitleTextColor</focusedcolor>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <width>960</width>
             <height>60</height>
             <font>font14</font>
-            <textcolor>maintext</textcolor>
-            <focusedcolor>maintext</focusedcolor>
+            <textcolor>TitleTextColor</textcolor>
+            <focusedcolor>TitleTextColor</focusedcolor>
             <textwidth>880</textwidth>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default spincontrolex</description>
             <width>960</width>
             <height>60</height>
-            <textcolor>maintext</textcolor>
-            <focusedcolor>maintext</focusedcolor>
+            <textcolor>TitleTextColor</textcolor>
+            <focusedcolor>TitleTextColor</focusedcolor>
             <font>font14</font>
             <aligny>center</aligny>
             <reverse>yes</reverse>
@@ -152,7 +152,7 @@
             <font>font13_title</font>
             <align>center</align>
             <label />
-            <textcolor>highlight</textcolor>
+            <textcolor>NormalTextColor</textcolor>
             <textoffsetx>15</textoffsetx>
         </control>
         <control type="sliderex" id="13">
@@ -160,8 +160,8 @@
             <width>960</width>
             <height>60</height>
             <font>font14</font>
-            <textcolor>maintext</textcolor>
-            <focusedcolor>maintext</focusedcolor>
+            <textcolor>TitleTextColor</textcolor>
+            <focusedcolor>TitleTextColor</focusedcolor>
         </control>
     </controls>
 </window>

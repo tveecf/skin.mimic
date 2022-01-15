@@ -155,7 +155,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <selectedcolor>highlight</selectedcolor>
+                <selectedcolor>SelectedColor</selectedcolor>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="label">
@@ -165,7 +165,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <selectedcolor>highlight</selectedcolor>
+                <selectedcolor>SelectedColor</selectedcolor>
                 <label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature),  [COLOR ff8de0ff],[/COLOR]]</label>
             </control>
             <control type="image">

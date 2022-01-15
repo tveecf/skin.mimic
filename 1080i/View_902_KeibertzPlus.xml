@@ -23,7 +23,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>lyre30</font>
-				<textcolor>grey</textcolor>
+				<textcolor>TitleTextColor</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<scroll>false</scroll>
 				<visible>$EXP[KeibertzPlusHideLabels] + Control.IsVisible(902) + !$EXP[isInfoDialog]</visible>
@@ -197,8 +197,8 @@
             <aligny>center</aligny>
             <font>font48</font>
             <label>$INFO[ListItem.Label]</label>			
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <textcolor>TitleTextColor</textcolor>
+            <shadowcolor>shadow</shadowcolor>
             <scroll>true</scroll>
         </control>
 		<control type="label">
@@ -209,9 +209,9 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font15</font>
-			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=white]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
-			<textcolor>highlight</textcolor>
-			<shadowcolor>black</shadowcolor>
+			<label>[UPPERCASE]$INFO[ListItem.Year]  [COLOR=TitleTextColor]•[/COLOR]  $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<textcolor>AltTextColor</textcolor>
+			<shadowcolor>shadow</shadowcolor>
 			<scroll>false</scroll>
 		</control>
 		<control type="textbox">
@@ -222,8 +222,8 @@
             <align>justify</align>
             <font>font13</font>
             <label>$INFO[ListItem.Plot]</label>			
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
+            <textcolor>NormalTextColor</textcolor>
+            <shadowcolor>shadow</shadowcolor>
             <autoscroll time="2000" delay="3000" repeat="5000">Control.HasFocus(902)</autoscroll>
         </control>
         <control type="image">

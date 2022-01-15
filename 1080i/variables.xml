@@ -643,10 +643,10 @@
 	<!--<variable name="ColorHighlightVar"> <value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value> <value>highlight</value> 
 		</variable> <variable name="ColorBackgroundVar"> <value condition="!String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value> <value>background</value> 
 		</variable> <variable name="ColorDialogVar"> <value condition="!String.IsEmpty(Skin.String(dialogcolor.name))">$INFO[Skin.String(dialogcolor.name)]</value> <value>dialog</value> </variable> 
-		<variable name="ColorTextVar"> <value condition="!String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value> <value>maintext</value> </variable> <variable 
+		<variable name="ColorTextVar"> <value condition="!String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value> <value>TitleTextColor</value> </variable> <variable 
 		name="ColorDisabledVar"> <value condition="!String.IsEmpty(Skin.String(disabledcolor.name))">$INFO[Skin.String(disabledcolor.name)]</value> <value>disabled</value> </variable> <variable 
-		name="ColorMenuVar"> <value condition="!String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value> <value>maintext</value> </variable> <variable name="ColorRecordingVar"> 
-		<value condition="Player.Recording">ffff0000</value> <value condition="!Player.Recording + !String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value> <value>maintext</value> 
+		name="ColorMenuVar"> <value condition="!String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value> <value>TitleTextColor</value> </variable> <variable name="ColorRecordingVar"> 
+		<value condition="Player.Recording">ffff0000</value> <value condition="!Player.Recording + !String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value> <value>TitleTextColor</value> 
 		</variable> -->
 	<variable name="ArtLabelVar">
 		<value
@@ -998,10 +998,10 @@
 			condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + Window.IsVisible(extendedprogressdialog) + [Window.IsVisible(addoninformation) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation)]">$INFO[System.Date]</value>
 	</variable>
 	<variable name="AddonDisclaimer">
-		<value condition="!String.IsEmpty(ListItem.AddonDisclaimer)">[COLOR highlight]$LOCALIZE[24052]: [/COLOR][CR]$INFO[ListItem.AddonDisclaimer]</value>
+		<value condition="!String.IsEmpty(ListItem.AddonDisclaimer)">[COLOR LabelTextColor]$LOCALIZE[24052]: [/COLOR][CR]$INFO[ListItem.AddonDisclaimer]</value>
 	</variable>
 	<variable name="AddonNews">
-		<value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR highlight]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
+		<value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR LabelTextColor]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
 	</variable>
 	<variable name="LibraryStatsVar">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31097])">$LOCALIZE[20342]: $INFO[Window(Home).Property(Movies.Count)] • $LOCALIZE[16102]: $INFO[Window(Home).Property(Movies.Watched)] • $LOCALIZE[16101]:

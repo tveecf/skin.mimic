@@ -160,7 +160,8 @@
 							<top>387</top>
 							<width>306</width>
 							<height>270</height>
-							<texture colordiffuse="1532C4FF" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="1532C4FF" border="5">listselect_fo.png</texture> -->
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 							<animation type="Conditional" condition="true" reversible="false">
 								<effect type="rotatex" center="387,0" end="90" time="0" />
 							</animation>
@@ -189,7 +190,8 @@
 							<top>115</top>
 							<width>306</width>
 							<height>270</height>
-							<texture colordiffuse="ff32C4FF" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 							<animation type="Focus" reversible="true">
 								<effect type="fade" time="800" />
 							</animation>
@@ -279,7 +281,8 @@
 							<top>388</top>
 							<width>226</width>
 							<height>270</height>
-							<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture> -->
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 							<animation type="Conditional" condition="true" reversible="false">
 								<effect type="rotatex" center="388,0" end="90" time="0" />
 							</animation>
@@ -307,7 +310,8 @@
 							<top>115</top>
 							<width>226</width>
 							<height>270</height>
-							<texture colordiffuse="ff32C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
 							<animation type="Focus" reversible="false">
 								<effect type="fade" time="800" />
 							</animation>
@@ -395,7 +399,8 @@
 							<top>384</top>
 							<width>180</width>
 							<height>316</height>
-							<texture colordiffuse="1532C4FF" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="1532C4FF" border="5">listselect_fo.png</texture> -->
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 							<animation type="Conditional" condition="true" reversible="false">
 								<effect type="rotatex" center="386,0" end="90" time="0" />
 							</animation>
@@ -424,7 +429,8 @@
 							<top>68</top>
 							<width>180</width>
 							<height>316</height>
-							<texture colordiffuse="ff32C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
 							<animation type="Focus" reversible="true">
 								<effect type="fade" time="800" />
 							</animation>
@@ -509,7 +515,8 @@
 							<top>384</top>
 							<width>360</width>
 							<height>262</height>
-							<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture> -->
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 							<animation type="Conditional" condition="true" reversible="false">
 								<effect type="rotatex" center="384,0" end="90" time="0" />
 							</animation>
@@ -538,7 +545,8 @@
 							<top>120</top>
 							<width>360</width>
 							<height>262</height>
-							<texture colordiffuse="ff32C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
 							<animation type="Focus" reversible="true">
 								<effect type="fade" time="800" />
 							</animation>
@@ -634,7 +642,8 @@
 								<top>387</top>
 								<width>270</width>
 								<height>270</height>
-								<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture>
+<!-- 								<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture> -->
+								<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 								<animation type="Focus" reversible="true">
 									<effect type="fade" time="800" />
 								</animation>
@@ -657,7 +666,8 @@
 							<top>115</top>
 							<width>270</width>
 							<height>270</height>
-							<texture colordiffuse="ff32C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
 							<!--<animation type="Focus" condition="Skin.HasSetting(Arcade.Games.Cirrus)" reversible="false"> <effect type="zoom" center="auto" start="100" end="126" delay="0" time="800" 
 								tween="back" easing="out" /> </animation> -->
 							<animation type="Focus" reversible="true">
@@ -758,7 +768,8 @@
 							<top>384</top>
 							<width>210</width>
 							<height>316</height>
-							<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="1832C4FF" border="5">listselect_fo.png</texture> -->
 							<animation type="Conditional" condition="true" reversible="false">
 								<effect type="rotatex" center="386,0" end="90" time="0" />
 							</animation>
@@ -786,7 +797,8 @@
 							<top>68</top>
 							<width>210</width>
 							<height>316</height>
-							<texture colordiffuse="FF32C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
 							<animation type="Focus" reversible="true">
 								<effect type="fade" time="800" />
 							</animation>
@@ -883,7 +895,7 @@
 							<height>20</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>ff666666</textcolor>
+							<textcolor>TitleTextColor</textcolor>
 							<font>font20</font>
 							<label>$INFO[ListItem.Label]</label>
 							<scroll>false</scroll>
@@ -895,9 +907,9 @@
 							<height>20</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>ff333333</textcolor>
+							<textcolor>AltTextColor</textcolor>
 							<font>font10</font>
-							<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=ff666666]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+							<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=NormalTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 							<scroll>false</scroll>
 						</control>
 						<include content="OverlayIcons">
@@ -919,7 +931,8 @@
 							<top>388</top>
 							<width>480</width>
 							<height>270</height>
-							<texture colordiffuse="1532C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="1532C4FF" border="5">listselect_fo.png</texture> -->
 							<animation type="Conditional" condition="true" reversible="false">
 								<effect type="rotatex" center="388,0" end="90" time="0" />
 							</animation>
@@ -948,7 +961,8 @@
 							<top>115</top>
 							<width>480</width>
 							<height>270</height>
-							<texture colordiffuse="ff32C4FF" border="5">listselect_fo.png</texture>
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+<!-- 							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture> -->
 							<animation type="Focus" reversible="true">
 								<effect type="fade" time="800" />
 							</animation>
@@ -1008,7 +1022,7 @@
 								<height>20</height>
 								<align>left</align>
 								<aligny>center</aligny>
-								<textcolor>ff666666</textcolor>
+								<textcolor>TitleTextColor</textcolor>
 								<font>font20</font>
 								<label>$INFO[ListItem.Label]</label>
 								<scroll>false</scroll>
@@ -1020,9 +1034,9 @@
 								<height>20</height>
 								<align>left</align>
 								<aligny>center</aligny>
-								<textcolor>ff333333</textcolor>
+								<textcolor>AltTextColor</textcolor>
 								<font>font10</font>
-								<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=ff666666]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+								<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=NormalTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 								<scroll>false</scroll>
 							</control>
 							<include content="OverlayIcons">
@@ -1285,7 +1299,7 @@
 			<aligny>center</aligny>
 			<font>font36</font>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>white</textcolor>
+			<textcolor>TitleTextColor</textcolor>
 			<scrollspeed>60</scrollspeed>
 			<pauseatend>1500</pauseatend>
 			<scroll>true</scroll>
@@ -1297,9 +1311,9 @@
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>highlight</textcolor>
+			<textcolor>AltTextColor</textcolor>
 			<font>font20</font>
-			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 			<scroll>false</scroll>
 		</control>
 		<control type="textbox">
@@ -1309,7 +1323,7 @@
 			<height>110</height>
 			<font>font12</font>
 			<align>justify</align>
-			<textcolor>white</textcolor>
+			<textcolor>NormalTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
 			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 		</control>
@@ -1318,7 +1332,8 @@
 			<top>458</top>
 			<width>1040</width>
 			<height>2</height>
-			<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture>
+			<texture background="true" colordiffuse="FocusColor">lyretex/separator2.png</texture>
+<!-- 			<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture> -->
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="group">
@@ -1330,7 +1345,7 @@
 				<height>50</height>
 				<width>160</width>
 				<include>MediaFlagVars</include>
-				<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+				<texture colordiffuse="TitleTextColor">$VAR[StarRatingVar]</texture>
 				<aspectratio align="left">keep</aspectratio>
 				<visible>!Skin.HasSetting(Arcade.Games.HideStars)</visible>
 			</control>
@@ -1491,7 +1506,7 @@
 			<height>50</height>
 			<width>160</width>
 			<include>MediaFlagVars</include>
-			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<texture colordiffuse="TitleTextColor">$VAR[StarRatingVar]</texture>
 			<aspectratio align="left">keep</aspectratio>
 			<visible>$EXP[ArcadeHideStars]</visible>
 		</control>
@@ -1562,7 +1577,7 @@
 				<aligny>center</aligny>
 				<font>font54</font>
 				<label>$INFO[ListItem.Label]</label>
-				<textcolor>white</textcolor>
+				<textcolor>TitleTextColor</textcolor>
 				<scrollspeed>60</scrollspeed>
 				<pauseatend>1500</pauseatend>
 				<scroll>true</scroll>
@@ -1574,9 +1589,9 @@
 				<height>50</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 				<font>font32</font>
-				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 				<scroll>false</scroll>
 			</control>
 			<control type="image">
@@ -1584,7 +1599,8 @@
 				<top>348</top>
 				<width>1660</width>
 				<height>2</height>
-				<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture>
+				<texture background="true" colordiffuse="FocusColor">lyretex/separator2.png</texture>
+<!-- 				<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture> -->
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="textbox">
@@ -1594,7 +1610,7 @@
 				<height>150</height>
 				<font>font15</font>
 				<align>justify</align>
-				<textcolor>white</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
@@ -1603,7 +1619,7 @@
 				<top>1000</top>
 				<width>320</width>
 				<height>40</height>
-				<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+				<texture colordiffuse="TitleTextColor">$VAR[StarRatingVar]</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<animation type="Visible" reversible="false">
 					<effect type="fade" delay="400" time="800" />
@@ -1682,7 +1698,7 @@
 			<aligny>center</aligny>
 			<font>font36</font>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>white</textcolor>
+			<textcolor>TitleTextColor</textcolor>
 			<scrollspeed>60</scrollspeed>
 			<pauseatend>1500</pauseatend>
 			<scroll>true</scroll>
@@ -1694,9 +1710,9 @@
 			<height>25</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>highlight</textcolor>
+			<textcolor>AltTextColor</textcolor>
 			<font>font20</font>
-			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 			<scroll>false</scroll>
 		</control>
 		<control type="textbox">
@@ -1706,7 +1722,7 @@
 			<height>110</height>
 			<font>font12</font>
 			<align>justify</align>
-			<textcolor>white</textcolor>
+			<textcolor>NormalTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
 			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 		</control>
@@ -1715,7 +1731,8 @@
 			<top>458</top>
 			<width>1040</width>
 			<height>2</height>
-			<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture>
+			<texture background="true" colordiffuse="FocusColor">lyretex/separator2.png</texture>
+<!-- 			<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture> -->
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="group">
@@ -1727,7 +1744,7 @@
 				<height>50</height>
 				<width>160</width>
 				<include>MediaFlagVars</include>
-				<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+				<texture colordiffuse="TitleTextColor">$VAR[StarRatingVar]</texture>
 				<aspectratio align="left">keep</aspectratio>
 				<visible>!Skin.HasSetting(Arcade.Games.HideStars)</visible>
 			</control>
@@ -1901,7 +1918,7 @@
 			<aligny>center</aligny>
 			<font>font18</font>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>white</textcolor>
+			<textcolor>TitleTextColor</textcolor>
 			<scroll>false</scroll>
 		</control>
 		<control type="label">
@@ -1911,9 +1928,9 @@
 			<height>32</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<textcolor>highlight</textcolor>
+			<textcolor>AltTextColor</textcolor>
 			<font>font12</font>
-			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+			<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 			<scroll>false</scroll>
 		</control>
 	</include>
@@ -1930,7 +1947,8 @@
 			<top>398</top>
 			<width>1080</width>
 			<height>2</height>
-			<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture>
+			<texture background="true" colordiffuse="FocusColor">lyretex/separator2.png</texture>
+<!-- 			<texture background="true" colordiffuse="3332C4FF">lyretex/separator2.png</texture> -->
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image">
@@ -1938,7 +1956,7 @@
 			<top>1020</top>
 			<width>320</width>
 			<height>45</height>
-			<texture colordiffuse="maintext">$VAR[StarRatingVar]</texture>
+			<texture colordiffuse="TitleTextColor">$VAR[StarRatingVar]</texture>
 			<aspectratio align="center">keep</aspectratio>
 			<visible>!Skin.HasSetting(Arcade.Games.HideStars)</visible>
 		</control>
@@ -1972,7 +1990,7 @@
 				<height>150</height>
 				<font>font12plus</font>
 				<align>justify</align>
-				<textcolor>white</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
@@ -1985,7 +2003,7 @@
 				<aligny>center</aligny>
 				<font>font36</font>
 				<label>$INFO[ListItem.Label]</label>
-				<textcolor>white</textcolor>
+				<textcolor>TitleTextColor</textcolor>
 				<scrollspeed>60</scrollspeed>
 				<pauseatend>1500</pauseatend>
 				<scroll>true</scroll>
@@ -1997,9 +2015,9 @@
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 				<font>font13</font>
-				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 				<scroll>false</scroll>
 			</control>
 			<control type="image">
@@ -2034,7 +2052,7 @@
 				<aligny>center</aligny>
 				<font>font36</font>
 				<label>$INFO[ListItem.Label]</label>
-				<textcolor>white</textcolor>
+				<textcolor>TitleTextColor</textcolor>
 				<scrollspeed>60</scrollspeed>
 				<pauseatend>1500</pauseatend>
 				<scroll>true</scroll>
@@ -2046,9 +2064,9 @@
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 				<font>font13</font>
-				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 				<scroll>false</scroll>
 			</control>
 			<control type="image">
@@ -2066,7 +2084,7 @@
 				<height>150</height>
 				<font>font12plus</font>
 				<align>justify</align>
-				<textcolor>white</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
@@ -2110,7 +2128,7 @@
 				<height>150</height>
 				<font>font12plus</font>
 				<align>justify</align>
-				<textcolor>white</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
@@ -2123,7 +2141,7 @@
 				<aligny>center</aligny>
 				<font>font36</font>
 				<label>$INFO[ListItem.Label]</label>
-				<textcolor>white</textcolor>
+				<textcolor>TitleTextColor</textcolor>
 				<scrollspeed>60</scrollspeed>
 				<pauseatend>1500</pauseatend>
 				<scroll>true</scroll>
@@ -2135,9 +2153,9 @@
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 				<font>font13</font>
-				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 				<scroll>false</scroll>
 			</control>
 			<control type="image">
@@ -2192,7 +2210,7 @@
 				<aligny>center</aligny>
 				<font>font36</font>
 				<label>$INFO[ListItem.Label]</label>
-				<textcolor>white</textcolor>
+				<textcolor>TitleTextColor</textcolor>
 				<scrollspeed>60</scrollspeed>
 				<pauseatend>1500</pauseatend>
 				<scroll>true</scroll>
@@ -2204,9 +2222,9 @@
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>highlight</textcolor>
+				<textcolor>AltTextColor</textcolor>
 				<font>font13</font>
-				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=white]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
+				<label>[UPPERCASE]$INFO[ListItem.Year] [COLOR=TitleTextColor]•[/COLOR] $INFO[ListItem.Genre][/UPPERCASE]</label>
 				<scroll>false</scroll>
 			</control>
 			<control type="textbox">
@@ -2216,7 +2234,7 @@
 				<height>150</height>
 				<font>font12plus</font>
 				<align>justify</align>
-				<textcolor>white</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 			</control>
@@ -2266,7 +2284,7 @@
 			<aligny>center</aligny>
 			<font>font30</font>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>white</textcolor>
+			<textcolor>TitleTextColor</textcolor>
 			<scrollspeed>60</scrollspeed>
 			<pauseatend>1500</pauseatend>
 			<scroll>true</scroll>
@@ -2278,7 +2296,7 @@
 			<height>20</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>highlight</textcolor>
+			<textcolor>NormalTextColor</textcolor>
 			<font>font20</font>
 			<label>[UPPERCASE]$INFO[ListItem.Studio][/UPPERCASE]</label>
 			<scroll>false</scroll>
@@ -2314,7 +2332,7 @@
 			<height>140</height>
 			<font>font12</font>
 			<align>justify</align>
-			<textcolor>white</textcolor>
+			<textcolor>NormalTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
 			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 		</control>
@@ -2324,7 +2342,7 @@
 			<top>520</top>
 			<width>80</width>
 			<height>55</height>
-			<texture colordiffuse="white">resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</texture>
+			<texture colordiffuse="TitleTextColor">resource://resource.images.gamestudios.grayscale/$INFO[ListItem.Studio,,.png]</texture>
 			<aspectratio align="center" aligny="center">keep</aspectratio>
 		</control>
 		<control type="label">
@@ -2334,10 +2352,10 @@
 			<height>20</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>highlight</textcolor>
+			<textcolor>NormalTextColor</textcolor>
 			<font>font12</font>
-			<label>$LOCALIZE[90955]: [COLOR=white]$INFO[ListItem.Year][/COLOR] [COLOR=grey]•[/COLOR] $LOCALIZE[90956]: [COLOR=white]$INFO[ListItem.Genre][/COLOR] [COLOR=grey]•[/COLOR]
-				$LOCALIZE[90957]: [COLOR=white]$INFO[ListItem.Rating][/COLOR]</label>
+			<label>[COLOR=LabelTextColor]$LOCALIZE[90955]:[/COLOR] [COLOR=TitleTextColor]$INFO[ListItem.Year][/COLOR] [COLOR=NormalTextColor]•[/COLOR] [COLOR=LabelTextColor]$LOCALIZE[90956]:[/COLOR] [COLOR=AltTextColor]$INFO[ListItem.Genre][/COLOR] [COLOR=NormalTextColor]•[/COLOR]
+				[COLOR=LabelTextColor]$LOCALIZE[90957]:[/COLOR] [COLOR=TitleTextColor]$INFO[ListItem.Rating][/COLOR]</label>
 			<scroll>false</scroll>
 		</control>
 		<control type="image">
@@ -2398,7 +2416,7 @@
 			<height>36</height>
 			<align>left</align>
 			<aligny>center</aligny>
-			<texture background="true" colordiffuse="white">$INFO[ListItem.Rating,starrating/,.png]</texture>
+			<texture background="true" colordiffuse="TitleTextColor">$INFO[ListItem.Rating,starrating/,.png]</texture>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
 		</control>
 	</include>

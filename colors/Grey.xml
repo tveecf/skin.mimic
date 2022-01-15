@@ -1,0 +1,22 @@
+<colors>
+	<color name="TitleTextColor">FFEEEEEE</color>
+	<color name="NormalTextColor">FFEEEEEE</color>
+	<color name="AltTextColor">FFBBBBBB</color>
+	<color name="LabelTextColor">FFBBBBBB</color>
+	<color name="FocusColor">FF666666</color>	
+	<color name="SelectedColor">FFFFFFFF</color>	
+	<color name="DisabledColor">FF444444</color>
+	<color name="black">FF000000</color>
+	<color name="invalid">FF444444</color>
+	<color name="shadow">AA000000</color>
+	<color name="background">FF333333</color>
+	<color name="dialog">FF666666</color>
+	<color name="white11">11FFFFFF</color>
+	<color name="blue">FF6DB9E5</color>
+</colors>
+<!-- 
+<onclick>Skin.SetString(color.500, FF908E8E)</onclick>
+<onclick>Skin.SetString(color.900, FF5D5C5C)</onclick>
+<onclick>Skin.SetString(color.400, FFBDBDBD)</onclick>
+<onclick>Skin.SetString(color.alt, FFFFEB3B)</onclick>
+-->

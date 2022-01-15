@@ -27,7 +27,7 @@
                     <width>330</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
@@ -43,7 +43,7 @@
                     <width>680</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="700,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
                 </control>
@@ -56,7 +56,7 @@
                     <width>330</width>
                     <height>240</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,260" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,260" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
@@ -91,7 +91,7 @@
                         <align>center</align>
                         <label>s</label>
                         <font>IconTiny</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                     </control>
                     <control type="label">
                         <visible>[Control.HasFocus(8011$SKINSHORTCUTS[id]) + Container(8011$SKINSHORTCUTS[id]).HasNext] | [Control.HasFocus(8013$SKINSHORTCUTS[id]) + Container(8013$SKINSHORTCUTS[id]).HasNext]</visible>
@@ -101,7 +101,7 @@
                         <align>center</align>
                         <label>t</label>
                         <font>IconTiny</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                     </control>
                 </control>
                 <control type="group">
@@ -116,7 +116,7 @@
                         <height>40</height>
                         <font>font15_title</font>
                         <align>right</align>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                         <label>[LOWERCASE]$VAR[WidgetNameLabelVar][/LOWERCASE]</label>
                     </control>
                 </control>
@@ -128,7 +128,7 @@
                     <top>400</top>
                     <width>330</width>
                     <height>370</height>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
@@ -256,14 +256,14 @@
                         <width>438</width>
                         <itemgap>20</itemgap>
                         <control type="label">
-                            <label>[COLOR highlight]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR highlight]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -271,7 +271,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
-                            <label>[COLOR highlight]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -279,7 +279,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
-                            <label>[COLOR highlight]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -296,7 +296,7 @@
                     <width>330</width>
                     <height>240</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,260" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,260" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
@@ -344,7 +344,7 @@
                     <top>10</top>
                     <width>330</width>
                     <height>370</height>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
@@ -360,7 +360,7 @@
                     <width>855</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="875,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
                 </control>
@@ -372,7 +372,7 @@
                     <top>10</top>
                     <width>330</width>
                     <height>240</height>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,260" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,260" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
@@ -407,7 +407,7 @@
                         <align>center</align>
                         <label>a</label>
                         <font>IconTiny</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                     </control>
                     <control type="label">
                         <visible>[Control.HasFocus(8011$SKINSHORTCUTS[id]) + Container(8011$SKINSHORTCUTS[id]).HasNext] | [Control.HasFocus(8013$SKINSHORTCUTS[id]) + Container(8013$SKINSHORTCUTS[id]).HasNext]</visible>
@@ -417,7 +417,7 @@
                         <align>center</align>
                         <label>b</label>
                         <font>IconTiny</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                     </control>
                 </control>
                 <control type="group">
@@ -433,7 +433,7 @@
                         <font>font15_title</font>
                         <angle>-90</angle>
                         <aligny>top</aligny>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                         <label>[LOWERCASE]$VAR[WidgetNameLabelVar][/LOWERCASE]</label>
                     </control>
                 </control>
@@ -446,7 +446,7 @@
                     <width>330</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
@@ -566,14 +566,14 @@
                         <width>438</width>
                         <itemgap>20</itemgap>
                         <control type="label">
-                            <label>[COLOR highlight]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR highlight]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -581,7 +581,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
-                            <label>[COLOR highlight]$LOCALIZE[33027]:[/COLOR] $INFO[Window(weather).Property(Today.Sunrise)]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[33027]:[/COLOR] $INFO[Window(weather).Property(Today.Sunrise)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -589,7 +589,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
-                            <label>[COLOR highlight]$LOCALIZE[33028]:[/COLOR] $INFO[Window(weather).Property(Today.Sunset)]</label>
+                            <label>[COLOR LabelTextColor]$LOCALIZE[33028]:[/COLOR] $INFO[Window(weather).Property(Today.Sunset)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -606,7 +606,7 @@
                     <width>330</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>

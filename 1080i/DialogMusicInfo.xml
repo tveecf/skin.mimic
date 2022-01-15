@@ -39,7 +39,7 @@
                                 <width>200</width>
                                 <height>50</height>
                                 <font>font15</font>
-                                <textcolor>highlight</textcolor>
+                                <textcolor>LabelTextColor</textcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
@@ -55,7 +55,7 @@
                                 <width>200</width>
                                 <height>50</height>
                                 <font>font15</font>
-                                <textcolor>highlight</textcolor>
+                                <textcolor>LabelTextColor</textcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
@@ -264,7 +264,7 @@
                                         <height>62</height>
                                         <align>center</align>
                                         <font>IconSuperTiny</font>
-                                        <textcolor>highlight</textcolor>
+                                        <textcolor>NormalTextColor</textcolor>
                                         <label>I</label>
                                     </control>
                                 </control>
@@ -277,7 +277,7 @@
                                     <width>572</width>
                                     <height>77</height>
                                     <texture border="5">listselect_fo.png</texture>
-                                    <colordiffuse>highlight</colordiffuse>
+                                    <colordiffuse>FocusColor</colordiffuse>
                                     <visible>Control.HasFocus(50)</visible>
                                     <include>VisibleFadeEffect</include>
                                 </control>
@@ -314,7 +314,7 @@
                                         <height>62</height>
                                         <align>center</align>
                                         <font>IconSuperTiny</font>
-                                        <textcolor>highlight</textcolor>
+                                        <textcolor>NormalTextColor</textcolor>
                                         <label>I</label>
                                     </control>
                                 </control>
@@ -337,7 +337,7 @@
                                     <width>572</width>
                                     <height>77</height>
                                     <texture border="5">listselect_fo.png</texture>
-                                    <colordiffuse>highlight</colordiffuse>
+                                    <colordiffuse>FocusColor</colordiffuse>
                                     <visible>Control.HasFocus(50)</visible>
                                     <include>VisibleFadeEffect</include>
                                 </control>
@@ -362,7 +362,7 @@
                             <height>343</height>
                             <animation effect="fade" time="320" delay="200">Visible</animation>
                             <animation effect="fade" time="200">Hidden</animation>
-                            <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                            <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                             <animation effect="slide" end="579,0" time="300" tween="cubic" easing="inout" condition="Container(150).Column(1)">Conditional</animation>
                         </control>
                     </control>
@@ -471,7 +471,7 @@
                             <height>397</height>
                             <animation effect="fade" time="320" delay="0">Visible</animation>
                             <animation effect="fade" time="200">Hidden</animation>
-                            <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+                            <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
                             <animation effect="slide" end="385,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(250).Column,1)">Conditional</animation>
                             <animation effect="slide" end="385,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(250).Column,0)">Conditional</animation>
                         </control>
@@ -524,7 +524,7 @@
                                     <width>353</width>
                                     <height>40</height>
                                     <font>font_Actor</font>
-                                    <selectedcolor>highlight</selectedcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -533,7 +533,7 @@
                                     <width>353</width>
                                     <height>40</height>
                                     <font>font_Actor</font>
-                                    <selectedcolor>highlight</selectedcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                 </control>
                             </control>
@@ -608,7 +608,7 @@
                                 <height>77</height>
                                 <font>font15</font>
                                 <textoffsetx>20</textoffsetx>
-                                <selectedcolor>highlight</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <label>$INFO[ListItem.Tracknumber,,: ]$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -619,7 +619,7 @@
                                     <width>572</width>
                                     <height>77</height>
                                     <texture border="5">listselect_fo.png</texture>
-                                    <colordiffuse>highlight</colordiffuse>
+                                    <colordiffuse>FocusColor</colordiffuse>
                                     <visible>Control.HasFocus(350)</visible>
                                     <include>VisibleFadeEffect</include>
                                 </control>
@@ -680,7 +680,7 @@
                         <align>center</align>
                         <label>a</label>
                         <font>IconTiny</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                     </control>
                     <control type="label">
                         <visible>Container(9000).HasNext</visible>
@@ -690,7 +690,7 @@
                         <align>center</align>
                         <label>b</label>
                         <font>IconTiny</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>DisabledColor</textcolor>
                     </control>
                 </control>
                 <control type="group">

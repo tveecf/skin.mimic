@@ -112,7 +112,7 @@
 			<height>72</height>
 			<label>x</label>
 			<font>IconTiny</font>
-			<focusedcolor>highlight</focusedcolor>
+			<focusedcolor>FocusColor</focusedcolor>
 			<onclick>$PARAM[CloseIconDialogClose]</onclick>
 			<onclick>$PARAM[CloseIconDialogClose2]</onclick>
 			<onclick>$PARAM[ClearMediaMenu]</onclick>
@@ -156,7 +156,7 @@
 			<textoffsetx>15</textoffsetx>
 			<font>font13_title</font>
 			<label>31006</label>
-			<textcolor>highlight</textcolor>
+			<textcolor>LabelTextColor</textcolor>
 		</control>
 		<control type="button" id="1802">
 			<label>$LOCALIZE[31906]</label>
@@ -379,7 +379,7 @@
 					<include>ButtonCommonValues</include>
 					<label>31039</label>
 					<enable>no</enable>
-					<disabledcolor>highlight</disabledcolor>
+					<disabledcolor>DisabledColor</disabledcolor>
 				</control>
 				<control type="button" id="100">
 					<description>Channels</description>
@@ -435,7 +435,7 @@
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
 				</control>
 				<!--<control type="button" id="201"> <description>View options</description> <textwidth>352</textwidth> <font>font13_title</font> <include>ButtonCommonValues</include> <label>31026</label> 
-					<enable>no</enable> <disabledcolor>highlight</disabledcolor> </control> -->
+					<enable>no</enable> <disabledcolor>DisabledColor</disabledcolor> </control> -->
 				<include>QuicknavButton</include>
 				<include>PlaylistButtons</include>
 				<include content="MenuPlayerControls">
@@ -476,7 +476,7 @@
 					<include>ButtonCommonValues</include>
 					<label>31247</label>
 					<enable>no</enable>
-					<disabledcolor>highlight</disabledcolor>
+					<disabledcolor>DisabledColor</disabledcolor>
 				</control>
 				<control type="button" id="2202">
 					<textwidth>352</textwidth>
@@ -565,7 +565,7 @@
 					<include>ButtonCommonValues</include>
 					<label>31039</label>
 					<enable>no</enable>
-					<disabledcolor>highlight</disabledcolor>
+					<disabledcolor>DisabledColor</disabledcolor>
 				</control>
 				<control type="button" id="20">
 					<description>Settings level</description>
@@ -717,8 +717,8 @@
 	<!-- <width>80</width> -->
 	<!-- <height>80</height> -->
 	<!-- <onclick>Back</onclick> -->
-	<!-- <texturefocus colordiffuse="white">special://skin/extras/icons/back.png</texturefocus> -->
-	<!-- <texturenofocus colordiffuse="white">special://skin/extras/icons/back.png</texturenofocus> -->
+	<!-- <texturefocus colordiffuse="TitleTextColor">special://skin/extras/icons/back.png</texturefocus> -->
+	<!-- <texturenofocus colordiffuse="TitleTextColor">special://skin/extras/icons/back.png</texturenofocus> -->
 	<!-- <aspectratio align="center" aligny="center">keep</aspectratio> -->
 	<!-- <animation effect="fade" start="0" end="100" time="150">VisibleChange -->
 	<!-- </animation> -->
@@ -737,7 +737,7 @@
 	<!-- <left>19</left> -->
 	<!-- <width>80</width> -->
 	<!-- <height>80</height> -->
-	<!-- <texture colordiffuse="maintext">$VAR[HeaderIcon]</texture> -->
+	<!-- <texture colordiffuse="TitleTextColor">$VAR[HeaderIcon]</texture> -->
 	<!-- <visible>!Window.IsVisible(busydialog) + !Control.IsVisible(12345)</visible> -->
 	<!-- <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation> -->
 	<!-- </control> -->
@@ -748,7 +748,7 @@
 	<!-- <left>29</left> -->
 	<!-- <width>60</width> -->
 	<!-- <height>60</height> -->
-	<!-- <texture colordiffuse="maintext" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture> -->
+	<!-- <texture colordiffuse="TitleTextColor" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture> -->
 	<!-- <aspectratio>keep</aspectratio> -->
 	<!-- <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation> -->
 	<!-- </control> -->
@@ -760,12 +760,12 @@
 	<!-- <height>45</height> -->
 	<!-- <font>font14</font> -->
 	<!-- <textoffsetx>15</textoffsetx> -->
-	<!-- <textcolor>highlight</textcolor> -->
+	<!-- <textcolor>NormalTextColor</textcolor> -->
 	<!-- <label>$VAR[HeaderSubLabelInfoDialog]</label> -->
 	<!-- <label2>$VAR[TopbarFadeLabel2]</label2> -->
 	<!-- <onclick>noop</onclick> -->
 	<!-- <texturefocus>blank.png</texturefocus> -->
-	<!-- <focusedcolor>highlight</focusedcolor> -->
+	<!-- <focusedcolor>FocusColor</focusedcolor> -->
 	<!-- </control> -->
 	<!-- </control> -->
 	<!-- </control> -->
@@ -840,7 +840,7 @@
 						<width>305</width>
 						<height>70</height>
 						<align>center</align>
-						<textcolor>grey</textcolor>
+						<textcolor>TitleTextColor</textcolor>
 						<textoffsetx>5</textoffsetx>
 						<font>font14</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -851,7 +851,7 @@
 						<top>5</top>
 						<width>305</width>
 						<height>70</height>
-						<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 						<visible>Control.HasFocus(5000)</visible>
 					</control>
 					<control type="label">
@@ -861,6 +861,7 @@
 						<align>center</align>
 						<textoffsetx>5</textoffsetx>
 						<font>font14</font>
+						<textcolor>TitleTextColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
@@ -909,7 +910,7 @@
 			<control type="image">
 				<width>60</width>
 				<height>60</height>
-				<texture background="true" colordiffuse="highlight">$VAR[OverlayBGVar]</texture>
+				<texture background="true" colordiffuse="FocusColor">$VAR[OverlayBGVar]</texture>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 			</control>
 			<control type="label">
@@ -930,7 +931,7 @@
 				<height>56</height>
 				<align>center</align>
 				<font>IconSuperTiny</font>
-				<textcolor>highlight</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>A</label>
 			</control>
 		</control>
@@ -959,7 +960,7 @@
 				<height>62</height>
 				<align>center</align>
 				<font>IconTiny</font>
-				<textcolor>highlight</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>A</label>
 			</control>
 		</control>
@@ -972,7 +973,7 @@
 			<control type="image">
 				<width>60</width>
 				<height>60</height>
-				<texture colordiffuse="highlight">overlays/overlaybg.png</texture>
+				<texture colordiffuse="FocusColor">overlays/overlaybg.png</texture>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 			</control>
 			<control type="label">
@@ -991,7 +992,7 @@
 				<height>56</height>
 				<align>center</align>
 				<font>IconSuperTiny</font>
-				<textcolor>highlight</textcolor>
+				<textcolor>NormalTextColor</textcolor>
 				<label>I</label>
 			</control>
 		</control>
@@ -1232,7 +1233,7 @@
 				<textoffsetx>15</textoffsetx>
 				<font>font13_title</font>
 				<label>31248</label>
-				<textcolor>highlight</textcolor>
+				<textcolor>LabelTextColor</textcolor>
 			</control>
 			<control type="list" id="9013">
 				<!-- Quicknav list -->
@@ -1272,7 +1273,7 @@
 						<width>400</width>
 						<height>60</height>
 						<texture border="5">listselect_fo.png</texture>
-						<colordiffuse>highlight</colordiffuse>
+						<colordiffuse>FocusColor</colordiffuse>
 						<visible>Control.HasFocus(9013)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -1304,7 +1305,7 @@
 				<textoffsetx>30</textoffsetx>
 				<font>IconMedium</font>
 				<label>B</label>
-				<focusedcolor>highlight</focusedcolor>
+				<focusedcolor>FocusColor</focusedcolor>
 				<texturefocus />
 				<onright>ClearProperty(MediaMenu,Home)</onright>
 				<onright
@@ -1348,7 +1349,7 @@
 				<right>10</right>
 				<height>60</height>
 				<font>font15</font>
-				<selectedcolor>highlight</selectedcolor>
+				<selectedcolor>SelectedColor</selectedcolor>
 				<label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
@@ -1356,7 +1357,7 @@
 				<top>70</top>
 				<right>10</right>
 				<height>60</height>
-				<selectedcolor>highlight</selectedcolor>
+				<selectedcolor>SelectedColor</selectedcolor>
 				<label>$INFO[ListItem.Property(Description)]</label>
 			</control>
 		</itemlayout>
@@ -1364,7 +1365,7 @@
 			<control type="image">
 				<width>100%</width>
 				<height>100%</height>
-				<texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
+				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -1395,7 +1396,7 @@
 		<control type="label">
 			<height>50</height>
 			<label>31259</label>
-			<textcolor>highlight</textcolor>
+			<textcolor>LabelTextColor</textcolor>
 			<font>font13_title</font>
 		</control>
 		<control type="label">
@@ -1422,7 +1423,7 @@
 		<control type="label">
 			<height>50</height>
 			<label>31260</label>
-			<textcolor>highlight</textcolor>
+			<textcolor>LabelTextColor</textcolor>
 			<font>font13_title</font>
 		</control>
 		<control type="label">
@@ -1438,7 +1439,7 @@
 		<control type="label">
 			<height>50</height>
 			<label>138</label>
-			<textcolor>highlight</textcolor>
+			<textcolor>NormalTextColor</textcolor>
 			<font>font13_title</font>
 		</control>
 		<control type="label">
@@ -1468,7 +1469,7 @@
 			<height>40</height>
 			<font>font13</font>
 			<textoffsetx>15</textoffsetx>
-			<textcolor>disabled</textcolor>
+			<textcolor>DisabledColor</textcolor>
 			<align>right</align>
 			<label>$INFO[Container($PARAM[ContainerID]).NumItems,, $LOCALIZE[31025] • ]$INFO[Container($PARAM[ContainerID]).CurrentPage]$INFO[Container($PARAM[ContainerID]).NumPages,/]
 			</label>

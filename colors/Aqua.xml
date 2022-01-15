@@ -1,9 +1,13 @@
 <colors>
-	<color name="maintext">FFE8E8E8</color>
-	<color name="disabled">FF606060</color>
+	<color name="TitleTextColor">FFE8E8E8</color>
+	<color name="NormalTextColor">FFE8E8E8</color>	
+	<color name="LabelTextColor">FF337979</color>	
+	<color name="AltTextColor">FF337979</color>	
+	<color name="FocusColor">FF337979</color>	
+	<color name="SelectedColor">FF337979</color>	
+	<color name="DisabledColor">FF606060</color>
 	<color name="black">FF000000</color>
 	<color name="invalid">FFFF6666</color>
-	<color name="highlight">FF337979</color>	
 	<color name="shadow">AA000000</color>
 	<color name="background">FF132C2C</color>
 	<color name="dialog">FF54C4C4</color>

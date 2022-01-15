@@ -259,7 +259,7 @@
 			<control type="image">
 				<include content="Coverflow_3ds_Icon">
 					<param name="bordertexture">listselect_fo.png</param>
-					<param name="colordiffuse">FF32C4FF</param>
+					<param name="colordiffuse">FocusColor</param>
 					<param name="texture">black.png</param>
 				</include>
 				<animation type="Conditional" condition="Container.OnNext" reversible="false">
@@ -321,7 +321,7 @@
 			<control type="image">
 				<include content="Coverflow_3ds_Icon">
 					<param name="bordertexture">listselect_fo.png</param>
-					<param name="colordiffuse">FF32C4FF</param>
+					<param name="colordiffuse">FocusColor</param>
 					<param name="texture">black.png</param>
 				</include>
 				<animation type="Conditional" condition="Container.OnNext" reversible="false">
@@ -615,7 +615,7 @@
 			<control type="image">
 				<include content="Coverflow_3ds_Icon">
 					<param name="bordertexture">listselect_fo.png</param>
-					<param name="colordiffuse">FF32C4FF</param>
+					<param name="colordiffuse">FocusColor</param>
 					<param name="texture">black.png</param>
 				</include>
 				<animation type="Conditional" condition="Container.OnPrevious" reversible="false">
@@ -677,7 +677,7 @@
 			<control type="image">
 				<include content="Coverflow_3ds_Icon">
 					<param name="bordertexture">listselect_fo.png</param>
-					<param name="colordiffuse">FF32C4FF</param>
+					<param name="colordiffuse">FocusColor</param>
 					<param name="texture">black.png</param>
 				</include>
 				<animation type="Conditional" condition="Container.OnPrevious" reversible="false">
@@ -954,7 +954,7 @@
 			<control type="image">
 				<include content="Coverflow_3ds_Icon">
 					<param name="bordertexture">listselect_fo.png</param>
-					<param name="colordiffuse">FF32C4FF</param>
+					<param name="colordiffuse">FocusColor</param>
 					<param name="texture">black.png</param>
 				</include>
 				<animation effect="fade" time="400">VisibleChange</animation>

@@ -444,7 +444,7 @@
                     <width>1693</width>
                     <height>30</height>
                     <font>font14</font>
-                    <textcolor>highlight</textcolor>
+                    <textcolor>AltTextColor</textcolor>
                     <label>$VAR[FloorSubLabelVar]</label>
                     <textoffsetx>30</textoffsetx>
                 </control>
@@ -465,7 +465,7 @@
                     <width>1250</width>
                     <height>30</height>
                     <font>font14</font>
-                    <textcolor>highlight</textcolor>
+                    <textcolor>AltTextColor</textcolor>
                     <label>$VAR[FloorSubLabelVar]</label>
                     <textoffsetx>30</textoffsetx>
                 </control>
@@ -501,7 +501,7 @@
             <visible>Control.IsVisible(57) + Container.Content(movies) + String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
             <control type="image">
                 <height>50</height>
-                <colordiffuse>maintext</colordiffuse>
+                <colordiffuse>TitleTextColor</colordiffuse>
                 <texture>imdb.png</texture>
                 <aspectratio align="left" aligny="top">keep</aspectratio>
             </control>
@@ -534,7 +534,7 @@
                     <width>1693</width>
                     <height>30</height>
                     <font>font14</font>
-                    <textcolor>highlight</textcolor>
+                    <textcolor>NormalTextColor</textcolor>
                     <label>$VAR[FloorLabel2Var]</label>
                     <textoffsetx>30</textoffsetx>
                 </control>
