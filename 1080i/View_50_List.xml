@@ -22,12 +22,12 @@
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
 						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -40,13 +40,13 @@
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
 						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-						<animation effect="slide" end="870,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
+						<animation effect="slide" end="870,0" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -59,12 +59,12 @@
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
 						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
-						<animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
+						<animation effect="slide" end="0,120" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -77,19 +77,19 @@
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
 						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,9)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,8)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,9)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,8)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -102,19 +102,19 @@
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
 						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,9)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,8)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,9)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,8)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -127,20 +127,20 @@
 						<animation effect="fade" time="320" delay="200">Visible</animation>
 						<animation effect="fade" time="50">Hidden</animation>
 						<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-						<animation effect="slide" end="870,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,9)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,8)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
-						<animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
+						<animation effect="slide" end="870,0" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,9)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,8)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,2)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,1)">Conditional</animation>
+						<animation effect="slide" end="0,60" time="0" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 					</control>
 				</control>
 				<control type="panel" id="50">
@@ -333,7 +333,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
-		                    <textcolor>AltTextColor</textcolor>
+		                    <textcolor>NormalTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
@@ -519,7 +519,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
-		                    <textcolor>AltTextColor</textcolor>
+		                    <textcolor>NormalTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
@@ -880,7 +880,7 @@
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
-		                    <textcolor>AltTextColor</textcolor>
+		                    <textcolor>NormalTextColor</textcolor>
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<include content="OverlayList">

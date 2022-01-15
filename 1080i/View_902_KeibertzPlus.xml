@@ -22,7 +22,7 @@
 				<height>40</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>lyre30</font>
+				<font>font35_title</font>
 				<textcolor>TitleTextColor</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<scroll>false</scroll>
@@ -195,7 +195,7 @@
             <height>60</height>
             <align>left</align>
             <aligny>center</aligny>
-            <font>font48</font>
+            <font>font35_title</font>
             <label>$INFO[ListItem.Label]</label>			
             <textcolor>TitleTextColor</textcolor>
             <shadowcolor>shadow</shadowcolor>
