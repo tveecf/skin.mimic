@@ -14,9 +14,3 @@
 	<color name="white11">11FFFFFF</color>
 	<color name="blue">FF6DB9E5</color>
 </colors>
-<!-- 
-<onclick>Skin.SetString(color.500, FF908E8E)</onclick>
-<onclick>Skin.SetString(color.900, FF5D5C5C)</onclick>
-<onclick>Skin.SetString(color.400, FFBDBDBD)</onclick>
-<onclick>Skin.SetString(color.alt, FFFFEB3B)</onclick>
--->

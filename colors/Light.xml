@@ -1,0 +1,17 @@
+<colors>
+	<color name="TitleTextColor" >FF202000</color>
+	<color name="NormalTextColor">FF200000</color>
+	<color name="AltTextColor"   >FF202000</color>
+	<color name="LabelTextColor" >FF002020</color>
+	<color name="FocusColor"     >AAE0E0A0</color>	
+	<color name="SelectedColor"  >FF003000</color>	
+	<color name="DisabledColor"  >FF909090</color>
+	<color name="black"          >FFFFFFFF</color>
+	<color name="invalid"        >FFC0C0C0</color>
+	<color name="shadow"         >FFFFFFFF</color>
+	<color name="background"     >FCFFFFDF</color>
+	<color name="dialog"         >FF000000</color>
+	<color name="white11"        >FF000000</color>
+	<color name="blue"           >FF6DB9E5</color>
+</colors>
+ 
