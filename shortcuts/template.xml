@@ -236,7 +236,7 @@
 							<left>270</left>
 							<height>216</height>
 							<font>font16</font>
-							<label>  [COLOR yellow]$LOCALIZE[90916][/COLOR]</label>
+							<label>  [COLOR=Alert]$LOCALIZE[90916][/COLOR]</label>
 							<visible>!String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 					</control>
                     </control>
@@ -256,14 +256,14 @@
                         <width>438</width>
                         <itemgap>20</itemgap>
                         <control type="label">
-                            <label>[COLOR LabelTextColor]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR LabelTextColor]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -271,7 +271,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
-                            <label>[COLOR LabelTextColor]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -279,7 +279,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
-                            <label>[COLOR LabelTextColor]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -566,14 +566,14 @@
                         <width>438</width>
                         <itemgap>20</itemgap>
                         <control type="label">
-                            <label>[COLOR LabelTextColor]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR LabelTextColor]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -581,7 +581,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
-                            <label>[COLOR LabelTextColor]$LOCALIZE[33027]:[/COLOR] $INFO[Window(weather).Property(Today.Sunrise)]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[33027]:[/COLOR] $INFO[Window(weather).Property(Today.Sunrise)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -589,7 +589,7 @@
                         </control>
                         <control type="label">
                         	<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
-                            <label>[COLOR LabelTextColor]$LOCALIZE[33028]:[/COLOR] $INFO[Window(weather).Property(Today.Sunset)]</label>
+                            <label>[COLOR=LabelTextColor]$LOCALIZE[33028]:[/COLOR] $INFO[Window(weather).Property(Today.Sunset)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>

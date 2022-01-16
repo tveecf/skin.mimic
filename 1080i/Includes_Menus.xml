@@ -226,7 +226,7 @@
 								<label>I</label>
 								<font>IconTiny</font>
 								<align>right</align>
-								<textcolor>ccffffff</textcolor>
+								<textcolor>TitleTextColor</textcolor>
 								<visible>String.Contains(ListItem.Property(hasSubmenu),True) + Skin.HasSetting(Enable.CombineMenus)</visible>
 								<visible>!String.IsEqual(ListItem.Property("submenuVisibility"),Window(10000).Property("submenuVisibility"))</visible>
 								<animation effect="rotate" time="0" start="0" end="-90" condition="true" center="auto">Conditional</animation>

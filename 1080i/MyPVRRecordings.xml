@@ -124,7 +124,7 @@
                     <width>570</width>
                     <height>50</height>
                     <font>font14_textbox</font>
-                    <label>$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,E,]  [COLOR NormalTextColor]$INFO[ListItem.EpisodeName][/COLOR]</label>
+                    <label>$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,E,]  [COLOR=NormalTextColor]$INFO[ListItem.EpisodeName][/COLOR]</label>
                     <include>AutoscrollDefault</include>
                 </control>
                 

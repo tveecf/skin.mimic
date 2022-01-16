@@ -224,8 +224,8 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font31</font>
-					<textcolor>yellow</textcolor>
-					<label>[B]!!![/B]</label>
+<!-- 					<textcolor>Alert</textcolor> -->
+					<label>[B][COLOR=Alert]!!![/COLOR][/B]</label>
 					<visible>!Skin.HasSetting(HideTopbarWeather) + !String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 				</control>
 

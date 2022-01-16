@@ -125,7 +125,7 @@
                 <width>1585</width>
                 <height>40</height>
                 <font>font14</font>
-                <label>[COLOR LabelTextColor]$LOCALIZE[19031]: [/COLOR]$INFO[VideoPlayer.NextTitle] $INFO[VideoPlayer.NextStartTime,(, - ]$INFO[VideoPlayer.NextEndTime,,)]</label>
+                <label>[COLOR=LabelTextColor]$LOCALIZE[19031]: [/COLOR]$INFO[VideoPlayer.NextTitle] $INFO[VideoPlayer.NextStartTime,(, - ]$INFO[VideoPlayer.NextEndTime,,)]</label>
                 <scroll>true</scroll>
             </control>
             <control type="progress">

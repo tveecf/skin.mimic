@@ -43,7 +43,7 @@
 				<include>VisibleFadeEffect</include>
 				<control type="textbox">
 					<visible>!Skin.HasSetting(Enable.MediaFlags)</visible>
-					<label>[COLOR AltTextColor]$VAR[ListSubLabelVar]:[/COLOR] $VAR[VideoPlotVar]</label>
+					<label>[COLOR=AltTextColor]$VAR[ListSubLabelVar]:[/COLOR] $VAR[VideoPlotVar]</label>
 					<width>585</width>
 					<height>390</height>
 					<font>font14_textbox</font>
@@ -53,7 +53,7 @@
 				<control type="textbox">
 					<animation effect="slide" time="0" start="0,0" end="0,-10" condition="true">Conditional</animation>
 					<visible>Skin.HasSetting(Enable.MediaFlags)</visible>
-					<label>[COLOR LabelTextColor]$VAR[ListSubLabelVar]:[/COLOR] $VAR[VideoPlotVar]</label>
+					<label>[COLOR=LabelTextColor]$VAR[ListSubLabelVar]:[/COLOR] $VAR[VideoPlotVar]</label>
 					<width>585</width>
 					<height>325</height>
 					<font>font14_textbox</font>
@@ -81,13 +81,13 @@
 				<height>360</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.AddonType)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[21863]:[/COLOR][CR]$INFO[ListItem.AddonCreator]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[21863]:[/COLOR][CR]$INFO[ListItem.AddonCreator]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
@@ -342,43 +342,43 @@
 				<height>360</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[557]:[/COLOR][CR]$INFO[ListItem.Artist]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[557]:[/COLOR][CR]$INFO[ListItem.Artist]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.Artist)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[558]/$LOCALIZE[562]:[/COLOR][CR]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[558]/$LOCALIZE[562]:[/COLOR][CR]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>Container.Content(songs) + !String.IsEmpty(ListItem.Album)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Genre]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Genre]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.Genre)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[180]:[/COLOR][CR]$INFO[ListItem.Duration]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[180]:[/COLOR][CR]$INFO[ListItem.Duration]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.Duration)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[21894]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Formed)]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[21894]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Formed)]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.Property(Artist_Formed)) + String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[21893]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Born)]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[21893]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Born)]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.Property(Artist_Born)) + String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Genre)]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Property(Artist_Genre)]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.Property(Artist_Genre)) + !Window.IsActive(musicplaylist) + !Container.Content(artists)</visible>
@@ -405,13 +405,13 @@
 				<height>360</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.AddonType)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[21863]:[/COLOR][CR]$INFO[ListItem.AddonCreator]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[21863]:[/COLOR][CR]$INFO[ListItem.AddonCreator]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>
@@ -720,13 +720,13 @@
 				<height>360</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.AddonType)</visible>
 				</control>
 				<control type="button">
-					<label>[COLOR LabelTextColor]$LOCALIZE[21863]:[/COLOR][CR]$INFO[ListItem.AddonCreator]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[21863]:[/COLOR][CR]$INFO[ListItem.AddonCreator]</label>
 					<width>610</width>
 					<include>InfoPanelButtonsValues</include>
 					<visible>!String.IsEmpty(ListItem.AddonCreator)</visible>

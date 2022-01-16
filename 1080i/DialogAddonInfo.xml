@@ -118,7 +118,7 @@
                     <width>1120</width>
                     <height>405</height>
                     <font>font15_textbox</font>
-                    <label>[COLOR LabelTextColor]$LOCALIZE[21821]: [/COLOR][CR]$INFO[ListItem.AddonDescription][CR]$VAR[AddonNews]$VAR[AddonDisclaimer]</label>
+                    <label>[COLOR=LabelTextColor]$LOCALIZE[21821]: [/COLOR][CR]$INFO[ListItem.AddonDescription][CR]$VAR[AddonNews]$VAR[AddonDisclaimer]</label>
                     <pagecontrol>60</pagecontrol>
                     <include>AutoscrollDefault</include>
                     <visible>!Control.IsVisible(50)</visible>

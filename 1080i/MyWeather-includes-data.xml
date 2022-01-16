@@ -166,7 +166,7 @@
                 <font>font15</font>
                 <align>center</align>
                 <selectedcolor>SelectedColor</selectedcolor>
-                <label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature),  [COLOR ff8de0ff],[/COLOR]]</label>
+                <label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature),  [COLOR=LowTemp],[/COLOR]]</label>
             </control>
             <control type="image">
                 <top>20</top>
@@ -211,7 +211,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR ff8de0ff],[/COLOR]]</label>
+                <label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=LowTemp],[/COLOR]]</label>
             </control>
             <control type="image">
                 <animation center="auto" condition="Control.HasFocus($PARAM[id])" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>

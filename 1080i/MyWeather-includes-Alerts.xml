@@ -75,7 +75,7 @@
 						<height>50</height>
 						<font>font16</font>
 						<selectedcolor>SelectedColor</selectedcolor>
-						<label>[COLOR yellow]$INFO[ListItem.Label][/COLOR]</label>
+						<label>[COLOR=Alert]$INFO[ListItem.Label][/COLOR]</label>
 					</control>
 					<control type="textbox">
 						<width>1050</width>
@@ -132,7 +132,7 @@
 						<width>1060</width>
 						<height>50</height>
 						<font>font16</font>
-						<label>[COLOR yellow]$INFO[ListItem.Label][/COLOR]</label>
+						<label>[COLOR=Alert]$INFO[ListItem.Label][/COLOR]</label>
 					</control>
 					<control type="textbox">
 						<width>1050</width>

@@ -87,7 +87,7 @@
 						<height>50</height>
 						<font>font15</font>
 						<selectedcolor>SelectedColor</selectedcolor>
-						<label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR ff8de0ff],[/COLOR]]</label>
+						<label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=LowTemp],[/COLOR]]</label>
 					</control>
 					<control type="label">
 						<left>200</left>
@@ -162,7 +162,7 @@
 						<width>475</width>
 						<height>50</height>
 						<font>font15</font>
-						<label>$INFO[ListItem.Property(HighTemperature),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR ff8de0ff],[/COLOR]]</label>
+						<label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=LowTemp],[/COLOR]]</label>
 					</control>
 					<control type="label">
 						<left>200</left>

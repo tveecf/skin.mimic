@@ -222,7 +222,7 @@
 					<height>48</height>
 					<font>font14_textbox</font>
 					<scroll>true</scroll>
-					<label>[COLOR LabelTextColor]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, • ]$INFO[MusicPlayer.offset(1).TrackNumber,,. ]$INFO[MusicPlayer.offset(1).Title]
+					<label>[COLOR=LabelTextColor]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, • ]$INFO[MusicPlayer.offset(1).TrackNumber,,. ]$INFO[MusicPlayer.offset(1).Title]
 					</label>
 				</control>
 			</control>
@@ -300,7 +300,7 @@
 					<height>160</height>
 					<width>1870</width>
 					<font>font14_textbox</font>
-					<label>[COLOR LabelTextColor]$LOCALIZE[21887]:[/COLOR] $INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</label>
+					<label>[COLOR=LabelTextColor]$LOCALIZE[21887]:[/COLOR] $INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</label>
 					<autoscroll time="3000" delay="10000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 				</control>
 			</control>

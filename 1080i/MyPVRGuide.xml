@@ -198,7 +198,7 @@
                     <height>30</height>
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
-                    <label>[COLOR NormalTextColor]$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,: ][/COLOR]$INFO[ListItem.Title] [I]$INFO[ListItem.Season,- S,]$INFO[ListItem.Episode,E,][/I]$INFO[ListItem.Year, (,)][COLOR NormalTextColor][I]$INFO[ListItem.EpisodeName, - ,][/I][/COLOR]</label>
+                    <label>[COLOR=NormalTextColor]$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,: ][/COLOR]$INFO[ListItem.Title] [I]$INFO[ListItem.Season,- S,]$INFO[ListItem.Episode,E,][/I]$INFO[ListItem.Year, (,)][COLOR=NormalTextColor][I]$INFO[ListItem.EpisodeName, - ,][/I][/COLOR]</label>
                 </control>
                 <control type="label">
                     <top>58</top>
@@ -206,7 +206,7 @@
                     <height>30</height>
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
-                    <label>[COLOR LabelTextColor]$LOCALIZE[515]:[/COLOR] [CAPITALIZE]$INFO[ListItem.Genre][/CAPITALIZE]</label>
+                    <label>[COLOR=LabelTextColor]$LOCALIZE[515]:[/COLOR] [CAPITALIZE]$INFO[ListItem.Genre][/CAPITALIZE]</label>
                     <visible>!String.IsEmpty(ListItem.Genre)</visible>
                 </control>
                 <control type="label">
@@ -217,7 +217,7 @@
                     <height>30</height>
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
-                    <label>[COLOR LabelTextColor]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</label>
+                    <label>[COLOR=LabelTextColor]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</label>
                     <visible>!String.IsEmpty(ListItem.Premiered)+[!String.IsEqual(ListItem.Premiered,"Wednesday, December 31, 1969")]</visible>
                 </control>
                 <control type="textbox" id="81">
