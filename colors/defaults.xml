@@ -1,16 +1,16 @@
 <colors>
     <color name="TitleTextColor">FFE8E8E8</color>
     <color name="NormalTextColor">FFE8E8E8</color>    
-    <color name="AltTextColor">FF23729B</color>    
-    <color name="LabelTextColor">FF23729B</color>    
+    <color name="AltTextColor">FF73D3FE</color>    
+    <color name="LabelTextColor">FF73D2FB</color>    
     <color name="FocusColor">FF23729B</color>    
     <color name="SelectedColor">FF23729B</color>    
     <color name="DisabledColor">FF606060</color>
     <color name="black">FF000000</color>
     <color name="invalid">FFFF6666</color>
     <color name="shadow">AA000000</color>
-    <color name="background">FF0A1A23</color>
-    <color name="dialog">FF57A4CB</color>
+    <color name="background">E00A1A23</color>
+    <color name="dialog">FF17243B</color>
     <color name="white11">11FFFFFF</color>
     <color name="blue">FF6db9e5</color>
 	<color name="LowTemp">FF66CCFF</color>

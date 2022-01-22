@@ -10,7 +10,7 @@
 	<color name="invalid">FFFF6666</color>
 	<color name="shadow">AA000000</color>
 	<color name="background">FF151515</color>
-	<color name="dialog">FFBABABA</color>
+	<color name="dialog">FF3A3A3A</color>
 	<color name="white11">11FFFFFF</color>
 	<color name="blue">FF6DB9E5</color>
 </colors>

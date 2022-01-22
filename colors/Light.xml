@@ -3,14 +3,14 @@
 	<color name="NormalTextColor">FF300000</color>
 	<color name="AltTextColor"   >FFA06060</color>
 	<color name="LabelTextColor" >FF404000</color>
-	<color name="FocusColor"     >DDC0C090</color>	
+	<color name="FocusColor"     >FFA9A979</color>	
 	<color name="SelectedColor"  >FFA0A060</color>	
 	<color name="DisabledColor"  >FFA0A0A0</color>
 	<color name="black"          >FF000000</color>
 	<color name="invalid"        >FFC0C0C0</color>
 	<color name="shadow"         >AA303030</color>
-	<color name="background"     >EEFFFFE0</color>
-	<color name="dialog"         >FEEFEFCF</color>
+	<color name="background"     >D0FFFFE6</color>
+	<color name="dialog"         >FFEFEFCF</color>
 	<color name="white11"        >FFEEEEEE</color>
 	<color name="blue"           >FF6DB9E5</color>
 </colors>
