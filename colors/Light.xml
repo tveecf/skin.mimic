@@ -1,7 +1,7 @@
 <colors>
-	<color name="TitleTextColor" >FF903060</color>
+	<color name="TitleTextColor" >FF900030</color>
 	<color name="NormalTextColor">FF300000</color>
-	<color name="AltTextColor"   >FFA06060</color>
+	<color name="AltTextColor"   >FF600020</color>
 	<color name="LabelTextColor" >FF404000</color>
 	<color name="FocusColor"     >FFA9A979</color>	
 	<color name="SelectedColor"  >FFA0A060</color>	

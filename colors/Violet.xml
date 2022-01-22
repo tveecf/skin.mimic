@@ -1,8 +1,8 @@
 <colors>
 	<color name="TitleTextColor">FFE8E8E8</color>
 	<color name="NormalTextColor">FFE8E8E8</color>	
-	<color name="LabelTextColor">FF881556</color>	
-	<color name="AltTextColor">FF881556</color>	
+	<color name="LabelTextColor">FFD884B6</color>	
+	<color name="AltTextColor">FFF885C6</color>	
 	<color name="FocusColor">FF881556</color>	
 	<color name="SelectedColor">FF881556</color>	
 	<color name="DisabledColor">FF606060</color>
