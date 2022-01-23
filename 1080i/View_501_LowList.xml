@@ -39,12 +39,22 @@
 			<control type="group">
 				<visible>!Container.Content(addons)</visible>
 				<left>1300</left>
-				<top>640</top>
+				<top>620</top>
 				<include>VisibleFadeEffect</include>
 				<control type="textbox">
 					<visible>!Skin.HasSetting(Enable.MediaFlags)</visible>
-					<label>[COLOR=AltTextColor]$VAR[ListSubLabelVar]:[/COLOR] $VAR[VideoPlotVar]</label>
+					<label>[COLOR=AltTextColor]$VAR[ListSubLabelVar][/COLOR]</label>
 					<width>585</width>
+					<height>40</height>
+					<font>font14_textbox</font>
+					<include>InfoPanelButtonsValues</include>
+					<include>AutoscrollDefault</include>
+				</control>
+				<control type="textbox">
+					<visible>!Skin.HasSetting(Enable.MediaFlags)</visible>
+					<label>$VAR[VideoPlotVar]</label>
+					<width>585</width>
+					<top>48</top>
 					<height>390</height>
 					<font>font14_textbox</font>
 					<include>InfoPanelButtonsValues</include>
@@ -53,7 +63,18 @@
 				<control type="textbox">
 					<animation effect="slide" time="0" start="0,0" end="0,-10" condition="true">Conditional</animation>
 					<visible>Skin.HasSetting(Enable.MediaFlags)</visible>
-					<label>[COLOR=LabelTextColor]$VAR[ListSubLabelVar]:[/COLOR] $VAR[VideoPlotVar]</label>
+					<label>[COLOR=LabelTextColor]$VAR[ListSubLabelVar][/COLOR]</label>
+					<width>585</width>
+					<height>40</height>
+					<font>font14_textbox</font>
+					<include>InfoPanelButtonsValues</include>
+					<include>AutoscrollDefault</include>
+				</control>
+				<control type="textbox">
+					<animation effect="slide" time="0" start="0,0" end="0,-10" condition="true">Conditional</animation>
+					<visible>Skin.HasSetting(Enable.MediaFlags)</visible>
+					<label>$VAR[VideoPlotVar]</label>
+					<top>48</top>
 					<width>585</width>
 					<height>325</height>
 					<font>font14_textbox</font>
@@ -71,8 +92,8 @@
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordersize>20</bordersize>
  	           </control>
-				
 			</control>
+
 			<control type="grouplist">
 				<visible>Container.Content(addons)</visible>
 				<left>1280</left>
@@ -110,8 +131,8 @@
 				<visible>Integer.IsGreater(Container(501).NumItems,0)</visible>
 				<control type="image">
 					<left>463</left>
-					<top>632</top>
-					<width>806</width>
+					<top>610</top>
+					<width>802</width>
 					<height>67</height>
 					<visible>Control.HasFocus(501)</visible>
 					<animation effect="fade" time="320" delay="200">Visible</animation>
@@ -126,9 +147,9 @@
 			</control>
 			<control type="panel" id="501">
 				<left>463</left>
-				<top>632</top>
+				<top>610</top>
 				<width>976</width>
-				<height>402</height>
+				<height>400</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
 				<onright>60</onright>
