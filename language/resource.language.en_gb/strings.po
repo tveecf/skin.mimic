@@ -1104,7 +1104,23 @@ msgctxt "#31392"
 msgid "Days"
 msgstr "Days"
 
-#empty strings from id 31393 to 31410
+msgctxt "#31393"
+msgid "Exo2"
+msgstr "Exo2"
+
+msgctxt "#31394"
+msgid "Monsterrat"
+msgstr "Monsterrat"
+
+msgctxt "#31395"
+msgid "Passion One"
+msgstr "Passion One"
+
+msgctxt "#31396"
+msgid "Bubblegum Sans"
+msgstr "Bubblegum Sans"
+
+#empty strings from id 31397 to 31410
 
 msgctxt "#31411"
 msgid "Sawasdee"
