@@ -1325,7 +1325,7 @@
 			<align>justify</align>
 			<textcolor>NormalTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
-			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 		</control>
 		<control type="image">
 			<left>70</left>
@@ -1612,7 +1612,7 @@
 				<align>justify</align>
 				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 			</control>
 			<control type="image">
 				<left>800</left>
@@ -1724,7 +1724,7 @@
 			<align>justify</align>
 			<textcolor>NormalTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
-			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 		</control>
 		<control type="image">
 			<left>810</left>
@@ -1992,7 +1992,7 @@
 				<align>justify</align>
 				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 			</control>
 			<control type="label">
 				<left>100</left>
@@ -2086,7 +2086,7 @@
 				<align>justify</align>
 				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 			</control>
 			<control type="image">
 				<left>1150</left>
@@ -2130,7 +2130,7 @@
 				<align>justify</align>
 				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 			</control>
 			<control type="label">
 				<left>100</left>
@@ -2236,7 +2236,7 @@
 				<align>justify</align>
 				<textcolor>NormalTextColor</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 			</control>
 			<control type="image">
 				<left>1135</left>
@@ -2334,7 +2334,7 @@
 			<align>justify</align>
 			<textcolor>NormalTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
-			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 		</control>
 		<control type="image">
 			<description>Studio Flags</description>

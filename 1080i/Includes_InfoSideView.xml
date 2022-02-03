@@ -197,7 +197,6 @@
 				<font>font14_textbox</font>
                     <include content="AutoscrollDefault">
                     </include>
-<!-- 				<autoscroll delay="5000" time="3000" repeat="5000">true</autoscroll> -->
 			</control>
 		</control>
 	</include>
@@ -309,7 +308,6 @@
 				<width>680</width>
 				<height>300</height>
 				<font>font14_textbox</font>
-<!-- 				<autoscroll delay="5000" time="3000" repeat="5000">true</autoscroll> -->
                     <include content="AutoscrollDefault">
                     </include>
 			</control>

@@ -184,7 +184,7 @@
 			<label>$INFO[ListItem.Plot]</label>
 			<textcolor>NormalTextColor</textcolor>
 		<include>AutoscrollDefault</include>
-		<autoscroll time="2000" delay="3000" repeat="5000">Control.HasFocus(909)</autoscroll>
+		<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll) + Control.HasFocus(909)</autoscroll>
 		</control>
 		<control type="image">
 			<left>1216</left>
@@ -295,7 +295,7 @@
 			<font>font13_textbox</font>
 			<textcolor>NormalTextColor</textcolor>
 			<shadowcolor>black</shadowcolor>
-			<autoscroll time="2000" delay="3000" repeat="5000">!Control.HasFocus(2)</autoscroll>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll) + !Control.HasFocus(2)</autoscroll>
 		</control>
 		<control type="group">
 			<left>50</left>
@@ -467,7 +467,7 @@
 			<align>left</align>
 			<textcolor>TitleTextColor</textcolor>
 			<label>$INFO[ListItem.Plot]</label>
-			<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+			<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
 		</control>
 		<control type="image">
 			<left>1360</left>
