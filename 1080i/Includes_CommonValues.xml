@@ -284,6 +284,9 @@
         <font>font15</font>
     </include>
     <include name="AutoscrollDefault">
-        <autoscroll time="3000" delay="4000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>
+    	<param name="condition" default="true"/>
+		<definition>
+        <autoscroll time="3000" delay="4000" repeat="5000">[$PARAM[condition]] + !Skin.HasSetting(Disable.AutoScroll)</autoscroll>
+		</definition>
     </include>
 </includes>

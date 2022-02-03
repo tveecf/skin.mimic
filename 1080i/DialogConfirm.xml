@@ -20,7 +20,7 @@
             <height>225</height>
             <font>font14_textbox</font>
             <label />
-            <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+            <include>AutoscrollDefault</include>
         </control>
         <control type="progress" id="20">
             <description>Progressbar</description>

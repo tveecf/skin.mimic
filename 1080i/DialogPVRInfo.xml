@@ -99,7 +99,10 @@
                     <height>170</height>
                     <font>font14_textbox</font>
                     <pagecontrol>60</pagecontrol>
-                    <autoscroll time="3000" delay="4000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll) + !Control.HasFocus(60)</autoscroll>
+                    <include content="AutoscrollDefault">
+                    	<param name="condition" value="!Control.HasFocus(60)"/>
+                    </include>
+<!--                     <autoscroll time="3000" delay="4000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll) + </autoscroll> -->
                     <label>$INFO[ListItem.Plot]</label>
                 </control>
                 <control type="scrollbar" id="60">

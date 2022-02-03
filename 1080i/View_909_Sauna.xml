@@ -183,7 +183,8 @@
 			<font>font14_textbox</font>
 			<label>$INFO[ListItem.Plot]</label>
 			<textcolor>NormalTextColor</textcolor>
-			<autoscroll time="2000" delay="3000" repeat="5000">Control.HasFocus(909)</autoscroll>
+		<include>AutoscrollDefault</include>
+		<autoscroll time="2000" delay="3000" repeat="5000">Control.HasFocus(909)</autoscroll>
 		</control>
 		<control type="image">
 			<left>1216</left>
