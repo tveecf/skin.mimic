@@ -10,6 +10,8 @@
 	<color name="invalid">FF444444</color>
 	<color name="shadow">AA000000</color>
 	<color name="ItemDiffuse">FF151515</color>
+    <color name="BackgroundColor">E00A1A23</color>
+    <color name="BorderDiffuse">33787878</color>
 	<color name="dialog">FF262626</color>
 	<color name="white11">11FFFFFF</color>
 	<color name="blue">FF6DB9E5</color>

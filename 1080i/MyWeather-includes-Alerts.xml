@@ -32,7 +32,7 @@
 						<top>60</top>
 						<right>20</right>
 						<bottom>20</bottom>
-						<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
+						<texture colordiffuse="ItemDiffuse" border="5">background.png</texture>
 					</control>
 
 <!-- 
@@ -86,7 +86,7 @@
 						<top>60</top>
 						<right>20</right>
 						<bottom>20</bottom>
-						<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
+						<texture colordiffuse="ItemDiffuse" border="5">background.png</texture>
 					</control>
 
 <!-- 

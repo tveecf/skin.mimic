@@ -21,7 +21,7 @@
 <!-- 				<scrolltime tween="quadratic" easing="out">200</scrolltime> -->
 				<itemlayout height="360" width="1400">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
+						<param name="bottom" value="20" />
 					</include>
 
 					<control type="image">
@@ -81,7 +81,7 @@
 				</itemlayout>
 				<focusedlayout height="360" width="1400">
 					<include content="ItemFocusBorder">
-						<param name="bottom" value="65" />
+						<param name="bottom" value="20" />
 					</include>
 
 					<control type="image">

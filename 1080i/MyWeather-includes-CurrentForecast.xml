@@ -246,7 +246,7 @@
 						<height>60</height>
 						<font>font15</font>
 						<align>center</align>
-						<label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=ff8de0ff],[/COLOR]]</label>
+						<label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=LowTemp],[/COLOR]]</label>
 					</control>
 				</focusedlayout>
 				<content>

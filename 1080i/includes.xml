@@ -1557,7 +1557,7 @@
 				<top>20</top>
 				<right>20</right>
 				<bottom>$PARAM[bottom]</bottom>
-				<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
+				<texture colordiffuse="ItemDiffuse" border="5">background.png</texture>
 			</control>
 		</definition>
 	</include>
@@ -1573,27 +1573,9 @@
 				<top>20</top>
 				<right>20</right>
 				<bottom>$PARAM[bottom]</bottom>
-				<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
+				<texture colordiffuse="ItemDiffuse" border="5">background.png</texture>
 			</control>
 		</definition>
-	</include>
-
-
-	<include name="ItemFocusBorder">
-		<control type="image">
-			<left>10</left>
-			<top>10</top>
-			<right>10</right>
-			<bottom>10</bottom>
-			<texture colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texture>
-		</control>
-		<control type="image">
-			<left>20</left>
-			<top>20</top>
-			<right>20</right>
-			<bottom>65</bottom>
-			<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
-		</control>
 	</include>
 
 	<include name="CommonFonts">

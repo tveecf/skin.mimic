@@ -3,13 +3,15 @@
 	<color name="NormalTextColor">FFFAF5F9</color>
 	<color name="AltTextColor">FFFA3256</color>
 	<color name="LabelTextColor">FFFA3256</color>
-	<color name="FocusColor">DDC01030</color>
+	<color name="FocusColor">EECC1133</color>
 	<color name="SelectedColor">FFC00016</color>
 	<color name="DisabledColor">FF606060</color>
 	<color name="black">FF000000</color>
 	<color name="invalid">FFFF6666</color>
 	<color name="shadow">AA333333</color>
-	<color name="ItemDiffuse">F0100003</color>
+	<color name="ItemDiffuse">AA030100</color>
+    <color name="BackgroundColor">C0030100</color>
+    <color name="BorderDiffuse">DDA00010</color>
 	<color name="dialog">FF000000</color>
 	<color name="white11">EEFF0FF2</color>
 	<color name="blue">FF6DB9E5</color>

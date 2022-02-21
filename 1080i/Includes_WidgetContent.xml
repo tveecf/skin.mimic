@@ -203,13 +203,6 @@
 					<include content="ItemFocusBorder">
 						<param name="bottom" value="65" />
 					</include>
-			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<right>20</right>
-				<height>180</height>
-				<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
-			</control>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -522,13 +515,6 @@
 					<include content="ItemFocusBorder">
 						<param name="bottom" value="65" />
 					</include>
-			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<right>20</right>
-				<height>180</height>
-				<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
-			</control>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -580,13 +566,6 @@
 					<include content="ItemFocusBorder">
 						<param name="bottom" value="65" />
 					</include>
-			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<right>20</right>
-				<height>310</height>
-				<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
-			</control>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
