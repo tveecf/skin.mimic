@@ -641,7 +641,7 @@
 		<value>DefaultIconClock.png</value>
 	</variable>
 	<!--<variable name="ColorHighlightVar"> <value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value> <value>highlight</value> 
-		</variable> <variable name="ColorBackgroundVar"> <value condition="!String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value> <value>background</value> 
+		</variable> <variable name="ColorBackgroundVar"> <value condition="!String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value> <value>ItemDiffuse</value> 
 		</variable> <variable name="ColorDialogVar"> <value condition="!String.IsEmpty(Skin.String(dialogcolor.name))">$INFO[Skin.String(dialogcolor.name)]</value> <value>dialog</value> </variable> 
 		<variable name="ColorTextVar"> <value condition="!String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value> <value>TitleTextColor</value> </variable> <variable 
 		name="ColorDisabledVar"> <value condition="!String.IsEmpty(Skin.String(disabledcolor.name))">$INFO[Skin.String(disabledcolor.name)]</value> <value>disabled</value> </variable> <variable 
@@ -1268,6 +1268,7 @@
 	</variable>
 	
 		<variable name="Art2Setting">
+		
 		<!-- genre and tags are special -->
 		<value condition="String.IsEqual(ListItem.DBTYPE,tag) | String.IsEqual(ListItem.DBTYPE,source)
 		| String.IsEqual(ListItem.DBTYPE,genre)">genreicon</value>
@@ -1286,7 +1287,15 @@
 		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
 		+ String.IsEqual(ListItem.DBTYPE,album)">$INFO[Skin.String(InfoWall.album.Art2)]</value>
 		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,artist)">$INFO[Skin.String(InfoWall.artist.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,song)">$INFO[Skin.String(InfoWall.song.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
 		+ String.IsEqual(ListItem.DBTYPE,actor)">$INFO[Skin.String(InfoWall.actor.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall) 
+		+ String.IsEqual(ListItem.DBTYPE,video)">$INFO[Skin.String(InfoWall.video.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,InfoWall)"
+		>$INFO[Skin.String(InfoWall..Art2)]</value>
 
 		<value condition="String.IsEqual(Container.Viewmode,List) 
 		+ String.IsEqual(ListItem.DBTYPE,movie)">$INFO[Skin.String(List.movie.Art2)]</value>
@@ -1303,7 +1312,15 @@
 		<value condition="String.IsEqual(Container.Viewmode,List) 
 		+ String.IsEqual(ListItem.DBTYPE,album)">$INFO[Skin.String(List.album.Art2)]</value>
 		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,artist)">$INFO[Skin.String(List.artist.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,song)">$INFO[Skin.String(List.song.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
 		+ String.IsEqual(ListItem.DBTYPE,actor)">$INFO[Skin.String(List.actor.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List) 
+		+ String.IsEqual(ListItem.DBTYPE,video)">$INFO[Skin.String(List.video.Art2)]</value>
+		<value condition="String.IsEqual(Container.Viewmode,List)"
+		>$INFO[Skin.String(List..Art2)]</value>
 		<!-- default to fanart if no property set -->
 		<value>thumb</value>
 	</variable>

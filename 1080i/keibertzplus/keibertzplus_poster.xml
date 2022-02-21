@@ -4,7 +4,7 @@
 	<include name="KeibertzPlus_Poster_Icon">
 		<param name="bordersize" default="10" />
 		<param name="bordertexture" default="" />
-		<param name="colordiffuse" default="33787878" />
+		<param name="colordiffuse" default="BorderDiffuse" />
 		<param name="diffuse" default="false" />
 		<param name="flipy" default="false" />
 		<param name="texture" default="$INFO[ListItem.Art(poster)]" />

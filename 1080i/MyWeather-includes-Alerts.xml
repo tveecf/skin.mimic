@@ -8,27 +8,6 @@
 			<top>0</top>
 			<width>1400</width>
 			<height>780</height>
-			
-			<control type="image">
-				<visible>Control.HasFocus(308) + !Container(308).IsUpdating</visible>
-				<animation effect="fade" time="320" delay="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<left>0</left>
-				<top>0</top>
-				<width>1400</width>
-				<height>660</height>
-				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-				<animation effect="slide" end="0,360" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(308).Row,1)">Conditional</animation>
-				<animation effect="slide" end="0,360" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(308).Row,0)">Conditional</animation>
-				<animation effect="slide" end="700,0" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(308).Column,0)">Conditional</animation>
-			</control>
 
 			<control type="panel" id="308">
 				<left>0</left>
@@ -39,21 +18,21 @@
 				<ondown>308</ondown>
 				<onleft>9000</onleft>
 				<orientation>vertical</orientation>
-				<scrolltime tween="quadratic" easing="out">200</scrolltime>
+<!-- 				<scrolltime tween="quadratic" easing="out">200</scrolltime> -->
 				<itemlayout height="660" width="1400">
 					<control type="image">
 						<left>10</left>
 						<top>10</top>
 						<right>10</right>
 						<bottom>10</bottom>
-						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texture>
 					</control>
 					<control type="image">
 						<left>280</left>
 						<top>60</top>
 						<right>20</right>
 						<bottom>20</bottom>
-						<texture colordiffuse="background" border="5">thumbnail_bg.png</texture>
+						<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
 					</control>
 
 <!-- 
@@ -98,19 +77,16 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="660" width="1400">
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<right>10</right>
-						<bottom>10</bottom>
-						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
-					</control>
+						<control type="image">
+							<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+						</control>
+
 					<control type="image">
 						<left>280</left>
 						<top>60</top>
 						<right>20</right>
 						<bottom>20</bottom>
-						<texture colordiffuse="background" border="5">thumbnail_bg.png</texture>
+						<texture colordiffuse="ItemDiffuse" border="5">thumbnail_bg.png</texture>
 					</control>
 
 <!-- 
@@ -143,21 +119,6 @@
                     <include content="AutoscrollDefault">
                     </include>
 						<label>$INFO[ListItem.Property(description)]</label>
-					</control>
-
-					<control type="image">
-						<animation center="auto"
-							condition="Control.HasFocus(301)" easing="inout" effect="fade"
-							end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto"
-							condition="Control.HasFocus(301)" easing="inout" effect="fade"
-							end="100" start="0" time="300" tween="sine">UnFocus</animation>
-						<top>20</top>
-						<left>20</left>
-						<right>20</right>
-						<height>660</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 				</focusedlayout>
 				<content>

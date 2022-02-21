@@ -92,16 +92,6 @@
 							<aspectratio>stretch</aspectratio>
 							<bordersize>5</bordersize>
 						</control>
-						<control type="image">
-							<width>305</width>
-							<height>140</height>
-							<texture diffuse="diffuse/thumbnail.png">overlays/icon-overlay.png</texture>
-							<aspectratio>stretch</aspectratio>
-							<bordersize>5</bordersize>
-							<animation effect="fade" start="100" end="0" time="400">Focus</animation>
-							<animation effect="fade" start="0" end="100" time="200">UnFocus</animation>
-							<visible>!Skin.HasSetting(Enable.HighlightFocused)</visible>
-						</control>
 					</control>
 					<control type="group">
 						<visible>Skin.HasSetting(SaunaTrailers)</visible>
@@ -192,7 +182,7 @@
 			<width>624</width>
 			<height>360</height>
 			<texture diffuse="diffuse/thumbnail.png">black.png</texture>
-			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="5" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 			<bordersize>10</bordersize>			
 		</control>
 		<control type="videowindow">
@@ -256,7 +246,7 @@
 			<texture>$INFO[ListItem.Art(banner)]</texture>
 			<aspectratio>stretch</aspectratio>
 			<bordersize>6</bordersize>
-			<bordertexture border="6" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="6" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 		</control>
 		<control type="label">
 			<left>470</left>
@@ -306,7 +296,7 @@
             <height>232</height>
             <texture>black.png</texture>
             <aspectratio>stretch</aspectratio>
-			<bordertexture border="6" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="6" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 			<bordersize>6</bordersize>
         </control>
 		<control type="videowindow">
@@ -336,7 +326,7 @@
             <height>232</height>
             <texture>black.png</texture>
             <aspectratio>stretch</aspectratio>
-			<bordertexture border="6" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="6" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 			<bordersize>6</bordersize>
         </control>
 		<control type="videowindow">
@@ -414,7 +404,7 @@
 			<height>440</height>
 			<fadetime>400</fadetime>
 			<texture background="true" diffuse="diffuse/fanart-square.png">$INFO[ListItem.Icon]</texture>
-			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="5" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 			<bordersize>10</bordersize>
 		</control>
 	<!--	<control type="image">
@@ -475,7 +465,7 @@
 			<width>500</width>
 			<height>290</height>
 			<texture diffuse="diffuse/thumbnail.png">black.png</texture>
-			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="5" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 			<bordersize>10</bordersize>			
 		</control>
 		<control type="videowindow">

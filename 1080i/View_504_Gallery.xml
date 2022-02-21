@@ -194,14 +194,6 @@
 							<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						</control>
 
-						<control type="image">
-							<animation center="auto" condition="Control.HasFocus(504)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(504)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<width>1155</width>
-							<height>650</height>
-							<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
-						</control>
 						<include content="OverlayIcons" condition="![Container.Content(images) | Container.Content(artists)]">
 							<param name="OverlayLeft" value="1095" />
 							<param name="OverlayTop" value="0" />

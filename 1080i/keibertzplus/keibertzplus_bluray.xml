@@ -4,7 +4,7 @@
 	<include name="KeibertzPlus_Bluray_Icon">
 		<param name="bordersize" default="10" />
 		<param name="bordertexture" default="" />
-		<param name="colordiffuse" default="33787878" />
+		<param name="colordiffuse" default="BorderDiffuse" />
 		<param name="diffuse" default="false" />
 		<param name="flipy" default="false" />
 		<param name="texture" default="$INFO[ListItem.Art(poster)]" />
@@ -66,6 +66,7 @@
 				</include>
 		</itemlayout>
 		<focusedlayout width="340" height="640" condition="$EXP[GameSupport] + [$EXP[DetectBluray]]">
+
 			<control type="group">
 				<animation effect="zoom" center="150,550" start="100" end="115" time="400" tween="cubic" easing="out" condition="$EXP[KeibertzPlusStaticIcons]" reversible="false">Focus</animation>
 				<animation effect="zoom" center="150,550" start="115" end="100" time="200" tween="cubic" easing="in" condition="$EXP[KeibertzPlusStaticIcons]" reversible="false">UnFocus</animation>

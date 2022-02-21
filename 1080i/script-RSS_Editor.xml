@@ -72,7 +72,7 @@
                 <font>font12_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 <texturefocus colordiffuse="FocusColor" border="5">listselect_fo.png</texturefocus>
             </control>
             <control type="button" id="14">
@@ -81,7 +81,7 @@
                 <font>font12_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 <texturefocus colordiffuse="FocusColor" border="5">listselect_fo.png</texturefocus>
             </control>
             <control type="button" id="11">
@@ -89,7 +89,7 @@
                 <font>font12_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 <texturefocus colordiffuse="FocusColor" border="5">listselect_fo.png</texturefocus>
             </control>
             <control type="button" id="18">
@@ -98,7 +98,7 @@
                 <font>font12_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 <texturefocus colordiffuse="FocusColor" border="5">listselect_fo.png</texturefocus>
             </control>
             <control type="button" id="19">
@@ -107,7 +107,7 @@
                 <font>font12_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 <texturefocus colordiffuse="FocusColor" border="5">listselect_fo.png</texturefocus>
             </control>
         </control>

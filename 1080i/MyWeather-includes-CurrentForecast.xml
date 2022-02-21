@@ -4,22 +4,24 @@
 
 		<control type="group">
 			<visible>Container(9000).HasFocus(1)</visible>
-			<include>SettingsFadeEffect</include>
+<!-- 			<include>SettingsFadeEffect</include> -->
 			<left>470</left>
 			<control type="group">
 				<top>0</top>
 				<left>0</left>
 				<width>1400</width>
 				<height>390</height>
-				<include>ThumbnailItemBackground</include>
-				<control type="image">
-					<top>20</top>
-					<left>20</left>
-					<right>20</right>
-					<height>310</height>
-					<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
-				</control>
+					<include content="ItemBorder">
+						<param name="bottom" value="65" />
+					</include>
+<!-- 				<control type="image"> -->
+<!-- 					<top>20</top> -->
+<!-- 					<left>20</left> -->
+<!-- 					<right>20</right> -->
+<!-- 					<height>310</height> -->
+<!-- 					<texture border="5">overlays/diffuse-overlay.png</texture> -->
+<!--  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible> -->
+<!-- 				</control> -->
                     <control type="grouplist">
                         <left>20</left>
                         <right>20</right>
@@ -143,29 +145,6 @@
 					</control>
 				</control>
 			</control>
-			<control type="image">
-				<visible>Control.HasFocus(300) + !Container(300).IsUpdating</visible>
-				<animation effect="fade" time="320" delay="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<left>10</left>
-				<top>400</top>
-				<width>330</width>
-				<height>370</height>
-				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-				<animation effect="slide" end="350,0" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(300).Column,3)">Conditional</animation>
-				<animation effect="slide" end="350,0" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(300).Column,2)">Conditional</animation>
-				<animation effect="slide" end="350,0" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(300).Column,1)">Conditional</animation>
-				<animation effect="slide" end="350,0" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(300).Column,0)">Conditional</animation>
-			</control>
 			<control type="panel" id="300">
 				<top>390</top>
 				<left>0</left>
@@ -178,10 +157,12 @@
 				<ondown>9000</ondown>
 				<preloaditems>2</preloaditems>
 				<viewtype label="21371">list</viewtype>
-				<scrolltime tween="quadratic" easing="out">300</scrolltime>
+<!-- 				<scrolltime tween="quadratic" easing="out">300</scrolltime> -->
 				<orientation>horizontal</orientation>
 				<itemlayout height="390" width="350">
-					<include>ThumbnailItemBackground</include>
+					<include content="ItemBorder">
+						<param name="bottom" value="65" />
+					</include>
 					<control type="label">
 						<left>20</left>
 						<right>20</right>
@@ -230,7 +211,9 @@
 				</itemlayout>
 
 				<focusedlayout height="390" width="350">
-					<include>ThumbnailItemBackground</include>
+					<include content="ItemFocusBorder">
+						<param name="bottom" value="65" />
+					</include>
 					<control type="label">
 						<left>20</left>
 						<right>20</right>
@@ -264,20 +247,6 @@
 						<font>font15</font>
 						<align>center</align>
 						<label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=ff8de0ff],[/COLOR]]</label>
-					</control>
-					<control type="image">
-						<animation center="auto"
-							condition="Control.HasFocus(300)" easing="inout" effect="fade"
-							end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto"
-							condition="Control.HasFocus(300)" easing="inout" effect="fade"
-							end="100" start="0" time="300" tween="sine">UnFocus</animation>
-						<top>20</top>
-						<left>20</left>
-						<right>20</right>
-						<height>310</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 				</focusedlayout>
 				<content>

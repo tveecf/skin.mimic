@@ -248,7 +248,7 @@
                 <label>186</label>
                 <font>font15_title</font>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
             </control>
             <control type="button" id="5">
                 <description>Apply changes button</description>
@@ -256,7 +256,7 @@
                 <label>14070</label>
                 <font>font15_title</font>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
             </control>
             <control type="button" id="6">
                 <description>Clear button</description>
@@ -264,7 +264,7 @@
                 <label>222</label>
                 <font>font15_title</font>
                 <align>center</align>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
             </control>
         </control>
     </controls>

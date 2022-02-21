@@ -233,7 +233,7 @@
             <height>300</height>
             <texture>black.png</texture>
             <aspectratio>stretch</aspectratio>
-			<bordertexture border="5" colordiffuse="33787878">listselect_fo.png</bordertexture>
+			<bordertexture border="5" colordiffuse="BorderDiffuse">listselect_fo.png</bordertexture>
 			<bordersize>5</bordersize>	
         </control>
 		<control type="videowindow">

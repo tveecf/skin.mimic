@@ -36,7 +36,7 @@
         <align>center</align>
         <font>font12_title</font>
         <textoffsetx>10</textoffsetx>
-        <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+        <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
     </include>
     <!-- KeyBoard -->
     <include name="Objects_KeyOffVars">
@@ -44,7 +44,7 @@
         <align>center</align>
         <font>font15</font>
         <selectedcolor>SelectedColor</selectedcolor>
-        <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+        <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
         <alttexturenofocus colordiffuse="33ffffff" border="5">listselect_fo.png</alttexturenofocus>
     </include>
     <include name="Objects_DoubleKeyOff">
@@ -260,7 +260,9 @@
         </focusedlayout>
     </include>
     <include name="GlobalSearchCommons">
-        <include>ThumbnailItemBackground</include>
+					<include content="ItemBorder">
+						<param name="bottom" value="65" />
+					</include>
         <control type="label">
             <left>20</left>
             <right>20</right>

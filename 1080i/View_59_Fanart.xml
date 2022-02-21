@@ -6,7 +6,7 @@
             <visible>$EXP[isInfoDialog]</visible>
             <include>FullscreenDimensions</include>
             <texture>background.png</texture>
-            <colordiffuse>background</colordiffuse>
+            <colordiffuse>BackgroundColor</colordiffuse>
         </control>
         <control type="group">
             <visible>Control.IsVisible(59) + !$EXP[isInfoDialog]</visible>
@@ -16,7 +16,7 @@
                 <width>FullScreenWidth</width>
                 <height>370</height>
                 <texture>background.png</texture>
-                <colordiffuse>background</colordiffuse>
+                <colordiffuse>ItemDiffuse</colordiffuse>
             </control>
             <control type="fixedlist" id="59">
                 <width>FullScreenWidth</width>

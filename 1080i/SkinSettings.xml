@@ -9,6 +9,16 @@
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu|quicknav)</onunload>
     <controls>
         <include>CommonBackground</include>
+        <control type="image">
+            <include>FullscreenDimensions</include>
+            <texture background="true" fallback="special://skin/backgrounds/default_bg.jpg">$INFO[Skin.String(CustomBackground)]</texture>
+            <fadetime>400</fadetime>
+        </control>
+        <control type="image">
+            <include>FullscreenDimensions</include>
+            <texture>background.png</texture>
+            <colordiffuse>BackgroundColor</colordiffuse>
+        </control>
         <control type="group">
             <left>0</left>
             <top>180</top>

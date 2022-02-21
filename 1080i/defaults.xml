@@ -95,8 +95,8 @@
         <top>0</top>
         <textureup colordiffuse="TitleTextColor">osd/numberpicker_up_normal_holo_dark.png</textureup>
         <texturedown colordiffuse="TitleTextColor">osd/numberpicker_down_normal_holo_dark.png</texturedown>
-        <textureupfocus colordiffuse="background">osd/numberpicker_up_normal_holo_dark.png</textureupfocus>
-        <texturedownfocus colordiffuse="background">osd/numberpicker_down_normal_holo_dark.png</texturedownfocus>
+        <textureupfocus colordiffuse="ItemDiffuse">osd/numberpicker_up_normal_holo_dark.png</textureupfocus>
+        <texturedownfocus colordiffuse="ItemDiffuse">osd/numberpicker_down_normal_holo_dark.png</texturedownfocus>
         <textureupdisabled colordiffuse="DisabledColor">osd/numberpicker_up_normal_holo_dark.png</textureupdisabled>
         <texturedowndisabled colordiffuse="DisabledColor">osd/numberpicker_down_normal_holo_dark.png</texturedowndisabled>
         <align>right</align>
@@ -123,8 +123,8 @@
         <texturefocus border="5">listselect_fo.png</texturefocus>
         <textureup colordiffuse="TitleTextColor">osd/numberpicker_up_normal_holo_dark.png</textureup>
         <texturedown colordiffuse="TitleTextColor">osd/numberpicker_down_normal_holo_dark.png</texturedown>
-        <textureupfocus colordiffuse="background">osd/numberpicker_up_normal_holo_dark.png</textureupfocus>
-        <texturedownfocus colordiffuse="background">osd/numberpicker_down_normal_holo_dark.png</texturedownfocus>
+        <textureupfocus colordiffuse="ItemDiffuse">osd/numberpicker_up_normal_holo_dark.png</textureupfocus>
+        <texturedownfocus colordiffuse="ItemDiffuse">osd/numberpicker_down_normal_holo_dark.png</texturedownfocus>
         <textureupdisabled colordiffuse="DisabledColor">osd/numberpicker_up_normal_holo_dark.png</textureupdisabled>
         <texturedowndisabled colordiffuse="DisabledColor">osd/numberpicker_down_normal_holo_dark.png</texturedowndisabled>
         <font>font14</font>

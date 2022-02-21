@@ -223,7 +223,7 @@
                     <align>center</align>
                     <width>464</width>
                     <label />
-                    <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                    <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 </control>
                 <control type="button" id="7">
                     <description>Cancel button</description>
@@ -231,7 +231,7 @@
                     <align>center</align>
                     <width>464</width>
                     <label>222</label>
-                    <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                    <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 </control>
             </control>
             <control type="scrollbar" id="60">

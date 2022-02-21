@@ -17,7 +17,7 @@
         <control type="image">
             <include>FullscreenDimensions</include>
             <texture>background.png</texture>
-            <colordiffuse>background</colordiffuse>
+            <colordiffuse>BackgroundColor</colordiffuse>
         </control>
         <control type="group">
             <visible>Control.IsVisible(655)</visible>
@@ -108,16 +108,6 @@
                             <height>384</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture fallback="DefaultFallback.png" background="true" diffuse="diffuse/infowall-poster.png">$VAR[PosterVar]</texture>
-                        </control>
-                        <control type="image">
-                            <animation center="auto" condition="Control.HasFocus(655)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                            <animation center="auto" condition="Control.HasFocus(655)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                            <top>6</top>
-                            <left>6</left>
-                            <width>256</width>
-                            <height>384</height>
-                            <texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                         </control>
                         <control type="group">
                             <visible>ListItem.IsSelected</visible>

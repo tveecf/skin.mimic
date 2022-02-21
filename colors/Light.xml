@@ -1,17 +1,20 @@
 <colors>
-	<color name="TitleTextColor" >FF900030</color>
-	<color name="NormalTextColor">FF300000</color>
-	<color name="AltTextColor"   >FF600020</color>
-	<color name="LabelTextColor" >FF404000</color>
-	<color name="FocusColor"     >FFA9A979</color>	
-	<color name="SelectedColor"  >FFA0A060</color>	
-	<color name="DisabledColor"  >FFA0A0A0</color>
-	<color name="black"          >FF000000</color>
-	<color name="invalid"        >FFC0C0C0</color>
-	<color name="shadow"         >AA303030</color>
-	<color name="background"     >D0FFFFE6</color>
-	<color name="dialog"         >FFEFEFCF</color>
-	<color name="white11"        >FFEEEEEE</color>
-	<color name="blue"           >FF6DB9E5</color>
+	<color name="TitleTextColor"   >FF900030</color>
+	<color name="NormalTextColor"  >FF300000</color>
+	<color name="AltTextColor"     >FF600020</color>
+	<color name="LabelTextColor"   >FF404000</color>
+	<color name="FocusColor"       >FFE9E9BC</color>	
+	<color name="SelectedColor"    >FFC0C090</color>	
+	<color name="DisabledColor"    >FFA0A0A0</color>
+	<color name="black"            >FF000000</color>
+	<color name="invalid"          >FFC0C0C0</color>
+	<color name="shadow"           >AA303030</color>
+<!-- 	<color name="ItemDiffuse"     >FFE9E9B9</color> -->
+	<color name="ItemDiffuse"      >DDCCCCBB</color>
+    <color name="BorderDiffuse"    >88AFAF9F</color>
+    <color name="BackgroundColor"  >EAFFFFE6</color>
+	<color name="dialog"           >FFEFEFCF</color>
+	<color name="white11"          >FFEEEEEE</color>
+	<color name="blue"             >FF6DB9E5</color>
 </colors>
  

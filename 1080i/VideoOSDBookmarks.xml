@@ -89,16 +89,6 @@
                         <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
                     </control>
                     <control type="image">
-                        <animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                        <animation center="auto" condition="Control.HasFocus(11)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                        <top>6</top>
-                        <left>6</left>
-                        <width>362</width>
-                        <height>210</height>
-                        <texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
-                    </control>
-                    <control type="image">
                         <top>166</top>
                         <left>6</left>
                         <width>362</width>

@@ -37,7 +37,9 @@
                 <scrolltime tween="quadratic" easing="out">300</scrolltime>
                 <orientation>vertical</orientation>
                 <itemlayout height="390" width="350">
-                    <include>ThumbnailItemBackground</include>
+					<include content="ItemBorder">
+						<param name="bottom" value="65" />
+					</include>
                     <control type="label">
                         <left>20</left>
                         <right>20</right>
@@ -64,7 +66,9 @@
                 </itemlayout>
 
                 <focusedlayout height="390" width="350">
-                    <include>ThumbnailItemBackground</include>
+					<include content="ItemFocusBorder">
+						<param name="bottom" value="65" />
+					</include>
                     <control type="label">
                         <left>20</left>
                         <right>20</right>
@@ -79,16 +83,6 @@
                         <height>310</height>
                         <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
                         <texture background="true" fallback="DefaultIconProfile.png" diffuse="diffuse/thumbnail.png">$VAR[ProfileIconVar]</texture>
-                    </control>
-                    <control type="image">
-                        <animation center="auto" condition="Control.HasFocus(2)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                        <animation center="auto" condition="Control.HasFocus(2)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                        <top>20</top>
-                        <left>20</left>
-                        <right>20</right>
-                        <height>310</height>
-                        <texture border="5">overlays/diffuse-overlay.png</texture>
-  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                     </control>
                 </focusedlayout>
             </control>

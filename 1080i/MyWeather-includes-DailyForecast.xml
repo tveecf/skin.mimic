@@ -3,31 +3,11 @@
 	<include name="DailyForecast">
 		<control type="group">
 			<visible>Container(9000).HasFocus(2)</visible>
-			<include>SettingsFadeEffect</include>
+<!-- 			<include>SettingsFadeEffect</include> -->
 			<left>470</left>
 			<top>0</top>
 			<width>1400</width>
 			<height>780</height>
-			<control type="image">
-				<visible>Control.HasFocus(301) + !Container(301).IsUpdating</visible>
-				<animation effect="fade" time="320" delay="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<left>10</left>
-				<top>10</top>
-				<width>680</width>
-				<height>240</height>
-				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
-				<animation effect="slide" end="0,260" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(301).Row,1)">Conditional</animation>
-				<animation effect="slide" end="0,260" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(301).Row,0)">Conditional</animation>
-				<animation effect="slide" end="700,0" time="300"
-					tween="cubic" easing="inout"
-					condition="Integer.IsGreater(Container(301).Column,0)">Conditional</animation>
-			</control>
 
 			<control type="panel" id="301">
 				<left>0</left>
@@ -40,20 +20,9 @@
 				<orientation>vertical</orientation>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<itemlayout height="260" width="700">
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<right>10</right>
-						<bottom>10</bottom>
-						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
-					</control>
-					<control type="image">
-						<left>20</left>
-						<top>20</top>
-						<right>20</right>
-						<height>180</height>
-						<texture colordiffuse="background" border="5">thumbnail_bg.png</texture>
-					</control>
+					<include content="ItemBorder">
+						<param name="bottom" value="65" />
+					</include>
 					<control type="label">
 						<left>20</left>
 						<right>20</right>
@@ -118,20 +87,9 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="260" width="700">
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<right>10</right>
-						<bottom>10</bottom>
-						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
-					</control>
-					<control type="image">
-						<left>20</left>
-						<top>20</top>
-						<right>20</right>
-						<height>180</height>
-						<texture colordiffuse="background" border="5">thumbnail_bg.png</texture>
-					</control>
+					<include content="ItemFocusBorder">
+						<param name="bottom" value="65" />
+					</include>
 					<control type="label">
 						<left>20</left>
 						<right>20</right>
@@ -180,20 +138,6 @@
 						<font>font15</font>
 						<align>right</align>
 						<label>$INFO[ListItem.Property(WindDirection)]</label>
-					</control>
-					<control type="image">
-						<animation center="auto"
-							condition="Control.HasFocus(301)" easing="inout" effect="fade"
-							end="0" start="100" time="300" tween="sine">Focus</animation>
-						<animation center="auto"
-							condition="Control.HasFocus(301)" easing="inout" effect="fade"
-							end="100" start="0" time="300" tween="sine">UnFocus</animation>
-						<top>20</top>
-						<left>20</left>
-						<right>20</right>
-						<height>180</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 				</focusedlayout>
 				<content>

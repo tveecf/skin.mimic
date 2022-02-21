@@ -9,7 +9,7 @@
 				<top>600</top>
 				<width>FullScreenWidth</width>
 				<height>651</height>
-				<colordiffuse>background</colordiffuse>
+				<colordiffuse>ItemDiffuse</colordiffuse>
 				<texture>background.png</texture>
 			</control>
 			<control type="group">
@@ -329,7 +329,7 @@
 				<width>FullScreenWidth</width>
 				<height>485</height>
 				<texture>background.png</texture>
-				<colordiffuse>background</colordiffuse>
+				<colordiffuse>ItemDiffuse</colordiffuse>
 			</control>
 			<control type="group">
 				<visible>!Container.Content(addons)</visible>
@@ -721,7 +721,7 @@
 				<width>FullScreenWidth</width>
 				<height>485</height>
 				<texture>background.png</texture>
-				<colordiffuse>background</colordiffuse>
+				<colordiffuse>ItemDiffuse</colordiffuse>
 			</control>
 			<control type="group">
 				<left>30</left>

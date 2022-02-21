@@ -144,7 +144,7 @@
                         <label>19687</label>
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="5">
                         <description>Switch button</description>
@@ -153,7 +153,7 @@
                         <label>19165</label>
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="9">
                         <description>Add timer button</description>
@@ -162,7 +162,7 @@
                         <label>19061</label>
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="6">
                         <description>Record button</description>
@@ -171,7 +171,7 @@
                         <label />
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
                     </control>
                <control type="button" id="7">
                     <description>Cancel button</description>
@@ -179,7 +179,7 @@
                     <label>222</label>
                     <font>font15_title</font>
                     <align>center</align>
-                    <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                    <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
                 </control>
         
                     

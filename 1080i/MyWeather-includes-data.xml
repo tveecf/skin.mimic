@@ -129,10 +129,13 @@
         <onclick>ActivateWindow(weather)</onclick>
         <preloaditems>2</preloaditems>
         <viewtype label="21371">list</viewtype>
-        <scrolltime tween="quadratic" easing="out">300</scrolltime>
+<!--         <scrolltime tween="quadratic" easing="out">300</scrolltime> -->
         <orientation>horizontal</orientation>
+
         <itemlayout height="390" width="350">
-            <include>ThumbnailItemBackground</include>
+					<include content="ItemBorder">
+						<param name="bottom" value="65" />
+					</include>
             <control type="label">
                 <left>20</left>
                 <right>20</right>
@@ -179,7 +182,10 @@
         </itemlayout>
 
         <focusedlayout height="390" width="350">
-            <include>ThumbnailItemBackground</include>
+					<include content="ItemFocusBorder">
+						<param name="bottom" value="65" />
+					</include>
+            
             <control type="label">
                 <left>20</left>
                 <right>20</right>
@@ -212,16 +218,6 @@
                 <font>font15</font>
                 <align>center</align>
                 <label>$INFO[ListItem.Property(HighTemperature),[COLOR=HighTemp],[/COLOR]]$INFO[ListItem.Property(LowTemperature), [COLOR=LowTemp],[/COLOR]]</label>
-            </control>
-            <control type="image">
-                <animation center="auto" condition="Control.HasFocus($PARAM[id])" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                <animation center="auto" condition="Control.HasFocus($PARAM[id])" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                <top>20</top>
-                <left>20</left>
-                <right>20</right>
-                <height>310</height>
-                <texture border="5">overlays/diffuse-overlay.png</texture>
-  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
             </control>
         </focusedlayout>
 				<content>

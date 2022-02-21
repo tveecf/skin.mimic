@@ -17,7 +17,7 @@
             <description>Overlay</description>
             <include>FullscreenDimensions</include>
             <texture>background.png</texture>
-            <colordiffuse>background</colordiffuse>
+            <colordiffuse>BackgroundColor</colordiffuse>
         </control>
         <control type="group">
             <control type="mover" id="8">

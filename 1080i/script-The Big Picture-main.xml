@@ -10,7 +10,7 @@
         <control type="image">
             <include>FullscreenDimensions</include>
             <texture>background.png</texture>
-            <colordiffuse>background</colordiffuse>
+            <colordiffuse>BackgroundColor</colordiffuse>
         </control>
         <control type="label" id="104">
             <description>Arrows visibility-controller</description>
@@ -121,7 +121,7 @@
                 <width>FullScreenWidth</width>
                 <height>230</height>
                 <texture>background.png</texture>
-                <colordiffuse>background</colordiffuse>
+                <colordiffuse>ItemDiffuse</colordiffuse>
             </control>
             <control type="textbox">
                 <description>Description text</description>
