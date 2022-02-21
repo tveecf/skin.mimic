@@ -70,7 +70,7 @@
                 <itemlayout height="390" width="350" condition="Skin.HasSetting(Enable.SettingsPanelView)">
                     <control type="group">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
                         <control type="label">
                             <left>20</left>
@@ -100,7 +100,7 @@
                 <focusedlayout height="390" width="350" condition="Skin.HasSetting(Enable.SettingsPanelView)">
                     <control type="group">
 					<include content="ItemFocusBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
                         <control type="label">
                             <left>20</left>

@@ -12,7 +12,6 @@
 				<width>1400</width>
 				<height>390</height>
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
 					</include>
 <!-- 				<control type="image"> -->
 <!-- 					<top>20</top> -->
@@ -161,7 +160,7 @@
 				<orientation>horizontal</orientation>
 				<itemlayout height="390" width="350">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -212,7 +211,7 @@
 
 				<focusedlayout height="390" width="350">
 					<include content="ItemFocusBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>

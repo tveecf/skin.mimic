@@ -261,7 +261,6 @@
     </include>
     <include name="GlobalSearchCommons">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
 					</include>
         <control type="label">
             <left>20</left>

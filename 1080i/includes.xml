@@ -1543,7 +1543,7 @@
 	</include>
 
 	<include name="ItemBorder">
-		<param name="bottom" default="20"/>
+		<param name="bottom" default="60"/>
 		<definition>
 			<control type="image">
 				<left>10</left>
@@ -1563,7 +1563,7 @@
 	</include>
 
 	<include name="ItemFocusBorder">
-		<param name="bottom" default="20"/>
+		<param name="bottom" default="60"/>
 		<definition>
 			<control type="image">
 				<texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>

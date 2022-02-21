@@ -20,7 +20,6 @@
 				<!-- <scrolltime tween="quadratic" easing="out">200</scrolltime> -->
 				<itemlayout height="780" width="467">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -60,7 +59,7 @@
 				</itemlayout>
 				<focusedlayout height="780" width="467">
 					<include content="ItemFocusBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>

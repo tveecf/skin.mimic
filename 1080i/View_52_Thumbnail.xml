@@ -61,7 +61,7 @@
 				<orientation>vertical</orientation>
 				<itemlayout height="390" width="350" condition="!Container.Content(episodes)">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -129,7 +129,7 @@
 				</itemlayout>
 				<focusedlayout height="390" width="350" condition="!Container.Content(episodes)">
 					<include content="ItemFocusBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -189,7 +189,7 @@
 				</focusedlayout>
 				<itemlayout height="260" width="350" condition="Container.Content(episodes)">
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -230,7 +230,7 @@
 				</itemlayout>
 				<focusedlayout height="260" width="350" condition="Container.Content(episodes)">
 					<include content="ItemfocusBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
 					<control type="label">
 						<left>20</left>

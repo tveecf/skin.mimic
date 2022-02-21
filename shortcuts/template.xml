@@ -137,7 +137,7 @@
                     <height>390</height>
                     <top>370</top>
 					<include content="ItemBorder">
-						<param name="bottom" value="65" />
+						
 					</include>
                     <control type="image">
                         <top>20</top>
