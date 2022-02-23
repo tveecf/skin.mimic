@@ -6,7 +6,7 @@
 * big overhaul of color schemes, enable some more flexibility (allow scheme to 
 	differentiate between the focus highlight color, title color, normal text 
 	color, alt-color, and label colors, instead of just "normal" and "hilight")
-* add grey color scheme (user request)
+* weather screen updates
 
 
 7.0.2

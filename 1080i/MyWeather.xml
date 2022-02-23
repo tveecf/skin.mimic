@@ -6,6 +6,9 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
+	<onunload>Skin.Reset(Weather.Zoom.Detailed)</onunload>
+	<onunload>Skin.Reset(Weather.Zoom.Alert)</onunload>
+	
 	<allowoverlay>no</allowoverlay>
 
 	<include file="MyWeather-includes-data.xml" />
