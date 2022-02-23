@@ -17,6 +17,9 @@
 				<onup>307</onup>
 				<ondown>307</ondown>
 				<onleft>9000</onleft>
+				<onclick>Skin.ToggleSetting(Weather.Zoom.Detailed)</onclick>
+				<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+				<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
 				<orientation>vertical</orientation>
 <!-- 				<scrolltime tween="quadratic" easing="out">200</scrolltime> -->
 				<itemlayout height="360" width="1400">
@@ -80,6 +83,13 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="360" width="1400">
+					<control type="button" id="3061">
+						<visible>false</visible>
+						<description>Dummy object to catch focus so we can clear property</description>
+						<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+						<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
+					</control>
+				
 					<include content="ItemFocusBorder">
 						<param name="bottom" value="20" />
 					</include>

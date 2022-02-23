@@ -9,7 +9,7 @@
 	<color name="black">FF000000</color>
 	<color name="invalid">FFFF6666</color>
 	<color name="shadow">AA333333</color>
-	<color name="ItemDiffuse">AA030100</color>
+	<color name="ItemDiffuse">CC030001</color>
     <color name="BackgroundColor">C0030100</color>
     <color name="BorderDiffuse">DDA00010</color>
 	<color name="dialog">FF000000</color>

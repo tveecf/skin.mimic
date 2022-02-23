@@ -145,6 +145,9 @@
 					<onback>9000</onback>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
+					<onclick>Skin.ToggleSetting(Weather.Zoom.Detailed)</onclick>
+					<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+					<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
 					<preloaditems>2</preloaditems>
 					<viewtype label="21371">list</viewtype>
 					<scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -199,8 +202,13 @@
 					</itemlayout>
 
 					<focusedlayout height="390" width="350">
+					<control type="button" id="3063">
+						<visible>false</visible>
+						<description>Dummy object to catch focus so we can clear property</description>
+						<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+						<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
+					</control>
 					<include content="ItemFocusBorder">
-						
 					</include>
 						<control type="label">
 							<left>20</left>
@@ -318,20 +326,19 @@
 			</control>
 		</control>
 		
-		<control type="image">
-			<left>1240</left>
-			<top>785</top>
-			<width>500</width>
-			<height>50</height>
-			<aspectratio align="right" aligny="center">keep</aspectratio>
-			<texture background="true" colordiffuse="33ffffff">$INFO[Window.Property(WeatherProviderLogo)]</texture>
-		</control>
+<!-- 		<control type="image"> -->
+<!-- 			<left>1240</left> -->
+<!-- 			<top>785</top> -->
+<!-- 			<width>500</width> -->
+<!-- 			<height>50</height> -->
+<!-- 			<aspectratio align="right" aligny="center">keep</aspectratio> -->
+<!-- 			<texture background="true" colordiffuse="33ffffff">$INFO[Window.Property(WeatherProviderLogo)]</texture> -->
+<!-- 		</control> -->
 		<control type="button" id="9000">
 			<include>HiddenObject</include>
 			<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,True,home)</onleft>
 			<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetFocus(9050)</onleft>
 		</control>
 	</control>
- 
 	</include>
 </includes>

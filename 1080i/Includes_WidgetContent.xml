@@ -3,17 +3,18 @@
 	<include file="Includes_GenreIcons.xml" />
 
 	<include name="WidgetBusyAnimation">
-		<control type="image" id="12345">
-			<visible>Control.IsVisible($PARAM[id]) + Container($PARAM[id]).IsUpdating</visible>
-			<description>Busy animation</description>
-			<top>30</top>
-			<left>30</left>
-			<width>60</width>
-			<height>60</height>
-			<texture colordiffuse="TitleTextColor" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
-			<aspectratio>keep</aspectratio>
-			<animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
-		</control>
+<!-- GETS STUCK INVISIBLY RUNNING AND BECOMES CPU HOG -->
+<!-- 		<control type="image" id="12345"> -->
+<!-- 		<visible>Control.IsVisible($PARAM[id]) + Container($PARAM[id]).IsUpdating</visible> -->
+<!-- 		<description>Busy animation</description> -->
+<!-- 		<top>30</top> -->
+<!-- 		<left>30</left> -->
+<!-- 		<width>60</width> -->
+<!-- 		<height>60</height> -->
+<!-- 		<texture colordiffuse="TitleTextColor" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture> -->
+<!-- 		<aspectratio>keep</aspectratio> -->
+<!-- 		<animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation> -->
+<!-- 		</control> -->
 	</include>
 	<include name="WidgetContents">
 		<left>$PARAM[left]</left>
@@ -42,8 +43,7 @@
    | String.IsEqual(ListItem.DBTYPE,album)
    | String.IsEqual(ListItem.DBTYPE,tvshow)
   ]
-">
-			activatewindow(videos,$INFO[ListItem.FolderPath])</onclick>
+">activatewindow(videos,$INFO[ListItem.FolderPath])</onclick>
 
 		<onclick
 			condition="
@@ -61,8 +61,7 @@
    | String.IsEqual(ListItem.DBTYPE,artist)
    | String.IsEqual(ListItem.DBTYPE,album)
   ]
-">
-			activatewindow(music,$INFO[ListItem.FolderPath])</onclick>
+">activatewindow(music,$INFO[ListItem.FolderPath])</onclick>
 
 		<onback>9000</onback>
 		<preloaditems>2</preloaditems>
@@ -70,12 +69,13 @@
 		<!-- <scrolltime tween="quadratic" easing="out">300</scrolltime> -->
 		<orientation>$PARAM[orientation]</orientation>
 		<visible>!IsEmpty(Container(9000).ListItem.Property(widgetPath)) + !String.IsEqual(Container(9000).ListItem.Property(widget),weather) +
-			!String.IsEqual(Container(9000).ListItem.Property(widget),settings)</visible>
+			!String.IsEqual(Container(9000).ListItem.Property(widget),settings)
+		</visible>
 
 		<itemlayout height="390" width="350"
 			condition="[String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + ![String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]] | String.IsEmpty(Container(9000).ListItem.Property(widgetIcon))">
-					<include content="ItemBorder">
-					</include>
+			<include content="ItemBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -115,9 +115,9 @@
 
 		<focusedlayout height="390" width="350"
 			condition="[String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + ![String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]] | String.IsEmpty(Container(9000).ListItem.Property(widgetIcon))">
-					<include content="ItemFocusBorder">
-						
-					</include>
+			<include content="ItemFocusBorder">
+
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -148,8 +148,8 @@
 
 		<itemlayout height="260" width="350"
 			condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088]) | [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + [String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]]">
-					<include content="ItemBorder">
-					</include>
+			<include content="ItemBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -198,9 +198,9 @@
 
 		<focusedlayout height="260" width="350"
 			condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088]) | [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + [String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]]">
-					<include content="ItemFocusBorder">
-						
-					</include>
+			<include content="ItemFocusBorder">
+
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -240,8 +240,8 @@
 
 		<itemlayout height="390" width="700"
 			condition="!Skin.HasSetting(Enable.HorizontalMenu) + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])">
-					<include content="ItemBorder">
-					</include>
+			<include content="ItemBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -299,9 +299,9 @@
 		</itemlayout>
 		<focusedlayout height="390" width="700"
 			condition="!Skin.HasSetting(Enable.HorizontalMenu) + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])">
-					<include content="ItemFocusBorder">
-						
-					</include>
+			<include content="ItemFocusBorder">
+
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -349,8 +349,8 @@
 
 		<itemlayout height="390" width="875"
 			condition="Skin.HasSetting(Enable.HorizontalMenu) + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])">
-					<include content="ItemBorder">
-					</include>
+			<include content="ItemBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -406,9 +406,9 @@
 		<focusedlayout height="390" width="875"
 			condition="Skin.HasSetting(Enable.HorizontalMenu) + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])">
 
-					<include content="ItemFocusBorder">
-						
-					</include>
+			<include content="ItemFocusBorder">
+
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -458,8 +458,6 @@
 	<!-- weather widget moved to weather include -->
 	<include file="MyWeather-includes-data.xml" />
 
-
-
 	<include name="SettingsWidgetContents">
 		<visible>String.IsEqual(Container(9000).ListItem.Property(widget),settings)</visible>
 		<top>0</top>
@@ -476,8 +474,8 @@
 		<scrolltime tween="quadratic" easing="out">300</scrolltime>
 
 		<itemlayout height="260" width="350" condition="!Skin.HasSetting(Enable.HorizontalMenu)">
-					<include content="ItemBorder">
-					</include>
+			<include content="ItemBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -506,10 +504,8 @@
 		</itemlayout>
 
 		<focusedlayout height="260" width="350" condition="!Skin.HasSetting(Enable.HorizontalMenu)">
-
-					<include content="ItemFocusBorder">
-						
-					</include>
+			<include content="ItemFocusBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -528,8 +524,8 @@
 		</focusedlayout>
 
 		<itemlayout height="390" width="350" condition="Skin.HasSetting(Enable.HorizontalMenu)">
-					<include content="ItemBorder">
-					</include>
+			<include content="ItemBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>
@@ -557,9 +553,8 @@
 		</itemlayout>
 
 		<focusedlayout height="390" width="350" condition="Skin.HasSetting(Enable.HorizontalMenu)">
-					<include content="ItemFocusBorder">
-						
-					</include>
+			<include content="ItemFocusBorder">
+			</include>
 			<control type="label">
 				<left>20</left>
 				<right>20</right>

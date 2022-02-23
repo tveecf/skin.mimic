@@ -3,7 +3,7 @@
 	<include name="DailyForecast">
 		<control type="group">
 			<visible>Container(9000).HasFocus(2)</visible>
-<!-- 			<include>SettingsFadeEffect</include> -->
+			<!-- <include>SettingsFadeEffect</include> -->
 			<left>470</left>
 			<top>0</top>
 			<width>1400</width>
@@ -17,11 +17,14 @@
 				<onup>301</onup>
 				<ondown>301</ondown>
 				<onleft>9000</onleft>
+				<onclick>Skin.ToggleSetting(Weather.Zoom.Detailed)</onclick>
+				<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+				<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
+
 				<orientation>vertical</orientation>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<itemlayout height="260" width="700">
 					<include content="ItemBorder">
-						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -83,12 +86,18 @@
 						<right>20</right>
 						<height>180</height>
 						<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
+						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="260" width="700">
+					<control type="button" id="3060">
+						<visible>false</visible>
+						<description>Dummy object to catch focus so we can clear property</description>
+						<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+						<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
+					</control>
+
 					<include content="ItemFocusBorder">
-						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -139,11 +148,14 @@
 						<align>right</align>
 						<label>$INFO[ListItem.Property(WindDirection)]</label>
 					</control>
+
+
+
 				</focusedlayout>
 				<content>
 					<item>
 						<label>$LOCALIZE[31909]</label>
-						<icon/>
+						<icon />
 						<visible>String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
 					<include content="weather-daily-item">
@@ -222,5 +234,6 @@
 				</content>
 			</control>
 		</control>
+
 	</include>
 </includes>

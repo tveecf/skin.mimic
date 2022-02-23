@@ -1550,7 +1550,8 @@
 				<top>10</top>
 				<right>10</right>
 				<bottom>10</bottom>
-				<texture colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texture>
+<!-- 				<texture colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texture> -->
+				<texture colordiffuse="BorderDiffuse" border="5">background.png</texture>
 			</control>
 			<control type="image">
 				<left>20</left>

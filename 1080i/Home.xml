@@ -61,5 +61,6 @@
             <font>font16</font>
             <wrapmultiline>true</wrapmultiline>
         </control>
+		<include>weather-details-zoom</include>
     </controls>
 </window>

@@ -4,46 +4,46 @@
 
 		<control type="group">
 			<visible>Container(9000).HasFocus(1)</visible>
-<!-- 			<include>SettingsFadeEffect</include> -->
+			<!-- <include>SettingsFadeEffect</include> -->
 			<left>470</left>
 			<control type="group">
 				<top>0</top>
 				<left>0</left>
 				<width>1400</width>
 				<height>390</height>
-					<include content="ItemBorder">
-					</include>
-<!-- 				<control type="image"> -->
-<!-- 					<top>20</top> -->
-<!-- 					<left>20</left> -->
-<!-- 					<right>20</right> -->
-<!-- 					<height>310</height> -->
-<!-- 					<texture border="5">overlays/diffuse-overlay.png</texture> -->
-<!--  						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible> -->
-<!-- 				</control> -->
-                    <control type="grouplist">
-                        <left>20</left>
-                        <right>20</right>
-                        <top>327</top>
-                        <height>50</height>
-                        <orientation>horizontal</orientation>
-                        <control type="label">
-                            <width>auto</width>
-                            <font>font13</font>
-                            <label>$LOCALIZE[31204]</label>
-                        </control>
-                        <control type="label">
-                            <width>auto</width>
-                            <font>font13</font>
-                            <label> $LOCALIZE[19107] </label>
-                            <visible>!String.IsEmpty(Window(weather).Property(Location))</visible>
-                        </control>
-                        <control type="label">
-                            <width>auto</width>
-                            <font>font13</font>
-                            <label>$INFO[Window(weather).Property(Location)]</label>
-                        </control>
-                    </control>
+				<include content="ItemBorder">
+				</include>
+				<!-- <control type="image"> -->
+				<!-- <top>20</top> -->
+				<!-- <left>20</left> -->
+				<!-- <right>20</right> -->
+				<!-- <height>310</height> -->
+				<!-- <texture border="5">overlays/diffuse-overlay.png</texture> -->
+				<!-- <visible>Skin.HasSetting(Enable.HighlightFocused)</visible> -->
+				<!-- </control> -->
+				<control type="grouplist">
+					<left>20</left>
+					<right>20</right>
+					<top>327</top>
+					<height>50</height>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<width>auto</width>
+						<font>font13</font>
+						<label>$LOCALIZE[31204]</label>
+					</control>
+					<control type="label">
+						<width>auto</width>
+						<font>font13</font>
+						<label> $LOCALIZE[19107] </label>
+						<visible>!String.IsEmpty(Window(weather).Property(Location))</visible>
+					</control>
+					<control type="label">
+						<width>auto</width>
+						<font>font13</font>
+						<label>$INFO[Window(weather).Property(Location)]</label>
+					</control>
+				</control>
 
 				<!-- weather icon when weather addon provies remote image -->
 				<control type="image">
@@ -60,11 +60,10 @@
 					<top>40</top>
 					<height>270</height>
 					<visible>!Skin.HasSetting(Enable.RemoteWeatherIcons)</visible>
-					<aspectratio scalediffuse="false" align="left"
-						aligny="center">keep</aspectratio>
+					<aspectratio scalediffuse="false" align="left" aligny="center">keep</aspectratio>
 					<texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
 				</control>
-				
+
 				<control type="grouplist">
 					<top>0</top>
 					<left>350</left>
@@ -86,15 +85,15 @@
 					</control>
 					<control type="label">
 						<description>weather alert</description>
-						<width>auto</width>	
+						<width>auto</width>
 						<left>270</left>
 						<height>216</height>
 						<font>font16</font>
-						<label>  [COLOR=Alert]$LOCALIZE[90916][/COLOR]</label>
+						<label> [COLOR=Alert]$LOCALIZE[90916][/COLOR]</label>
 						<visible>!String.IsEmpty(Window(weather).Property(Alerts.IsFetched))</visible>
 					</control>
 				</control>
-				
+
 				<control type="label">
 					<description>current condition label</description>
 					<top>210</top>
@@ -154,13 +153,16 @@
 				<onback>9000</onback>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
+				<onclick>Skin.ToggleSetting(Weather.Zoom.Detailed)</onclick>
+				<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+				<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
 				<preloaditems>2</preloaditems>
 				<viewtype label="21371">list</viewtype>
-<!-- 				<scrolltime tween="quadratic" easing="out">300</scrolltime> -->
+				<!-- <scrolltime tween="quadratic" easing="out">300</scrolltime> -->
 				<orientation>horizontal</orientation>
 				<itemlayout height="390" width="350">
 					<include content="ItemBorder">
-						
+
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -175,8 +177,7 @@
 						<top>72</top>
 						<right>75</right>
 						<height>180</height>
-						<aspectratio scalediffuse="false" align="center"
-							aligny="center">keep</aspectratio>
+						<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
@@ -205,13 +206,19 @@
 						<right>20</right>
 						<height>310</height>
 						<texture border="5">overlays/diffuse-overlay.png</texture>
- 						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
+						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
 					</control>
 				</itemlayout>
 
 				<focusedlayout height="390" width="350">
+					<control type="button" id="3062">
+						<visible>false</visible>
+						<description>Dummy object to catch focus so we can clear property</description>
+						<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
+						<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
+					</control>
+
 					<include content="ItemFocusBorder">
-						
 					</include>
 					<control type="label">
 						<left>20</left>
@@ -225,8 +232,7 @@
 						<top>72</top>
 						<right>75</right>
 						<height>180</height>
-						<aspectratio scalediffuse="false" align="center"
-							aligny="center">keep</aspectratio>
+						<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
@@ -249,81 +255,65 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<!-- try to get Daily info, but if that is not available, fetch Day 
-						info as a backup -->
+					<!-- try to get Daily info, but if that is not available, fetch Day info as a backup -->
 					<item>
 						<label>$LOCALIZE[31909]</label>
 						<icon />
 						<visible>String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="1" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="2" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="3" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="4" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="5" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="6" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="7" />
 					</include>
-					<include content="weather-daily-item"
-						condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-daily-item" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="8" />
 					</include>
 
 
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="0" />
-				    </include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
-							<param name="index" value="1" />
 					</include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+						<param name="index" value="1" />
+					</include>
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="2" />
 					</include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="3" />
 					</include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="4" />
 					</include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="5" />
 					</include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="6" />
 					</include>
-					<include content="weather-day-item"
-						condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+					<include content="weather-day-item" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 						<param name="index" value="7" />
 					</include>
 
 				</content>
+
 			</control>
 		</control>
 	</include>
