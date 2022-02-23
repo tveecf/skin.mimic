@@ -5,12 +5,10 @@
 
 		<!-- zoom Dialog background -->
 		<control type="image">
-			<visible>Skin.HasSetting(Weather.Zoom.Detailed) + !String.IsEmpty(ListItem.Property(DetailedOutlook))</visible>
+			<visible>Skin.HasSetting(Weather.Zoom.Detailed) + !String.IsEmpty(Window(weather).Property(Detailed.IsFetched))</visible>
 			<include>FullscreenDimensions</include>
 			<texture border="5">overlays/diffuse-overlay.png</texture>
 		</control>
-
-
 
 		<control type="group">
 			<width>1400</width>
@@ -18,7 +16,7 @@
 			<top>240</top>
 			<left>260</left>
 
-			<visible>Skin.HasSetting(Weather.Zoom.Detailed) + !String.IsEmpty(ListItem.Property(DetailedOutlook))</visible>
+			<visible>Skin.HasSetting(Weather.Zoom.Detailed) + !String.IsEmpty(Window(weather).Property(Detailed.IsFetched))</visible>
 			<include content="ItemFocusBorder">
 				<param name="bottom" value="20" />
 			</include>
@@ -95,7 +93,6 @@
 			<texture border="5">overlays/diffuse-overlay.png</texture>
 		</control>
 
-
 		<control type="group">
 			<width>1400</width>
 			<height>1000</height>
@@ -128,8 +125,6 @@
 		</control>
 	</include>
 
-
-
 	<include name="weather-alert-item">
 		<param name="index" />
 		<definition>
@@ -149,9 +144,9 @@
 		<definition>
 			<item>
 				<label>$INFO[Window(weather).Property(Daily.$PARAM[index].LongDay)] ($INFO[Window(weather).Property(Daily.$PARAM[index].ShortDate)])</label>
-				<label2>$INFO[Window(weather).Property(Daily.$PARAM[index].ShortOutlook)]</label2>
+				<label2>$INFO[Window(weather).Property(Daily.$PARAM[index].Outlook)]</label2>
 				<icon>$INFO[Window(weather).Property(Daily.$PARAM[index].RemoteIcon)]</icon>
-				<property name="DetailedOutlook">$INFO[Window(weather).Property(Daily.$PARAM[index].Outlook)]</property>
+				<property name="DetailedOutlook">$INFO[Window(weather).Property(Daily.$PARAM[index].DetailedOutlook)]</property>
 				<property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[index].HighTemperature)]</property>
 				<property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[index].LowTemperature)]</property>
 				<property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[index].Precipitation)]</property>
@@ -161,9 +156,9 @@
 			</item>
 			<item>
 				<label>$INFO[Window(weather).Property(Daily.$PARAM[index].LongDay)] $INFO[Window(weather).Property(Daily.$PARAM[index].ShortDate)]</label>
-				<label2>$INFO[Window(weather).Property(Daily.$PARAM[index].ShortOutlook)]</label2>
+				<label2>$INFO[Window(weather).Property(Daily.$PARAM[index].Outlook)]</label2>
 				<icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Daily.$PARAM[index].FanartCode),,.png]</icon>
-				<property name="DetailedOutlook">$INFO[Window(weather).Property(Daily.$PARAM[index].Outlook)]</property>
+				<property name="DetailedOutlook">$INFO[Window(weather).Property(Daily.$PARAM[index].DetailedOutlook)]</property>
 				<property name="HighTemperature">$INFO[Window(weather).Property(Daily.$PARAM[index].HighTemperature)]</property>
 				<property name="LowTemperature">$INFO[Window(weather).Property(Daily.$PARAM[index].LowTemperature)]</property>
 				<property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[index].Precipitation)]</property>

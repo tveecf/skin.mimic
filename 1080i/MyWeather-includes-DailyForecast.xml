@@ -17,7 +17,7 @@
 				<onup>301</onup>
 				<ondown>301</ondown>
 				<onleft>9000</onleft>
-				<onclick>Skin.ToggleSetting(Weather.Zoom.Detailed)</onclick>
+				<onclick condition="!String.IsEmpty(ListItem.Property(DetailedOutlook))">Skin.ToggleSetting(Weather.Zoom.Detailed)</onclick>
 				<onfocus>Skin.Reset(Weather.Zoom.Detailed)</onfocus>
 				<onunfocus>Skin.Reset(Weather.Zoom.Detailed)</onunfocus>
 
