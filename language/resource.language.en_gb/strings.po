@@ -1105,8 +1105,8 @@ msgid "Days"
 msgstr "Days"
 
 msgctxt "#31393"
-msgid "Exo2"
-msgstr "Exo2"
+msgid ""
+msgstr ""
 
 msgctxt "#31394"
 msgid "Monsterrat"
@@ -1120,7 +1120,24 @@ msgctxt "#31396"
 msgid "Bubblegum Sans"
 msgstr "Bubblegum Sans"
 
-#empty strings from id 31397 to 31410
+msgctxt "#31397"
+msgid "Baloo Chettan"
+msgstr "Baloo Chettan"
+
+msgctxt "#31398"
+msgid "Bellota Text"
+msgstr "Bellota Text"
+
+msgctxt "#31399"
+msgid "Grandstander Regular"
+msgstr "Grandstander Regular"
+
+msgctxt "#31400"
+msgid "Grandstander SemiBold"
+msgstr "Grandstander SemiBold"
+
+
+#empty strings from id 31399 to 31410
 
 msgctxt "#31411"
 msgid "Sawasdee"

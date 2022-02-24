@@ -684,7 +684,7 @@
                         <width>1316</width>
                         <height>120</height>
                         <textoffsetx>30</textoffsetx>
-                        <font>WeatherTemp</font>
+                        <font>WeatherTempFont</font>
                         <label>31196</label>
                     </control>
                     <control type="label">

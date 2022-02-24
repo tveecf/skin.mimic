@@ -13,6 +13,8 @@
     <color name="BackgroundColor">C0030100</color>
     <color name="BorderDiffuse">DDA00010</color>
 	<color name="dialog">FF000000</color>
-	<color name="white11">EEFF0FF2</color>
-	<color name="blue">FF6DB9E5</color>
+    <color name="ScrollBar">11FFFFFF</color>
+	<color name="LowTemp">FF66CCFF</color>
+	<color name="HighTemp">FFFF7766</color>
+	<color name="Alert">FFFFFF00</color>
 </colors>

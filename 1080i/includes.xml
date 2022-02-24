@@ -29,6 +29,8 @@
 	<include file="View_909_Sauna.xml" />
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
+	
+	
 
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>

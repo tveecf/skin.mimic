@@ -72,7 +72,7 @@
 						<description>current temp Value</description>
 						<width>auto</width>
 						<height>270</height>
-						<font>WeatherTemp</font>
+						<font>WeatherTempFont</font>
 						<label>$INFO[Window(weather).Property(Current.Temperature)]</label>
 					</control>
 					<control type="label">

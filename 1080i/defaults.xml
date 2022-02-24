@@ -223,7 +223,7 @@
     </default>
     <default type="scrollbar">
         <showonepage>false</showonepage>
-        <texturesliderbackground colordiffuse="white11" border="5">listselect_fo.png</texturesliderbackground>
+        <texturesliderbackground colordiffuse="ScrollBar" border="5">listselect_fo.png</texturesliderbackground>
         <texturesliderbar colordiffuse="22ffffff" border="5">listselect_fo.png</texturesliderbar>
         <texturesliderbarfocus colordiffuse="FocusColor" border="5">listselect_fo.png</texturesliderbarfocus>
     </default>

@@ -30,7 +30,7 @@
 					<control type="label">
 						<width>432</width>
 						<height>90</height>
-						<font>font_MainMenu</font>
+						<font>MainMenuFont</font>
 						<textcolor>TitleTextColor</textcolor>
 						<align>center</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -40,7 +40,7 @@
 					<control type="label">
 						<width>432</width>
 						<height>90</height>
-						<font>font_MainMenu</font>
+						<font>MainMenuFont</font>
 						<textcolor>TitleTextColor</textcolor>
 						<selectedcolor>TitleTextColor</selectedcolor>
 						<align>center</align>
@@ -181,7 +181,7 @@
 						<control type="label">
 							<width>430</width>
 							<height>95</height>
-							<font>font_MainMenu</font>
+							<font>MainMenuFont</font>
 							<textoffsetx>20</textoffsetx>
 							<textcolor>TitleTextColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -190,7 +190,7 @@
 						<control type="label">
 							<width>430</width>
 							<height>95</height>
-							<font>font_SubMenu</font>
+							<font>SubMenuFont</font>
 							<textoffsetx>20</textoffsetx>
 							<textcolor>TitleTextColor</textcolor>
 							<label>[I]$INFO[ListItem.Label][/I]</label>
@@ -201,7 +201,7 @@
 						<control type="label">
 							<width>430</width>
 							<height>95</height>
-							<font>font_MainMenu</font>
+							<font>MainMenuFont</font>
 							<textoffsetx>20</textoffsetx>
 							<textcolor>TitleTextColor</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -210,7 +210,7 @@
 						<control type="label">
 							<width>430</width>
 							<height>95</height>
-							<font>font_SubMenu</font>
+							<font>SubMenuFont</font>
 							<textoffsetx>20</textoffsetx>
 							<textcolor>TitleTextColor</textcolor>
 							<label>[I]$INFO[ListItem.Label][/I]</label>
@@ -342,7 +342,7 @@
 			<control type="label">
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<font>font_SubMenu</font>
+				<font>SubMenuFont</font>
 				<textcolor>TitleTextColor</textcolor>
 				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 				<selectedcolor>TitleTextColor</selectedcolor>
@@ -362,7 +362,7 @@
 				<control type="label">
 					<width>$PARAM[SubmenuItemWidth]</width>
 					<height>$PARAM[SubmenuItemHeight]</height>
-					<font>font_SubMenu</font>
+					<font>SubMenuFont</font>
 					<textcolor>TitleTextColor</textcolor>
 					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 					<align>$PARAM[SubmenuAlign]</align>
@@ -374,7 +374,7 @@
 				<control type="label">
 					<width>$PARAM[SubmenuItemWidth]</width>
 					<height>$PARAM[SubmenuItemHeight]</height>
-					<font>font_SubMenu</font>
+					<font>SubMenuFont</font>
 					<textcolor>TitleTextColor</textcolor>
 					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 					<align>$PARAM[SubmenuAlign]</align>

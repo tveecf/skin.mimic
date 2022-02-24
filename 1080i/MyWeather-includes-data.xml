@@ -12,8 +12,8 @@
 
 		<control type="group">
 			<width>1400</width>
-			<height>600</height>
-			<top>240</top>
+			<height>800</height>
+			<top>140</top>
 			<left>260</left>
 
 			<visible>Skin.HasSetting(Weather.Zoom.Detailed) + !String.IsEmpty(Window(weather).Property(Detailed.IsFetched))</visible>
@@ -75,10 +75,8 @@
 				<width>1050</width>
 				<left>320</left>
 				<top>175</top>
-				<height>400</height>
-				<scrolltime>200</scrolltime>
-				<include content="AutoscrollDefault">
-				</include>
+				<height>600</height>
+				<autoscroll delay="8000" time="8000" repeat="20000">true</autoscroll>
 				<label>$INFO[ListItem.Property(DetailedOutlook)]</label>
 			</control>
 		</control>
@@ -118,8 +116,7 @@
 				<width>1360</width>
 				<height>860</height>
 				<font>font15</font>
-				<scrolltime>300</scrolltime>
-				<autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
+				<autoscroll delay="8000" time="8000" repeat="20000">true</autoscroll>
 				<label>$INFO[ListItem.Property(description)]</label>
 			</control>
 		</control>
