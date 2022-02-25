@@ -3,19 +3,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<!-- <include>InfoDialogTopbar</include> -->
-		<control type="button">
-			<description>Back button</description>
-			<visible>Skin.HasSetting(Enable.TouchScreen)</visible>
-			<width>80</width>
-			<height>80</height>
-			<left>20</left>
-			<onclick>Back</onclick>
-			<texturefocus colordiffuse="TitleTextColor">special://skin/extras/icons/back.png</texturefocus>
-			<texturenofocus colordiffuse="TitleTextColor">special://skin/extras/icons/back.png</texturenofocus>
-			<aspectratio align="center" aligny="center">keep</aspectratio>
-			<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-		</control>
+		<include>Topbar</include>
 
 		<control type="group">
 			<include>Animation.Common</include>
