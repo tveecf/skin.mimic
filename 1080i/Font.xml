@@ -2,7 +2,7 @@
 
 <fonts>
 
- 	<include file="fonts/GenericFont.xml" />
+ 	<include file="fonts/GenericFont.xml"/>
 
 	<fontset id="Default" idloc="31390">
 	 	<include file="fonts/weblysleek.xml">weblysleek-font</include>
@@ -42,7 +42,6 @@
 		</include>
 	</fontset>
 
-
 	<fontset id="Assistant" idloc="31264">
 	 	<include file="fonts/assistant.xml">assistant-font</include>
 	</fontset>
@@ -72,134 +71,10 @@
 	</fontset>
 
 	<fontset id="Roboto2014" idloc="31949">
-<!-- 		<font> -->
-<!-- 			<name>font10</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>21</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font12</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>26</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font13</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>30</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font_Actor</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>30</size> -->
-<!-- 			<linespacing>1.27</linespacing> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font13_textbox</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>30</size> -->
-<!-- 			<linespacing>1.2</linespacing> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font13_widget</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>30</size> -->
-<!-- 			<linespacing>1.18</linespacing> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font14</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>33</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font14_textbox</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>33</size> -->
-<!-- 			<linespacing>1.42</linespacing> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font_TextViewer</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>33</size> -->
-<!-- 			<linespacing>1.43</linespacing> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font15</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>35</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font15_textbox</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>35</size> -->
-<!-- 			<linespacing>1.40</linespacing> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font16</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>38</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font30</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>45</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font36</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>55</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font12_title</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<style>uppercase</style> -->
-<!-- 			<size>30</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font13_title</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<style>uppercase</style> -->
-<!-- 			<size>33</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font15_title</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<style>uppercase</style> -->
-<!-- 			<size>35</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>font35_title</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<style>uppercase</style> -->
-<!-- 			<size>52</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>MainMenuFont</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<linespacing>0</linespacing> -->
-<!-- 			<size>55</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>SubMenuFont</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<linespacing>0</linespacing> -->
-<!-- 			<size>40</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>BigAssFont</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>600</size> -->
-<!-- 		</font> -->
-<!-- 		<font> -->
-<!-- 			<name>WeatherTempFont</name> -->
-<!-- 			<filename>Roboto-Light.ttf</filename> -->
-<!-- 			<size>120</size> -->
-<!-- 		</font> -->
-<!-- 		<include>CommonFonts</include> -->
 		<include content="GenericFont">
 			<param name="filename" value="Roboto-Light.ttf" />
 		</include>
 	</fontset>
-
 
 	<fontset id="Sawasdee" idloc="31411">
 		<include content="GenericFont">
@@ -207,13 +82,11 @@
 		</include>
 	</fontset>
 
-
 	<fontset id="Ubuntu" idloc="31028">
 		<include content="GenericFont">
 			<param name="filename" value="Ubuntu-L.ttf" />
 		</include>
 	</fontset>
-
 
 	<fontset id="Blogger" idloc="31391">
 		<include content="GenericFont">
@@ -221,20 +94,12 @@
 		</include>
 	</fontset>
 
-
 	<fontset id="Days" idloc="31392">
 		<include content="GenericFont">
 			<param name="filename" value="Days.ttf" />
 		</include>
 	</fontset>
 
-
-<!-- 	<fontset id="" idloc="31393"> -->
-<!-- 		<include content="GenericFont"> -->
-<!-- 			<param name="filename" value="" /> -->
-<!-- 		</include> -->
-<!-- 	</fontset> -->
-	
 	<fontset id="Monsterrat" idloc="31394">
 		<include content="GenericFont">
 			<param name="filename" value="MontserratAlternates-Bold.ttf" />
@@ -246,8 +111,6 @@
 			<param name="filename" value="PassionOne-Regular.ttf" />
 		</include>
 	</fontset>
-
-
 
 </fonts>
 

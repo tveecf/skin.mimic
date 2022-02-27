@@ -927,7 +927,7 @@
 				<hitrect x="0" y="0" w="0" h="0" />
 			</control>
 			<control type="image">
-				<include>FullscreenDimensions</include>
+				<include>FullScreenDimensions</include>
 				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<texture>$INFO[ListItem.Art(fanart)]</texture>
 			</control>

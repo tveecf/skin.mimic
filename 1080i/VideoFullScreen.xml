@@ -34,7 +34,7 @@
         <control type="label" id="1">
             <font>WeatherTempFont</font>
             <align>center</align>
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <label>$INFO[Player.SeekNumeric]</label>
         </control>
     </controls>

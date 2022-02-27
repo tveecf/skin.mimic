@@ -628,7 +628,7 @@
 			<control type="multiimage">
 				<include>BackgroundFadeAnimation</include>
 				<visible>$SKINSHORTCUTS[visible]</visible>
-				<include>FullscreenDimensions</include>
+				<include>FullScreenDimensions</include>
 				<description>Widget Background Image</description>
 				<imagepath background="true">$SKINSHORTCUTS[imagepath]</imagepath>
 			</control>

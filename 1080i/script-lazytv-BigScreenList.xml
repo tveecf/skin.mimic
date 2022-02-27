@@ -5,18 +5,18 @@
     <controls>
         <control type="group">
             <control type="image">
-                <include>FullscreenDimensions</include>
+                <include>FullScreenDimensions</include>
                 <texture>black.png</texture>
             </control>
             <control type="multiimage">
-                <include>FullscreenDimensions</include>
+                <include>FullScreenDimensions</include>
                 <aspectratio>scale</aspectratio>
                 <imagepath background="true">$INFO[Container(655).ListItem.Property(Fanart_Image)]</imagepath>
                 <fadetime>400</fadetime>
                 <visible>!String.IsEmpty(Container(655).ListItem.Property(Fanart_Image))</visible>
             </control>
             <control type="image">
-                <include>FullscreenDimensions</include>
+                <include>FullScreenDimensions</include>
                 <texture>background.png</texture>
                 <colordiffuse>BackgroundColor</colordiffuse>
             </control>

@@ -4,18 +4,18 @@
     <controls>
         <control type="videowindow" id="20">
             <description>videowindow</description>
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <visible>Player.HasVideo + !SlideShow.IsActive</visible>
         </control>
         <control type="image">
             <visible>!Player.HasVideo</visible>
             <description>Normal Default Background Image</description>
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <texture>special://skin/backgrounds/default_bg.jpg</texture>
         </control>
         <control type="image">
             <description>Overlay</description>
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <texture>background.png</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>

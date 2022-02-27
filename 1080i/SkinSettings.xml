@@ -10,12 +10,12 @@
     <controls>
         <include>CommonBackground</include>
         <control type="image">
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <texture background="true" fallback="special://skin/backgrounds/default_bg.jpg">$INFO[Skin.String(CustomBackground)]</texture>
             <fadetime>400</fadetime>
         </control>
         <control type="image">
-            <include>FullscreenDimensions</include>
+            <include>FullScreenDimensions</include>
             <texture>background.png</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>

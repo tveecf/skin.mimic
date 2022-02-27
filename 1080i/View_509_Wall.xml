@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <!-- Fullscreen Wall -->
+    <!-- FullScreen Wall -->
     <include name="View_509_Wall">
         <control type="group">
             <visible>Control.IsVisible(509) + !$EXP[isInfoDialog]</visible>

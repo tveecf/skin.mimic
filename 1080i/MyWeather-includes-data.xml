@@ -6,7 +6,7 @@
 		<!-- zoom Dialog background -->
 		<control type="image">
 			<visible>Skin.HasSetting(Weather.Zoom.Detailed) + !String.IsEmpty(Window(weather).Property(Detailed.IsFetched))</visible>
-			<include>FullscreenDimensions</include>
+			<include>FullScreenDimensions</include>
 			<texture border="5">overlays/diffuse-overlay.png</texture>
 		</control>
 
@@ -87,7 +87,7 @@
 		<!-- zoom Dialog background -->
 		<control type="image">
 			<visible>Skin.HasSetting(Weather.Zoom.Alert)</visible>
-			<include>FullscreenDimensions</include>
+			<include>FullScreenDimensions</include>
 			<texture border="5">overlays/diffuse-overlay.png</texture>
 		</control>
 

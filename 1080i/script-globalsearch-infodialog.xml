@@ -979,7 +979,7 @@
                 <hitrect x="0" y="0" w="0" h="0"/>
             </control>
             <control type="image">
-                <include>FullscreenDimensions</include>
+                <include>FullScreenDimensions</include>
                 <texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
             </control>
         </control>

@@ -229,7 +229,7 @@
 					</include>
 				</itemlayout>
 				<focusedlayout height="260" width="350" condition="Container.Content(episodes)">
-					<include content="ItemfocusBorder">
+					<include content="ItemFocusBorder">
 						
 					</include>
 					<control type="label">
