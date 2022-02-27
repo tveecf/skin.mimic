@@ -914,7 +914,7 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="90400">
 				<description>FS Fanart button</description>
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<height>1080</height>
 				<texturefocus />
 				<texturenofocus />
@@ -927,7 +927,7 @@
 				<hitrect x="0" y="0" w="0" h="0" />
 			</control>
 			<control type="image">
-				<include>FullScreenDimensions</include>
+				<include>FullscreenDimensions</include>
 				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<texture>$INFO[ListItem.Art(fanart)]</texture>
 			</control>

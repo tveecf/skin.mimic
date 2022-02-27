@@ -10,7 +10,7 @@
 	<controls>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<visible>Player.HasAudio</visible>
 		</control>
 

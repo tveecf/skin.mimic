@@ -4,12 +4,12 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="image">
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<texture background="true" fallback="special://skin/backgrounds/default_bg.jpg">$INFO[Skin.String(CustomBackground)]</texture>
 			<fadetime>400</fadetime>
 		</control>
 		<control type="image">
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<texture>background.png</texture>
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>

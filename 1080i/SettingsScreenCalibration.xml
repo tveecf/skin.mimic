@@ -4,18 +4,18 @@
     <controls>
         <control type="videowindow" id="20">
             <description>videowindow</description>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <visible>Player.HasVideo + !SlideShow.IsActive</visible>
         </control>
         <control type="image">
             <visible>!Player.HasVideo</visible>
             <description>Normal Default Background Image</description>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>special://skin/backgrounds/default_bg.jpg</texture>
         </control>
         <control type="image">
             <description>Overlay</description>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>background.png</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>
@@ -75,7 +75,7 @@
             <control type="label" id="2">
                 <description>coordinates label</description>
                 <top>150</top>
-                <width>FullScreenWidth</width>
+                <width>FullscreenWidth</width>
                 <height>30</height>
                 <align>center</align>
                 <label />
@@ -84,7 +84,7 @@
             <control type="label" id="3">
                 <description>help information</description>
                 <top>210</top>
-                <width>FullScreenWidth</width>
+                <width>FullscreenWidth</width>
                 <height>30</height>
                 <align>center</align>
                 <label />

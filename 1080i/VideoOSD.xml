@@ -37,7 +37,7 @@
 			<control type="grouplist" id="202">
 				<top>20</top>
 				<height>144</height>
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<align>center</align>
 				<itemgap>0</itemgap>
 				<scrolltime tween="sine">200</scrolltime>

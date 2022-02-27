@@ -4,14 +4,14 @@
 
 
 
-		<!-- <control type="image"> <aspectratio>scale</aspectratio> <include>FullScreenDimensions</include> <texture background="true">$VAR[MusicVizBackground]</texture> <animation effect="fade" 
+		<!-- <control type="image"> <aspectratio>scale</aspectratio> <include>FullscreenDimensions</include> <texture background="true">$VAR[MusicVizBackground]</texture> <animation effect="fade" 
 			start="100" end="40" time="0" condition="!Skin.HasSetting(HideVisualizationFanart) + Visualisation.Enabled">Conditional</animation> <animation effect="zoom" start="110" end="130" center="auto" 
 			time="10000" tween="sine" easing="inout" pulse="true" condition="!Skin.HasSetting(Disable.AnimateFanart)">Conditional</animation> <animation effect="slide" start="-30,-30" end="30,30" 
 			time="6000" tween="sine" easing="inout" pulse="true" condition="!Skin.HasSetting(Disable.AnimateFanart)">Conditional</animation> <colordiffuse>99FFFFFF</colordiffuse> </control> -->
 
 		<control type="image">
 			<aspectratio>scale</aspectratio>
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<fadetime>400</fadetime>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -23,7 +23,7 @@
 
 		<control type="image">
 			<aspectratio>scale</aspectratio>
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<fadetime>400</fadetime>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -34,7 +34,7 @@
 
 		<control type="image">
 			<aspectratio>scale</aspectratio>
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<fadetime>400</fadetime>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -63,7 +63,7 @@
 			<left>0</left>
 			<top>0</top>
 			<heigth>1080</heigth>
-			<width>FullScreenWidth</width>
+			<width>FullscreenWidth</width>
 			<scroll>true</scroll>
 			<scrollout>true</scrollout>
 			<font>BigAssFont</font>

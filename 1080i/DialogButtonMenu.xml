@@ -9,7 +9,7 @@
     </coordinates>
     <controls>
         <control type="image">
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>$VAR[CommonBackgroundOverlay]</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>

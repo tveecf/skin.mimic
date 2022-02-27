@@ -7,7 +7,7 @@
 			<include>WindowSlideAnimation</include>
 			<control type="image">
 				<top>600</top>
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<height>651</height>
 				<colordiffuse>ItemDiffuse</colordiffuse>
 				<texture>background.png</texture>
@@ -326,7 +326,7 @@
 			<animation effect="slide" end="0,15" start="0,0" time="0" condition="Window.IsActive(musicplaylist)">Conditional</animation>
 			<control type="image">
 				<top>602</top>
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<height>485</height>
 				<texture>background.png</texture>
 				<colordiffuse>ItemDiffuse</colordiffuse>
@@ -718,7 +718,7 @@
 			<animation effect="slide" end="0,-15" start="0,0" time="0" condition="Window.IsActive(pictures)">Conditional</animation>
 			<control type="image">
 				<top>617</top>
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<height>485</height>
 				<texture>background.png</texture>
 				<colordiffuse>ItemDiffuse</colordiffuse>

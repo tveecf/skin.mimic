@@ -31,7 +31,7 @@
 		</control>
 	</include>
 
-	<include name="FullScreenButton">
+	<include name="FullscreenButton">
 		<control type="button">
 			<description>fullscreen button</description>
 			<description>full-screen display button</description>
@@ -60,13 +60,13 @@
 <!-- 				<visible>[Control.IsVisible(59) | Control.IsVisible(501)] + -->
 <!-- 					!$EXP[isInfoDialog] -->
 <!-- 				</visible> -->
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<height>80</height>
 				<texture>background.png</texture>
 				<colordiffuse>ItemDiffuse</colordiffuse>
 			</control>
 			<control type="image">
-				<width>FullScreenWidth</width>
+				<width>FullscreenWidth</width>
 				<height>80</height>
 				<colordiffuse>33000000</colordiffuse>
 				<texture>menu_fo.png</texture>
@@ -83,7 +83,7 @@
 
 				<include>BackButton</include>
 				<include>MenuButton</include>
-				<include>FullScreenButton</include>
+				<include>FullscreenButton</include>
 
 				<control type="image">
 					<width>60</width>
@@ -247,7 +247,7 @@
 			<visible>!Control.IsVisible(509) + [Player.Playing | Player.HasAudio
 				| Player.HasVideo]
 			</visible>
-			<width>FullScreenWidth</width>
+			<width>FullscreenWidth</width>
 			<top>80</top>
 			<height>100</height>
 

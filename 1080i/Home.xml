@@ -21,27 +21,27 @@
             <visible>String.IsEqual(Container(9000).ListItem.Property(background),playlistBackground)</visible>
         </control>
         <control type="multiimage">
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <include>BackgroundFadeAnimation</include>
             <imagepath background="true">$VAR[HomeBackgroundVar]</imagepath>
         </control>
         <include>skinshortcuts-template-WidgetFanart</include>
         <control type="visualisation">
             <visible>Player.HasAudio + !Skin.HasSetting(Disable.ShowBackgroundVis) + !SlideShow.IsActive</visible>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
         </control>
         <control type="group">
             <visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !SlideShow.IsActive</visible>
             <control type="image">
-                <include>FullScreenDimensions</include>
+                <include>FullscreenDimensions</include>
                 <texture>black.png</texture>
             </control>
             <control type="videowindow">
-                <include>FullScreenDimensions</include>
+                <include>FullscreenDimensions</include>
             </control>
         </control>
         <control type="image">
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>$VAR[CommonBackgroundOverlay]</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>

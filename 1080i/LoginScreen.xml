@@ -10,11 +10,11 @@
     <controls>
         <control type="image">
             <description>Normal Default Background Image</description>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture fallback="special://skin/backgrounds/default_bg.jpg">$INFO[Skin.String(CustomBackground)]</texture>
         </control>
         <control type="image">
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>background.png</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>
@@ -99,7 +99,7 @@
             </control>
             <control type="image">
                 <top>920</top>
-                <width>FullScreenWidth</width>
+                <width>FullscreenWidth</width>
                 <height>160</height>
                 <texture>menu_fo.png</texture>
                 <colordiffuse>33000000</colordiffuse>

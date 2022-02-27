@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include name="FullScreenDimensions">
+    <include name="FullscreenDimensions">
         <left>0</left>
         <top>0</top>
-        <width>FullScreenWidth</width>
+        <width>FullscreenWidth</width>
         <height>1080</height>
     </include>
     <include name="HiddenObject">

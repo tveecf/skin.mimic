@@ -34,7 +34,7 @@
 
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
-	<constant name="FullScreenWidth">1920</constant>
+	<constant name="FullscreenWidth">1920</constant>
 	<expression name="GameSupport">String.IsEqual(Container.PluginName,plugin.program.advanced.emulator.launcher)</expression>
 	<expression name="DetectSquare">String.IsEqual(ListItem.Property(platform),Atari Lynx) | String.IsEqual(ListItem.Property(platform),Microsoft Windows) |
 		String.IsEqual(ListItem.Property(platform),NEC TurboGrafx CD) | String.IsEqual(ListItem.Property(platform),Nintendo GameBoy) | String.IsEqual(ListItem.Property(platform),Nintendo
@@ -796,7 +796,7 @@
 			<animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
 			<left>0</left>
 			<top>1070</top>
-			<width>FullScreenWidth</width>
+			<width>FullscreenWidth</width>
 			<height>10</height>
 			<onup>50</onup>
 			<ondown>50</ondown>

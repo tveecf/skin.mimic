@@ -3,12 +3,12 @@
     <controls>
         <control type="image" id="105">
             <description>Normal Default Background Image</description>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <aspectratio>scale</aspectratio>
             <texture>special://skin/backgrounds/default_bg.jpg</texture>
         </control>
         <control type="image">
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>background.png</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>
@@ -43,7 +43,7 @@
             <description>List of Images</description>
             <left>0</left>
             <top>0</top>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <scrolltime tween="cubic" easing="inout">500</scrolltime>
             <animation effect="zoom" start="100" end="65" center="auto" time="400" tween="cubic" easing="inout" condition="String.IsEqual(Window.Property(Category),Album)">Conditional</animation>
             <animation effect="slide" start="0" end="0,-80" center="auto" time="400" tween="cubic" easing="inout" condition="String.IsEqual(Window.Property(Category),Album)">Conditional</animation>
@@ -53,14 +53,14 @@
             <itemlayout width="1920" height="1080">
                 <control type="image">
                     <description>Picture in ratio scale</description>
-                    <include>FullScreenDimensions</include>
+                    <include>FullscreenDimensions</include>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
                     <visible>!Control.IsVisible(103)</visible>
                 </control>
                 <control type="image">
                     <description>Picture in ratio keep (default)</description>
-                    <include>FullScreenDimensions</include>
+                    <include>FullscreenDimensions</include>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>keep</aspectratio>
                     <visible>Control.IsVisible(103)</visible>
@@ -69,14 +69,14 @@
             <focusedlayout width="1920" height="1080">
                 <control type="image">
                     <description>Picture in ratio scale</description>
-                    <include>FullScreenDimensions</include>
+                    <include>FullscreenDimensions</include>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
                     <visible>!Control.IsVisible(103)</visible>
                 </control>
                 <control type="image">
                     <description>Picture in ratio keep (default)</description>
-                    <include>FullScreenDimensions</include>
+                    <include>FullscreenDimensions</include>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>keep</aspectratio>
                     <visible>Control.IsVisible(103)</visible>
@@ -118,7 +118,7 @@
             <control type="image">
                 <visible>!String.IsEqual(Window.Property(Category),Album) + !String.IsEmpty(Container(100).ListItem.Label2) + !Window.IsActive(addonsettings)</visible>
                 <top>850</top>
-                <width>FullScreenWidth</width>
+                <width>FullscreenWidth</width>
                 <height>230</height>
                 <texture>background.png</texture>
                 <colordiffuse>ItemDiffuse</colordiffuse>

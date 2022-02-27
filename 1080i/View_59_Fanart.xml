@@ -4,7 +4,7 @@
         <control type="image">
             <top>-15</top>
             <visible>$EXP[isInfoDialog]</visible>
-            <include>FullScreenDimensions</include>
+            <include>FullscreenDimensions</include>
             <texture>background.png</texture>
             <colordiffuse>BackgroundColor</colordiffuse>
         </control>
@@ -13,13 +13,13 @@
             <include>WindowSlideAnimation</include>
             <top>715</top>
             <control type="image">
-                <width>FullScreenWidth</width>
+                <width>FullscreenWidth</width>
                 <height>370</height>
                 <texture>background.png</texture>
                 <colordiffuse>ItemDiffuse</colordiffuse>
             </control>
             <control type="fixedlist" id="59">
-                <width>FullScreenWidth</width>
+                <width>FullscreenWidth</width>
                 <height>370</height>
                 <onleft>59</onleft>
                 <onright>59</onright>

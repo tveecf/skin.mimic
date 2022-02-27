@@ -243,7 +243,7 @@
             <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
             <left>0</left>
             <top>1070</top>
-            <width>FullScreenWidth</width>
+            <width>FullscreenWidth</width>
             <height>10</height>
             <onup condition="Container(9000).HasFocus(1)">200</onup>
             <onup condition="Container(9000).HasFocus(2)">201</onup>

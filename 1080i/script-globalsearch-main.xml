@@ -9,7 +9,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">
-			<include>FullScreenDimensions</include>
+			<include>FullscreenDimensions</include>
 			<texture>background.png</texture>
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>

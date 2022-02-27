@@ -10,7 +10,7 @@
         <top>0</top>
         <aspectratio align="center">scale</aspectratio>
         <fadetime>FanartCrossfadeTime</fadetime>
-        <include>FullScreenDimensions</include>
+        <include>FullscreenDimensions</include>
         <timeperimage>12000</timeperimage>
         <randomize>true</randomize>
     </default>
