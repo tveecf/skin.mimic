@@ -557,6 +557,14 @@
                         <onclick>Skin.ToggleSetting(Enable.RemoteWeatherIcons)</onclick>
                         <selected>Skin.HasSetting(Enable.RemoteWeatherIcons)</selected>
                     </control>
+					<control type="button" id="205">
+						<description>Select weather fanart</description>
+						<include>SkinSettingsButtonDefaults</include>
+						<label>31171</label>
+                        <label2>$INFO[Skin.String(weatherfanart.path)]</label2>
+						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
+						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+					</control>
                     <control type="radiobutton" id="420">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>90913</label>

@@ -669,7 +669,10 @@ msgctxt "#31170"
 msgid "Artist Slideshow"
 msgstr ""
 
-#empty string with id 31171
+msgctxt "#31171"
+msgid "Select Weather Fanart"
+msgstr ""
+
 
 msgctxt "#31172"
 msgid "ExtendedInfo Script"
