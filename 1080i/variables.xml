@@ -616,7 +616,7 @@
 	</variable>
 
 	<variable name="NowPlayingThumbVar">
-		<value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !String.IsEmpty(Window(weather).Property(Current.FanartCode))">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</value>
+		<value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !String.IsEmpty(Window(weather).Property(Current.FanartCode))">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode)]$VAR[WeatherIconExtVar]</value>
 		<value condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)] + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
 		<value condition="VideoPlayer.Content(livetv) + !String.IsEmpty(VideoPlayer.Cover)">$INFO[VideoPlayer.Cover]</value>
@@ -629,7 +629,7 @@
 	</variable>
 
 	<variable name="HomeNowPlayingThumbVar">
-		<value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !String.IsEmpty(Window(weather).Property(Current.FanartCode))">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</value>
+		<value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !String.IsEmpty(Window(weather).Property(Current.FanartCode))">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode)]$VAR[WeatherIconExtVar]</value>
 		<value condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)] + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
 		<value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
 		<value condition="VideoPlayer.Content(livetv) + !String.IsEmpty(VideoPlayer.Cover)">$INFO[VideoPlayer.Cover]</value>
@@ -669,9 +669,15 @@
 		<value condition="Container.SortDirection(Descending)">$LOCALIZE[31051]</value>
 	</variable>
 	<variable name="WeatherIconVar">
-		<value condition="System.HasAddon(script.image.resource.select) + !String.IsEmpty(Skin.String(weathericons.path))">$INFO[Skin.String(weathericons.path)]</value>
+		<value condition="!String.IsEmpty(Skin.String(weathericons.path))">$INFO[Skin.String(weathericons.path)]</value>
 		<value>resource://resource.images.weathericons.default/</value>
 	</variable>
+	<variable name="WeatherIconExtVar">
+		<value condition="String.Contains(Skin.String(weathericons.path),animated)" />
+		<value condition="!String.IsEmpty(Skin.String(weathericons.ext))">$INFO[Skin.String(weathericons.ext)]</value>
+		<value>.png</value>
+	</variable>
+
 	<variable name="WidgetIconLabel">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetIcon))">$INFO[Container(211).ListItem.Property(widgetIcon)]</value>
 		<value>$LOCALIZE[21371]</value>

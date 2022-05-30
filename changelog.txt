@@ -1,6 +1,7 @@
 7.0.4
 * Set watched icon checkmark to be focus color instead of normal text color so it stands out
-
+* add support for selecting weather icon packs
+* add support for animated weather icon packs
 
 7.0.3
 * rebuild BusyDialog.xml so that it works
