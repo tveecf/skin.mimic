@@ -836,7 +836,7 @@
 				<height>56</height>
 				<align>center</align>
 				<font>IconSuperTiny</font>
-				<textcolor>NormalTextColor</textcolor>
+				<textcolor>FocusColor</textcolor>
 				<label>A</label>
 			</control>
 		</control>
