@@ -865,7 +865,7 @@
 				<height>62</height>
 				<align>center</align>
 				<font>IconTiny</font>
-				<textcolor>NormalTextColor</textcolor>
+				<textcolor>FocusColor</textcolor>
 				<label>A</label>
 			</control>
 		</control>
