@@ -3,7 +3,7 @@
   id="skin.mimic"
   version="6.0.5"
   name="Mimic"
-  provider-name="braz, DaedalusBLN,Michaz">
+  provider-name="braz, DaedalusBLN, tveecf, Michaz">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="resource.images.studios.white" version="0.0.4"/>
@@ -20,7 +20,7 @@
         <summary lang="bg_BG">Mimic от braz</summary>
         <summary lang="ca_ES">Mimic per braz</summary>
         <summary lang="cs_CZ">Mimic od braz</summary>
-        <summary lang="de_DE">Mimic von braz</summary>
+        <summary lang="de_DE">Mimik von bitorbit.cf</summary>
         <summary lang="en_AU">Mimic by braz</summary>
         <summary lang="en_GB">Mimic by braz</summary>
         <summary lang="en_NZ">Mimic by braz</summary>
