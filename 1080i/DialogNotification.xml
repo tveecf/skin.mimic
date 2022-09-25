@@ -41,7 +41,7 @@
                 <width>640</width>
                 <height>45</height>
                 <font>font14</font>
-                <textcolor>LabelTextColor</textcolor>
+                <textcolor>highlight</textcolor>
                 <scrollout>false</scrollout>
                 <pauseatend>2000</pauseatend>
                 <aligny>center</aligny>

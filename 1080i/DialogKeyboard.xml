@@ -455,7 +455,7 @@
                 <control type="group">
                     <animation effect="fade" time="300" tween="cubic" start="0" end="100" reversible="false">Visible</animation>
                     <animation effect="fade" time="150" tween="cubic" start="100" end="0" reversible="false">Hidden</animation>
-                    <include content="DialogBackgroundCommons">
+                    <include name="DialogBackgroundCommons">
                         <param name="DialogBackgroundWidth" value="1320" />
                         <param name="DialogBackgroundHeight" value="180" />
                         <param name="DialogHeaderLabel" value="-" />

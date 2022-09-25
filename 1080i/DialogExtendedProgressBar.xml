@@ -2,15 +2,12 @@
 <window>
     <coordinates>
         <left>0</left>
-        <top>80</top>
+        <top>-1</top>
     </coordinates>
     <controls>
-    	
         <control type="group">
             <visible>!Window.IsActive(fullscreenvideo) + !Window.IsActive(visualisation) + !Window.IsActive(slideshow)</visible>
-        	<width>900</width>
-            <left>0</left>
-            <top>-16</top>
+            <left>1801</left>
             <animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
             <control type="group">
@@ -24,15 +21,13 @@
                 <control type="image">
                     <width>120</width>
                     <height>120</height>
-                    <texture colordiffuse="FocusColor">progress/volume/p$INFO[Control.GetLabel(32)].png</texture>
+                    <texture colordiffuse="highlight">progress/volume/p$INFO[Control.GetLabel(32)].png</texture>
                 </control>
                 <control type="image">
-                <visible>!Skin.HasSetting(Disable.Animations)</visible>
                     <width>120</width>
                     <height>120</height>
                     <texture colordiffuse="55ffffff">progress/loading.png</texture>
-                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" 
-                    	condition="!Skin.HasSetting(Disable.Animations)">Conditional</animation>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
                 </control>
                 <control type="label">
                     <animation effect="slide" end="-3" time="0" condition="Integer.IsLess(Control.GetLabel(32),10)">Conditonal</animation>
@@ -48,29 +43,27 @@
             </control>
             <control type="label" id="30">
                 <description>Header label</description>
-                <left>121</left>
+                <left>-800</left>
                 <top>15</top>
                 <width>800</width>
                 <height>45</height>
                 <font>font14</font>
-                <align>left</align>
+                <align>right</align>
             </control>
             <control type="label" id="31">
                 <description>Title label</description>
-                <left>121</left>
+                <left>-800</left>
                 <top>56</top>
                 <width>800</width>
                 <height>45</height>
                 <font>font12</font>
-                <align>left</align>
+                <align>right</align>
             </control>
-           
             <control type="progress" id="32">
                 <left>3000</left>
                 <description>progress control</description>
                 <height>15</height>
             </control>
-           
         </control>
     </controls>
 </window>

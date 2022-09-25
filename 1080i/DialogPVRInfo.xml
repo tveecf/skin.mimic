@@ -49,7 +49,7 @@
                             <width>738</width>
                             <height>90</height>
                             <texture border="5">listselect_fo.png</texture>
-                            <colordiffuse>FocusColor</colordiffuse>
+                            <colordiffuse>highlight</colordiffuse>
                             <visible>Control.HasFocus(9002)</visible>
                             <include>VisibleFadeEffect</include>
                         </control>
@@ -71,22 +71,22 @@
                     </focusedlayout>
                     <content>
                         <item>
-                            <label>$INFO[ListItem.Title][I]$INFO[ListItem.Season, - S,]$INFO[ListItem.Episode,E,][/I][COLOR=NormalTextColor][I]$INFO[ListItem.EpisodeName, - ,][/I][/COLOR]</label>
-                            <label2>[COLOR=LabelTextColor]$LOCALIZE[369]:[/COLOR]</label2>
+                            <label>$INFO[ListItem.Title]</label>
+                            <label2>[COLOR highlight]$LOCALIZE[369]:[/COLOR]</label2>
                         </item>
                         <item>
                             <label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.StartDate])</label>
-                            <label2>[COLOR=LabelTextColor]$LOCALIZE[142][/COLOR]</label2>
+                            <label2>[COLOR highlight]$LOCALIZE[142][/COLOR]</label2>
                             <visible>!String.IsEmpty(ListItem.StartTime)</visible>
                         </item>
                         <item>
                             <label>$INFO[ListItem.Duration]</label>
-                            <label2>[COLOR=LabelTextColor]$LOCALIZE[180]:[/COLOR]</label2>
+                            <label2>[COLOR highlight]$LOCALIZE[180]:[/COLOR]</label2>
                             <visible>!String.IsEmpty(ListItem.Duration)</visible>
                         </item>
                         <item>
                             <label>[CAPITALIZE]$INFO[ListItem.Genre][/CAPITALIZE]</label>
-                            <label2>[COLOR=LabelTextColor]$LOCALIZE[515]:[/COLOR]</label2>
+                            <label2>[COLOR highlight]$LOCALIZE[515]:[/COLOR]</label2>
                             <visible>!String.IsEmpty(ListItem.Genre)</visible>
                         </item>
                     </content>
@@ -99,10 +99,8 @@
                     <height>170</height>
                     <font>font14_textbox</font>
                     <pagecontrol>60</pagecontrol>
-                    <include content="AutoscrollDefault">
-                    	<param name="condition" value="!Control.HasFocus(60)"/>
-                    </include>
-                    <label>$INFO[ListItem.Plot]</label>
+                    <autoscroll time="3000" delay="4000" repeat="5000">!Skin.HasSetting(Disable.AutoScroll) + !Control.HasFocus(60)</autoscroll>
+                    <label fallback="161">$INFO[ListItem.Plot]</label>
                 </control>
                 <control type="scrollbar" id="60">
                     <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
@@ -140,49 +138,39 @@
                     <control type="button" id="8">
                         <description>Play button</description>
                         <visible>Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)</visible>
-                        <width>290</width>
+                        <width>344</width>
                         <label>19687</label>
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="5">
                         <description>Switch button</description>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        <width>260</width>
+                        <width>344</width>
                         <label>19165</label>
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="9">
                         <description>Add timer button</description>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        <width>260</width>
+                        <width>344</width>
                         <label>19061</label>
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="6">
                         <description>Record button</description>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
-                        <width>260</width>
+                        <width>344</width>
                         <label />
                         <font>font15_title</font>
                         <align>center</align>
-                        <texturenofocus colordiffuse="BorderDiffuse">selecteditem_bg.png</texturenofocus>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
-               <control type="button" id="7">
-                    <description>Cancel button</description>
-                    <width>260</width>
-                    <label>222</label>
-                    <font>font15_title</font>
-                    <align>center</align>
-                    <texturenofocus colordiffuse="BorderDiffuse" border="5">listselect_fo.png</texturenofocus>
-                </control>
-        
-                    
                 </control>
             </control>
         </control>

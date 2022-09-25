@@ -7,7 +7,7 @@
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <onunload>ClearProperty(MediaMenu,Home)</onunload>
     <onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-    <views>50,52,520,57,501,900,902,903,909</views>
+    <views>50,52,520,57,501</views>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -21,10 +21,6 @@
             <!-- view id = 57 -->
             <include>AddonLowList</include>
             <!-- view id = 501 -->
-			<include>View_900_Arcade</include>
-			<include>View_902_KeibertzPlus</include>
-			<include>View_903_Coverflow</include>
-			<include>View_909_Sauna</include>
         </control>
         <include>Topbar</include>
         <control type="group">
@@ -54,7 +50,7 @@
                     <include>ButtonCommonValues</include>
                     <label>31039</label>
                     <enable>no</enable>
-                    <disabledcolor>DisabledColor</disabledcolor>
+                    <disabledcolor>highlight</disabledcolor>
                 </control>
                 <control type="button" id="205">
                     <include>ButtonCommonValues</include>

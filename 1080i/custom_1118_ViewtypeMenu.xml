@@ -28,7 +28,7 @@
                 <textoffsetx>15</textoffsetx>
                 <font>font13_title</font>
                 <label>31127</label>
-                <textcolor>LabelTextColor</textcolor>
+                <textcolor>highlight</textcolor>
             </control>
             <control type="list" id="9011">
                 <!-- viewtype selection-->
@@ -58,7 +58,7 @@
                         <width>400</width>
                         <height>60</height>
                         <texture border="5">listselect_fo.png</texture>
-                        <colordiffuse>FocusColor</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <visible>Control.HasFocus(9011)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
@@ -175,7 +175,7 @@
                         <description>Gallery</description>
                         <label>31054</label>
                         <onclick>Container.SetViewMode(504)</onclick>
-                        <visible>[Container.Content(sets) |Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows) | [Container.Content(images) + Container(504).HasFiles] | Container.Content(artists)|Container.Content(albums)  ] + !Container.Content(addons)</visible>
+                        <visible>[Container.Content(movies) | Container.Content(tvshows) | [Container.Content(images) + Container(504).HasFiles] | [Container.Content(artists) + !Window.IsActive(videos)]] + !Container.Content(addons)</visible>
                         <visible>!Skin.HasSetting(Disable.GalleryView)</visible>
                     </item>
                     <item>
@@ -192,30 +192,6 @@
                         <visible>Container.Content(songs)</visible>
                         <visible>!Skin.HasSetting(Disable.SongView)</visible>
                     </item>
-                    <item>
-                        <description>Arcade</description>
-                        <label>Arcade</label>
-                        <onclick>Container.SetViewMode(900)</onclick>
-                        <visible>$EXP[GameSupport] | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
-                    </item>
-                    <item>
-                        <description>Keibertz</description>
-                        <label>Keibertz+</label>
-                        <onclick>Container.SetViewMode(902)</onclick>
-                        <visible>$EXP[GameSupport] | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
-                    </item>
-                    <item>
-                        <description>Coverflow</description>
-                        <label>Coverflow</label>
-                        <onclick>Container.SetViewMode(903)</onclick>
-                        <visible>$EXP[GameSupport] | Container.Content(Albums) | Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows)</visible>
-                    </item>
-                    <item>
-                        <description>Sauna</description>
-                        <label>Sauna</label>
-                        <onclick>Container.SetViewMode(909)</onclick>
-                        <visible>$EXP[GameSupport]</visible>
-                    </item>
                 </content>
             </control>
             <control type="button" id="9012">
@@ -226,7 +202,7 @@
                 <textoffsetx>30</textoffsetx>
                 <font>IconMedium</font>
                 <label>B</label>
-                <focusedcolor>FocusColor</focusedcolor>
+                <focusedcolor>highlight</focusedcolor>
                 <texturefocus />
                 <onright>Dialog.Close(1118)</onright>
                 <onright>ClearProperty(MediaMenu,Home)</onright>

@@ -56,9 +56,9 @@
                             <height>30</height>
                             <font>IconSmall</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>TitleTextColor</textcolor>
+                            <textcolor>maintext</textcolor>
                             <align>right</align>
-                            <selectedcolor>SelectedColor</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <label></label>
                             <visible>ListItem.HasTimer</visible>
                         </control>
@@ -68,9 +68,9 @@
                             <height>30</height>
                             <font>IconSmall</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>TitleTextColor</textcolor>
+                            <textcolor>maintext</textcolor>
                             <align>right</align>
-                            <selectedcolor>SelectedColor</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <label></label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -81,7 +81,7 @@
                         <width>821</width>
                         <height>90</height>
                         <texture border="5">listselect_fo.png</texture>
-                        <colordiffuse>FocusColor</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <visible>Control.HasFocus(11)</visible>
                         <include>VisibleFadeEffect</include>
                     </control>
@@ -111,9 +111,9 @@
                             <height>30</height>
                             <font>IconSmall</font>
                             <textoffsetx>15</textoffsetx>
-                            <textcolor>TitleTextColor</textcolor>
+                            <textcolor>maintext</textcolor>
                             <align>right</align>
-                            <selectedcolor>SelectedColor</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <label></label>
                             <visible>ListItem.HasTimer</visible>
                         </control>
