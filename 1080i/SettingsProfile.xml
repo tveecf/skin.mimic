@@ -22,7 +22,7 @@
                     <width>330</width>
                     <height>370</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="FocusColor" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="highlight" border="5">listselect_fo.png</texture>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(2).Row,0)">Conditional</animation>
                 </control>
             </control>
@@ -37,9 +37,7 @@
                 <scrolltime tween="quadratic" easing="out">300</scrolltime>
                 <orientation>vertical</orientation>
                 <itemlayout height="390" width="350">
-					<include content="ItemBorder">
-						
-					</include>
+                    <include>ThumbnailItemBackground</include>
                     <control type="label">
                         <left>20</left>
                         <right>20</right>
@@ -61,14 +59,11 @@
                         <right>20</right>
                         <height>310</height>
                         <texture border="5">overlays/diffuse-overlay.png</texture>
-   						<visible>Skin.HasSetting(Enable.HighlightFocused)</visible>
                     </control>
                 </itemlayout>
 
                 <focusedlayout height="390" width="350">
-					<include content="ItemFocusBorder">
-						
-					</include>
+                    <include>ThumbnailItemBackground</include>
                     <control type="label">
                         <left>20</left>
                         <right>20</right>
@@ -83,6 +78,15 @@
                         <height>310</height>
                         <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
                         <texture background="true" fallback="DefaultIconProfile.png" diffuse="diffuse/thumbnail.png">$VAR[ProfileIconVar]</texture>
+                    </control>
+                    <control type="image">
+                        <animation center="auto" condition="Control.HasFocus(2)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+                        <animation center="auto" condition="Control.HasFocus(2)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+                        <top>20</top>
+                        <left>20</left>
+                        <right>20</right>
+                        <height>310</height>
+                        <texture border="5">overlays/diffuse-overlay.png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -99,7 +103,7 @@
                     <align>center</align>
                     <label>s</label>
                     <font>IconTiny</font>
-                    <textcolor>DisabledColor</textcolor>
+                    <textcolor>disabled</textcolor>
                 </control>
                 <control type="label">
                     <visible>Container(2).HasNext</visible>
@@ -109,7 +113,7 @@
                     <align>center</align>
                     <label>t</label>
                     <font>IconTiny</font>
-                    <textcolor>DisabledColor</textcolor>
+                    <textcolor>disabled</textcolor>
                 </control>
             </control>
             
@@ -152,7 +156,7 @@
                     <width>100</width>
                     <height>100</height>
                     <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-                    <texture background="true" fallback="DefaultActor.png" diffuse="diffuse/list-icon.png">$INFO[System.ProfileThumb]</texture>
+                    <texture fallback="DefaultActor.png" diffuse="diffuse/list-icon.png">$INFO[System.ProfileThumb]</texture>
                 </control>
                 <control type="label">
                     <width>980</width>

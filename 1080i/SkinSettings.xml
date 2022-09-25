@@ -9,16 +9,6 @@
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu|quicknav)</onunload>
     <controls>
         <include>CommonBackground</include>
-        <control type="image">
-            <include>FullscreenDimensions</include>
-            <texture background="true" fallback="special://skin/backgrounds/default_bg.jpg">$INFO[Skin.String(CustomBackground)]</texture>
-            <fadetime>400</fadetime>
-        </control>
-        <control type="image">
-            <include>FullscreenDimensions</include>
-            <texture>background.png</texture>
-            <colordiffuse>BackgroundColor</colordiffuse>
-        </control>
         <control type="group">
             <left>0</left>
             <top>180</top>
@@ -43,7 +33,7 @@
                         <height>90</height>
                         <font>font15</font>
                         <textoffsetx>20</textoffsetx>
-                        <selectedcolor>SelectedColor</selectedcolor>
+                        <selectedcolor>highlight</selectedcolor>
                         <align>right</align>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -54,7 +44,7 @@
                         <width>356</width>
                         <height>90</height>
                         <texture border="5">listselect_fo.png</texture>
-                        <colordiffuse>FocusColor</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <include>VisibleFadeEffect</include>
                     </control>
                     <control type="label">
@@ -104,10 +94,9 @@
                 <width>1256</width>
                 <height>140</height>
                 <font>font15_textbox</font>
-                <textcolor>NormalTextColor</textcolor>
+                <textcolor>highlight</textcolor>
                 <label>$VAR[SkinSettingsDescriptionVar]</label>
-                    <include content="AutoscrollDefault">
-                    </include>
+                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
                 <animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
                 <visible>!Window.IsActive(script-skinshortcuts.xml)</visible>
@@ -127,7 +116,7 @@
                     <onup>9001</onup>
                     <ondown>9001</ondown>
                     <visible>Container(9000).HasFocus(1)</visible>
-                    <control type="button" id="101">
+                    <control type="button" id="100">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31911</label>
                         <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
@@ -137,13 +126,13 @@
                         <label>31096</label>
                         <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                     </control>
-                    <control type="button" id="103">
+                    <control type="button" id="101">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31018</label>
                         <label2>$VAR[MenuOrientationVar]</label2>
                         <onclick>Skin.ToggleSetting(Enable.HorizontalMenu)</onclick>
                     </control>
-                    <control type="radiobutton" id="104">
+                    <control type="radiobutton" id="105">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31231</label>
                         <onclick>Skin.ToggleSetting(Enable.CombineMenus)</onclick>
@@ -196,7 +185,7 @@
                         <control type="image">
                             <width>1316</width>
                             <height>90</height>
-                            <texture border="5" colordiffuse="FocusColor">listselect_fo.png</texture>
+                            <texture border="5" colordiffuse="highlight">listselect_fo.png</texture>
                             <visible>Control.HasFocus(9007)</visible>
                         </control>
                         <control type="image">
@@ -366,63 +355,55 @@
                     <onup>9006</onup>
                     <ondown>9006</ondown>
                     <visible>Container(9000).HasFocus(3)</visible>
-                    <control type="button" id="201">
+                    <control type="button" id="601">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31115</label>
                         <label2>$INFO[Skin.String(CustomBackground)]</label2>
                         <onclick>Skin.SetImage(CustomBackground,special://skin/backgrounds)</onclick>
                     </control>
-                    <control type="button" id="202">
+                    <control type="button" id="604">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>- $LOCALIZE[10035]</label>
                         <onclick>Skin.Reset(CustomBackground)</onclick>
                         <visible>!String.IsEmpty(Skin.String(CustomBackground))</visible>
                     </control>
-                    <control type="button" id="203">
+                    <control type="button" id="607">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31276</label>
                         <label2>$INFO[Skin.String(CustomOverlay)]</label2>
                         <onclick>Skin.SetImage(CustomOverlay,special://skin/overlays)</onclick>
                     </control>
-                    <control type="button" id="204">
+                    <control type="button" id="608">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>- $LOCALIZE[10035]</label>
                         <onclick>Skin.Reset(CustomOverlay)</onclick>
                         <visible>!String.IsEmpty(Skin.String(CustomOverlay))</visible>
                     </control>
-                    <control type="button" id="205">
+                    <control type="button" id="605">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31163</label>
                         <label2>$INFO[Skin.String(CustomHomeSlideshow)]</label2>
                         <onclick>Skin.SetPath(CustomHomeSlideshow)</onclick>
                     </control>
-                    <control type="button" id="206">
+                    <control type="button" id="606">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>- $LOCALIZE[10035]</label>
                         <onclick>Skin.Reset(CustomHomeSlideshow)</onclick>
                         <visible>!String.IsEmpty(Skin.String(CustomHomeSlideshow))</visible>
                     </control>
-                    <control type="radiobutton" id="207">
+                    <control type="radiobutton" id="602">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31124</label>
                         <onclick>Skin.ToggleSetting(Disable.ShowBackgroundVideo)</onclick>
                         <selected>!Skin.HasSetting(Disable.ShowBackgroundVideo)</selected>
                     </control>
-                    <control type="radiobutton" id="208">
+                    <control type="radiobutton" id="603">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31125</label>
                         <onclick>Skin.ToggleSetting(Disable.ShowBackgroundVis)</onclick>
                         <selected>!Skin.HasSetting(Disable.ShowBackgroundVis)</selected>
                     </control>
-                    <control type="button" id="209">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90914</label>
-                        <label2>$INFO[Skin.String(VisBackgroundMask)]</label2>
-                        <onclick>Skin.SetString(VisBackgroundMask)</onclick>
-                    </control>
-                
                 </control>
-                
                 <control type="grouplist" id="9002">
                     <description>General control area</description>
                     <left>522</left>
@@ -435,68 +416,49 @@
                     <onup>9002</onup>
                     <ondown>9002</ondown>
                     <visible>Container(9000).HasFocus(4)</visible>
-                    <control type="radiobutton" id="301">
+                    <control type="radiobutton" id="200">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>20189</label>
                         <onclick>Skin.ToggleSetting(Disable.AutoScroll)</onclick>
                         <selected>!Skin.HasSetting(Disable.AutoScroll)</selected>
                     </control>
-                    <control type="button" id="302">
+                    <control type="button" id="201">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31931</label>
                         <label2>$VAR[VideoPlotLocalizeVar]</label2>
                         <onclick>Skin.ToggleSetting(VideoInfoPlotToggle)</onclick>
                     </control>
-                    <control type="radiobutton" id="303">
+                    <control type="radiobutton" id="202">
+                        <include>SkinSettingsButtonDefaults</include>
+                        <label>31238</label>
+                        <onclick>Skin.ToggleSetting(Enable.MediaFlags)</onclick>
+                        <selected>Skin.HasSetting(Enable.MediaFlags)</selected>
+                    </control>
+                    <control type="radiobutton" id="207">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31250</label>
                         <onclick>Skin.ToggleSetting(Disable.Quicknav)</onclick>
                         <selected>!Skin.HasSetting(Disable.Quicknav)</selected>
                     </control>
-                    <control type="radiobutton" id="304">
+                    <control type="radiobutton" id="208">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31251</label>
                         <onclick>Skin.ToggleSetting(Disable.MainQuicknav)</onclick>
                         <selected>!Skin.HasSetting(Disable.MainQuicknav)</selected>
                         <enable>!Skin.HasSetting(Disable.Quicknav)</enable>
                     </control>
-                    <control type="button" id="305">
+                    <control type="button" id="203">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31943</label>
                         <onclick>ActivateWindow(1127)</onclick>
                     </control>
-                    <control type="radiobutton" id="310">
-                        <description>Suppress Animations</description>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>31907</label>
-                        <onclick>Skin.ToggleSetting(Disable.Animations)</onclick>
-                        <selected>Skin.HasSetting(Disable.Animations)</selected>
-                    </control>
-                    <control type="button" id="306">
+                    <control type="button" id="204">
                         <description>Busy Loader Image</description>
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31130</label>
                         <label2>$INFO[Skin.String(busyloader)]</label2>
                         <onclick>Skin.SetImage(busyloader,special://skin/extras/spinners)</onclick>
                     </control>
-                    <control type="radiobutton" id="307">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>31238</label>
-                        <onclick>Skin.ToggleSetting(Enable.MediaFlags)</onclick>
-                        <selected>Skin.HasSetting(Enable.MediaFlags)</selected>
-                    </control>
-                    <control type="radiobutton" id="308">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90917</label>
-                        <onclick>Skin.ToggleSetting(Enable.TouchScreen)</onclick>
-                        <selected>Skin.HasSetting(Enable.TouchScreen)</selected>
-                    </control>
-					<control type="radiobutton" id="309">
-						<label>90945</label>
-						<include>ButtonCommonValues</include>
-						<onclick>Skin.ToggleSetting(Enable.HighlightFocused)</onclick>
-						<selected>Skin.HasSetting(Enable.HighlightFocused)</selected>
-					</control>
                 </control>
                 <control type="grouplist" id="9003">
                     <description>Extras control area</description>
@@ -510,14 +472,14 @@
                     <onup>9003</onup>
                     <ondown>9003</ondown>
                     <visible>Container(9000).HasFocus(5)</visible>
-                    <control type="radiobutton" id="401">
+                    <control type="radiobutton" id="306">
                         <description>Startup Playlist Path</description>
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31254</label>
                         <onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
                         <selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
                     </control>
-                    <control type="button" id="402">
+                    <control type="button" id="307">
                         <description>Startup Playlist Path</description>
                         <include>SkinSettingsButtonDefaults</include>
                         <label>15311</label>
@@ -525,138 +487,38 @@
                         <onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
                         <enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
                     </control>
-                    <control type="radiobutton" id="403">
+                    <control type="radiobutton" id="305">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31083</label>
                         <onclick>Skin.ToggleSetting(Disable.NextAired)</onclick>
                         <selected>!Skin.HasSetting(Disable.NextAired)</selected>
                         <onclick condition="!System.HasAddon(script.tv.show.next.aired)">InstallAddon(script.tv.show.next.aired)</onclick>
                     </control>
-                    <control type="radiobutton" id="404">
+                    <control type="radiobutton" id="312">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31135</label>
                         <onclick>Skin.ToggleSetting(Disable.AutoComplete)</onclick>
                         <onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
                         <selected>!Skin.HasSetting(Disable.AutoComplete)</selected>
                     </control>
-                    <control type="button" id="405">
+                    <control type="button" id="303">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31119</label>
                         <onclick condition="System.HasAddon(script.toolbox)">RunScript(script.toolbox)</onclick>
                         <onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
                     </control>
-                    <!--<control type="button" id="406">
+                    <!--<control type="button" id="303">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31119</label>
                         <onclick condition="System.HasAddon(script.toolbox)">RunScript(script.toolbox,info=extrafanartmovie)</onclick>
                         <onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
                     </control>
-                    <control type="button" id="407">
+                    <control type="button" id="304">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31120</label>
                         <onclick condition="System.HasAddon(script.toolbox)">RunScript(script.toolbox,info=extrafanarttvshow)</onclick>
                         <onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
                     </control>-->
-                    
-                    <control type="radiobutton" id="408">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90912</label>
-                        <onclick>Skin.ToggleSetting(Enable.RemoteWeatherIcons)</onclick>
-                        <selected>Skin.HasSetting(Enable.RemoteWeatherIcons)</selected>
-                    </control>
-					<control type="button" id="421">
-						<description>Select weather fanart</description>
-						<include>SkinSettingsButtonDefaults</include>
-						<label>31171</label>
-                        <label2>$INFO[Skin.String(weatherfanart.path)]</label2>
-						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=weatherfanart&amp;type=resource.images.weatherfanart)</onclick>
-						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
-					</control>
-                    <control type="radiobutton" id="420">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90913</label>
-                        <onclick>Skin.ToggleSetting(Enable.ZoomRadar)</onclick>
-                        <selected>Skin.HasSetting(Enable.ZoomRadar)</selected>
-                    </control>
-                    <control type="radiobutton" id="409">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90918</label>
-                        <onclick>Skin.ToggleSetting(Enable.ActorRoleImages)</onclick>
-                        <selected>Skin.HasSetting(Enable.ActorRoleImages)</selected>
-                    </control>
-                    <control type="button" id="410">
- 						<visible>Skin.HasSetting(Enable.ActorRoleImages)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90919</label>
-                        <label2>$INFO[Skin.String(CustomActorRoleImages.path)]</label2>
-                        <onclick>Skin.SetPath(CustomActorRoleImages.path,special://profile)</onclick>
-                    </control>
-                    
-                    <control type="radiobutton" id="411">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90920</label>
-                        <onclick>Skin.ToggleSetting(Enable.ExternalMovieGenreIcons)</onclick>
-                        <selected>Skin.HasSetting(Enable.ExternalMovieGenreIcons)</selected>
-                    </control>
-                    <control type="button" id="412">
- 						<visible>Skin.HasSetting(Enable.ExternalMovieGenreIcons)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90921</label>
-                        <label2>$INFO[Skin.String(CustomMovieGenreIcons.path)]</label2>
-                        <onclick>Skin.SetPath(CustomMovieGenreIcons.path,special://profile)</onclick>
-                    </control>
-                    <control type="button" id="413">
- 						<visible>!Skin.HasSetting(Enable.ExternalMovieGenreIcons)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90922</label>
-                        <label2>$INFO[Skin.String(MovieGenreIcons.name)]</label2>
-                        <onclick>RunScript(script.image.resource.select,property=MovieGenreIcons&amp;type=resource.images.moviegenreicons)</onclick>
-                    </control>
-
-
-                    <control type="radiobutton" id="414">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90923</label>
-                        <onclick>Skin.ToggleSetting(Enable.ExternalTVGenreIcons)</onclick>
-                        <selected>Skin.HasSetting(Enable.ExternalTVGenreIcons)</selected>
-                    </control>
-                    <control type="button" id="415">
- 						<visible>Skin.HasSetting(Enable.ExternalTVGenreIcons)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90924</label>
-                        <label2>$INFO[Skin.String(CustomTVGenreIcons.path)]</label2>
-                        <onclick>Skin.SetPath(CustomTVGenreIcons.path,special://profile)</onclick>
-                    </control>
-                    <control type="button" id="416">
- 						<visible>!Skin.HasSetting(Enable.ExternalTVGenreIcons)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90925</label>
-                        <label2>$INFO[Skin.String(TVGenreIcons.name)]</label2>
-                        <onclick>RunScript(script.image.resource.select,property=TVGenreIcons&amp;type=resource.images.moviegenreicons)</onclick>
-                    </control>
-
-                    <control type="radiobutton" id="417">
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90926</label>
-                        <onclick>Skin.ToggleSetting(Enable.ExternalMusicGenreIcons)</onclick>
-                        <selected>Skin.HasSetting(Enable.ExternalMusicGenreIcons)</selected>
-                    </control>
-                    <control type="button" id="418">
- 						<visible>Skin.HasSetting(Enable.ExternalMusicGenreIcons)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90927</label>
-                        <label2>$INFO[Skin.String(CustomMusicGenreIcons.path)]</label2>
-                        <onclick>Skin.SetPath(CustomMusicGenreIcons.path,special://profile)</onclick>
-                    </control>
-                    <control type="button" id="419">
- 						<visible>!Skin.HasSetting(Enable.ExternalMusicGenreIcons)</visible>
-                        <include>SkinSettingsButtonDefaults</include>
-                        <label>90928</label>
-                        <label2>$INFO[Skin.String(MusicGenreIcons.name)]</label2>
-                        <onclick>RunScript(script.image.resource.select,property=MusicGenreIcons&amp;type=resource.images.musicgenreicons)</onclick>
-                    </control>
-                    
-                    
                 </control>
                 <control type="grouplist" id="9004">
                     <description>Advanced control area</description>
@@ -670,21 +532,19 @@
                     <onup>9004</onup>
                     <ondown>9004</ondown>
                     <visible>Container(9000).HasFocus(6)</visible>
-                    <control type="radiobutton" id="501">
+                    <control type="radiobutton" id="402">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31941</label>
                         <onclick>Skin.ToggleSetting(KioskMode.Enabled)</onclick>
                         <selected>Skin.HasSetting(KioskMode.Enabled)</selected>
                     </control>
-                    <control type="radiobutton" id="502">
+                    <control type="radiobutton" id="403">
                         <include>SkinSettingsButtonDefaults</include>
                         <label>31263</label>
                         <onclick>Skin.ToggleSetting(Skin.ToggleDebug)</onclick>
                         <onclick>Skin.ToggleDebug</onclick>
                         <selected>Skin.HasSetting(Skin.ToggleDebug)</selected>
                     </control>
-
-					
                 </control>
                 <control type="grouplist" id="9008">
                     <description>About control area</description>
@@ -699,14 +559,14 @@
                         <width>1316</width>
                         <height>120</height>
                         <textoffsetx>30</textoffsetx>
-                        <font>WeatherTempFont</font>
+                        <font>WeatherTemp</font>
                         <label>31196</label>
                     </control>
                     <control type="label">
                         <width>1316</width>
                         <height>45</height>
                         <textoffsetx>30</textoffsetx>
-                        <textcolor>NormalTextColor</textcolor>
+                        <textcolor>highlight</textcolor>
                         <font>font15</font>
                         <label>31197</label>
                     </control>
@@ -714,17 +574,9 @@
                         <width>1316</width>
                         <height>45</height>
                         <textoffsetx>30</textoffsetx>
-                        <textcolor>NormalTextColor</textcolor>
+                        <textcolor>highlight</textcolor>
                         <font>font15</font>
                         <label>31198</label>
-                    </control>
-                    <control type="label">
-                        <width>1316</width>
-                        <height>45</height>
-                        <textoffsetx>30</textoffsetx>
-                        <textcolor>NormalTextColor</textcolor>
-                        <font>font15</font>
-                        <label>31203</label>
                     </control>
                     <control type="textbox">
                         <top>30</top>
