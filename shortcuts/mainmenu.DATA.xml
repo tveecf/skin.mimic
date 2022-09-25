@@ -26,11 +26,11 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>music</defaultID>
-		<label>10502</label>
+		<label>10005</label>
 		<label2>Custom item</label2>
 		<icon>DefaultMusicAlbums.png</icon>
 		<thumb>DefaultMusicAlbums.png</thumb>
-		<action>ActivateWindow(music,musicdb://albums/,return)</action>
+		<action>ActivateWindow(music,library://music/artists.xml/,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>musicvideos</defaultID>
